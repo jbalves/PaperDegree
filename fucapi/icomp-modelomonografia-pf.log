@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  19 NOV 2015 03:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  19 NOV 2015 03:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1080,41 +1080,41 @@ File: img/abordagemModeloClassificacao.png Graphic file (type png)
 Package pdftex.def Info: img/abordagemModeloClassificacao.png used on input lin
 e 421.
 (pdftex.def)             Requested size: 305.64423pt x 229.45901pt.
- [17 <./img/abordagemModeloClassificacao.png>]
+ [17 <./img/abordagemModeloClassificacao.png>] [18]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 455.
+               Default added (so using `tbp') on input line 458.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.474 		Removemos os atributos: DT_
+l.477 		Removemos os atributos: DT_
                                    NASC (ID 12), NU_DDD_TEL (ID 29), DDD_HOS...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 475.
+LaTeX Warning: Command \' invalid in math mode on input line 478.
 
 Missing character: There is no Û in font cmr12!
 
-LaTeX Warning: Command \^ invalid in math mode on input line 476.
+LaTeX Warning: Command \^ invalid in math mode on input line 479.
 
 Missing character: There is no ‚ in font cmr12!
 
-LaTeX Warning: Command \^ invalid in math mode on input line 476.
+LaTeX Warning: Command \^ invalid in math mode on input line 479.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.477 
+l.480 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 Missing character: There is no ‚ in font cmr12!
 
-Overfull \hbox (860.01445pt too wide) in paragraph at lines 472--477
+Overfull \hbox (860.01445pt too wide) in paragraph at lines 475--480
 \T1/pbk/l/n/12 (-20) igual a 66. Re-mo-ve-mos os atri-bu-tos: DT$[]\OML/cmm/m/i
 t/12 ASC\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ID\OT1/cmr/m/n/12 12)\OML/cmm/m/it/12
  ; NU[]DD[]EL\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ID\OT1/cmr/m/n/12 29)\OML/cmm/m/
@@ -1127,7 +1127,7 @@ S/cmsy/m/n/12 ^^@
  []
 
 
-Overfull \hbox (402.95686pt too wide) in paragraph at lines 472--477
+Overfull \hbox (402.95686pt too wide) in paragraph at lines 475--480
 \OML/cmm/m/it/12 seaclassertuloAplicamosofiltroRemoveRange \OMS/cmsy/m/n/12 ^^@
  \OML/cmm/m/it/12 R$\T1/pbk/l/n/12 (-20) 5001$\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it
 /12 last; pararealizarmosoexperimentocom$\T1/pbk/l/n/12 (-20) 5.000$\OML/cmm/m/
@@ -1138,18 +1138,18 @@ it/12 instnciaseoatributoCLASSI[]INcom$\T1/pbk/l/n/12 (-20) 22$\OT1/cmr/m/n/12
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.478 ...$10.000$ inst√¢ncias e o atributo CLASSI_
+l.481 ...$10.000$ inst√¢ncias e o atributo CLASSI_
                                                   FIN com $19$\% das inst√¢n...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 478.
+LaTeX Warning: Command \^ invalid in math mode on input line 481.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.479 
+l.482 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1158,30 +1158,30 @@ Missing character: There is no ‚ in font cmr12!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.480 ...$15.000$ inst√¢ncias e o atributo CLASSI_
+l.483 ...$15.000$ inst√¢ncias e o atributo CLASSI_
                                                   FIN com $19$\% das inst√¢n...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \^ invalid in math mode on input line 480.
+LaTeX Warning: Command \^ invalid in math mode on input line 483.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.481 
+l.484 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 Missing character: There is no ‚ in font cmr12!
-[18
+[19
 
 ]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.485 		NU_
+l.488 		NU_
            NOTIFIC
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1189,13 +1189,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.546 
+l.549 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (3535.88547pt too wide) in paragraph at lines 485--546
+Overfull \hbox (3535.88547pt too wide) in paragraph at lines 488--549
 []\T1/pbk/l/n/12 (-20) NU$[]\OML/cmm/m/it/12 OTIFICDT[]OTIFICSEM[]OTSG[]F[]OTID
 []UNICIPID[]EGIONAID[]NIDADEDT[]IN[]RISEM[]RI[]OMES[]IN[]RSEM[]RINU[]DADE[]NU[]
 DADE[]FX[]U[]DADCS[]EXOCS[]ESTANTCS[]ACACS[]SCOL[]ID[]NS[]USSG[]FID[]N[]ESIID[]
@@ -1207,25 +1207,25 @@ OMUNINFCODISINFCO[]AINFNOBAIINFDOENCA[]RAEVOLUCAODT[]BITODT[]NCERRAHOSPITALIZDT
 []NTERNAUFMUNICIPIOHOSPITALCLASSI[]IN$ 
  []
 
-[19] [20
+[20] [21
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 581.
- [21
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 584.
+ [22
 
 ] (./icomp-modelomonografia-pf.bbl
 (./icomp-modelomonografia-pf.brf)
 \tf@brf=\write5
 \openout5 = `icomp-modelomonografia-pf.brf'.
 
- [22
+ [23
 
 ]
 bibitemlist
-[23
+[24
 
-]) [24] [25
+]) [25] [26
 
 ]
 \tf@lof=\write6
@@ -1237,11 +1237,11 @@ bibitemlist
 \tf@toc=\write8
 \openout8 = `icomp-modelomonografia-pf.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 641.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 641.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 644.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 644.
  (./icomp-modelomonografia-pf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 641.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 641.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 644.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 644.
 
 
 Package rerunfilecheck Warning: File `icomp-modelomonografia-pf.brf' has change
@@ -1249,24 +1249,24 @@ d.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `icomp-modelomonografia-pf.brf':
-(rerunfilecheck)             Before: E1C1148246F31AD0C92F47F606F5A523;1198
-(rerunfilecheck)             After:  186A08C75D0C6665A1AE6474D1163C5F;1198.
+(rerunfilecheck)             Before: 6518B0DF3ED8BCC9454E6A0250772161;1243
+(rerunfilecheck)             After:  B9DA892008D6F257DAFD484316874BB6;1243.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 641.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 644.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 597 (\begingroup)
+### semi simple group (level 2) entered at line 600 (\begingroup)
 ### semi simple group (level 1) entered at line 376 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13604 strings out of 493089
- 202174 string characters out of 6134842
+ 13608 strings out of 493089
+ 202205 string characters out of 6134842
  367215 words of memory out of 5000000
  16711 multiletter control sequences out of 15000+600000
- 34259 words of font info for 127 fonts, out of 8000000 for 9000
+ 34452 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,13n,36p,883b,5406s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
@@ -1278,10 +1278,10 @@ ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb>
-Output written on icomp-modelomonografia-pf.pdf (26 pages, 440835 bytes).
+Output written on icomp-modelomonografia-pf.pdf (27 pages, 441835 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
- 83 named destinations out of 1000 (max. 500000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 84 named destinations out of 1000 (max. 500000)
  12059 words of extra memory for PDF output out of 14400 (max. 10000000)
 
