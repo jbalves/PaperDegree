@@ -1,0 +1,95 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.5 }
+
+\bibitem[Adriaans e Zantinge]{adriaans:1996}
+\abntrefinfo{Adriaans e Zantinge}{ADRIAANS; ZANTINGE}{}
+{ADRIAANS, P.; ZANTINGE, D. Data mining, 1996.
+\emph{Addision-Wesley, Harlow}.}
+
+\bibitem[Bellazzi e Zupan 2008]{bellazzi:2008}
+\abntrefinfo{Bellazzi e Zupan}{BELLAZZI; ZUPAN}{2008}
+{BELLAZZI, R.; ZUPAN, B. Predictive data mining in clinical medicine: current
+  issues and guidelines.
+\emph{International journal of medical informatics}, Elsevier, v.~77, n.~2, p.
+  81--97, 2008.}
+
+\bibitem[Berry e Linoff 1997]{berry:1997}
+\abntrefinfo{Berry e Linoff}{BERRY; LINOFF}{1997}
+{BERRY, M.~J.; LINOFF, G. \emph{Data mining techniques: for marketing, sales,
+  and customer support}. [S.l.]: John Wiley \& Sons, Inc., 1997.}
+
+\bibitem[Bezerra 2009]{bezerra:2009}
+\abntrefinfo{Bezerra}{BEZERRA}{2009}
+{BEZERRA, S.~M. Prontu{\'a}rio eletr{\^o}nico do paciente: uma ferramenta para
+  aprimorar a qualidade dos servi{\c{c}}os de sa{\'u}de.
+\emph{Revista Meta: Avalia{\c{c}}{\~a}o}, v.~1, n.~1, p. 73--82, 2009.}
+
+\bibitem[Costa 2012]{costa:2012}
+\abntrefinfo{Costa}{COSTA}{2012}
+{COSTA, A.~F.
+\emph{Minera{\c{c}}{\~a}o de imagens m{\'e}dicas utilizando
+  caracter{\'\i}sticas de forma}.
+Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
+
+\bibitem[DAMASCENO 2005]{damasceno:2005}
+\abntrefinfo{DAMASCENO}{DAMASCENO}{2005}
+{DAMASCENO, M. Introdu{\c{c}}{\~a}o a minera{\c{c}}{\~a}o de dados utilizando o
+  weka.
+\emph{Instituto AAAFederal de Educa{\c{c}}{\~a}o, Ci{\^e}ncia e Tecnologia do
+  Rio Grande do Norte}, 2005.}
+
+\bibitem[Fayyad, Piatetsky-Shapiro e Smyth 1996]{fayyad:1996}
+\abntrefinfo{Fayyad, Piatetsky-Shapiro e Smyth}{FAYYAD; PIATETSKY-SHAPIRO;
+  SMYTH}{1996}
+{FAYYAD, U.; PIATETSKY-SHAPIRO, G.; SMYTH, P. From data mining to knowledge
+  discovery in databases.
+\emph{AI magazine}, v.~17, n.~3, p.~37, 1996.}
+
+\bibitem[Freitas 2000]{freitas:2000}
+\abntrefinfo{Freitas}{FREITAS}{2000}
+{FREITAS, A. Uma introdu{\c{c}}{\~a}o a data mining.
+\emph{Inform{\'a}tica Brasileira em An{\'a}lise, Centro de Estudos e Sistemas
+  Avan{\c{c}}ados do Recife (CESAR), Recife, Pe, ano II}, n.~32, 2000.}
+
+\bibitem[Hall et al. 2009]{hall:2009}
+\abntrefinfo{Hall et al.}{HALL et al.}{2009}
+{HALL, M. et al. The weka data mining software: an update.
+\emph{ACM SIGKDD explorations newsletter}, ACM, v.~11, n.~1, p. 10--18, 2009.}
+
+\bibitem[Junior e Piedade 2013]{alexander:2013}
+\abntrefinfo{Junior e Piedade}{JUNIOR; PIEDADE}{2013}
+{JUNIOR, A.~R. de M.; PIEDADE, M.~P. Data mining na descoberta de padr{\~o}es
+  de sintomas com foco no aux{\'\i}lio ao diagn{\'o}stico m{\'e}dico.
+\emph{Encontro Regional de Computação e Sistemas de Informação}, 2013.}
+
+\bibitem[Santos e Neto]{santos:2011}
+\abntrefinfo{Santos e Neto}{SANTOS; NETO}{}
+{SANTOS, M.~S.; NETO, J.~C. da C. Amagodis: Algoritmos de minera{\c{c}}{\~a}o
+  para apoio {\`a} ger{\^e}ncia de ocorr{\^e}ncias de dengue a partir de
+  informa{\c{c}}{\~o}es presentes na base dados do sinan.}
+
+\bibitem[Shakil, Anis e Alam 2015]{shakil:2015}
+\abntrefinfo{Shakil, Anis e Alam}{SHAKIL; ANIS; ALAM}{2015}
+{SHAKIL, K.~A.; ANIS, S.; ALAM, M. Dengue disease prediction using weka data
+  mining tool.
+\emph{arXiv preprint arXiv:1502.05167}, 2015.}
+
+\bibitem[Thitiprayoonwongse, Suriyaphol e Soonthornphisaj
+  2012]{thitiprayoonwongse:2012}
+\abntrefinfo{Thitiprayoonwongse, Suriyaphol e
+  Soonthornphisaj}{THITIPRAYOONWONGSE; SURIYAPHOL; SOONTHORNPHISAJ}{2012}
+{THITIPRAYOONWONGSE, D.; SURIYAPHOL, P.; SOONTHORNPHISAJ, N. Data mining of
+  dengue infection using decision tree.
+\emph{Entropy}, v.~2, p.~2, 2012.}
+
+\bibitem[Thom{\'e} 2002]{thome:2002}
+\abntrefinfo{Thom{\'e}}{THOM{\'E}}{2002}
+{THOM{\'E}, A. C.~G. Redes neurais: uma ferramenta para kdd e data mining.
+\emph{Material Did{\'a}tico http://equipe. nce. ufrj.
+  br/thome/grad/nn/mat\_didatico/apostila\_kdd\_mbi. pdf, Outubro}, 2002.}
+
+\end{thebibliography}

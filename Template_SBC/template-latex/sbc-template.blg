@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sbc-template.aux
+The style file: sbc.bst
+Database file #1: sbc-template.bib
+Warning--empty journal in cacsi:15
+You've used 4 entries,
+            1935 wiz_defined-function locations,
+            495 strings with 4079 characters,
+and the built_in function-call counts, 1529 in all, are:
+= -- 146
+> -- 52
+< -- 5
++ -- 17
+- -- 15
+* -- 106
+:= -- 266
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 26
+chr.to.int$ -- 4
+cite$ -- 5
+duplicate$ -- 72
+empty$ -- 121
+format.name$ -- 23
+if$ -- 313
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 5
+newline$ -- 22
+num.names$ -- 16
+pop$ -- 33
+preamble$ -- 1
+purify$ -- 26
+quote$ -- 0
+skip$ -- 54
+stack$ -- 0
+substring$ -- 82
+swap$ -- 12
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 22
+warning$ -- 1
+while$ -- 13
+width$ -- 0
+write$ -- 52
+(There was 1 warning)

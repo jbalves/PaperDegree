@@ -1,0 +1,125 @@
+@MISC{INMET:Site,
+  author =       {INMET},
+  title =        {Instituto Nacional de Meteorologia},
+  howpublished = {\url{http://www.inmet.gov.br}},
+  year =         {2015}
+}
+
+@MISC{MATLAB:Trainlm,
+    author = {Mathworks},
+    title = {Levenberg-Marquardt Backpropagation},
+    howpublished = {\url{http://www.mathworks.com/help/nnet/ref/trainlm.html}},
+    year = {2015}
+}
+
+@MISC{INMET:Documento,
+  author =       {INMET},
+  title =        {Instituto Nacional de Meteorologia},
+  howpublished = {\url{http://www.inmet.gov.br/portal/css/content/topo_iframe/pdf/Nota_Tecnica-Rede_estacoes_INMET.pdf}},
+  year =         {2015}
+}
+
+@MISC{Barreto:IntroRNA,
+  author =       {Jorge M. Barreto},
+  title =        {Introdução às Redes Neurais Artificiais},
+  howpublished = {UFSC - Universidade Federal de Santa Catarina},
+  year =         {2002}
+}
+
+@ARTICLE{Abhishek:Journal,
+  AUTHOR =       {Kumar Abhishek and M.P.Singh and Saswata Ghosh and Abhishek Anand},
+  TITLE =        {Weather forecasting model using Artificial Neural Network},
+  JOURNAL =      {Procedia Technology},
+  YEAR =         {2012},
+  volume =       {4},
+  pages =        {311-318},
+}
+
+@ARTICLE{Luk:RainfallForecasting,
+  AUTHOR =       {Kin C. Luk and J. E. Ball and A. Sharma},
+  TITLE =        {An application of Artificial Neural Networks for Rainfall Forecasting},
+  JOURNAL =      {Mathematical and Computing Modelling},
+  YEAR =         {2001},
+  volume =       {33},
+  pages =        {683-693},
+}
+
+@BOOK{Teresa:Livro,
+  AUTHOR =       {Antônio de Pádua Braga and André Ponce de Leon F. de Carvalho and Teresa Bernarda Ludermir},
+  editor =       {LTC},
+  TITLE =        {Redes Neurais Artificiais: Teoria e Aplicações},
+  YEAR =         {2007},
+  edition =      {2},
+}
+
+@ARTICLE{Cybenko:Approximation,
+    AUTHOR = {G. Cybenko},
+    TITLE = {Approximation by Superpositions of a Sigmoidal Function},
+    JOURNAL = {Mathematics of Control, Signals, and Systems},
+    YEAR = {1989},
+    VOLUME = {2},
+    PAGES = {303-314},
+}
+
+@ARTICLE{LM:Article,
+    AUTHOR = {M. H. Fun and M. T. Hagan},
+    TITLE = {Levenberg-Marquardt training for modular networks},
+    JOURNAL = {IEEE International Conference on Neural Networks},
+    YEAR = {1996},
+    VOLUME = {1},
+    PAGES = {468-473},
+}
+
+@BOOK{Moreira:Geografia,
+  AUTHOR =       {João Carlos Moreira and Eustáquio de Sene},
+  editor =       {Editora Scipione},
+  TITLE =        {Geografia Geral e do Brasil},
+  YEAR =         {2010}
+}
+
+@ARTICLE{Alvares:ClassificacaoManaus,
+  AUTHOR =       {C. A. Alavares and J. L. Stape and P. C. Sentelhas and J. L. M. Gonçalves and G. Sparovek},
+  TITLE =        {Koppen's climate classification map for Brazil},
+  JOURNAL =      {Meteorologische Zeitschrift},
+  YEAR =         {2014},
+  volume =       {22},
+  number =       {6},
+  pages =        {711-728}
+}
+
+@ARTICLE{Silva:PrecipitacaoManaus,
+  AUTHOR =       {Daniel Araujo da Silva},
+  TITLE =        {Função da Precipitação no Conforto do Clima Urbano da Cidade de Manaus},
+  JOURNAL =      {Revista Geonorte},
+  YEAR =         {2012},
+  volume =       {1},
+  number =       {5},
+  pages =        {22-40}
+}
+
+@BOOK{Sioli:AmazoniaEcologia,
+  AUTHOR =       {H. Sioli},
+  editor =       {Vozes},
+  TITLE =        {Amazônia: Fundamentos da ecologia da maior região de florestas tropicais},
+  PUBLISHER =    {Vozes},
+  YEAR =         {1991}
+}
+
+@INPROCEEDINGS{Darji:Survey,
+AUTHOR = {Mohini P. Darji and Vipul K. Dabhi and Harshadkumar B. Prajapati},
+TITLE = {Rainfall Forecasting Using Neural Network: A Survey},
+BOOKTITLE = {International Conference on Advances in Computer Engineering and Applications},
+YEAR = {2015},
+PUBLISHER = {{IMS} Engineering College},
+address = {India},
+}
+
+@ARTICLE{Silva:PrecipitacaoManaus,
+  AUTHOR =       {Patrick Magalhães de Lima and Elloá B. Guedes},
+  TITLE =        {Função da Precipitação no Conforto do Clima Urbano da Cidade de Manaus},
+  JOURNAL =      {Revista Geonorte},
+  YEAR =         {2012},
+  volume =       {1},
+  number =       {5},
+  pages =        {22-40}
+}

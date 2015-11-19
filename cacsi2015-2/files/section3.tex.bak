@@ -1,0 +1,99 @@
+Manaus é a capital do estado do Amazonas no norte do Brasil e está localizada na região do baixo platô da planície do Rio Negro. Fundada por volta de $1693$ hoje é a $7ª$ cidade mais populosa do país com cerca de $2$ milhões de habitantes no ano de $2014$ \cite{Moreira:Geografia}.
+
+De acordo com o sistema de classificação climática de \emph{Köppen}, Manaus possui um clima tropical de monções, devido às altas temperaturas constantes durante todo o ano e as intensas chuvas de outubro a junho. Seu clima não categoriza-se como de floresta tropical devido ao mês mais seco do ano, agosto, o qual apresenta menos de $60$ mm de precipitação \cite{Alvares:ClassificacaoManaus}.
+
+A região da cidade de Manaus e seus arredores possuem condições climáticas naturalmente desagradáveis, com calor e umidade característicos de regiões equatoriais, sendo ocasionados principalmente por dois fatores: sua localização geográfica e topografia \cite{Silva:PrecipitacaoManaus}. Muitas de suas precipitações são resultados de vários sistemas de precipitação, como a zona de convergência Intertropical, Anticiclones Subtropicais, Alta da Bolívia, Sistemas de Mesoescala Tropical, Zona de Convergência do Atlântico Sul, Sistemas de Escala Sinóptica, dentre outros \cite{Silva:PrecipitacaoManaus}. A chuva na cidade de Manaus é abundante, não uniforme e um importante fator que modela o clima da região \cite{Sioli:AmazoniaEcologia}, porém, constata-se que é um processo resultante de sistema natural de elevada complexidade.
+
+\subsection{Dados de Entrada e Saída}
+
+Os dados utilizados para a realização deste trabalho provêm de uma \emph{estação meteorológica automática} composta pelos subsistemas de: ($i$) coleta de dados, cujo objetivo é integrar diversos sensores que aferem os parâmetros climáticos de interesse; ($ii$) armazenamento, que mantêm os dados em uma memória não volátil; ($iii$) comunicação, cuja tarefa é a transmissão dos dados da estação; e ($iv$) energia, responsável por manter a estação funcionando por meio de energia solar. Os dados produzidos pela estação são validados e então armazenados em um banco de dados  disponibilizado pelo INMET (Instituto Nacional de Meteorologia) \cite{INMET:Documento}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{./images/estacao}
+    \caption{Estação Meteorológica Automática utilizada pelo INMET.}
+    \label{img_estacao}
+\end{figure}
+
+Considerando o problema da previsão de precipitação na cidade de Manaus, foi utilizada a estação meteorológica do INMET, localizada em \ang{03;06;13.2552}S, \ang{60;00;6596}W, a $61.25$m acima do nível do mar \cite{INMET:Site}. Esta estação encontra-se ilustrada na Figura \ref{img_estacao}. Foram recuperados dados climáticos registrados diariamente entre  $01$ de Janeiro de $1970$ a $31$ de Dezembro de $2014$, resultando num conjunto com cerca de $13179$ dias de dados válidos. A partir destas observações, foram colhidos os seguintes parâmetros meteorológicos:
+
+\begin{enumerate}
+    \item Temperatura Máxima Média;
+    \item Temperatura Mínima Média;
+    \item Umidade Relativa Média;
+    \item Velocidade Média do Vento;
+    \item Precipitação Média.
+\end{enumerate}
+
+No contexto deste trabalho, os parâmetros de $1$ a $4$ serão utilizados como entradas das redes neurais, enquanto que o parâmetro $5$ será a saída, ou seja, o valor que se deseja prever.
+
+\subsection{Modelo de Redes Neurais}
+
+O modelo de \emph{Redes Neurais Multicamadas Feedforward} (RNMF) será utilizado para realizar a tarefa de predição proposta. Este modelo foi escolhido por ser capaz de aproximar, com precisão aceitável, uma função arbitrária \cite{Barreto:IntroRNA}. 
+
+A utilização do modelo RNMF em tarefas de previsão de chuva já mostra-se consolidada na literatura. Trabalhos como o de Abhishek et al. \cite{Abhishek:Journal} e Luk et al. \cite{Luk:RainfallForecasting} mostram que RNMFs apresentam resultados similares quando comparadas a modelos de maior complexidade em problemas de predição de chuva. Estes resultados reforçam a escolha do modelo em questão no contexto deste trabalho.
+
+No trabalho de Luk et al. \cite{Luk:RainfallForecasting}, em particular, este modelo de redes neurais foi capaz de gerar alertas contra inundações com $15$ minutos de antecedência. Já no trabalho de Abhishek et al. \cite{Abhishek:Journal}, estas redes foram utilizadas para prever monções na Índia. Ambos os trabalhos mostram aplicações práticas e relevantes das RNMFs.
+
+\subsection{Metodologia}
+
+Antes de apresentar os dados para o treinamento das redes neurais, um processo de \emph{normalização pela média} foi realizado, conforme \begin{equation}
+\label{eq:normalization}
+ x_i' = \frac{x_i - \mu}{\sigma}, \hspace{1cm} \forall x_i \in X,
+\end{equation}em que $X$ é o conjunto de dados a ser normalizado, $\mu$ e $\sigma$ são os valores da média aritmética e do desvio padrão do conjunto $X$, respectivamente. Isto ocorreu para reduzir a grande variabilidade dos dados, visando a melhor convergência do algoritmo de retropropagação de erros (\emph{backpropagation}).
+
+Os $13179$ dias de dados válidos foram separados em três conjuntos: ($i$) \emph{treinamento}, cujos dados apresentarão as características do problema à rede; ($ii$) \emph{validação}, cujos dados servirão para avaliar o aprendizado da rede; e ($iii$) \emph{teste} do qual os dados são destinados a averiguar a capacidade de generalização da rede. A separação destes conjuntos visou segmentar de maneira temporal o conjunto de dados de entrada. Desta forma, o conjunto de treinamento recebeu dados entre $1970$ e $2010$ (  $86\%$ dos dados); ao conjunto validação foram assinalados os anos de $2011$ a $2013$ (cerca de $11\%$); enquanto que ao conjunto teste foram designados $365$ dias de dados (aproximadamente $3\%$), relativos ao ano de $2014$. Tal separação foi feita com o objetivo de agrupar características de memória inerentes aos processos climáticos, ao mesmo tempo que tenta-se evitar o \emph{overfiting}, uma vez que cada dado do conjunto será apresentado à rede de forma randômica.
+
+ Embora redes neurais com somente uma camada escondida possam aproximar qualquer função contínua, optou-se por utilizar redes com duas camadas escondidas na expectativa de que estas pudessem capturar melhor os detalhes envolvidos no mapeamento de uma função de predição. Para isso, foram treinadas redes com $X = 4$ neurônios na camada de entrada, $Y$ e $Z$ neurônios na primeira e segunda camadas escondidas, respectivamente, em que $1 \leq Y,Z \leq 50$. Há apenas $1$ neurônio na camada de saída, correspondendo a previsão realizada pela rede.
+
+Um total de $2500$ redes neurais diferentes poderiam satisfazer os requisitos previamente apresentados. Para automatizar a tarefa de treinamento,  validação e testes dessas redes, bem como para a posterior análise dos dados, o software MATLAB\textsuperscript{\textregistered} foi utilizado.
+
+
+Dado o amplo número de redes neurais a considerar, a escolha das arquiteturas mais apropriadas foi efetuada em duas etapas:
+ \begin{enumerate}
+    \item \textbf{Treinamento}. Considerou o \emph{Erro Médio Quadrático} (MSE - \emph{Mean Squared Error}) da previsão de chuva como parâmetro guia para a avaliação do aprendizado;
+    \item \textbf{Avaliação}. Nesta etapa, as redes foram analisadas tendo como medida de performance a porcentagem de acertos na fase de testes.
+ \end{enumerate}
+
+O MSE não poderá ser usado como métrica confiável para a escolha das redes, pois, por tratar-se de um trabalho de classificação, suas saídas fornecerão a predição da probabilidade de ocorrer precipitação em um determinado dia. Mesmo em problemas de regressão um baixo MSE pode ser uma medida de performance errônea, principalmente nos casos onde ocorre \emph{overfiting}. Por este motivo, as arquiteturas de rede selecionadas serão as que possuírem maior porcentagem de acertos na fase de testes e que, por conseguinte, efetuaram a tarefa de predição mais precisamente.
+
+As redes foram treinadas utilizando a otimização de \emph{Levenberg-Marquardt} que é uma aproximação do método de Newton e que utiliza uma taxa de aprendizagem variável \cite{LM:Article}. Geralmente é o algoritmo \emph{backpropagation} mais rápido, embora requeira mais memória que outros algoritmos disponíveis \cite{MATLAB:Trainlm}. Utilizou-se a função tangente sigmoidal como função de ativação dos neurônios da rede, sendo esta muito utilizada em problemas de classificação como o abordado neste trabalho [Survey].
+
+Os parâmetros de treinamento da rede foram mantidos fixos e encontram-se listados na Tabela \ref{table:train_parameters}, sendo a diferenciação entre as diversas redes testadas dada pela variação do número de neurônios das camadas escondidas.
+
+\begin{comment}
+ \begin{table}[h!]
+ \caption{Parâmetros utilizados no treinamento das redes neurais.}
+ \begin{center}
+ \begin{tabular}{*{10}c}
+ \textbf{Limiar de erro} & \textbf{Épocas de treinamento} & \textbf{Erros máximos} & \textbf{Gradiente mínimo} & \textbf{$\mu$} & \textbf{Decremento de $\mu$} & \textbf{Incremento de $\mu$} & \textbf{$\mu$ máximo} & \textbf{Tempo de treinamento} \\
+ \hline
+ $0.5 \times 10^{-4}$ & $1000$ & $7$ & $1 \times 10^{-10}$ & $0.003$ & $0.01$ & $7$ & $1 \times 10^{10}$ & indeterminado\\
+ \end{tabular}
+ \end{center}
+ \label{table:train_parameters}
+ \end{table}
+\end{comment}
+
+
+ \begin{table}[h!]
+ \caption{Parâmetros utilizados no treinamento das redes neurais.}
+ \begin{center}
+ \begin{tabular}{c|c}
+ \textbf{Parâmetro} & \textbf{Valor} \\
+ \hline
+ erro desejado & $0.5 \times 10^{-4}$\\
+ épocas de treinamento & $1000$\\
+ erros máximos & $7$\\
+ gradiente mínimo & $1 \times 10^{-10}$\\
+ mu & $0.003$\\
+ decremento do mu & $0.01$\\
+ incremento do mu & $7$\\
+ mu máximo & $1 \times 10^{10}$\\
+ tempo de treinamento & indeterminado\\
+ \end{tabular}
+ \end{center}
+ \label{table:train_parameters}
+ \end{table}
+
+Utilizando a metodologia proposta, dentre as $2500$ redes neurais consideradas, aquelas com melhor performance para previsão de chuva em Manaus foram identificadas.  Os resultados obtidos, suas descrições e análises são apresentadas na seção a seguir. 

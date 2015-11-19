@@ -1,0 +1,80 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage{courier}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{float, cite}
+\usepackage{booktabs}
+\usepackage[bf,sf,footnotesize,indent,justification=centering]{caption}
+\usepackage{framed}
+\usepackage{siunitx}
+\usepackage{verbatim}
+\usepackage[caption=true,font=footnotesize]{subfig}
+
+\captionsetup[subfigure]{justification=centering,labelfont={bf,sf},textfont={bf,sf,footnotesize},singlelinecheck=off,justification=centering}
+\captionsetup[figure]{justification=centering,labelfont={bf,sf},textfont={bf,sf,footnotesize},singlelinecheck=off}
+\captionsetup[table]{justification=centering,labelfont={bf,sf},textfont={bf,sf,footnotesize},singlelinecheck=off,justification=centering}
+
+\hyphenation{}
+
+
+\sloppy
+
+\title{Uso de técnicas de Data Mining na classificação de sorotipos da dengue}
+
+\author{Jeferson Barros Alves}
+
+%\providecommand{\keywords}[1]{\textbf{\textit{Palvras-Chave: }} #1}
+
+\address{Núcleo de Computação\\
+Escola Superior de Tecnologia\\
+Universidade do Estado do Amazonas\\
+Av. Darcy Vargas, 1200 -- Manaus -- Amazonas
+    \email{\{pml.eng, ebgcosta\}@uea.edu.br}
+}
+
+\begin{document}
+\selectlanguage{brazil}
+
+\maketitle
+
+\begin{abstract}
+The weather in Manaus, Amazonas is typically Equatorial warm and humid which causes a natural discomfort for its inhabitants.  One of the main agents for the local weather regulation is the precipitations, whose prediction is very important although difficult, because the weather in the city is under the influence of many precipitation systems. This work aims at presenting an approach based on multilayered artificial neural networks to predict the occurrence of rainfall in Manaus. Data from an automatic meteorological station from $1970$ to $2014$ was used. After testing a set of $2500$ different neural network that address this problem, it was possible to identify the network with $4-9-7-1$ architecture with best performance, being able to predict rainfall with almost $70\%$ certainty.
+\end{abstract}
+
+\begin{resumo}
+O clima na cidade de Manaus, Amazonas é caracterizado por calor e umidade tipicamente equatoriais, responsáveis por um desconforto natural a seus habitantes.  Um dos principais agentes na regulação do clima local é a precipitação, sendo sua predição de apreciável importância, tratando-se porém, de um procedimento difícil, pois o clima da cidade é influenciado por diversos sistemas de precipitação. Este trabalho apresenta uma abordagem utilizando redes neurais artificiais de múltiplas camadas para prever a ocorrência de precipitações na cidade de Manaus. Foram utilizados dados climáticos de $1970$ a $2014$, provenientes de uma estação meteorológica automática. Após testar um conjunto de $2500$ redes neurais que endereçam este problema, foi possível identificar a rede com arquitetura $4-9-7-1$ com melhor desempenho para este problema, capaz de prever precipitações com cerca de $70\%$ de acerto.
+\end{resumo}
+
+%\begin{keywords}
+%Redes Neurais Artificiais; Previsão de Precipitação; Inteligência Computacional.
+%\end{keywords}
+
+\section{Introdução} \label{sec:intro}
+\input{./files/intro}
+
+\section{Redes Neurais Artificais} \label{sec:fundamenta}
+\input{./files/fundamenta}
+
+\section{Predição de Precipitação em Manaus, Amazonas}
+\input{./files/section3}\label{sec:metodologia}
+
+\section{Resultados e Discussões}
+\input{./files/section4} \label{sec:resultados}
+
+\section{Considerações Finais} \label{sec:considera}
+\input{./files/considera}
+
+
+\section*{Agradecimentos}
+O autor Patrick Magalhães agradece o apoio financeiro provido pela Samsung para a realização deste trabalho. Os autores agradecem a Profa. Maria Betânia Leal pelas sugestões fornecidas e que contribuíram para a melhoria deste trabalho.
+
+\bibliographystyle{sbc}
+\bibliography{referencias}
+
+\end{document}
