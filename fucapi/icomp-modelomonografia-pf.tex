@@ -246,6 +246,8 @@
 \begin{siglas}
   \item[KDD] Knowledge Discovery in Databases
   \item[WEKA] Waikato Environment for Knowledge Analysis
+  \item[SVM] Support Vector Machine
+  \item[SMO] Sequential Minimal Optimization
 \end{siglas}
 % ---
 
@@ -408,7 +410,20 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		
 		A partir da definição de uma métrica de similaridade, os dados são  agrupados, dando a possibilidade de encontrar relações interessantes entre as instâncias. Assim, o cliente do conhecimento gerado pode aplicar uma determinada ação em um subconjunto de instâncias presente nos  dados. A suíte Weka possui os algoritmos Cobweb e SimpleKMeans e EM para tarefas de agrupamento.
 		
-	\section{Árvore de Decisão}
+	\section{Classificação}
+	
+	Uma técnica de classificação é uma abordagem sistemática para construção de modelos de classificação a partir de im conjunto de dados de entrada. Exemplos incluem classificadores de árvores de decisão, classificadores baseados em regras, redes neurais, máquinas de vetores de suporte e classificadores Bayes simples. Cada técnica emprega um algoritmo de aprendizagem para identificar um modelo que seja mais apropriado para o relacionamento entre o conjunto de atributos e o rótulo da classe dos dados de entrada. O modelos gerado pelo algoritmo de aprendizagem deve se adaptar bem aos dados de entrada e prever corretamente os rótulos de classes de registros que ele nunca viu antes. Portanto, o objetivo chave do algoritmo de aprendizagem é construir modelos com boa capacidade de generalização \cite{tan:2009}.
+	
+	A Figura \ref{figabordagemModeloClassificacao} mostra uma abordagem geral para resolver problemas de classificação. Primeiro, um conjunto de treinamento consistindo de registros cujos rótulos sejam conhecidos e devem ser fornecidos. O conjunto de treinamento é usado para construir um modelo de classificação, que é subsequentemente aplicado ao conjunto de teste, que consiste de registros com rótulos de classes desconhecidas \cite{tan:2009}.
+	
+	\begin{figure}[!htb]
+		\begin{center}
+			\includegraphics[scale=0.3]{img/abordagemModeloClassificacao.png}
+			%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
+		\end{center}
+		\caption{\label{figabordagemModeloClassificacao} Abordagem geral para a construção de um modelo de classificação. Adaptado de \cite{tan:2009}}
+	\end{figure}
+	\section{Árvore de Decisão  }
 	
 		Seção 4
 		

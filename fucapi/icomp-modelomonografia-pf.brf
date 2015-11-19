@@ -1,4 +1,5 @@
 \backcite {fayyad:1996}{{2}{(document)}{Doc-Start}}
+\backcite {tan:2009}{{2}{(document)}{Doc-Start}}
 \backcite {fayyad:1996}{{7}{1}{chapter.1}}
 \backcite {costa:2012}{{7}{1.1}{section.1.1}}
 \backcite {bezerra:2009}{{7}{1.1}{section.1.1}}
@@ -19,3 +20,6 @@
 \backcite {adriaans:1996}{{15}{2.2}{section.2.2}}
 \backcite {berry:1997}{{15}{2.2}{section.2.2}}
 \backcite {damasceno:2005}{{16}{2.3}{section.2.3}}
+\backcite {tan:2009}{{16}{2.4}{section.2.4}}
+\backcite {tan:2009}{{17}{2.4}{section.2.4}}
+\backcite {tan:2009}{{17}{2}{figure.2.2}}
