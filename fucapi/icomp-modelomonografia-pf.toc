@@ -20,7 +20,7 @@
 \contentsline {section}{\numberline {2.3}Aprendizagem N\IeC {\~a}o Supervisionada}{16}{section.2.3}
 \contentsline {section}{\numberline {2.4}Classifica\IeC {\c c}\IeC {\~a}o}{16}{section.2.4}
 \contentsline {section}{\numberline {2.5}\IeC {\'A}rvore de Decis\IeC {\~a}o }{17}{section.2.5}
-\contentsline {section}{\numberline {2.6}Clasifica\IeC {\c c}\IeC {\~a}o Bayesiana}{18}{section.2.6}
+\contentsline {section}{\numberline {2.6}Clasificadores Bayesianos}{18}{section.2.6}
 \contentsline {section}{\numberline {2.7}Support Vector Machine}{18}{section.2.7}
 \contentsline {section}{\numberline {2.8}WEKA}{18}{section.2.8}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }

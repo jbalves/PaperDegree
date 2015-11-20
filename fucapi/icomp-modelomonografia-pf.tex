@@ -35,7 +35,7 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 
-\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[brazilian,hyper]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 \usepackage{pdfpages} %adicionar documentos pdf. neste caso utilizando no anexo
 \usepackage{booktabs} %adicionar tabelas geradas pelo site http://www.tablesgenerator.com
@@ -410,7 +410,7 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		
 		A partir da definição de uma métrica de similaridade, os dados são  agrupados, dando a possibilidade de encontrar relações interessantes entre as instâncias. Assim, o cliente do conhecimento gerado pode aplicar uma determinada ação em um subconjunto de instâncias presente nos  dados. A suíte Weka possui os algoritmos Cobweb e SimpleKMeans e EM para tarefas de agrupamento.
 		
-	\section{Classificação}
+	\section{Técnicas de Classificação}
 	
 	Uma técnica de classificação é uma abordagem sistemática para construção de modelos de classificação a partir de im conjunto de dados de entrada. Exemplos incluem classificadores de árvores de decisão, classificadores baseados em regras, redes neurais, máquinas de vetores de suporte e classificadores Bayes simples. Cada técnica emprega um algoritmo de aprendizagem para identificar um modelo que seja mais apropriado para o relacionamento entre o conjunto de atributos e o rótulo da classe dos dados de entrada. O modelos gerado pelo algoritmo de aprendizagem deve se adaptar bem aos dados de entrada e prever corretamente os rótulos de classes de registros que ele nunca viu antes. Portanto, o objetivo chave do algoritmo de aprendizagem é construir modelos com boa capacidade de generalização \cite{tan:2009}.
 	
@@ -430,15 +430,19 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		
 		Classificar um registro de testes é direto, assim que uma árvore de decisão tenha sido construída. Começando do nodo raiz, aplicamos a condição de teste ao registro e seguimos a ramificação apropriada baseados no resultado do teste. Isto nos levará a um outro nodo interno, para o qual uma nova condição de teste é aplicada, ou a um nodo folha \cite{tan:2009}.
 		
-	\section{Clasificadores Bayesianos}
+		Utilizamos os algoritmos: J48, RandomTree e REPTree.
+		
+	\section{Bayes}
 	
 	Em muitas aplicações, o relacionamento entre o conjunto de atributos e a variável classe é não determinístico. O rótulo da classe de um registro de teste não pode ser previsto com certeza embora seu conjunto de atributos seja idêntico a alguns dos exemplos de treinamento. Esta situação pode surgir por causa de dados com ruídos oud a presença de determinados fatores de confusão que afetam a classificação mas que não são incluídos na análise.
 	
 	O teorema de Bayes pode ser usado para resolver o problema de previsão.....
 	
+	Utilizamos o algoritmo NaiveBayes
 	
+	\section{Máquinas de Vetores de Suporte}
 	
-	\section{Support Vector Machine}
+	Utilizamos o algoritmo SMO.
 
 
 	\section{WEKA}
@@ -487,73 +491,6 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		
 		Aplicamos o filtro RemoveRange -R $15001$-last, para realizarmos o experimento com $15.000$ instâncias e o atributo CLASSI_FIN com $19$\% das instâncias vazias.
 		
-		Instances:    $5000$
-		Attributes:  $61$
-		
-		NU_NOTIFIC
-		DT_NOTIFIC
-		SEM_NOT
-		SG_UF_NOT
-		ID_MUNICIP
-		ID_REGIONA
-		ID_UNIDADE
-		DT_SIN_PRI
-		SEM_PRI_NO
-		MES_SIN_PR
-		SEM_PRI
-		NU_IDADE_N
-		NU_IDADE_0
-		FX_NU_IDAD
-		CS_SEXO
-		CS_GESTANT
-		CS_RACA
-		CS_ESCOL_N
-		ID_CNS_SUS
-		SG_UF
-		ID_MN_RESI
-		ID_RG_RESI
-		ID_DISTRIT
-		ID_BAIRRO
-		NM_BAIRRO
-		ID_GEO1
-		NU_CEP
-		CS_ZONA
-		DT_DIGITA
-		CS_FLXRET
-		IDENT_MICR
-		DT_INVEST
-		ID_OCUPA_N
-		DT_SORO
-		RESUL_SORO
-		DT_NS1
-		RESUL_NS1
-		DT_VIRAL
-		RESUL_VI_N
-		DT_PCR
-		RESUL_PCR_
-		SOROTIPO
-		HISTOPA_N
-		IMUNOH_N
-		CRITERIO
-		TPAUTOCTO
-		COUFINF
-		COMUNINF
-		CODISINF
-		CO_BAINF
-		NOBAIINF
-		DOENCA_TRA
-		EVOLUCAO
-		DT_OBITO
-		DT_ENCERRA
-		HOSPITALIZ
-		DT_INTERNA
-		UF
-		MUNICIPIO
-		HOSPITAL
-		CLASSI_FIN
-		
-
-
 	\section{Resultados}2
 	
 		Seção 3.
