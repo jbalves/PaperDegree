@@ -424,7 +424,7 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		\caption{\label{figabordagemModeloClassificacao} Abordagem geral para a construção de um modelo de classificação. Adaptado de \cite{tan:2009}}
 	\end{figure}
 
-	\section{Árvore de Decisão  }
+	\subsection{Árvore de Decisão  }
 	
 		Em uma árvore de decisão, cada nodo folha recebe um rótulo de classe. os nodos não terminais, que incluem o nodo raiz e outros nodos internos, contêm condições de testes de atributos para separar registros que possuem características diferentes.
 		
@@ -432,7 +432,7 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		
 		Utilizamos os algoritmos: J48, RandomTree e REPTree.
 		
-	\section{Bayes}
+	\subsection{Bayes}
 	
 	Em muitas aplicações, o relacionamento entre o conjunto de atributos e a variável classe é não determinístico. O rótulo da classe de um registro de teste não pode ser previsto com certeza embora seu conjunto de atributos seja idêntico a alguns dos exemplos de treinamento. Esta situação pode surgir por causa de dados com ruídos oud a presença de determinados fatores de confusão que afetam a classificação mas que não são incluídos na análise.
 	
@@ -440,7 +440,7 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 	
 	Utilizamos o algoritmo NaiveBayes
 	
-	\section{Máquinas de Vetores de Suporte}
+	\subsection{Máquinas de Vetores de Suporte}
 	
 	Utilizamos o algoritmo SMO.
 
@@ -479,7 +479,7 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		\end{table}
 		
 		
-	\section{Metodologia}
+	\section{SINAN}
 	
 		Nossos experimentos foram realizados a partir do conjunto de dados disponibilizado pela prefeitura do Rio de Janeiro do ano de 2015. Contendo inicialmente 26.568 instâncias e 97 atributos.
 		Aplicamos os filtros: NumericToNominal -R 64, RemoveUseless -M 99.0. E observamos que a quantidade de atributos ficou igual a 66.
@@ -490,10 +490,7 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		Aplicamos o filtro RemoveRange -R $10001$-last, para realizarmos o experimento com $10.000$ instâncias e o atributo CLASSI_FIN com $19$\% das instâncias vazias.
 		
 		Aplicamos o filtro RemoveRange -R $15001$-last, para realizarmos o experimento com $15.000$ instâncias e o atributo CLASSI_FIN com $19$\% das instâncias vazias.
-		
-	\section{Resultados}2
-	
-		Seção 3.
+
 		
 % - - -
 % Capítulo 4
@@ -515,21 +512,34 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 % - - -
 \chapter{Resultados}
 
-	\section{Seção 1}
+	\section{Medida de Desempenho dos Algoritmos}
 	
-		Seção 1.
+	As medidas de desepenho resultantes da classificação foram: 
 	
-	\section{Seção 2}
+	\begin{itemize}
+		\item Correctly Classified Instances
+		\item Incorrectly Classified Instances
+		\item TP Rate
+		\item FP Rate
+		\item Precision
+		\item Recall
+		\item F-Measure
+		\item ROC Area
+	\end{itemize}
 	
-		Alguns exemplos de citação:
+	\subsection{J48}
+	
+	\subsection{RandomTree}
 
-		\subsection{Subseção 2.1}
+	\subsection{REPTree}	
+
+	\subsection{NaiveBayes}
+
+	\subsection{SMO}
+
 	
-			Seção 2.1
-			
-	\section{Seção 3}
+	\section{Resultados Comparativos Entre os Modelos}
 	
-		Seção 3
 		
 \chapter{Conclusão}
 
