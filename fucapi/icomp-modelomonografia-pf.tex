@@ -39,6 +39,8 @@
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 \usepackage{pdfpages} %adicionar documentos pdf. neste caso utilizando no anexo
 \usepackage{booktabs} %adicionar tabelas geradas pelo site http://www.tablesgenerator.com
+\usepackage{scalefnt} %definir tamanho da fonte da tabela
+
 
 
 \titulo{Uso de técnicas de \textit{Data Mining} na classificação de sorotipos da dengue}
@@ -333,7 +335,6 @@
 	
 	No trabalho de \cite{thitiprayoonwongse:2012}, foi utilizado a técnica de classificação conhecida como Árvore de Decisão, aplicado a um conjunto de dados temporais contendo dados clínicos e laboratoriais. Utilizaram dois conjuntos de dados com mais de 400 atributos. Nos experimentos os dados foram divididos em: conjunto de teste e treinamento. Onde o objetivo principal deste trabalho foi identificar o dia zero da dengue, pois esta previsão torna-se crítica, tendo em vista que o dia zero tem forte relação com o melhor tratamento do paciente.
 	
-
 	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN. Onde resultou uma aplicação em java que implementa algoritmos de classificação e regras de associação da base de dados do SINAN utilizando a API WEKA. Como resultado esta ferramente possibilitou o auxílio no diagnóstico de pacientes.
 
 	\section{Metodologia de Desenvolvimento}
@@ -429,9 +430,9 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		Fonte: \cite{tan:2009}.
 	\end{figure}
 
-	\subsection{Árvore de Decisão IMPORTANTE }
+	\subsection{Árvore de Decisão IMPORTANTE}
 	
-		Árvores de Decisão é, provavelmente, o algoritmo de AM mais estudado para apli- cações em Mineração de Dados WITTEN; FRANK, 2000.
+		Árvores de Decisão é, provavelmente, o algortimo de Aprendizagem de Máquina mais estudado em Mineração de dados WITTEN, FRANK, 2000.
 	
 		Em uma árvore de decisão, cada nodo folha recebe um rótulo de classe. os nodos não terminais, que incluem o nodo raiz e outros nodos internos, contêm condições de testes de atributos para separar registros que possuem características diferentes.
 		
@@ -464,7 +465,6 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 	
 	Utilizamos o algoritmo SMO.
 
-
 	\section{WEKA}
 	
 	A ferramenta WEKA (Waikato Environment for Knowledge Analysis)  conforme descrito em \cite{hall:2009}, visa proporcionar uma coleção abrangente de algoritmos de aprendizagem de máquina e ferramentas de pré-processamento de dados tanto para pesquisadores como para profissionais. Permite aos usuários experimentar rapidamente e comparar diferentes métodos de aprendizagem de máquina em diferentes conjuntos de dados. Sua arquitetura modular, extensível, permite que os processos de mineração de dados pode ser construido a partir da vasta coleção de algoritmos de aprendizado e diversas ferramentas oferecidas.
@@ -473,46 +473,110 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 % ---
 \chapter{Base de Dados}
 
-	A base de dados utilizada foi a do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualuqer pessoas \cite{fortaleza:2015}.
-	
-	\section{Dados Abertos}
-	
-	Utilizamos a base de dados disponibilizada pelo portal de dados abertos da prefeitura do Rio de Janeiro de casos notificados de dengue.
+	A base de dados utilizada foi a do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualquer pessoa \cite{fortaleza:2015}. Este conjunto de dados contém notificações de dengue do Município de Fortaleza no período de janeiro à junho de 2015, contendo 26.568 instâncias. Na Tabela \ref{tabDescricaoAtributos}, podemos observar os atributos utilizados neste trabalho.
 
-		\begin{table}[]
-			\caption{Descrição dos atributos do conjunto de dados}
-			\label{tabelaDescricaoAtributos}
-			\centering
-			\label{my-label}
-			\begin{tabular}{@{}lllll@{}}
-				\toprule
-				Atributos            & Descrição                        &  &  &  \\ \midrule
-				Data da investigação & Informar a data de investigação  &  &  &  \\
-				Ocupação             & Informar ramo da ocupação        &  &  &  \\
-				Classificação        & Informar a classificarão do caso &  &  &  \\ \bottomrule
-			\end{tabular}
-		\end{table}
+\begin{table}[]
+	\scalefont{0.75}
+	\centering
+	\caption{Descrição dos atributos do conjunto de dados}
+	\label{tabDescricaoAtributos}
+	\begin{tabular}{ll}
+		\hline
+		Atributos     & Descrição                        \\ \hline
+		NU\_NOTIFIC   & Informar a data de investigação  \\
+		DT\_NOTIFIC   & Informar ramo da ocupação        \\
+		SEM\_NOT      & Informar a classificarão do caso \\
+		SG\_UF\_NOT   &                                  \\
+		ID\_MUNICIP   &                                  \\
+		ID\_REGIONA   &                                  \\
+		ID\_UNIDADE   &                                  \\
+		SEM\_PRI\_NO  &                                  \\
+		MES\_PRIM\_PR &                                  \\
+		SEM\_PRI      &                                  \\
+		NU\_IDADE\_N  &                                  \\
+		NU\_IDADE\_0  &                                  \\
+		FX\_NU\_IDADE &                                  \\
+		CS\_SEXO &                                  \\
+		CS\_GESTANTE &                                  \\
+		CS\_RACA &                                  \\
+		CS\_ESCOL\_N &                                  \\
+		ID\_CNS\_SUS &                                  \\
+		SG\_UF &                                  \\
+		ID\_MN\_RESI &                                  \\
+		ID\_RG\_RESI &                                  \\
+		ID\_DISTRIT &                                  \\
+		ID\_BAIRRO &                                  \\
+		NM\_BAIRRO &                                  \\
+		ID\_GEO1 &                                  \\
+		NU\_CEP &                                  \\
+		DT\_DIGITA &                                  \\
+		CS\_FLXRET &                                  \\
+		IDENT\_MICR &                                  \\
+		DT\_INVEST &                                  \\
+		ID\_OCUPA\_N &                                  \\
+		DT\_SORO &                                  \\
+		RESUL\_SORO &                                  \\
+		DT\_NS1 &                                  \\
+		RESULT\_NS1 &                                  \\
+		DT\_VIRAL &                                  \\
+		RESUL\_VI\_N &                                  \\
+		DT\_PCR &                                  \\
+		RESUL\_PCR\_ &                                  \\
+		SOROTIPO &                                  \\
+		HISTOPA\_N &                                  \\
+		IMUNOH\_N &                                  \\
+		CRITERIO &                                  \\
+		TPAUTOCTO &                                  \\
+		COUFINF &                                  \\
+		COMUNINF &                                  \\
+		CODSINF &                                  \\
+		CO\_BAINF &                                  \\
+		NOBAIINF &                                  \\
+		DOENCA\_TRA &                                  \\
+		EVOLUCAO &                                  \\
+		DT\_OBITO &                                  \\
+		DT\_ENCERRA &                                  \\
+		HOSPITALIZ &                                  \\
+		DT\_INTERNA &                                  \\
+		UF &                                  \\
+		MUNICIPIO &                                  \\
+		HOSPITAL &                                  \\
+		CLASSI\_FIN   &                                  \\ \hline
+	\end{tabular}
+\end{table}
+		
+	\section{Dados Abertos}
+
+	Utilizamos a base de dados disponibilizada pelo portal de dados abertos da prefeitura do Rio de Janeiro de casos notificados de dengue. O portal de dados abertos de Fortaleza é um espaço desenvolvido pela Coordenadoria de Ciência, Tecnologia e Inovação da Prefeitura de Fortaleza (CITINOVA) para que a sociedade possa encontrar e utlizar os dados e informações públicas da cidade de Fortaleza. Os dados são publicados em formatos abertos que permitem sua reutilização em aplicativos digitais desenvolvidos por e para qualquer pessoa. Além disso, o portal serve como uma ferramenta de interlocução com a sociedade fortalezense para pensar e promover  a inovação e a criatividade em prol da melhoria de serviços e da vida na cidade de Fortaleza. O portal de dados abertos de Fortaleza está em conformidade com os princípios da administração pública e observâncias às recomendações aceitas internacionalmente, como as emitidas pela Open Knowledge Foundation e pelo Consórcio W3C Internacional.
 		
 		
 	\section{SINAN}
 	
-		Nossos experimentos foram realizados a partir do conjunto de dados disponibilizado pela prefeitura do Rio de Janeiro do ano de 2015. Contendo inicialmente 26.568 instâncias e 97 atributos.
-		Aplicamos os filtros: NumericToNominal -R 64, RemoveUseless -M 99.0. E observamos que a quantidade de atributos ficou igual a 66.
-		
+	O Sistema de Informações de Agravos de Notificação - SINAN é o principal sistema de informações que tem como objetivo os dados referentes a morbidade, sendo fundamental no processo de trabalho da Vigilância em Saúde, estando envolvido não somente nas ações de Vigilância Epidemiológica, mas também na Vigilância Ambiental em Saúde e Vigilância em Saúde do Trabalhador \cite{conass:2015}.
+	O SINAN foi desenvolvido no início da década de 90, com o objetivo de padronizar a coleta e o processamento de dados sobre agravos de notificação obrigatória em todo território nacional. Construido de maneira hierarquizada, mantendo coerência com a organização do SUS (Sistem Único de Saúde), pretende ser suficiente ágil na viabilização de análises de situações de saúde em curto espaço de tempo. O SINAN fornece dados para a análise do perfil da morbidade e contribui para a tomada de decisões nos níveis municipal, estadual e federal \cite{saude:2008}.
+	A dengue é uma das doenças de notificação compulsória, devendo todo caso suspeito ou confirmado ser notificado ao Serviço de Vigilância Epidemiológica, por meio do SINAN nas fichas de notificação de investigação \cite{saude:2008}.
+	
+	
 % - - -
 % Capítulo 4
 % - - -
 \chapter{Metodologia}
 
-%	\section{Seção 1}
+	Neste Capítulo é descrita a metodologia utilizada para classificação do tipo de dengue em ocorrências do SINAN do município de Fortaleza. Basicamente, pode ser apresentada da seguinte forma:
+	\begin{itemize}
+		\item Definição de Atributos utilizados: 
+		\item Seleção dos Dados:
+		\item Particionamento do Conjunto de Dados:
+		\item Treinamento dos Classificadores:
+	\end{itemize}
+
+	\section{Pré-processamento}
 	
 %		Teste de símbolo:
-		
 %		$\lambda$
 		
-%	\section{Seção 2}
-	
-%		Teste de abreviaturas:
+	\section{Seção 2}
+
 		
 % - - -
 % Capítulo 5
@@ -521,7 +585,7 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 
 	\section{Validação Cruzada IMPORTANTE}
 	
-	Portanto, a melhor abordagem para a Validação Cruzada é a utilização do método de k-partições. Neste método, o conjunto de dados é dividido em k partições segundo Witten e Frank 2000
+	Portanto, a melhor abordagem para a Validação Crizada é a utilização do método de k-partições. Neste método, o conjunto de dados é dividio em k partições segundo Witten e frank 2000.
 
 	\section{Medida de Desempenho dos Algoritmos}
 	
