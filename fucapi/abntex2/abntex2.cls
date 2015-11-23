@@ -1244,16 +1244,20 @@
           \leftskip=.42\textwidth
       	  \OnehalfSpacing
           \imprimirpreambulo
+          \\
+          \\
+          \vspace*{\fill}
+          %mudei esta linha abaixo para adequar ao padrao da FUCAPI
+           {%\fontsize{12}{15}\selectfont\imprimirorientadorRotulo~\par
+             Orientador: \fontsize{12}{15}\selectfont\imprimirorientador\par}
+             \abntex@ifnotempty{\imprimircoorientador}{%
+             	{\large\imprimircoorientadorRotulo~\imprimircoorientador}%
+             }%
       \end{minipage}%
       \vspace*{\fill}
     }%
 
-    {\fontsize{12}{15}\selectfont\imprimirorientadorRotulo~\par
-     \fontsize{13}{16}\selectfont\imprimirorientador\par}
-     \abntex@ifnotempty{\imprimircoorientador}{%
-       {\large\imprimircoorientadorRotulo~\imprimircoorientador}%
-    }%
-    \vspace*{\fill}
+
 
    % {\abntex@ifnotempty{\imprimirinstituicao}{\uppercase{\imprimirinstituicao}\vspace*{\fill}}}
 

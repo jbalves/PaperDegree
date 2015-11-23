@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  22 NOV 2015 22:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  23 NOV 2015 00:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,30 +999,37 @@ LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <15> not available
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 2717) in paragraph at lines 127--127
+ \T1/pbk/l/n/12 (+20) du-a-��o em Ci-�n-cia da Com-pu-ta-��o do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+ 
+ []
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 124.
+(Font)              <12> on input line 127.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 124.
+(Font)              <8> on input line 127.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 124.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <13> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 124.
+(Font)              <6> on input line 127.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 
+l.127 
        [1
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <22> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 232.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 231.
  (./icomp-modelomonografia-pf.lof) [2]
 (./icomp-modelomonografia-pf.lot) [3
 
@@ -1039,31 +1046,31 @@ LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <12> not available
 
 ]) [6]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <16> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 284.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 283.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <10> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 288.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 287.
  [7
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+pbk on input line 302.
+LaTeX Font Info:    Try loading font information for OMS+pbk on input line 301.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omspbk.fd
 File: omspbk.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pbk/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 302.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 301.
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <10> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 310.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 309.
 
 [8] [9]
-Overfull \hbox (9.23865pt too wide) in paragraph at lines 335--336
+Overfull \hbox (9.23865pt too wide) in paragraph at lines 334--335
 []\T1/pbk/l/n/12 (-20) No tra-ba-lho de ([]THI-TI-PRAYO-ONWONGSE; SU-RIYAPHOL; 
 SO-ONTHORNPHI-
  []
 
 
-Package hyperref Warning: Suppressing empty link on input line 338.
+Package hyperref Warning: Suppressing empty link on input line 337.
 
 [10] [11] [12] [13
 
@@ -1072,29 +1079,29 @@ Package hyperref Warning: Suppressing empty link on input line 338.
 File: img/dataMiningFayyad.png Graphic file (type png)
 
 <use img/dataMiningFayyad.png>
-Package pdftex.def Info: img/dataMiningFayyad.png used on input line 389.
+Package pdftex.def Info: img/dataMiningFayyad.png used on input line 388.
 (pdftex.def)             Requested size: 469.75386pt x 189.70828pt.
 
-Overfull \hbox (14.75386pt too wide) in paragraph at lines 389--391
+Overfull \hbox (14.75386pt too wide) in paragraph at lines 388--390
  [] 
  []
 
 
-Package hyperref Warning: Suppressing empty link on input line 399.
+Package hyperref Warning: Suppressing empty link on input line 398.
 
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <12> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 399.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 398.
 [14 <./img/dataMiningFayyad.png>] [15]
-<img/abordagemModeloClassificacao.png, id=219, 1018.80624pt x 764.8575pt>
+<img/abordagemModeloClassificacao.png, id=218, 1018.80624pt x 764.8575pt>
 File: img/abordagemModeloClassificacao.png Graphic file (type png)
 
 <use img/abordagemModeloClassificacao.png>
 Package pdftex.def Info: img/abordagemModeloClassificacao.png used on input lin
-e 427.
+e 426.
 (pdftex.def)             Requested size: 305.64423pt x 229.45901pt.
  [16]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 433.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 432.
 
 
 ! Package inputenc Error: Unicode char \u8:́ not set up for use with LaTeX.
@@ -1103,7 +1110,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.435 		Á
+l.434 		Á
            rvores de Decisão é, provavelmente, o algoritmo de AM mais es...
 
 Your command was ignored.
@@ -1117,7 +1124,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.435 		Árvores de Decisã
+l.434 		Árvores de Decisã
                              o é, provavelmente, o algoritmo de AM mais es...
 
 Your command was ignored.
@@ -1131,7 +1138,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.435 		Árvores de Decisão é
+l.434 		Árvores de Decisão é
                                   , provavelmente, o algoritmo de AM mais es...
 
 Your command was ignored.
@@ -1145,7 +1152,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.435 ...itmo de AM mais estudado para apli- caç
+l.434 ...itmo de AM mais estudado para apli- caç
                                                   ões em Mineração de ...
 
 Your command was ignored.
@@ -1159,7 +1166,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.435 ...o de AM mais estudado para apli- caçõ
+l.434 ...o de AM mais estudado para apli- caçõ
                                                   es em Mineração de Dad...
 
 Your command was ignored.
@@ -1173,7 +1180,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.435 ...tudado para apli- cações em Mineraç
+l.434 ...tudado para apli- cações em Mineraç
                                                   ão de Dados WITTEN; FRAN...
 
 Your command was ignored.
@@ -1187,7 +1194,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.435 ...ado para apli- cações em Mineraçã
+l.434 ...ado para apli- cações em Mineraçã
                                                   o de Dados WITTEN; FRANK, ...
 
 Your command was ignored.
@@ -1195,16 +1202,19 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [17 <./img/abordagemModeloClassificacao.png>]
-<img/svmHiperPlanos.png, id=239, 572.1375pt x 447.6725pt>
+<img/svmHiperPlanos.png, id=238, 572.1375pt x 447.6725pt>
 File: img/svmHiperPlanos.png Graphic file (type png)
 
 <use img/svmHiperPlanos.png>
-Package pdftex.def Info: img/svmHiperPlanos.png used on input line 460.
+Package pdftex.def Info: img/svmHiperPlanos.png used on input line 459.
 (pdftex.def)             Requested size: 286.06804pt x 223.8357pt.
  [18] [19 <./img/svmHiperPlanos.png>]
 
+Package hyperref Warning: Suppressing empty link on input line 476.
+
+
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 490.
+               Default added (so using `tbp') on input line 482.
 
 [20
 
@@ -1218,7 +1228,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ...anto, a melhor abordagem para a Validaç
+l.524 ...anto, a melhor abordagem para a Validaç
                                                   ão Cruzada é a utiliza...
 
 Your command was ignored.
@@ -1232,7 +1242,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ...o, a melhor abordagem para a Validaçã
+l.524 ...o, a melhor abordagem para a Validaçã
                                                   o Cruzada é a utilizaç...
 
 Your command was ignored.
@@ -1246,7 +1256,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ...bordagem para a Validação Cruzada é
+l.524 ...bordagem para a Validação Cruzada é
                                                    a utilização do mét...
 
 Your command was ignored.
@@ -1260,7 +1270,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ... a Validação Cruzada é a utilizaç
+l.524 ... a Validação Cruzada é a utilizaç
                                                   ão do método de k-part...
 
 Your command was ignored.
@@ -1274,7 +1284,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ...Validação Cruzada é a utilizaçã
+l.524 ...Validação Cruzada é a utilizaçã
                                                   o do método de k-partic�...
 
 Your command was ignored.
@@ -1288,7 +1298,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ...ão Cruzada é a utilização do mé
+l.524 ...ão Cruzada é a utilização do mé
                                                   todo de k-partições. N...
 
 Your command was ignored.
@@ -1302,7 +1312,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ... utilização do método de k-partiç
+l.524 ... utilização do método de k-partiç
                                                   ões. Neste método, o c...
 
 Your command was ignored.
@@ -1316,7 +1326,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ...ilização do método de k-partiçõ
+l.524 ...ilização do método de k-partiçõ
                                                   es. Neste método, o conj...
 
 Your command was ignored.
@@ -1330,7 +1340,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ...o método de k-partições. Neste mé
+l.524 ...o método de k-partições. Neste mé
                                                   todo, o conjunto de dados ...
 
 Your command was ignored.
@@ -1344,7 +1354,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 .... Neste método, o conjunto de dados é
+l.524 .... Neste método, o conjunto de dados é
                                                    dividido em k partiçõ...
 
 Your command was ignored.
@@ -1358,7 +1368,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ...junto de dados é dividido em k partiç
+l.524 ...junto de dados é dividido em k partiç
                                                   ões segundo Witten e Fra...
 
 Your command was ignored.
@@ -1372,7 +1382,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.532 ...to de dados é dividido em k partiçõ
+l.524 ...to de dados é dividido em k partiçõ
                                                   es segundo Witten e Frank ...
 
 Your command was ignored.
@@ -1404,11 +1414,11 @@ bibitemlist
 \tf@toc=\write8
 \openout8 = `icomp-modelomonografia-pf.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 615.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 615.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 607.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 607.
  (./icomp-modelomonografia-pf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 615.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 615.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 607.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 607.
 
 
 Package rerunfilecheck Warning: File `icomp-modelomonografia-pf.brf' has change
@@ -1416,35 +1426,35 @@ d.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `icomp-modelomonografia-pf.brf':
-(rerunfilecheck)             Before: E32B822384EC4E8904BA3385322D7EDA;1347
-(rerunfilecheck)             After:  BAF4B171A01F21EDA763AE3574D83D1C;1347.
+(rerunfilecheck)             Before: D8032399ECA56D9D7EFF52638C989501;1394
+(rerunfilecheck)             After:  60DFFB4DC29757A6EDC2EF41433C95C8;1394.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 615.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 607.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 571 (\begingroup)
+### semi simple group (level 2) entered at line 563 (\begingroup)
 ### semi simple group (level 1) entered at line 376 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13635 strings out of 493089
- 202636 string characters out of 6134842
- 366781 words of memory out of 5000000
- 16731 multiletter control sequences out of 15000+600000
- 34452 words of font info for 129 fonts, out of 8000000 for 9000
+ 13641 strings out of 493089
+ 202774 string characters out of 6134842
+ 367160 words of memory out of 5000000
+ 16737 multiletter control sequences out of 15000+600000
+ 32976 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,36p,883b,5423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,36p,883b,5426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb>
-Output written on icomp-modelomonografia-pf.pdf (28 pages, 622622 bytes).
+Output written on icomp-modelomonografia-pf.pdf (28 pages, 623270 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 90 named destinations out of 1000 (max. 500000)
- 12088 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 444 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 11576 words of extra memory for PDF output out of 12000 (max. 10000000)
 

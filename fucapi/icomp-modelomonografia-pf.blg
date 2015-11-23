@@ -13,53 +13,57 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
+Warning--entry type for "fortaleza:2015" isn't style-file defined
+--line 86 of file referencias.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--campo year vazio ou faltando em fortaleza:2015
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.5           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 17 entries,
+You've used 18 entries,
             6714 wiz_defined-function locations,
-            1281 strings with 12233 characters,
-and the built_in function-call counts, 12363 in all, are:
-= -- 931
+            1284 strings with 12386 characters,
+and the built_in function-call counts, 15507 in all, are:
+= -- 1475
 > -- 500
-< -- 20
-+ -- 229
+< -- 108
++ -- 363
 - -- 152
-* -- 913
-:= -- 1759
-add.period$ -- 47
-call.type$ -- 17
-change.case$ -- 171
-chr.to.int$ -- 32
-cite$ -- 16
-duplicate$ -- 580
-empty$ -- 844
+* -- 1064
+:= -- 2124
+add.period$ -- 49
+call.type$ -- 18
+change.case$ -- 176
+chr.to.int$ -- 33
+cite$ -- 18
+duplicate$ -- 862
+empty$ -- 904
 format.name$ -- 714
-if$ -- 2832
+if$ -- 3520
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 291
-newline$ -- 86
+missing$ -- 305
+newline$ -- 91
 num.names$ -- 80
-pop$ -- 411
+pop$ -- 439
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 69
 quote$ -- 0
-skip$ -- 678
+skip$ -- 1177
 stack$ -- 1
-substring$ -- 381
-swap$ -- 240
-text.length$ -- 15
+substring$ -- 521
+swap$ -- 332
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2
-warning$ -- 0
-while$ -- 107
+type$ -- 25
+warning$ -- 1
+while$ -- 110
 width$ -- 0
-write$ -- 247
+write$ -- 259
+(There were 2 warnings)
