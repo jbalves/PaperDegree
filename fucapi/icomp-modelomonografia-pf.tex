@@ -35,10 +35,11 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 
-\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[brazilian,hyper]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 \usepackage{pdfpages} %adicionar documentos pdf. neste caso utilizando no anexo
 \usepackage{booktabs} %adicionar tabelas geradas pelo site http://www.tablesgenerator.com
+
 
 \titulo{Uso de técnicas de \textit{Data Mining} na classificação de sorotipos da dengue}
 \autor{Jeferson Barros Alves}
@@ -246,6 +247,9 @@
 \begin{siglas}
   \item[KDD] Knowledge Discovery in Databases
   \item[WEKA] Waikato Environment for Knowledge Analysis
+  \item[SVM] Support Vector Machine
+  \item[SMO] Sequential Minimal Optimization
+  \item[SINAN] Sistema de Informação de Agravos de Notificação
 \end{siglas}
 % ---
 
@@ -274,6 +278,8 @@
 	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso surgiu uma abordagem de técnicas e ferramentas que buscam transformar dados, denominada Descoberta de Conhecimento em Base de Dados (knowledge Discovery in Databases - KDD), que foi proposto em 1989 com o objetivo de analisar os dados de uma base para que de alguma forma possa ser extraído conhecimento útil \cite{fayyad:1996}.	
 	
 	A computação tem apoiado o desenvolvimento da medicina em diversas áreas: em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras. Desta maneira, esse grande volume de dados é uma valiosa fonte de conhecimento que pode ser utilizada para o auxílio ao diagnóstico médico. Assim, é grande a importância do desenvolvimento de técnicas que permitam a descoberta de conhecimento em base de dados médicos para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista (COSTA, 2012).
+	
+	FALAR SOBRE A DENGUE
 
 	\section{Especificação do problema}
 	
@@ -376,13 +382,14 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 	A etapa de mineração de dados é o momento em que serão escolhidos os  algoritmos que mais se ajustam ao objetivo que se quer extrair da base de dados. Além disso, nesta fase são escolhidos os melhores parâmetros para que, no momento do processamento, os resultados sejam os mais rápidos e precisos possíveis.
 	
 	Ao final do processo teremos a etapa de interpretação e avaliação dos resultados, onde o conhecimento extraído da base de dados é representado por padrões.
-
+\\
 		\begin{figure}[h!]
+			\caption{\label{figDataMiningFayyad} Etapas do processo KDD.}
 			\begin{center}
 			    \includegraphics[scale=1]{img/dataMiningFayyad.png}
 			    %			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
 			\end{center}
-			\caption{\label{figDataMiningFayyad} Etapas do processo KDD. Adaptado de \cite{fayyad:1996}}
+			Fonte: \cite{fayyad:1996}.
 		\end{figure}
 		
 		Inicialmente, é necessário definir que tipo de conhecimento se deseja extrair da base de dados, pois a técnica que será utilizada para a mineração de dados depende do objetivo a que se quer chegar \cite{damasceno:2005}.
@@ -408,19 +415,62 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		
 		A partir da definição de uma métrica de similaridade, os dados são  agrupados, dando a possibilidade de encontrar relações interessantes entre as instâncias. Assim, o cliente do conhecimento gerado pode aplicar uma determinada ação em um subconjunto de instâncias presente nos  dados. A suíte Weka possui os algoritmos Cobweb e SimpleKMeans e EM para tarefas de agrupamento.
 		
-	\section{Árvore de Decisão}
+	\section{Técnicas de Classificação}
 	
-		Seção 4
+	Uma técnica de classificação é uma abordagem sistemática para construção de modelos de classificação a partir de im conjunto de dados de entrada. Exemplos incluem classificadores de árvores de decisão, classificadores baseados em regras, redes neurais, máquinas de vetores de suporte e classificadores Bayes simples. Cada técnica emprega um algoritmo de aprendizagem para identificar um modelo que seja mais apropriado para o relacionamento entre o conjunto de atributos e o rótulo da classe dos dados de entrada. O modelos gerado pelo algoritmo de aprendizagem deve se adaptar bem aos dados de entrada e prever corretamente os rótulos de classes de registros que ele nunca viu antes. Portanto, o objetivo chave do algoritmo de aprendizagem é construir modelos com boa capacidade de generalização \cite{tan:2009}.
+	
+	A Figura \ref{figabordagemModeloClassificacao} mostra uma abordagem geral para resolver problemas de classificação. Primeiro, um conjunto de treinamento consistindo de registros cujos rótulos sejam conhecidos e devem ser fornecidos. O conjunto de treinamento é usado para construir um modelo de classificação, que é subsequentemente aplicado ao conjunto de teste, que consiste de registros com rótulos de classes desconhecidas \cite{tan:2009}.
+	\\
+	\begin{figure}[!htb]
+		\caption{\label{figabordagemModeloClassificacao} Abordagem geral para a construção de um modelo de classificação }
+		\begin{center}
+			\includegraphics[scale=0.3]{img/abordagemModeloClassificacao.png}
+			%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
+		\end{center}
+		Fonte: \cite{tan:2009}.
+	\end{figure}
+
+	\subsection{Árvore de Decisão IMPORTANTE }
+	
+		Árvores de Decisão é, provavelmente, o algoritmo de AM mais estudado para apli- cações em Mineração de Dados WITTEN; FRANK, 2000.
+	
+		Em uma árvore de decisão, cada nodo folha recebe um rótulo de classe. os nodos não terminais, que incluem o nodo raiz e outros nodos internos, contêm condições de testes de atributos para separar registros que possuem características diferentes.
 		
-	\section{Clasificação Bayesiana}
+		Classificar um registro de testes é direto, assim que uma árvore de decisão tenha sido construída. Começando do nodo raiz, aplicamos a condição de teste ao registro e seguimos a ramificação apropriada baseados no resultado do teste. Isto nos levará a um outro nodo interno, para o qual uma nova condição de teste é aplicada, ou a um nodo folha \cite{tan:2009}.
+		
+		Utilizamos os algoritmos: J48, RandomTree e REPTree.
+		
+	\subsection{Bayes}
 	
+	Em muitas aplicações, o relacionamento entre o conjunto de atributos e a variável classe é não determinístico. O rótulo da classe de um registro de teste não pode ser previsto com certeza embora seu conjunto de atributos seja idêntico a alguns dos exemplos de treinamento. Esta situação pode surgir por causa de dados com ruídos oud a presença de determinados fatores de confusão que afetam a classificação mas que não são incluídos na análise.
 	
-	\section{Support Vector Machine}
+	O teorema de Bayes pode ser usado para resolver o problema de previsão.....
+	
+	Utilizamos o algoritmo NaiveBayes
+	
+	\subsection{Máquinas de Vetores de Suporte (SVM)}
+	
+	Uma técnica de classificação que tem recebido considerável atenção é esta técnica que possui seus fundamentos na teoria de aprendizagem estatística e tem mostrado resultados empíricos promissores em muitas aplicações práticas, desde o reconhecimento de dígitos escritos à mão até a categorização de textos. SVM também funciona bem com dados de alta dimensionalidade e evita o problema da dimensionalidade. Outro aspecto único desta abordagem é que ela representa o limite da decisão usando um subconjunto dos exemplos de treinamento, conhecido com vetores de suporte \cite{tan:2009}.
+	
+	Na Figura \ref{figsvmHiperPlanos}, existe um conjunto de classificadores lineares que separam duas classes, mas apenas um (em destaque) que maximiza a margem de separação (distância da instância mais próxima ao hiperplano de separação das classes). O hiperplano com margem máxima é chamado de hiperplano ótimo \cite{junior:2010}.
+	\\
+	\begin{figure}[!htb]
+		\caption{\label{figsvmHiperPlanos} Conjunto de hiperplanos possíveis}
+		\begin{center}
+			\includegraphics[scale=0.5]{img/svmHiperPlanos.png}
+			%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
+		\end{center}
+		Fonte: \cite{junior:2010}.
+	\end{figure}
+	
+	Utilizamos o algoritmo SMO.
 
 
 	\section{WEKA}
+	
+	A ferramenta WEKA (Waikato Environment for Knowledge Analysis)  \cite{hall:2009} visa proporcionar uma coleção abrangente de algoritmos de aprendizagem de máquina e ferramentas de pré-processamento de dados tanto para pesquisadores como para profissionais. Permite aos usuários experimentar rapidamente e comparar diferentes métodos de aprendizagem de máquina em diferentes conjuntos de dados. Sua arquitetura modular, extensível, permite que os processos de mineração de dados pode ser construido a partir da vasta coleção de algoritmos de aprendizado e diversas ferramentas oferecidas.
 % ---
-% Capítulo 3
+% Capítulo 3s
 % ---
 \chapter{Base de Dados}
 
@@ -452,88 +502,10 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		\end{table}
 		
 		
-	\section{Metodologia}
+	\section{SINAN}
 	
 		Nossos experimentos foram realizados a partir do conjunto de dados disponibilizado pela prefeitura do Rio de Janeiro do ano de 2015. Contendo inicialmente 26.568 instâncias e 97 atributos.
 		Aplicamos os filtros: NumericToNominal -R 64, RemoveUseless -M 99.0. E observamos que a quantidade de atributos ficou igual a 66.
-		Removemos os atributos: DT_NASC (ID 12), NU_DDD_TEL (ID 29), DDD_HOSP (ID 64), TEL_HOSP, (ID 65) NU_LOTE_I (ID 66), . Totalizando 61 atributos utilizados no experimento.
-		Attribute a Class em CLASSI_FIN, para que que este atributo torne-se a classe rótulo
-		Aplicamos o filtro RemoveRange -R $5001$-last, para realizarmos o experimento com $5.000$ instâncias e o atributo CLASSI_FIN com $22$\% das instâncias vazias.
-		
-		Aplicamos o filtro RemoveRange -R $10001$-last, para realizarmos o experimento com $10.000$ instâncias e o atributo CLASSI_FIN com $19$\% das instâncias vazias.
-		
-		Aplicamos o filtro RemoveRange -R $15001$-last, para realizarmos o experimento com $15.000$ instâncias e o atributo CLASSI_FIN com $19$\% das instâncias vazias.
-		
-		Instances:    $5000$
-		Attributes:  $61$
-		
-		NU_NOTIFIC
-		DT_NOTIFIC
-		SEM_NOT
-		SG_UF_NOT
-		ID_MUNICIP
-		ID_REGIONA
-		ID_UNIDADE
-		DT_SIN_PRI
-		SEM_PRI_NO
-		MES_SIN_PR
-		SEM_PRI
-		NU_IDADE_N
-		NU_IDADE_0
-		FX_NU_IDAD
-		CS_SEXO
-		CS_GESTANT
-		CS_RACA
-		CS_ESCOL_N
-		ID_CNS_SUS
-		SG_UF
-		ID_MN_RESI
-		ID_RG_RESI
-		ID_DISTRIT
-		ID_BAIRRO
-		NM_BAIRRO
-		ID_GEO1
-		NU_CEP
-		CS_ZONA
-		DT_DIGITA
-		CS_FLXRET
-		IDENT_MICR
-		DT_INVEST
-		ID_OCUPA_N
-		DT_SORO
-		RESUL_SORO
-		DT_NS1
-		RESUL_NS1
-		DT_VIRAL
-		RESUL_VI_N
-		DT_PCR
-		RESUL_PCR_
-		SOROTIPO
-		HISTOPA_N
-		IMUNOH_N
-		CRITERIO
-		TPAUTOCTO
-		COUFINF
-		COMUNINF
-		CODISINF
-		CO_BAINF
-		NOBAIINF
-		DOENCA_TRA
-		EVOLUCAO
-		DT_OBITO
-		DT_ENCERRA
-		HOSPITALIZ
-		DT_INTERNA
-		UF
-		MUNICIPIO
-		HOSPITAL
-		CLASSI_FIN
-		
-
-
-	\section{Resultados}2
-	
-		Seção 3.
 		
 % - - -
 % Capítulo 4
@@ -555,21 +527,38 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 % - - -
 \chapter{Resultados}
 
-	\section{Seção 1}
+	\section{Validação Cruzada IMPORTANTE}
 	
-		Seção 1.
-	
-	\section{Seção 2}
-	
-		Alguns exemplos de citação:
+	Portanto, a melhor abordagem para a Validação Cruzada é a utilização do método de k-partições. Neste método, o conjunto de dados é dividido em k partições segundo Witten e Frank 2000
 
-		\subsection{Subseção 2.1}
+	\section{Medida de Desempenho dos Algoritmos}
 	
-			Seção 2.1
-			
-	\section{Seção 3}
+	As medidas de desepenho resultantes da classificação foram: 
 	
-		Seção 3
+	\begin{itemize}
+		\item Correctly Classified Instances
+		\item Incorrectly Classified Instances
+		\item TP Rate
+		\item FP Rate
+		\item Precision
+		\item Recall
+		\item F-Measure
+		\item ROC Area
+	\end{itemize}
+	
+	\subsection{J48}
+	
+	\subsection{RandomTree}
+
+	\subsection{REPTree}	
+
+	\subsection{NaiveBayes}
+
+	\subsection{SMO}
+
+	
+	\section{Resultados Comparativos Entre os Modelos}
+	
 		
 \chapter{Conclusão}
 

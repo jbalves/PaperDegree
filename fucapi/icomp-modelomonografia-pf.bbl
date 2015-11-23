@@ -66,6 +66,13 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
   de sintomas com foco no aux{\'\i}lio ao diagn{\'o}stico m{\'e}dico.
 \emph{Encontro Regional de Computação e Sistemas de Informação}, 2013.}
 
+\bibitem[Junior 2010]{junior:2010}
+\abntrefinfo{Junior}{JUNIOR}{2010}
+{JUNIOR, G. M. d.~O. M{\'a}quina de vetores suporte: estudo e an{\'a}lise de
+  par{\^a}metros para otimiza{\c{c}}{\~a}o de resultado, 2010.
+\emph{Trabalho de Gradua{\c{c}}{\~a}o em Ci{\^e}ncia da Computa{\c{c}}{\~a}o},
+  2010.}
+
 \bibitem[Santos e Neto]{santos:2011}
 \abntrefinfo{Santos e Neto}{SANTOS; NETO}{}
 {SANTOS, M.~S.; NETO, J.~C. da C. Amagodis: Algoritmos de minera{\c{c}}{\~a}o
@@ -77,6 +84,11 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
 {SHAKIL, K.~A.; ANIS, S.; ALAM, M. Dengue disease prediction using weka data
   mining tool.
 \emph{arXiv preprint arXiv:1502.05167}, 2015.}
+
+\bibitem[Tan, Steinbach e Kumar 2009]{tan:2009}
+\abntrefinfo{Tan, Steinbach e Kumar}{TAN; STEINBACH; KUMAR}{2009}
+{TAN, P.-N.; STEINBACH, M.; KUMAR, V. \emph{Introdu{\c{c}}{\~a}o ao datamining:
+  minera{\c{c}}{\~a}o de dados}. [S.l.]: Ciencia Moderna, 2009.}
 
 \bibitem[Thitiprayoonwongse, Suriyaphol e Soonthornphisaj
   2012]{thitiprayoonwongse:2012}

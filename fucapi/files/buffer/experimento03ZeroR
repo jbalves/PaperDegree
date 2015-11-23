@@ -1,0 +1,107 @@
+=== Run information ===
+
+Scheme:weka.classifiers.rules.ZeroR 
+Relation:     dengue2015_work4-weka.filters.unsupervised.attribute.NumericToNominal-R64-weka.filters.unsupervised.attribute.RemoveUseless-M99.0-weka.filters.unsupervised.attribute.Remove-R12,29,64-66-weka.filters.unsupervised.attribute.Reorder-R1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,45-weka.filters.unsupervised.instance.RemoveRange-R15001-last
+Instances:    15000
+Attributes:   61
+              NU_NOTIFIC
+              DT_NOTIFIC
+              SEM_NOT
+              SG_UF_NOT
+              ID_MUNICIP
+              ID_REGIONA
+              ID_UNIDADE
+              DT_SIN_PRI
+              SEM_PRI_NO
+              MES_SIN_PR
+              SEM_PRI
+              NU_IDADE_N
+              NU_IDADE_0
+              FX_NU_IDAD
+              CS_SEXO
+              CS_GESTANT
+              CS_RACA
+              CS_ESCOL_N
+              ID_CNS_SUS
+              SG_UF
+              ID_MN_RESI
+              ID_RG_RESI
+              ID_DISTRIT
+              ID_BAIRRO
+              NM_BAIRRO
+              ID_GEO1
+              NU_CEP
+              CS_ZONA
+              DT_DIGITA
+              CS_FLXRET
+              IDENT_MICR
+              DT_INVEST
+              ID_OCUPA_N
+              DT_SORO
+              RESUL_SORO
+              DT_NS1
+              RESUL_NS1
+              DT_VIRAL
+              RESUL_VI_N
+              DT_PCR
+              RESUL_PCR_
+              SOROTIPO
+              HISTOPA_N
+              IMUNOH_N
+              CRITERIO
+              TPAUTOCTO
+              COUFINF
+              COMUNINF
+              CODISINF
+              CO_BAINF
+              NOBAIINF
+              DOENCA_TRA
+              EVOLUCAO
+              DT_OBITO
+              DT_ENCERRA
+              HOSPITALIZ
+              DT_INTERNA
+              UF
+              MUNICIPIO
+              HOSPITAL
+              CLASSI_FIN
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: 10
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        9211               76.8608 %
+Incorrectly Classified Instances      2773               23.1392 %
+Kappa statistic                          0     
+Mean absolute error                      0.1454
+Root mean squared error                  0.2696
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances            11984     
+Ignored Class Unknown Instances               3016     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.5      5
+                 0         0          0         0         0          0.476    8
+                 1         1          0.769     1         0.869      0.5      10
+                 0         0          0         0         0          0.495    11
+                 0         0          0         0         0          0.465    12
+Weighted Avg.    0.769     0.769      0.591     0.769     0.668      0.5  
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+    0    0 2562    0    0 |    a = 5
+    0    0   19    0    0 |    b = 8
+    0    0 9211    0    0 |    c = 10
+    0    0  158    0    0 |    d = 11
+    0    0   34    0    0 |    e = 12
+
