@@ -40,6 +40,7 @@
 \usepackage{pdfpages} %adicionar documentos pdf. neste caso utilizando no anexo
 \usepackage{booktabs} %adicionar tabelas geradas pelo site http://www.tablesgenerator.com
 \usepackage{scalefnt} %definir tamanho da fonte da tabela
+\usepackage{verbatim}  %fazer comentários em bloco
 
 
 
@@ -296,7 +297,10 @@
 	
 		\subsection{Objetivo Geral}
 
-		Construir um classificador que utilize dentre as diversas técnicas de classificação em Data Mining a que mais se adequa ao modelo de dados utilizados na ficha de investigação de dengue do SINAN.
+		Construir um classificador que utilize dentre as diversas técnicas de classificação em Data Mining e avaliar a que mais se adequa ao conjunto de dados utilizados no SINAN dengue do município de Fortaleza.
+		
+		O quê
+		Como
 		
 		\subsection{Objetivos Específicos}
 		
@@ -332,7 +336,7 @@
 	
 	No trabalho de \cite{thitiprayoonwongse:2012}, foi utilizado a técnica de classificação conhecida como Árvore de Decisão, aplicado a um conjunto de dados temporais contendo dados clínicos e laboratoriais. Utilizaram dois conjuntos de dados com mais de 400 atributos. Nos experimentos os dados foram divididos em: conjunto de teste e treinamento. Onde o objetivo principal deste trabalho foi identificar o dia zero da dengue, pois esta previsão torna-se crítica, tendo em vista que o dia zero tem forte relação com o melhor tratamento do paciente.
 	
-	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN. Onde resultou uma aplicação em java que implementa algoritmos de classificação e regras de associação da base de dados do SINAN utilizando a API WEKA. Como resultado esta ferramente possibilitou o auxílio no diagnóstico de pacientes.
+	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN. Onde resultou um aplicação em java que implementa algoritmos de classificação e regras de associação da base de dados do SINAN utilizando a API WEKA. Como resultado esta ferramenta possibilitou o auxílio no diagnóstico de pacientes.
 
 	\section{Metodologia de Desenvolvimento}
 		
@@ -393,7 +397,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		
 	\section{Data Mining}
 	
-		De acordo com \cite{adriaans:1996}, existe uma confusão entre os termos \textit{Data Mining} e KDD, podendo ser usadas até como sinônimos em algumas situações. Em contrapartida, \cite{berry:1997}, definiu como um processo de exploração e análise, de uma grande quantidade  de dados, por meio automático ou semiautomático, com o propósito de descobrir regras e padrões significativos.
+		De acordo com \cite{adriaans:1996}, existe uma confusão entre os termos \textit{Data Mining} e KDD, podendo ser usadas até como sinônimos em algumas situações. Em contrapartida, \cite{berry:1997}, definiu como um processo de exploração e análise, de uma grande quantidade de dados, por meio automático ou semiautomático, com o propósito de descobrir regras e padrões significativos.
 		
 		É uma técnica que faz parte de uma das etapas da descoberta de conhecimento em banco de dados. É uma área de pesquisa multidisciplinar, incluindo principalmente as tecnologias de banco de dados, inteligência artificial, estatística, reconhecimento de padrões, sistemas baseados em conhecimento, recuperação da informação, computação de alto desempenho e visualização de dados.
 		
@@ -479,9 +483,10 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\section{Base de Dados}
 	
 	Para avaliar o objetivo geral neste trabalho, usamos a base de dados  do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualquer pessoa \cite{fortaleza:2015}. Este conjunto de dados contém notificações de dengue do Município de Fortaleza no período de janeiro à junho de 2015, contendo 26.568 instâncias. Na Tabela \ref{tabDescricaoAtributos}, podemos observar os atributos utilizados neste trabalho.
-	
+
+\begin{comment}
 	\begin{table}[]
-		\scalefont{0.75}
+		\scalefont{0.6}
 		\centering
 		\caption{Descrição dos atributos do conjunto de dados}
 		\label{tabDescricaoAtributos}
@@ -549,6 +554,8 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			CLASSI\_FIN   &                                  \\ \hline
 		\end{tabular}
 		\end{table}
+\end{comment}
+
 
 	Neste Capítulo é descrita a metodologia utilizada para classificação do tipo de dengue em ocorrências do SINAN do município de Fortaleza. Basicamente, pode ser apresentada da seguinte forma:
 	\begin{itemize}
@@ -560,10 +567,74 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 
 	\section{Pré-processamento}
 	
-%		Teste de símbolo:
+	Após o download da base de dados em \cite{fortaleza:2015},  iniciamos a importação do arquivo no formato CSV (\textit{Comma Separated Value}), conforme mostrado na Figura \ref{figdataSetOriginal}.
+	
+		
+		\begin{figure}[!htb]
+			\caption{\label{figdataSetOriginal} Data Set Original}
+			\begin{center}
+				\includegraphics[scale=0.4]{img/dataSetOriginal.png}
+			\end{center}
+			Fonte: Próprio Autor.
+		\end{figure}
+	
+		\begin{figure}[!htb]
+			\caption{\label{figerroCarregarInstancias} Erro ao Carregar Instâncias}
+			\begin{center}
+				\includegraphics[scale=0.55]{img/erroCarregarInstancias.png}
+			\end{center}
+			Fonte: Próprio Autor.
+		\end{figure}
+
+	Onde nos deparamos com o erros no campos DS\_OBS, onde o WEKA informa que está lendo 102 atributos ao invés de 99, conforme mostrado na Figura \ref{figerroCarregarInstancias}. Já na Figura \ref{figerroLinhaSete}, podemos observar que houve falha na inserção dos dados no atributo DS\_OBS, pois o mesmo foi preenchido com vírgula em seu conteúdo da seguinte ''CEFALEIA, FEBRE, DOR NOS OLHOS, VOMITO'', além do caracter ''\^M'' que representa quebra de linha. Pelo fato do arquivo ser contruído no formato CSV (\textit{Comma Separated Value}), essas vírgulas excedentes serão consideradas como início de novos atributos.
+	
+
+	
+		\begin{figure}[!htb]
+			\caption{\label{figerroLinhaSete} Erro Mencionado pelo WEKA}
+			\begin{center}
+				\includegraphics[scale=0.45]{img/erroLinhaSete.png}
+			\end{center}
+			Fonte: Próprio Autor.
+		\end{figure}
+		
+		Para resolver este problema editamos o arquivo de tal forma que os atributos ''DS\_OBS'' e ''TP\_SISTEMA'' foram removidos. 
+		
+		Em seguida aplicamos os seguintes filtros:
+		
+		\begin{itemize}
+			\item \textit{RemoveUseless}: Este filtro remove atributos que não variam em tudo ou que variam muito. Todos os atributos constantes são excluídos automaticamente, juntamente com qualquer que exceder o percentual máximo de parâmetro de variação. O teste de variância máxima só é aplicada aos atributos nominais. Utilizamos os parâmetros padrões conforme Figura \ref{figfiltroRemoveUseless}.
+			\begin{figure}[!h]
+				\caption{\label{figfiltroRemoveUseless} Filtro \textit{RemoveUseless}}
+				\begin{center}
+					\includegraphics[scale=0.45]{img/filtroRemoveUseless.png}
+				\end{center}
+				\centering Fonte: Próprio Autor.
+			\end{figure}
+			\item \textit{NumericToNominal}: Um filtro para transformar numérico atributos em uns nominais. Ao contrário de discretização, apenas toma todos os valores numéricos e os adiciona à lista de valores nominais do que atributo. Útil após a importação CSV, para impor certos atributos para se tornar nominal. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroNumericToNominal}.
+			\begin{figure}[!h]
+				\caption{\label{figfiltroNumericToNominal} Filtro \textit{NumericToNominal}}
+				\begin{center}
+					\includegraphics[scale=0.45]{img/filtroNumericToNominal.png}
+				\end{center}
+				\centering Fonte: Próprio Autor.
+			\end{figure}
+			\newpage
+			\item \textit{RemoveRange}: Um filtro que remove uma determinado intervalo de ocorrências de um conjunto de dados. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroRemoveRange}. O parâmetro ''instancesIndices''  foi utilizado cinco vezes para criarmos 05 (cinco) conjuntos de dados com as seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. Que foram utilizados durantes os experimentos.
+			\begin{figure}[!h]
+					\caption{\label{figfiltroRemoveRange} Filtro \textit{RemoveRange}}
+				\begin{center}
+					\includegraphics[scale=0.45]{img/filtroRemoveRange.png}
+				\end{center}
+			\centering Fonte: Próprio Autor.
+			\end{figure}
+		\end{itemize}
+
 %		$\lambda$
 		
 	\section{Metodologia}
+	
+	\section{Classificação}
 	
 	\section{Resultados}
 	
