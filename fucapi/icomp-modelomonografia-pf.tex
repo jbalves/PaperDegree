@@ -43,7 +43,7 @@
 
 
 
-\titulo{Uso de técnicas de \textit{Data Mining} na classificação de sorotipos da dengue}
+\titulo{Uso de técnicas de \textit{Data Mining} na classificação de tipos de dengue}
 \autor{Jeferson Barros Alves}
 \local{Manaus - AM}
 \data{Novembro de 2015}
@@ -51,13 +51,13 @@
 \instituicao{%
   Fundação Centro de Análise, Pesquisa e Inovação Tecnológica
   \par
-  Instituto de Ensino Superior Fucapi}
+  Faculdade Fucapi (Instituto de Ensino Superior Fucapi)}
 \curso{%
   Coordenação de Graduação em Ciência da Computação}
 \tipotrabalho{Monografia}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
-\preambulo{Monografia apresentada ao Curso de Graduação em Ciência da Computação do Instituto de Ensino Superior FUCAPI - CESF como requisito parcial para a obtenção do Título de Bacharel em Ciência da Computação. Área de concentração: Banco de Dados.}
+\preambulo{Monografia apresentada ao Curso de Graduação em Ciência da Computação da Faculdade Fucapi (Instituto de Ensino Superior Fucapi), como requisito parcial para a obtenção do Título de Bacharel em Ciência da Computação. Área de concentração: Banco de Dados.}
 
 
 % Informações do PDF
@@ -251,6 +251,7 @@
   \item[SVM] Support Vector Machine
   \item[SMO] Sequential Minimal Optimization
   \item[SINAN] Sistema de Informação de Agravos de Notificação
+  \item[SUS] Sistema Único de Saúde
 \end{siglas}
 % ---
 
@@ -279,25 +280,25 @@
 	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso surgiu uma abordagem de técnicas e ferramentas que buscam transformar dados, denominada Descoberta de Conhecimento em Base de Dados (knowledge Discovery in Databases - KDD), que foi proposto em 1989 com o objetivo de analisar os dados de uma base para que de alguma forma possa ser extraído conhecimento útil \cite{fayyad:1996}.	
 	
 	A computação tem apoiado o desenvolvimento da medicina em diversas áreas: em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras. Desta maneira, esse grande volume de dados é uma valiosa fonte de conhecimento que pode ser utilizada para o auxílio ao diagnóstico médico. Assim, é grande a importância do desenvolvimento de técnicas que permitam a descoberta de conhecimento em base de dados médicos para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista (COSTA, 2012).
-	
-	FALAR SOBRE A DENGUE
 
 	\section{Especificação do problema}
-	
-		\cite{costa:2012} mostrou que o uso de suporte computacional no atendimento médico é comum nos dias de hoje e gera grandes informações digitalizadas dos pacientes. Tais informações armazenadas em base de dados podem representar boas fontes de conhecimento, que pdoerão ser utilizadas no auxílio de diagnóstico médico. Segundo \cite{bezerra:2009}, no passado, o médico detinha conhecimento suficiente para dispensar quase todo o cuidado necessário ao paciente.
 		
 		Ao longo dos últimos anos a mineração de dados tem sido cada vez mais utilizada na literatura médica. No entanto, a sua aplicação à analise de dados médicos tem sido relativamente limitada, tendo em vista que a aplicação prática pode explorar o conhecimento disponível no contexto clínico e explicar decisões propostas, uma vez que os modelos são utilizados para apoiar decisões \cite{bellazzi:2008}.
 		
 		É grande a importância do desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases de dados médicos para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 		
-		A dengue é hoje uma das doenças com maior incidência no Brasil, atingindo a população de todos os estados, independente de classe social. Nesse cenário, torna-se imperioso que um conjunto de ações para a prevenção da doença seja intensificado, permitindo assim a identificação precoce dos casos de dengue, a tomada de decisões e a implementação de medidas de maneira oportuna a fim de principalmente evitar óbitos. Preservar a vida humana é obrigação de todos. "COLOCAR FONTE DO MINISTÉRIO DA SAÚDE"
+		A dengue é hoje uma das doenças com maior incidência no Brasil, atingindo a população de todos os estados, independente de classe social. Nesse cenário, torna-se imperioso que um conjunto de ações para a prevenção da doença seja intensificado, permitindo assim a identificação precoce dos casos de dengue, a tomada de decisões e a implementação de medidas de maneira oportuna a fim de principalmente evitar óbitos. Preservar a vida humana é obrigação de todos.
+		
+		A classificação epidemiológica dos casos de dengue, que é feita habitualmente após desfecho clínico, na maioria das vezes é restrospectiva e depende de informações clínicas e laboratoriais disponíveis ao final do acompanhamento médico. Esses critérios não permitem o reconhecimento precoce de formas potencialmente graves, para as quais é crucial a instituição do tratamento imediato \cite{saude:2013}.
 
 
 	\section{Objetivos}
+	
+		\subsection{Objetivo Geral}
 
 		Construir um classificador que utilize dentre as diversas técnicas de classificação em Data Mining a que mais se adequa ao modelo de dados utilizados na ficha de investigação de dengue do SINAN.
 		
-		Objetivos Específicos:
+		\subsection{Objetivos Específicos}
 		
 		\begin{itemize}
 			\item Realizar experimentos com classificadores mais utilizados na literatura.
@@ -313,15 +314,11 @@
 			\item Validar e interpretar os resultados obtidos no processo de classificação
 		\end{itemize}
 		
-		Como os objetivos indicam ação, recomenda-se que eles sejam definidos por meio de verbos, tais como analisar, avaliar, caracterizar, discutir, diagnosticar, investigar, implantar, pesquisar, realizar, determinar, etc.
-		
 	\section{Justificativa}
 	
-	Na busca constante pela melhoria do atendimento médico hospitalar, as técnicas de mineração de dados estão sendo aplicadas nas bases de dados dos pacientes para descoberta de padrões, seja como ferramenta para auxílio ao diagnóstico ou descobertas que ajudem a alta direção nos hospitais a tomar atitudes com relação aos resultados obtidos (ROBERTINSON, 2012) "DOCUMENTO NÃO ENCONTRADO".
+	Considera-se a dengue um dos maiores problemas de saúde pública do mundo, especialmente nos países tropicais, cujas condições sócio-ambientais favorecem o desenvolvimento e a proliferação do seu principal vetor o \textsl{Aedes aegypti}. A dengue é, hoje, uma das doenças mais frenquentes no Brasil, atingindo a população em todos os estados, independente de classe social \cite{saude:2008}.
 	
 	O desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases médicas possui grande importância para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e a eficiência dos diagnósticos elaborados pelo especialista. Esse apoio computacional pode atuar como uma junta médica virtual, ao trazer para o especialista o conhecimento armazenado em exames e diagnósticos relacionados \cite{costa:2012}.
-	
-	Com o objetivo de estudo de métodos de suporte ao diagnóstico médico a partir de informações referentes aos sintomas dos pacientes conforme proposto por \cite{alexander:2013}, observamos a necessidade de continuar o trabalho utilizando a técnica de regras de associação em outro conjunto de dados da mesma base.
 	
 	\section{Trabalhos Relacionados}	
 	
@@ -361,7 +358,7 @@
 % ---
 \chapter{Referencial Teórico}
 
-Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envolvidos em KDD e consequentemente em Data Mining. Apresentam-se também os trabalhos encontrados na literatura sobre assunto que são relevantes para o desenvolvimento deste trabalho.
+Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos envolvidos em KDD e consequentemente em Data Mining. Apresentam-se também os trabalhos encontrados na literatura sobre assunto que são relevantes para o desenvolvimento deste trabalho.
 
 	\section{Descoberta de Conhecimento em Base de Dados}
 	
@@ -389,7 +386,7 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 			    \includegraphics[scale=1]{img/dataMiningFayyad.png}
 			    %			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
 			\end{center}
-			Fonte: \cite{fayyad:1996}.
+			Fonte: Adaptado de \cite{fayyad:1996}.
 		\end{figure}
 		
 		Inicialmente, é necessário definir que tipo de conhecimento se deseja extrair da base de dados, pois a técnica que será utilizada para a mineração de dados depende do objetivo a que se quer chegar \cite{damasceno:2005}.
@@ -400,7 +397,7 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		
 		É uma técnica que faz parte de uma das etapas da descoberta de conhecimento em banco de dados. É uma área de pesquisa multidisciplinar, incluindo principalmente as tecnologias de banco de dados, inteligência artificial, estatística, reconhecimento de padrões, sistemas baseados em conhecimento, recuperação da informação, computação de alto desempenho e visualização de dados.
 		
-		Em termos gerais, segundo ELMASRI (2002) "PROCURAR FONTE", a técnica de Data Mining compreende os seguintes propósitos:
+		Em termos gerais, a técnica de Data Mining compreende os seguintes propósitos:
 		
 		\begin{itemize}
 			\item Previsão – pode mostrar como certos atributos dentro dos dados irão comportar-se no futuro;
@@ -411,9 +408,9 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		
 	\section{Aprendizagem Não Supervisionada}
 	
-		Como mostrado por \citeauthoronline{damasceno:2005} aprendizagem não supervisionada é aquela que utiliza instâncias sem a determinação do atributo classe. Este  tipo de aprendizado é utilizado geralmente para análise exploratória dos dados, utilizando técnicas de  agrupamento ou regras de associação. Onde agrupamentos têm como objetivo relacionar instâncias com características em comuns. Lembrando que o agrupamento é uma técnica que utiliza o aprendizado não supervisionado, ou seja, não utiliza no  processamento o atributo classe.
+		Como mostrado por \cite{damasceno:2005} aprendizagem não supervisionada é aquela que utiliza instâncias sem a determinação do atributo classe. Este  tipo de aprendizado é utilizado geralmente para análise exploratória dos dados, utilizando técnicas de  agrupamento ou regras de associação. Onde agrupamentos têm como objetivo relacionar instâncias com características em comuns.
 		
-		A partir da definição de uma métrica de similaridade, os dados são  agrupados, dando a possibilidade de encontrar relações interessantes entre as instâncias. Assim, o cliente do conhecimento gerado pode aplicar uma determinada ação em um subconjunto de instâncias presente nos  dados. A suíte Weka possui os algoritmos Cobweb e SimpleKMeans e EM para tarefas de agrupamento.
+		A partir da definição de uma métrica de similaridade, os dados são  agrupados, dando a possibilidade de encontrar relações interessantes entre as instâncias. Assim, o cliente do conhecimento gerado pode aplicar uma determinada ação em um subconjunto de instâncias presente nos  dados. 
 		
 	\section{Técnicas de Classificação}
 	
@@ -427,26 +424,19 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 			\includegraphics[scale=0.3]{img/abordagemModeloClassificacao.png}
 			%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
 		\end{center}
-		Fonte: \cite{tan:2009}.
+		Fonte: Adaptado de \cite{tan:2009}.
 	\end{figure}
 
-	\subsection{Árvore de Decisão IMPORTANTE}
-	
-		Árvores de Decisão é, provavelmente, o algortimo de Aprendizagem de Máquina mais estudado em Mineração de dados WITTEN, FRANK, 2000.
+	\subsection{Árvore de Decisão}
 	
 		Em uma árvore de decisão, cada nodo folha recebe um rótulo de classe. os nodos não terminais, que incluem o nodo raiz e outros nodos internos, contêm condições de testes de atributos para separar registros que possuem características diferentes.
 		
 		Classificar um registro de testes é direto, assim que uma árvore de decisão tenha sido construída. Começando do nodo raiz, aplicamos a condição de teste ao registro e seguimos a ramificação apropriada baseados no resultado do teste. Isto nos levará a um outro nodo interno, para o qual uma nova condição de teste é aplicada, ou a um nodo folha \cite{tan:2009}.
 		
-		Utilizamos os algoritmos: J48, RandomTree e REPTree.
 		
 	\subsection{Bayes}
 	
 	Em muitas aplicações, o relacionamento entre o conjunto de atributos e a variável classe é não determinístico. O rótulo da classe de um registro de teste não pode ser previsto com certeza embora seu conjunto de atributos seja idêntico a alguns dos exemplos de treinamento. Esta situação pode surgir por causa de dados com ruídos oud a presença de determinados fatores de confusão que afetam a classificação mas que não são incluídos na análise.
-	
-	O teorema de Bayes pode ser usado para resolver o problema de previsão.....
-	
-	Utilizamos o algoritmo NaiveBayes
 	
 	\subsection{Máquinas de Vetores de Suporte (SVM)}
 	
@@ -462,88 +452,10 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		\end{center}
 		Fonte: \cite{junior:2010}.
 	\end{figure}
-	
-	Utilizamos o algoritmo SMO.
 
 	\section{WEKA}
 	
 	A ferramenta WEKA (Waikato Environment for Knowledge Analysis)  conforme descrito em \cite{hall:2009}, visa proporcionar uma coleção abrangente de algoritmos de aprendizagem de máquina e ferramentas de pré-processamento de dados tanto para pesquisadores como para profissionais. Permite aos usuários experimentar rapidamente e comparar diferentes métodos de aprendizagem de máquina em diferentes conjuntos de dados. Sua arquitetura modular, extensível, permite que os processos de mineração de dados pode ser construido a partir da vasta coleção de algoritmos de aprendizado e diversas ferramentas oferecidas.
-% ---
-% Capítulo 3
-% ---
-\chapter{Base de Dados}
-
-	A base de dados utilizada foi a do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualquer pessoa \cite{fortaleza:2015}. Este conjunto de dados contém notificações de dengue do Município de Fortaleza no período de janeiro à junho de 2015, contendo 26.568 instâncias. Na Tabela \ref{tabDescricaoAtributos}, podemos observar os atributos utilizados neste trabalho.
-
-\begin{table}[]
-	\scalefont{0.75}
-	\centering
-	\caption{Descrição dos atributos do conjunto de dados}
-	\label{tabDescricaoAtributos}
-	\begin{tabular}{ll}
-		\hline
-		Atributos     & Descrição                        \\ \hline
-		NU\_NOTIFIC   & Informar a data de investigação  \\
-		DT\_NOTIFIC   & Informar ramo da ocupação        \\
-		SEM\_NOT      & Informar a classificarão do caso \\
-		SG\_UF\_NOT   &                                  \\
-		ID\_MUNICIP   &                                  \\
-		ID\_REGIONA   &                                  \\
-		ID\_UNIDADE   &                                  \\
-		SEM\_PRI\_NO  &                                  \\
-		MES\_PRIM\_PR &                                  \\
-		SEM\_PRI      &                                  \\
-		NU\_IDADE\_N  &                                  \\
-		NU\_IDADE\_0  &                                  \\
-		FX\_NU\_IDADE &                                  \\
-		CS\_SEXO &                                  \\
-		CS\_GESTANTE &                                  \\
-		CS\_RACA &                                  \\
-		CS\_ESCOL\_N &                                  \\
-		ID\_CNS\_SUS &                                  \\
-		SG\_UF &                                  \\
-		ID\_MN\_RESI &                                  \\
-		ID\_RG\_RESI &                                  \\
-		ID\_DISTRIT &                                  \\
-		ID\_BAIRRO &                                  \\
-		NM\_BAIRRO &                                  \\
-		ID\_GEO1 &                                  \\
-		NU\_CEP &                                  \\
-		DT\_DIGITA &                                  \\
-		CS\_FLXRET &                                  \\
-		IDENT\_MICR &                                  \\
-		DT\_INVEST &                                  \\
-		ID\_OCUPA\_N &                                  \\
-		DT\_SORO &                                  \\
-		RESUL\_SORO &                                  \\
-		DT\_NS1 &                                  \\
-		RESULT\_NS1 &                                  \\
-		DT\_VIRAL &                                  \\
-		RESUL\_VI\_N &                                  \\
-		DT\_PCR &                                  \\
-		RESUL\_PCR\_ &                                  \\
-		SOROTIPO &                                  \\
-		HISTOPA\_N &                                  \\
-		IMUNOH\_N &                                  \\
-		CRITERIO &                                  \\
-		TPAUTOCTO &                                  \\
-		COUFINF &                                  \\
-		COMUNINF &                                  \\
-		CODSINF &                                  \\
-		CO\_BAINF &                                  \\
-		NOBAIINF &                                  \\
-		DOENCA\_TRA &                                  \\
-		EVOLUCAO &                                  \\
-		DT\_OBITO &                                  \\
-		DT\_ENCERRA &                                  \\
-		HOSPITALIZ &                                  \\
-		DT\_INTERNA &                                  \\
-		UF &                                  \\
-		MUNICIPIO &                                  \\
-		HOSPITAL &                                  \\
-		CLASSI\_FIN   &                                  \\ \hline
-	\end{tabular}
-\end{table}
 		
 	\section{Dados Abertos}
 
@@ -558,9 +470,85 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 	
 	
 % - - -
-% Capítulo 4
+% Capítulo 3
 % - - -
-\chapter{Metodologia}
+\chapter{Experimentos}
+
+	Neste capítulo, avaliamos os modelos gerados através de uma série de experimentos. Apresentaremos a base de dados utilizada nestes experimentos, nossa metodologia de experimentação e os experimentos em si realizados.
+
+	\section{Base de Dados}
+	
+	Para avaliar o objetivo geral neste trabalho, usamos a base de dados  do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualquer pessoa \cite{fortaleza:2015}. Este conjunto de dados contém notificações de dengue do Município de Fortaleza no período de janeiro à junho de 2015, contendo 26.568 instâncias. Na Tabela \ref{tabDescricaoAtributos}, podemos observar os atributos utilizados neste trabalho.
+	
+	\begin{table}[]
+		\scalefont{0.75}
+		\centering
+		\caption{Descrição dos atributos do conjunto de dados}
+		\label{tabDescricaoAtributos}
+		\begin{tabular}{ll}
+			\hline
+			Atributos     & Descrição                        \\ \hline
+			NU\_NOTIFIC   & Informar a data de investigação  \\
+			DT\_NOTIFIC   & Informar ramo da ocupação        \\
+			SEM\_NOT      & Informar a classificarão do caso \\
+			SG\_UF\_NOT   &                                  \\
+			ID\_MUNICIP   &                                  \\
+			ID\_REGIONA   &                                  \\
+			ID\_UNIDADE   &                                  \\
+			SEM\_PRI\_NO  &                                  \\
+			MES\_PRIM\_PR &                                  \\
+			SEM\_PRI      &                                  \\
+			NU\_IDADE\_N  &                                  \\
+			NU\_IDADE\_0  &                                  \\
+			FX\_NU\_IDADE &                                  \\
+			CS\_SEXO &                                  \\
+			CS\_GESTANTE &                                  \\
+			CS\_RACA &                                  \\
+			CS\_ESCOL\_N &                                  \\
+			ID\_CNS\_SUS &                                  \\
+			SG\_UF &                                  \\
+			ID\_MN\_RESI &                                  \\
+			ID\_RG\_RESI &                                  \\
+			ID\_DISTRIT &                                  \\
+			ID\_BAIRRO &                                  \\
+			NM\_BAIRRO &                                  \\
+			ID\_GEO1 &                                  \\
+			NU\_CEP &                                  \\
+			DT\_DIGITA &                                  \\
+			CS\_FLXRET &                                  \\
+			IDENT\_MICR &                                  \\
+			DT\_INVEST &                                  \\
+			ID\_OCUPA\_N &                                  \\
+			DT\_SORO &                                  \\
+			RESUL\_SORO &                                  \\
+			DT\_NS1 &                                  \\
+			RESULT\_NS1 &                                  \\
+			DT\_VIRAL &                                  \\
+			RESUL\_VI\_N &                                  \\
+			DT\_PCR &                                  \\
+			RESUL\_PCR\_ &                                  \\
+			SOROTIPO &                                  \\
+			HISTOPA\_N &                                  \\
+			IMUNOH\_N &                                  \\
+			CRITERIO &                                  \\
+			TPAUTOCTO &                                  \\
+			COUFINF &                                  \\
+			COMUNINF &                                  \\
+			CODSINF &                                  \\
+			CO\_BAINF &                                  \\
+			NOBAIINF &                                  \\
+			DOENCA\_TRA &                                  \\
+			EVOLUCAO &                                  \\
+			DT\_OBITO &                                  \\
+			DT\_ENCERRA &                                  \\
+			HOSPITALIZ &                                  \\
+			DT\_INTERNA &                                  \\
+			UF &                                  \\
+			MUNICIPIO &                                  \\
+			HOSPITAL &                                  \\
+			CLASSI\_FIN   &                                  \\ \hline
+		\end{tabular}
+		\end{table}
 
 	Neste Capítulo é descrita a metodologia utilizada para classificação do tipo de dengue em ocorrências do SINAN do município de Fortaleza. Basicamente, pode ser apresentada da seguinte forma:
 	\begin{itemize}
@@ -575,20 +563,24 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 %		Teste de símbolo:
 %		$\lambda$
 		
-	\section{Seção 2}
-
+	\section{Metodologia}
+	
+	\section{Resultados}
+	
+		\subsection{J48}
+		\subsection{RandomTree}
+		\subsection{REPTree}
+		\subsection{NaiveBayes}
+		\subsection{SMO}
 		
+	\section{Conclusões}
 % - - -
-% Capítulo 5
+% Capítulo 4
 % - - -
-\chapter{Resultados}
+\chapter{Conclusões e Trabalhos Futuros}
 
-	\section{Validação Cruzada IMPORTANTE}
-	
-	Portanto, a melhor abordagem para a Validação Crizada é a utilização do método de k-partições. Neste método, o conjunto de dados é dividio em k partições segundo Witten e frank 2000.
+	\section{Resultados Obtidos}
 
-	\section{Medida de Desempenho dos Algoritmos}
-	
 	As medidas de desepenho resultantes da classificação foram: 
 	
 	\begin{itemize}
@@ -601,24 +593,11 @@ Neste capítulo apresenta-se uma visão geral dos conceitos e procedimentos envo
 		\item F-Measure
 		\item ROC Area
 	\end{itemize}
-	
-	\subsection{J48}
-	
-	\subsection{RandomTree}
 
-	\subsection{REPTree}	
-
-	\subsection{NaiveBayes}
-
-	\subsection{SMO}
-
-	
-	\section{Resultados Comparativos Entre os Modelos}
-	
+	\section{Limitações}
 		
-\chapter{Conclusão}
-
-	As considerações finais formam a parte final (fechamento) do texto, sendo dito de forma resumida (1) o que foi desenvolvido no presente trabalho e quais os resultados do mesmo, (2) o que se pôde concluir após o desenvolvimento bem como as principais contribuições do trabalho, e (3) perspectivas para o desenvolvimento de trabalhos futuros. O texto referente às considerações finais do autor deve salientar a extensão e os resultados da contribuição do trabalho e os argumentos utilizados estar baseados em dados comprovados e fundamentados nos resultados e na discussão do texto, contendo deduções lógicas correspondentes aos objetivos do trabalho, propostos inicialmente.
+	\section{Trabalhos Futuros}
+	
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS

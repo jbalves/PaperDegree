@@ -22,12 +22,6 @@
 {BERRY, M.~J.; LINOFF, G. \emph{Data mining techniques: for marketing, sales,
   and customer support}. [S.l.]: John Wiley \& Sons, Inc., 1997.}
 
-\bibitem[Bezerra 2009]{bezerra:2009}
-\abntrefinfo{Bezerra}{BEZERRA}{2009}
-{BEZERRA, S.~M. Prontu{\'a}rio eletr{\^o}nico do paciente: uma ferramenta para
-  aprimorar a qualidade dos servi{\c{c}}os de sa{\'u}de.
-\emph{Revista Meta: Avalia{\c{c}}{\~a}o}, v.~1, n.~1, p. 73--82, 2009.}
-
 \bibitem[Costa 2012]{costa:2012}
 \abntrefinfo{Costa}{COSTA}{2012}
 {COSTA, A.~F.
@@ -96,6 +90,12 @@ Acessado em 2015.}
 {SA{\'U}DE, M. da. Vigil{\^a}ncia em sa{\'u}de: Dengue, esquistossomose,
   hansen{\'i}ase, mal{\'a}ria, tracoma e tuberculose.
 \emph{Departamento de Aten{\c{c}}{\~a}o B{\'a}sica}, 2008.}
+
+\bibitem[Sa{\'u}de 2013]{saude:2013}
+\abntrefinfo{Sa{\'u}de}{SA{\'U}DE}{2013}
+{SA{\'U}DE, M. da. Dengue: diagn{\'o}stico e manejo cl{\'i}nico: adulto e
+  crian{\c{c}}a.
+\emph{Departamento de Aten{\c{c}}{\~a}o B{\'a}sica}, 2013.}
 
 \bibitem[Shakil, Anis e Alam 2015]{shakil:2015}
 \abntrefinfo{Shakil, Anis e Alam}{SHAKIL; ANIS; ALAM}{2015}
