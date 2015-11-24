@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  24 NOV 2015 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  24 NOV 2015 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1199,11 +1199,11 @@ bibitemlist
 \tf@toc=\write8
 \openout8 = `icomp-modelomonografia-pf.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 721.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 721.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 723.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 723.
  (./icomp-modelomonografia-pf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 721.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 721.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 723.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 723.
 
 
 Package rerunfilecheck Warning: File `icomp-modelomonografia-pf.brf' has change
@@ -1211,7 +1211,7 @@ d.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `icomp-modelomonografia-pf.brf':
-(rerunfilecheck)             Before: 177A87AE1B09DA36E57EEBFED8D50AA0;1538
+(rerunfilecheck)             Before: 3136617419C1870C8978B7DF40D1C972;1538
 (rerunfilecheck)             After:  F0BB7F2580AF61ABEAD6B4F6D0DC1746;1538.
 
 LaTeX Warning: There were undefined references.
@@ -1219,17 +1219,17 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 721.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 723.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 677 (\begingroup)
+### semi simple group (level 2) entered at line 679 (\begingroup)
 ### semi simple group (level 1) entered at line 376 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  13728 strings out of 493089
- 204560 string characters out of 6134842
- 368570 words of memory out of 5000000
+ 204565 string characters out of 6134842
+ 368589 words of memory out of 5000000
  16791 multiletter control sequences out of 15000+600000
  34908 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1240,7 +1240,7 @@ Here is how much of TeX's memory you used:
 cal/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb>
-Output written on icomp-modelomonografia-pf.pdf (30 pages, 950870 bytes).
+Output written on icomp-modelomonografia-pf.pdf (30 pages, 951435 bytes).
 PDF statistics:
  528 PDF objects out of 1000 (max. 8388607)
  468 compressed objects within 5 object streams
