@@ -205,27 +205,27 @@
 
 % resumo em português
 
-%\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
-%\begin{resumo}
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
 
-% 	O resumo deve apresentar de forma concisa os pontos relevantes de um texto, fornecendo uma visão rápida e clara do conteúdo e das conclusões do trabalho. O texto, redigido na forma impessoal do verbo, é constituído de uma sequência de frases concisas e objetivas e não de uma simples enumeração de tópicos, não ultrapassando 500 palavras, seguido, logo abaixo, das palavras representativas do conteúdo do trabalho, isto é, palavras-chave e/ou descritores. Por exemplo, deve-se evitar, na redação do resumo, o uso de fórmulas, equações, diagramas e símbolos, optando-se, quando necessário, pela transcrição na forma extensa, além de não incluir citações bibliográficas.
+ 	A tarefa de classificação em \textit{Data Mining} consiste na predição de classe dado um determinado conjunto de atributos de uma instância. Esta técnica pode ser útil em auxílio ao diagnóstico médico, como ferramenta de apoio ao profissional da saúde. As melhores técnicas para esta tarefa na literatura, em geral, usam máquinas de vetores de suporte e árvore de decisão. Nestas técnicas é utilizado o conceito de hiperplano para separa de uma melhor forma as classes existentes num conjunto de dados, também, pode-se verificar o uso da ideia de dividir para conquistar na identificação dos melhores atributos capazes de resultados mais eficientes no processo de predição. Como resultado, obtivemos modelos classificadores, baseados em SMO e J48, que alcançaram resultados de 89,61\% e 86,63\% respectivamente no conjunto de dados utilizado neste trabalho. Também observamos que os modelos gerados obtiveram melhores resultados à medida que os experimentos no tamanho do conjunto de dados aumentava.
 
-% \textit{Palavras-chave}: Palavra-chave 1, Palavra-chave 2, Palavra-chave 3.
+ \textit{Palavras-chave}: Data Mining, Classificação, Árvore de Decisão, Bayes, Support Vector Machine.
 
-%\end{resumo}
+\end{resumo}
 
 % resumo em inglês
 
-%\begin{resumo}[Abstract]
- %\begin{otherlanguage*}{english}
- %  This is the english abstract.
+\begin{resumo}[Abstract]
+ \begin{otherlanguage*}{english}
+   This is the english abstract.
 
-  % \vspace{\onelineskip}
+   \vspace{\onelineskip}
  
-  % \noindent 
-  % \textit{Keywords}: Keyword 1, Keyword 2, Keyword 3.
-% \end{otherlanguage*}
-%\end{resumo}
+   \noindent 
+   \textit{Keywords}: Data mining, Classifier, Decision Tree, Bayes, Support Vector Machine.
+ \end{otherlanguage*}
+\end{resumo}
 
 % ---
 % inserir lista de figuras
@@ -336,7 +336,7 @@
 	
 	No trabalho de \cite{thitiprayoonwongse:2012}, foi utilizado a técnica de classificação conhecida como Árvore de Decisão, aplicado a um conjunto de dados temporais contendo dados clínicos e laboratoriais. Utilizaram dois conjuntos de dados com mais de 400 atributos. Nos experimentos os dados foram divididos em: conjunto de teste e treinamento. Onde o objetivo principal deste trabalho foi identificar o dia zero da dengue, pois esta previsão torna-se crítica, tendo em vista que o dia zero tem forte relação com o melhor tratamento do paciente.
 	
-	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN. Onde resultou um aplicação em java que implementa algoritmos de classificação e regras de associação da base de dados do SINAN utilizando a API WEKA. Como resultado esta ferramenta possibilitou o auxílio no diagnóstico de pacientes.
+	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN. Onde resultou uma aplicação em java que implementa algoritmos de classificação e regras de associação da base de dados do SINAN utilizando a API WEKA. Como resultado esta ferramenta possibilitou o auxílio no diagnóstico de pacientes.	
 
 	\section{Metodologia de Desenvolvimento}
 		
@@ -639,6 +639,18 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	\section{Resultados}
 	
+	Nesta seção apresentamos os resultados obtidos na aplicação dos classificadores em  5  conjuntos de dados e as medidas resultantes que utilizamos:
+	\begin{itemize}
+		\item \textit{Correctly Classified Instances}: Mostra o percentual de precisão das instâncias corretamente classificados.
+		\item \textit{Incorrectly Classified Instances} : Mostra o percentual de precisão das instâncias incorretamente classificados.
+		\item \textit{TP Rate}: Taxa de verdadeiros positivos.
+		\item \textit{FP Rate}: Taxa de falsos positivos.
+		\item \textit{Precision}: Percentual de instâncias classificadas corretamente sobre todo o conjunto de dados.
+		\item \textit{Recall}: Proporção de instâncias classificadas positivamente dentre todos os positivos.
+		\item \textit{F-Measure}: 
+		\item \textit{ROC Area}: 
+	\end{itemize}
+	
 		\subsection{ZeroR}
 		\subsection{J48}
 		\subsection{RandomTree}
@@ -652,9 +664,11 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 % - - -
 \chapter{Conclusões e Trabalhos Futuros}
 
+	Neste Capítulo, apresentamos as conclusões do nosso trabalho, incluindo suas limitações de nossa pesquisa e futuros estudos que possam ser explorados.
+
 	\section{Resultados Obtidos}
 
-	As medidas de desepenho resultantes da classificação foram: 
+	As medidas de desepenho resultantes do experimentos na classificação foram: 
 	
 	\begin{itemize}
 		\item Correctly Classified Instances
@@ -668,9 +682,12 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{itemize}
 
 	\section{Limitações}
-		
+	
+	Neste trabalho não estamos levando em consideração o tempo de criação de cada modelo gerado.
+	
 	\section{Trabalhos Futuros}
 	
+	Como trabalhos futuros
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS

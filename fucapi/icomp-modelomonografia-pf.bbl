@@ -5,10 +5,10 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.5 }
 
-\bibitem[Adriaans e Zantinge]{adriaans:1996}
-\abntrefinfo{Adriaans e Zantinge}{ADRIAANS; ZANTINGE}{}
-{ADRIAANS, P.; ZANTINGE, D. Data mining, 1996.
-\emph{Addision-Wesley, Harlow}.}
+\bibitem[Adriaans e Zantinge 1996]{adriaans:1996}
+\abntrefinfo{Adriaans e Zantinge}{ADRIAANS; ZANTINGE}{1996}
+{ADRIAANS, P.; ZANTINGE, D. Data mining.
+\emph{Addision-Wesley, Harlow}, 1996.}
 
 \bibitem[Bellazzi e Zupan 2008]{bellazzi:2008}
 \abntrefinfo{Bellazzi e Zupan}{BELLAZZI; ZUPAN}{2008}
@@ -53,12 +53,6 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
 \abntrefinfo{Hall et al.}{HALL et al.}{2009}
 {HALL, M. et al. The weka data mining software: an update.
 \emph{ACM SIGKDD explorations newsletter}, ACM, v.~11, n.~1, p. 10--18, 2009.}
-
-\bibitem[Junior e Piedade 2013]{alexander:2013}
-\abntrefinfo{Junior e Piedade}{JUNIOR; PIEDADE}{2013}
-{JUNIOR, A.~R. de M.; PIEDADE, M.~P. Data mining na descoberta de padr{\~o}es
-  de sintomas com foco no aux{\'\i}lio ao diagn{\'o}stico m{\'e}dico.
-\emph{Encontro Regional de Computação e Sistemas de Informação}, 2013.}
 
 \bibitem[Junior 2010]{junior:2010}
 \abntrefinfo{Junior}{JUNIOR}{2010}
