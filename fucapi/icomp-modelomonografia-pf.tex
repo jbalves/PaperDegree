@@ -39,6 +39,8 @@
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 \usepackage{pdfpages} %adicionar documentos pdf. neste caso utilizando no anexo
 \usepackage{booktabs} %adicionar tabelas geradas pelo site http://www.tablesgenerator.com
+\usepackage[table,xcdraw]{xcolor} %para adicionar cor
+\usepackage{multirow} % para adicionar "mesclar" estre células
 \usepackage{scalefnt} %definir tamanho da fonte da tabela
 \usepackage{verbatim}  %fazer comentários em bloco
 
@@ -281,7 +283,8 @@
 	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso surgiu uma abordagem de técnicas e ferramentas que buscam transformar dados, denominada Descoberta de Conhecimento em Base de Dados (knowledge Discovery in Databases - KDD), que foi proposto em 1989 com o objetivo de analisar os dados de uma base para que de alguma forma possa ser extraído conhecimento útil \cite{fayyad:1996}.	
 	
 	A computação tem apoiado o desenvolvimento da medicina em diversas áreas: em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras. Desta maneira, esse grande volume de dados é uma valiosa fonte de conhecimento que pode ser utilizada para o auxílio ao diagnóstico médico. Assim, é grande a importância do desenvolvimento de técnicas que permitam a descoberta de conhecimento em base de dados médicos para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista (COSTA, 2012).
-
+    
+    \newpage
 	\section{Especificação do problema}
 		
 		Ao longo dos últimos anos a mineração de dados tem sido cada vez mais utilizada na literatura médica. No entanto, a sua aplicação à analise de dados médicos tem sido relativamente limitada, tendo em vista que a aplicação prática pode explorar o conhecimento disponível no contexto clínico e explicar decisões propostas, uma vez que os modelos são utilizados para apoiar decisões \cite{bellazzi:2008}.
@@ -297,10 +300,7 @@
 	
 		\subsection{Objetivo Geral}
 
-		Construir um classificador que utilize dentre as diversas técnicas de classificação em Data Mining e avaliar a que mais se adequa ao conjunto de dados utilizados no SINAN dengue do município de Fortaleza.
-		
-		O quê
-		Como
+		Construir um classificador que utilize dentre as diversas técnicas de classificação em Data Mining e avaliar a que mais se adequa ao conjunto de dados utilizados no SINAN dengue do município de Fortaleza. 
 		
 		\subsection{Objetivos Específicos}
 		
@@ -352,7 +352,7 @@
 			\item A quinta e última etapa do processo ocorrerá a análise dos resultados obtidos com a a aplicação dos algoritmos de mineração de dados. Encontrar padrões de classificação que sejam relevantes para a pesquisa em questão.
 			
 		\end{itemize}
-		
+	
 	\section{Estruturação da Monografia}
 	
 		Além deste capítulo introdutório, este trabalho está organizado da forma descrita à seguir. No Capítulo 2, descrevemos conceitos básicos relacionados a compreensão deste trabalho, bem como referencial teórico. No Capítulo 3, apresentaremos os experimentos juntamente com os resultados obtidos. Finalmente no Capítulo 4, apresentaremos as conclusões observadas e sugestões de trabalhos futuros da pesquisa.
@@ -652,6 +652,113 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{itemize}
 	
 		\subsection{ZeroR}
+		
+		% Please add the following required packages to your document preamble:
+		% \usepackage[table,xcdraw]{xcolor}
+		% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+		\begin{table}[htbp]
+			\scalefont{1}
+			\centering
+			\caption{Resultados dos Experimentos com 5.000 instâncias}
+			\label{tabResultadosExperimentos5k}
+			\begin{center}
+	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{cp{3cm}p{3.2cm}cc}
+		\hline
+		\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
+		SMO                                      & 89,2866\%                                                                                 & 10,7134\% 							&0.863									&0.346                                                                                    \\
+		J48                                      & 86,6530\%                                                                                  & 13,3470\% 							&0.867										&0.701                                                                                     \\
+		REPTree                                  & 83,9683\%                                                                                 & 16,0317\%								&0.84											&0.815                                                                                     \\
+		NaiveBayes                               & 83,5592\%                                                                                 & 16,4408\%								&0.836												&0.619                                                                                     \\ \hline \hline
+		ZeroR    									& 84,2496\%                                                 									& 15,7504\%								&0.842											&0.842                                                     								\\
+		RandomTree                               & 82,0762\%                                                                                 & 17,9238\%									&0.821												&0.623                                                                                     \\ \hline
+	\end{tabular}
+\end{center}
+\end{table}
+		
+		
+				\begin{table}[htbp]
+					\scalefont{1}
+					\centering
+					\caption{Resultados dos Experimentos com 10.000 instâncias}
+					\label{tabResultadosExperimentos10k}
+					\begin{center}
+						\renewcommand{\arraystretch}{2}
+						\begin{tabular}{cp{3cm}p{3.2cm}cc}
+							\hline
+							\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
+							SMO                                      & 88.5345\%                                                                                 & 11.4655\% 							&0.885									&0.218                                                                                    \\
+							J48                                      & 86,2315\%                                                                                  & 13,7685\% 							&0.862										&0.328                                                                                     \\
+							REPTree                                  & 79,7414\%                                                                                 & 20,2586\%								&0.797											&0.497                                                                                     \\
+							RandomTree                               & 77,2906\%                                                                                 & 22,7094\%								&0.773												&0.408                                                                                     \\
+							NaiveBayes    									& 76,8103\%                                                 									& 23,1897\%								&0.768											&0.420                                                     								\\ \hline \hline
+							ZeroR                               & 75,6773\%                                                                                 &  24,3227\%									&0.757												&0.757                                                                                     \\ \hline
+						\end{tabular}
+					\end{center}
+				\end{table}
+		
+		
+\begin{table}[htbp]
+	\scalefont{1}
+	\centering
+	\caption{Resultados dos Experimentos com 15.000 instâncias}
+	\label{tabResultadosExperimentos15k}
+	\begin{center}
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{cp{3cm}p{3.2cm}cc}
+			\hline
+			\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
+			SMO                                      & 89,6195\%                                                                                 & 10,3805\% 							&0.896									&0.207                                                                                    \\
+			J48                                      & 86,6322\%                                                                                  & 13,3678\% 							&0.866										&0.335                                                                                     \\
+			REPTree                                  & 80,7076\%                                                                                 & 19,2924\%								&0.807											&0.507                                                                                     \\ \hline \hline
+			ZeroR                               & 76,8608\%                                                                                 & 23,1392\%								&0.769												&0.769                                                                                     \\
+			RandomTree    									& 78,8551\%                                                 									& 21,1449\%								&0.789											&0.435                                                     								\\ 
+			NaiveBayes                               & 76,1682\%                                                                                 &  23,8318\%									&0.762												&0.448                                                                                     \\ \hline
+		\end{tabular}
+	\end{center}
+\end{table}		
+
+
+\begin{table}[htbp]
+	\scalefont{1}
+	\centering
+	\caption{Resultados dos Experimentos com 20.000 instâncias}
+	\label{tabResultadosExperimentos20k}
+	\begin{center}
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{cp{3cm}p{3.2cm}cc}
+			\hline
+			\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
+			SMO                                      & 89,4714\%                                                                                 & 10,5286\% 							&0.895									&0.199                                                                                    \\
+			J48                                      & 85,9331\%                                                                                  & 14,0669\% 							&0.859										&0.324                                                                                     \\
+			REPTree                                  & 79,6344\%                                                                                 & 20,3656\%								&0.796											&0.499                                                                                     \\ 
+			RandomTree                               & 78,0289\%                                                                                 & 21,9711\%								&0.780												&0.426                                                                                     \\ \hline \hline
+			ZeroR    									& 75,9664\%                                                 									& 24,0336\%								&0.760											&0.760                                                     								\\ 
+			NaiveBayes                               & 74,6696\%                                                                                 &  25,3304\%									&0.747												&0.417                                                                                     \\ \hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table}[htbp]
+	\scalefont{1}
+	\centering
+	\caption{Resultados dos Experimentos com 25.000 instâncias}
+	\label{tabResultadosExperimentos25k}
+	\begin{center}
+		\renewcommand{\arraystretch}{2}
+		\begin{tabular}{cp{3cm}p{3.2cm}cc}
+			\hline
+			\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
+			SMO                                      & 89,1407\%                                                                                 & 10,8593\% 							&0.891									&0.169                                                                                    \\
+			J48                                      & 85.3096\%                                                                                  & 14,6904\% 							&0.853										&0.287                                                                                     \\
+			REPTree                                  & 77,7052\%                                                                                 & 22,2948\%								&0.777											&0.431                                                                                     \\ 
+			RandomTree                               & 76,6155\%                                                                                 & 23,3845\%								&0.766												&0.377                                                                                     \\ \hline \hline
+			ZeroR    									& 72,1555\%                                                 									& 27,8445\%								&0.722											&0.722                                                     								\\ 
+			NaiveBayes                               & 70,8689\%                                                                                 &  29,1311\%									&0.709												&0.319                                                                                     \\ \hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
 		\subsection{J48}
 		\subsection{RandomTree}
 		\subsection{REPTree}
@@ -727,9 +834,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 \begin{anexosenv}
 
 % ---
-\chapter{Dicionário de dados - SINAN online}
+%\chapter{Dicionário de dados - SINAN online}
 
-Este anexo descreve todos os atrubutos presentes no SINAN
+%Este anexo descreve todos os atrubutos presentes no SINAN
 % ---
 
 %inserindo todas as páginas

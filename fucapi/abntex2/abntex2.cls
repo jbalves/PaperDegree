@@ -974,14 +974,14 @@
    \PRIVATEbookmarkthis{#1}
    \renewcommand{\abstractnamefont}{\fontsize{18}{22}\selectfont}
    \renewcommand{\abstractname}{\ABNTEXchapterupperifneeded{#1}}
-
-   {\begin{center}
-   \fontsize{18}{22}\selectfont\imprimirtitulo
-   \end{center}}\vspace*{1cm}
-   {\begin{flushright}
-   \fontsize{12}{15}\selectfont
-    Autor: \imprimirautor \par Orientador: \imprimirorientador
-    \end{flushright}}\vspace*{1.5cm}
+   %retirando título, autor e orientador após título do trabalho na página de resumo
+   %{\begin{center}
+   %\fontsize{18}{22}\selectfont\imprimirtitulo
+   %\end{center}}\vspace*{1cm}
+   %{\begin{flushright}
+   %\fontsize{12}{15}\selectfont
+   % Autor: \imprimirautor \par Orientador: \imprimirorientador
+   %\end{flushright}}\vspace*{1.5cm}
 
    \begin{abstract}
   }{\end{abstract}\PRIVATEclearpageifneeded}

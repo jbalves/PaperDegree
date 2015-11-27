@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  25 NOV 2015 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  27 NOV 2015 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,6 +897,34 @@ File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count169
 \AM@templatesizebox=\box32
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks30
+\minrowclearance=\skip203
+)
+LaTeX Info: Redefining \color on input line 702.
+\rownum=\count170
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen165
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 \icomp-modelomonografia-pf@idxfile=\write4
 \openout4 = `icomp-modelomonografia-pf.idx'.
@@ -906,29 +934,29 @@ Writing index file icomp-modelomonografia-pf.idx
 (./icomp-modelomonografia-pf.aux)
 \openout1 = `icomp-modelomonografia-pf.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Try loading font information for T1+pbk on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Try loading font information for T1+pbk on input line 101.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pbk.fd
 File: t1pbk.fd 2001/06/04 font definitions for T1/pbk.
 )
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <12> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 99.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 101.
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 99.
+Package hyperref Info: Link coloring OFF on input line 101.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -936,29 +964,29 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count170
+\c@section@level=\count171
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 99.
-LaTeX Info: Redefining \ref on input line 99.
-LaTeX Info: Redefining \pageref on input line 99.
-LaTeX Info: Redefining \nameref on input line 99.
+LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Info: Redefining \ref on input line 101.
+LaTeX Info: Redefining \pageref on input line 101.
+LaTeX Info: Redefining \nameref on input line 101.
 \myptabbox=\box34
-\myptabboxwidth=\skip203
+\myptabboxwidth=\skip204
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count171
-\scratchdimen=\dimen165
+\scratchcounter=\count172
+\scratchdimen=\dimen166
 \scratchbox=\box35
-\nofMPsegments=\count172
-\nofMParguments=\count173
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count174
-\MPscratchDim=\dimen166
-\MPnumerator=\count175
-\makeMPintoPDFobject=\count176
-\everyMPtoPDFconversion=\toks31
+\nofMPsegments=\count173
+\nofMParguments=\count174
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count175
+\MPscratchDim=\dimen167
+\MPnumerator=\count176
+\makeMPintoPDFobject=\count177
+\everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -974,7 +1002,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 99.
+LaTeX Info: Redefining \microtypecontext on input line 101.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -989,18 +1017,18 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <11> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 118.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 120.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <18> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 118.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 120.
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <18> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 118.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 120.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <15> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 118.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 120.
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
  
  []
 
@@ -1009,28 +1037,28 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 130.
+(Font)              <12> on input line 132.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 130.
+(Font)              <8> on input line 132.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 130.
+(Font)              <6> on input line 132.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 
+l.132 
        [1
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <12> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 211.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 213.
  [2] [3
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <22> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 234.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 236.
  (./icomp-modelomonografia-pf.lof) [4
 
 ]
@@ -1048,27 +1076,27 @@ LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <12> not available
 [7
 
 ]) [8]
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <16> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 285.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <10> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 290.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 287.
  [9
 
 
 ]
+LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <16> not available
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 288.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 298.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 301.
+LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <10> not available
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 304.
+ [10]
 LaTeX Font Info:    Try loading font information for OMS+pbk on input line 308.
 
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omspbk.fd
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omspbk.fd
 File: omspbk.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pbk/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 308.
-LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <10> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 312.
-
-[10]
 LaTeX Font Info:    Font shape `T1/pbk/m/sl' in size <12> not available
 (Font)              Font shape `T1/pbk/l/sl' tried instead on input line 323.
  [11]
@@ -1083,7 +1111,7 @@ Package hyperref Warning: Suppressing empty link on input line 339.
 [12] [13] [14] [15
 
 ]
-<img/dataMiningFayyad.png, id=224, 469.755pt x 189.70876pt>
+<img/dataMiningFayyad.png, id=232, 469.755pt x 189.70876pt>
 File: img/dataMiningFayyad.png Graphic file (type png)
 
 <use img/dataMiningFayyad.png>
@@ -1095,7 +1123,7 @@ Overfull \hbox (14.75386pt too wide) in paragraph at lines 390--392
  []
 
 [16 <./img/dataMiningFayyad.png>] [17]
-<img/abordagemModeloClassificacao.png, id=253, 1018.80624pt x 764.8575pt>
+<img/abordagemModeloClassificacao.png, id=261, 1018.80624pt x 764.8575pt>
 File: img/abordagemModeloClassificacao.png Graphic file (type png)
 
 <use img/abordagemModeloClassificacao.png>
@@ -1103,7 +1131,7 @@ Package pdftex.def Info: img/abordagemModeloClassificacao.png used on input lin
 e 428.
 (pdftex.def)             Requested size: 305.64423pt x 229.45901pt.
  [18] [19 <./img/abordagemModeloClassificacao.png>] <img/svmHiperPlanos.png, id
-=274, 572.1375pt x 447.6725pt>
+=282, 572.1375pt x 447.6725pt>
 File: img/svmHiperPlanos.png Graphic file (type png)
 
 <use img/svmHiperPlanos.png>
@@ -1114,7 +1142,7 @@ Package pdftex.def Info: img/svmHiperPlanos.png used on input line 454.
 LaTeX Warning: Reference `tabDescricaoAtributos' on page 23 undefined on input 
 line 485.
 
-<img/dataSetOriginal.png, id=306, 1181.41376pt x 262.9825pt>
+<img/dataSetOriginal.png, id=314, 1181.41376pt x 262.9825pt>
 File: img/dataSetOriginal.png Graphic file (type png)
 
 <use img/dataSetOriginal.png>
@@ -1125,7 +1153,7 @@ Overfull \hbox (17.55713pt too wide) in paragraph at lines 576--577
  [] 
  []
 
-<img/erroCarregarInstancias.png, id=307, 888.31876pt x 173.64874pt>
+<img/erroCarregarInstancias.png, id=315, 888.31876pt x 173.64874pt>
 File: img/erroCarregarInstancias.png Graphic file (type png)
 
 <use img/erroCarregarInstancias.png>
@@ -1139,7 +1167,7 @@ Overfull \hbox (33.57683pt too wide) in paragraph at lines 584--585
 
 [23
 
-] <img/erroLinhaSete.png, id=315, 1069.9975pt x 151.56625pt>
+] <img/erroLinhaSete.png, id=323, 1069.9975pt x 151.56625pt>
 File: img/erroLinhaSete.png Graphic file (type png)
 
 <use img/erroLinhaSete.png>
@@ -1151,14 +1179,14 @@ Overfull \hbox (26.49443pt too wide) in paragraph at lines 596--597
  []
 
 [24 <./img/dataSetOriginal.png> <./img/erroCarregarInstancias.png> <./img/erroL
-inhaSete.png>] <img/filtroRemoveUseless.png, id=325, 483.8075pt x 230.8625pt>
+inhaSete.png>] <img/filtroRemoveUseless.png, id=333, 483.8075pt x 230.8625pt>
 File: img/filtroRemoveUseless.png Graphic file (type png)
 
 <use img/filtroRemoveUseless.png>
 Package pdftex.def Info: img/filtroRemoveUseless.png used on input line 610.
 (pdftex.def)             Requested size: 217.71136pt x 103.88715pt.
 
-<img/filtroNumericToNominal.png, id=327, 483.8075pt x 302.12875pt>
+<img/filtroNumericToNominal.png, id=335, 483.8075pt x 302.12875pt>
 File: img/filtroNumericToNominal.png Graphic file (type png)
 
 <use img/filtroNumericToNominal.png>
@@ -1170,27 +1198,124 @@ Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 618.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25 <./img/filtroRemoveUseless.png>]
-<img/filtroRemoveRange.png, id=334, 478.78876pt x 260.975pt>
+<img/filtroRemoveRange.png, id=342, 478.78876pt x 260.975pt>
 File: img/filtroRemoveRange.png Graphic file (type png)
 
 <use img/filtroRemoveRange.png>
 Package pdftex.def Info: img/filtroRemoveRange.png used on input line 627.
 (pdftex.def)             Requested size: 215.45294pt x 117.43767pt.
- [26 <./img/filtroNumericToNominal.png> <./img/filtroRemoveRange.png>] [27] [28
-] (./icomp-modelomonografia-pf.bbl
+ [26 <./img/filtroNumericToNominal.png> <./img/filtroRemoveRange.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
+[]|\T1/pbk/db/n/12 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
+[]|\T1/pbk/db/n/12 Incorrectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--668
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+[]|\T1/pbk/db/n/12 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+[]|\T1/pbk/db/n/12 Incorrectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--710
+[]|\T1/pbk/db/n/12 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--710
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--710
+[]|\T1/pbk/db/n/12 Incorrectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--710
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 731--731
+[]|\T1/pbk/db/n/12 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 731--731
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 731--731
+[]|\T1/pbk/db/n/12 Incorrectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 731--731
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
+[]|\T1/pbk/db/n/12 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
+[]|\T1/pbk/db/n/12 Incorrectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 751--751
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+[27] [28] [29] [30] (./icomp-modelomonografia-pf.bbl
 (./icomp-modelomonografia-pf.brf)
 \tf@brf=\write5
 \openout5 = `icomp-modelomonografia-pf.brf'.
 
- [29
+ [31
 
 ]
 bibitemlist
-[30
+[32
 
-]) [31] [32
-
-]
+]) [33]
 \tf@lof=\write6
 \openout6 = `icomp-modelomonografia-pf.lof'.
 
@@ -1200,11 +1325,11 @@ bibitemlist
 \tf@toc=\write8
 \openout8 = `icomp-modelomonografia-pf.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 740.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 740.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 847.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 847.
  (./icomp-modelomonografia-pf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 740.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 740.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 847.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 847.
 
 
 Package rerunfilecheck Warning: File `icomp-modelomonografia-pf.brf' has change
@@ -1212,39 +1337,39 @@ d.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `icomp-modelomonografia-pf.brf':
-(rerunfilecheck)             Before: A8389DB0751C885DA8586902CEB29E4C;1543
-(rerunfilecheck)             After:  38D984A00E69A70A0CAF56696CD6E863;1543.
+(rerunfilecheck)             Before: 4F3CBF16AD102007F31813AE1C705D8F;1544
+(rerunfilecheck)             After:  98666A27885A6E2C34FE22F96B32CA63;1544.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 740.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 847.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 696 (\begingroup)
+### semi simple group (level 2) entered at line 803 (\begingroup)
 ### semi simple group (level 1) entered at line 376 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13726 strings out of 493089
- 204448 string characters out of 6134842
- 368672 words of memory out of 5000000
- 16786 multiletter control sequences out of 15000+600000
+ 14206 strings out of 493089
+ 210316 string characters out of 6134842
+ 395291 words of memory out of 5000000
+ 17247 multiletter control sequences out of 15000+600000
  34715 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,36p,1101b,5444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,36p,1101b,5906s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb>
-Output written on icomp-modelomonografia-pf.pdf (33 pages, 955773 bytes).
+Output written on icomp-modelomonografia-pf.pdf (34 pages, 957604 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
- 490 compressed objects within 5 object streams
- 112 named destinations out of 1000 (max. 500000)
- 12182 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 563 PDF objects out of 1000 (max. 8388607)
+ 499 compressed objects within 5 object streams
+ 117 named destinations out of 1000 (max. 500000)
+ 12174 words of extra memory for PDF output out of 14400 (max. 10000000)
 
