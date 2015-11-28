@@ -54,6 +54,13 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
 {HALL, M. et al. The weka data mining software: an update.
 \emph{ACM SIGKDD explorations newsletter}, ACM, v.~11, n.~1, p. 10--18, 2009.}
 
+\bibitem[John e Langley 1995]{john:1995}
+\abntrefinfo{John e Langley}{JOHN; LANGLEY}{1995}
+{JOHN, G.~H.; LANGLEY, P. Estimating continuous distributions in bayesian
+  classifiers. In:  MORGAN KAUFMANN PUBLISHERS INC. \emph{Proceedings of the
+  Eleventh conference on Uncertainty in artificial intelligence}. [S.l.], 1995.
+  p. 338--345.}
+
 \bibitem[Junior 2010]{junior:2010}
 \abntrefinfo{Junior}{JUNIOR}{2010}
 {JUNIOR, G. M. d.~O. M{\'a}quina de vetores suporte: estudo e an{\'a}lise de

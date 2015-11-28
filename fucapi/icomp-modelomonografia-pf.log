@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  27 NOV 2015 13:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  27 NOV 2015 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1028,37 +1028,64 @@ LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <15> not available
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Runaway argument?
+{Orientador: \fontsize {12}{15}\selectfont \imprimirorientador 
+! Paragraph ended before \text@command was complete.
+<to be read again> 
+                   \par 
+l.169 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
  
  []
+
+LaTeX Font Info:    Font shape `T1/pbk/bx/n' in size <12> not available
+(Font)              Font shape `T1/pbk/b/n' tried instead on input line 169.
+LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <12> not available
+(Font)              Font shape `T1/pbk/db/n' tried instead on input line 169.
+! Extra }, or forgotten \endgroup.
+<argument> ...lectfont \imprimirorientador \par }}
+                                                   \abntex@ifnotempty {\impr...
+l.169 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 132.
+(Font)              <12> on input line 169.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 132.
+(Font)              <8> on input line 169.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 132.
+(Font)              <6> on input line 169.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.132 
+l.169 
        [1
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <12> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 213.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 210.
  [2] [3
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <22> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 236.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 233.
  (./icomp-modelomonografia-pf.lof) [4
 
 ]
@@ -1068,254 +1095,261 @@ LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <22> not available
 
 
 ] (./icomp-modelomonografia-pf.toc
-LaTeX Font Info:    Font shape `T1/pbk/bx/n' in size <12> not available
-(Font)              Font shape `T1/pbk/b/n' tried instead on input line 9.
-LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <12> not available
-(Font)              Font shape `T1/pbk/db/n' tried instead on input line 9.
+LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <10> not available
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 25.
 
 [7
 
-]) [8]
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <10> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 287.
- [9
+]) [8] [9
 
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <16> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 288.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 285.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 301.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 298.
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <10> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 304.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 301.
  [10]
-LaTeX Font Info:    Try loading font information for OMS+pbk on input line 308.
+LaTeX Font Info:    Try loading font information for OMS+pbk on input line 305.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omspbk.fd
 File: omspbk.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pbk/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 308.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 305.
 LaTeX Font Info:    Font shape `T1/pbk/m/sl' in size <12> not available
-(Font)              Font shape `T1/pbk/l/sl' tried instead on input line 323.
+(Font)              Font shape `T1/pbk/l/sl' tried instead on input line 318.
  [11]
-Overfull \hbox (9.23865pt too wide) in paragraph at lines 337--338
+Overfull \hbox (9.23865pt too wide) in paragraph at lines 332--333
 []\T1/pbk/l/n/12 (-20) No tra-ba-lho de ([]THI-TI-PRAYO-ONWONGSE; SU-RIYAPHOL; 
 SO-ONTHORNPHI-
  []
 
 
-Package hyperref Warning: Suppressing empty link on input line 339.
+Package hyperref Warning: Suppressing empty link on input line 334.
 
-[12] [13] [14] [15
+[12] [13] [14
 
-]
-<img/dataMiningFayyad.png, id=232, 469.755pt x 189.70876pt>
+] <img/dataMiningFayyad.png, id=227, 469.755pt x 189.70876pt>
 File: img/dataMiningFayyad.png Graphic file (type png)
 
 <use img/dataMiningFayyad.png>
-Package pdftex.def Info: img/dataMiningFayyad.png used on input line 390.
+Package pdftex.def Info: img/dataMiningFayyad.png used on input line 384.
 (pdftex.def)             Requested size: 469.75386pt x 189.70828pt.
 
-Overfull \hbox (14.75386pt too wide) in paragraph at lines 390--392
+Overfull \hbox (14.75386pt too wide) in paragraph at lines 384--386
  [] 
  []
 
-[16 <./img/dataMiningFayyad.png>] [17]
-<img/abordagemModeloClassificacao.png, id=261, 1018.80624pt x 764.8575pt>
+[15 <./img/dataMiningFayyad.png>] [16]
+<img/abordagemModeloClassificacao.png, id=256, 1018.80624pt x 764.8575pt>
 File: img/abordagemModeloClassificacao.png Graphic file (type png)
 
 <use img/abordagemModeloClassificacao.png>
 Package pdftex.def Info: img/abordagemModeloClassificacao.png used on input lin
-e 428.
+e 422.
 (pdftex.def)             Requested size: 305.64423pt x 229.45901pt.
- [18] [19 <./img/abordagemModeloClassificacao.png>] <img/svmHiperPlanos.png, id
-=282, 572.1375pt x 447.6725pt>
+ [17] [18 <./img/abordagemModeloClassificacao.png>] [19] <img/svmHiperPlanos.pn
+g, id=287, 572.1375pt x 447.6725pt>
 File: img/svmHiperPlanos.png Graphic file (type png)
 
 <use img/svmHiperPlanos.png>
-Package pdftex.def Info: img/svmHiperPlanos.png used on input line 454.
+Package pdftex.def Info: img/svmHiperPlanos.png used on input line 471.
 (pdftex.def)             Requested size: 286.06804pt x 223.8357pt.
- [20] [21 <./img/svmHiperPlanos.png>] [22]
+ [20 <./img/svmHiperPlanos.png>] [21] [22] [23]
 
-LaTeX Warning: Reference `tabDescricaoAtributos' on page 23 undefined on input 
-line 485.
+LaTeX Warning: Reference `tabDescricaoAtributos' on page 24 undefined on input 
+line 519.
 
-<img/dataSetOriginal.png, id=314, 1181.41376pt x 262.9825pt>
+<img/dataSetOriginal.png, id=324, 1181.41376pt x 262.9825pt>
 File: img/dataSetOriginal.png Graphic file (type png)
 
 <use img/dataSetOriginal.png>
-Package pdftex.def Info: img/dataSetOriginal.png used on input line 576.
+Package pdftex.def Info: img/dataSetOriginal.png used on input line 610.
 (pdftex.def)             Requested size: 472.55713pt x 105.19113pt.
 
-Overfull \hbox (17.55713pt too wide) in paragraph at lines 576--577
+Overfull \hbox (17.55713pt too wide) in paragraph at lines 610--611
  [] 
  []
 
-<img/erroCarregarInstancias.png, id=315, 888.31876pt x 173.64874pt>
+<img/erroCarregarInstancias.png, id=325, 888.31876pt x 173.64874pt>
 File: img/erroCarregarInstancias.png Graphic file (type png)
 
 <use img/erroCarregarInstancias.png>
-Package pdftex.def Info: img/erroCarregarInstancias.png used on input line 584.
+Package pdftex.def Info: img/erroCarregarInstancias.png used on input line 618.
 
 (pdftex.def)             Requested size: 488.57683pt x 95.5071pt.
 
-Overfull \hbox (33.57683pt too wide) in paragraph at lines 584--585
+Overfull \hbox (33.57683pt too wide) in paragraph at lines 618--619
  [] 
  []
 
-[23
+[24
 
-] <img/erroLinhaSete.png, id=323, 1069.9975pt x 151.56625pt>
+] <img/erroLinhaSete.png, id=334, 1069.9975pt x 151.56625pt>
 File: img/erroLinhaSete.png Graphic file (type png)
 
 <use img/erroLinhaSete.png>
-Package pdftex.def Info: img/erroLinhaSete.png used on input line 596.
+Package pdftex.def Info: img/erroLinhaSete.png used on input line 630.
 (pdftex.def)             Requested size: 481.49443pt x 68.20418pt.
 
-Overfull \hbox (26.49443pt too wide) in paragraph at lines 596--597
+Overfull \hbox (26.49443pt too wide) in paragraph at lines 630--631
  [] 
  []
 
-[24 <./img/dataSetOriginal.png> <./img/erroCarregarInstancias.png> <./img/erroL
-inhaSete.png>] <img/filtroRemoveUseless.png, id=333, 483.8075pt x 230.8625pt>
+[25 <./img/dataSetOriginal.png> <./img/erroCarregarInstancias.png> <./img/erroL
+inhaSete.png>] <img/filtroRemoveUseless.png, id=343, 483.8075pt x 230.8625pt>
 File: img/filtroRemoveUseless.png Graphic file (type png)
 
 <use img/filtroRemoveUseless.png>
-Package pdftex.def Info: img/filtroRemoveUseless.png used on input line 610.
+Package pdftex.def Info: img/filtroRemoveUseless.png used on input line 644.
 (pdftex.def)             Requested size: 217.71136pt x 103.88715pt.
 
-<img/filtroNumericToNominal.png, id=335, 483.8075pt x 302.12875pt>
+<img/filtroNumericToNominal.png, id=345, 483.8075pt x 302.12875pt>
 File: img/filtroNumericToNominal.png Graphic file (type png)
 
 <use img/filtroNumericToNominal.png>
-Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 618.
+Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 652.
 
 (pdftex.def)             Requested size: 217.71136pt x 135.95668pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25 <./img/filtroRemoveUseless.png>]
-<img/filtroRemoveRange.png, id=342, 478.78876pt x 260.975pt>
+[26 <./img/filtroRemoveUseless.png>]
+<img/filtroRemoveRange.png, id=352, 478.78876pt x 260.975pt>
 File: img/filtroRemoveRange.png Graphic file (type png)
 
 <use img/filtroRemoveRange.png>
-Package pdftex.def Info: img/filtroRemoveRange.png used on input line 627.
+Package pdftex.def Info: img/filtroRemoveRange.png used on input line 661.
 (pdftex.def)             Requested size: 215.45294pt x 117.43767pt.
- [26 <./img/filtroNumericToNominal.png> <./img/filtroRemoveRange.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+ [27 <./img/filtroNumericToNominal.png> <./img/filtroRemoveRange.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 691--691
 []|\T1/pbk/db/n/12 Correctly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 691--691
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 691--691
 []|\T1/pbk/db/n/12 Incorrectly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--668
+Underfull \hbox (badness 10000) in paragraph at lines 691--691
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
 []|\T1/pbk/db/n/12 Correctly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
 []|\T1/pbk/db/n/12 Incorrectly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--689
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 710--710
+Underfull \hbox (badness 10000) in paragraph at lines 733--733
 []|\T1/pbk/db/n/12 Correctly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 710--710
+Underfull \hbox (badness 10000) in paragraph at lines 733--733
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 710--710
+Underfull \hbox (badness 10000) in paragraph at lines 733--733
 []|\T1/pbk/db/n/12 Incorrectly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 710--710
+Underfull \hbox (badness 10000) in paragraph at lines 733--733
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 731--731
+Underfull \hbox (badness 10000) in paragraph at lines 754--754
 []|\T1/pbk/db/n/12 Correctly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 731--731
+Underfull \hbox (badness 10000) in paragraph at lines 754--754
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 731--731
+Underfull \hbox (badness 10000) in paragraph at lines 754--754
 []|\T1/pbk/db/n/12 Incorrectly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 731--731
+Underfull \hbox (badness 10000) in paragraph at lines 754--754
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 []|\T1/pbk/db/n/12 Correctly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 []|\T1/pbk/db/n/12 Incorrectly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 774--774
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
-[27] [28] [29] [30] (./icomp-modelomonografia-pf.bbl
-(./icomp-modelomonografia-pf.brf)
+[28] [29] [30]
+<img/instanciasClassificadasCorretamente.png, id=373, 812.03375pt x 569.12625pt
+>
+File: img/instanciasClassificadasCorretamente.png Graphic file (type png)
+ <use img/instanciasClassificadasCorretamente.png>
+Package pdftex.def Info: img/instanciasClassificadasCorretamente.png used on in
+put line 792.
+(pdftex.def)             Requested size: 487.22401pt x 341.47838pt.
+
+Overfull \hbox (32.22401pt too wide) in paragraph at lines 792--793
+ [] 
+ []
+
+[31 <./img/instanciasClassificadasCorretamente.png>]
+(./icomp-modelomonografia-pf.bbl (./icomp-modelomonografia-pf.brf)
 \tf@brf=\write5
 \openout5 = `icomp-modelomonografia-pf.brf'.
 
- [31
+ [32
 
 ]
 bibitemlist
-[32
+[33
 
-]) [33]
+]) [34]
 \tf@lof=\write6
 \openout6 = `icomp-modelomonografia-pf.lof'.
 
@@ -1325,11 +1359,11 @@ bibitemlist
 \tf@toc=\write8
 \openout8 = `icomp-modelomonografia-pf.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 847.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 847.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 866.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 866.
  (./icomp-modelomonografia-pf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 847.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 847.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 866.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 866.
 
 
 Package rerunfilecheck Warning: File `icomp-modelomonografia-pf.brf' has change
@@ -1337,39 +1371,41 @@ d.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `icomp-modelomonografia-pf.brf':
-(rerunfilecheck)             Before: 4F3CBF16AD102007F31813AE1C705D8F;1544
-(rerunfilecheck)             After:  98666A27885A6E2C34FE22F96B32CA63;1544.
+(rerunfilecheck)             Before: A5B72E378C9B318308031DAF2BD09C6C;1606
+(rerunfilecheck)             After:  898ECEFC2C05EF05A2643847A8DBD590;1606.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 847.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 866.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 803 (\begingroup)
+### semi simple group (level 2) entered at line 822 (\begingroup)
 ### semi simple group (level 1) entered at line 376 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14206 strings out of 493089
- 210316 string characters out of 6134842
- 395291 words of memory out of 5000000
- 17247 multiletter control sequences out of 15000+600000
- 34715 words of font info for 131 fonts, out of 8000000 for 9000
+ 14218 strings out of 493089
+ 210756 string characters out of 6134842
+ 393408 words of memory out of 5000000
+ 17258 multiletter control sequences out of 15000+600000
+ 34522 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,13n,36p,1101b,5906s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,36p,1101b,5910s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb>
-Output written on icomp-modelomonografia-pf.pdf (34 pages, 957604 bytes).
+}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb>
+Output written on icomp-modelomonografia-pf.pdf (35 pages, 1083181 bytes).
 PDF statistics:
- 563 PDF objects out of 1000 (max. 8388607)
- 499 compressed objects within 5 object streams
- 117 named destinations out of 1000 (max. 500000)
- 12174 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 580 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 12171 words of extra memory for PDF output out of 14400 (max. 10000000)
 

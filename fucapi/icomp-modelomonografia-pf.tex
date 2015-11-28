@@ -129,7 +129,6 @@
 % ---
 % Inserir folha de aprovação
 % ---
-
 % Isto é um exemplo de Folha de aprovação, elemento obrigatório da NBR
 % 14724/2011 (seção 4.2.1.3). Você pode utilizar este modelo até a aprovação
 % do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
@@ -137,7 +136,6 @@
 %
 % \includepdf{folhadeaprovacao_final.pdf}
 %
-
 %\begin{folhadeaprovacao}
 %	\parindent=0pt
 %	\setlength{\ABNTEXsignskip}{1.5cm}
@@ -161,7 +159,6 @@
 %	\end{center}
 %  
 %\end{folhadeaprovacao}
-
 % ---
 % Dedicatória
 % ---
@@ -282,7 +279,7 @@
 
 	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso surgiu uma abordagem de técnicas e ferramentas que buscam transformar dados, denominada Descoberta de Conhecimento em Base de Dados (knowledge Discovery in Databases - KDD), que foi proposto em 1989 com o objetivo de analisar os dados de uma base para que de alguma forma possa ser extraído conhecimento útil \cite{fayyad:1996}.	
 	
-	A computação tem apoiado o desenvolvimento da medicina em diversas áreas: em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras. Desta maneira, esse grande volume de dados é uma valiosa fonte de conhecimento que pode ser utilizada para o auxílio ao diagnóstico médico. Assim, é grande a importância do desenvolvimento de técnicas que permitam a descoberta de conhecimento em base de dados médicos para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista (COSTA, 2012).
+	A computação tem apoiado o desenvolvimento da medicina em diversas áreas como em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras. Desta maneira, esse grande volume de dados é uma valiosa fonte de conhecimento que pode ser utilizada para o auxílio ao diagnóstico médico. Assim, é grande a importância do desenvolvimento de técnicas que permitam a descoberta de conhecimento em base de dados médicos para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista (COSTA, 2012).
     
     \newpage
 	\section{Especificação do problema}
@@ -309,8 +306,6 @@
 
 			\item Identificar qual classificador é mais adequado para o trabalho.
 			
-			\item Utilizar atributos mais relevantes para aplicação da técnica selecionada
-			
 			\item Tratar o conjunto de dados para aplicação do classificador
 			
 			\item Construir o modelo classificador
@@ -331,7 +326,7 @@
 	\begin{itemize}
 		\item A extração da acurácia de classificação para predição do diagnóstico de dengue.
 		\item Comparação de diferentes algoritmos de mineração no conjunto de dados de dengue.
-		\item Identificar os algoritmos com melhor desempenho para previsão dos diagnósticos.
+		\item Identificação dos algoritmos com melhor desempenho para previsão dos diagnósticos.
 	\end{itemize}
 	
 	No trabalho de \cite{thitiprayoonwongse:2012}, foi utilizado a técnica de classificação conhecida como Árvore de Decisão, aplicado a um conjunto de dados temporais contendo dados clínicos e laboratoriais. Utilizaram dois conjuntos de dados com mais de 400 atributos. Nos experimentos os dados foram divididos em: conjunto de teste e treinamento. Onde o objetivo principal deste trabalho foi identificar o dia zero da dengue, pois esta previsão torna-se crítica, tendo em vista que o dia zero tem forte relação com o melhor tratamento do paciente.
@@ -340,14 +335,11 @@
 
 	\section{Metodologia de Desenvolvimento}
 		
-		Com base na metodologia utilizada no processo de Descoberta de Conhecimento em Base de Dados (Knowledge Dicovery in Databases), a realização desta pesquisa será composta das seguintes etapas:
+		Com base na metodologia utilizada no processo de Descoberta de Conhecimento em Base de Dados (Knowledge Dicovery in Databases) definida em \cite{fayyad:1996}, a realização desta pesquisa será composta das seguintes etapas:
 		
 		\begin{itemize}
-			\item A primeira etapa deste trabalho baseada na revisão bibliográfica da literatura relacionada a mineração de dados, para determinar outras pesquisas similares a esta, onde são aplicadas as técnicas de mineração de dados em base de dados médicos para descoberta de conhecimento novo e relevante, que de alguma forma possa auxiliar em diagnósticos do médico especialista.
 			
-			\item Na segunda etapa, ocorrerá a extração, manutenção e pré-processamento dos dados, onde realizaremos a análise de base de dados para extração de informações de atendimentos de pacientes necessários à pesquisa. Em todos os dados ocorrerá um processo de normalização, onde os sintomas relacionados serão dispostos em uma única linha e nos dados ausentes o preenchimento será realizado de forma padrão utilizando o sinal de "?".
-			
-			\item Na quarta etapa, pode-se executar algoritmos para descoberta do que mais se aproxima do esperado e na extração de informações propriamente dita. O objetivo desta etapa será encontrar padrões na base de dados que foi pré-processada, utilizando a ferramenta de mineração de dados WEKA, um software open-source amplamente utilizado por implementar diversos algoritmos de mineração de dados \cite{hall:2009}.
+			\item Na primeira etapa, ocorrerá a extração, manutenção e pré-processamento dos dados, onde será realizada a análise de base de dados para extração de informações de atendimentos de pacientes necessários à pesquisa. 
 			
 			\item A quinta e última etapa do processo ocorrerá a análise dos resultados obtidos com a a aplicação dos algoritmos de mineração de dados. Encontrar padrões de classificação que sejam relevantes para a pesquisa em questão.
 			
@@ -355,12 +347,14 @@
 	
 	\section{Estruturação da Monografia}
 	
-		Além deste capítulo introdutório, este trabalho está organizado da forma descrita à seguir. No Capítulo 2, descrevemos conceitos básicos relacionados a compreensão deste trabalho, bem como referencial teórico. No Capítulo 3, apresentaremos os experimentos juntamente com os resultados obtidos. Finalmente no Capítulo 4, apresentaremos as conclusões observadas e sugestões de trabalhos futuros da pesquisa.
+		Além deste capítulo introdutório, este trabalho está organizado da forma descrita à seguir. No Capítulo 2, será descrito conceitos básicos relacionados a compreensão deste trabalho, bem como referencial teórico. No Capítulo 3, será apresentado os experimentos juntamente com os resultados obtidos. Finalmente no Capítulo 4, será apresentado as conclusões observadas e sugestões de trabalhos futuros da pesquisa.
 
 % ---
 % Capítulo 2
 % ---
 \chapter{Referencial Teórico}
+
+Este Capitulo apresenta uma visão geral dos conceitos envolvidos nas várias técnicas de classificação utilizadas ao longo deste trabalho.
 
 Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos envolvidos em KDD e consequentemente em Data Mining. Apresentam-se também os trabalhos encontrados na literatura sobre assunto que são relevantes para o desenvolvimento deste trabalho.
 
@@ -370,7 +364,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	Em contrapartida, no trabalho de \cite{thome:2002}, define-se KDD como sendo a busca de extração de conhecimento de bases de dados utilizando-se de técnicas e algoritmos que realizam a mineração dos dados para trabalhar e descobrir relações.
 	
-	O processo de descoberta de conhecimento ocorre quando ocorre um conjunto de padrões que são semelhantes, e que podem levar a construção de um modelo. Este processo é formado por 5 etapas: seleção, pré-processamento, transformação, a mineração de dados e a interpretação dos dados \cite{fayyad:1996}. Além do processo, o conhecimento que se deseja buscar deve estar de acordo com três características: deve ser correto, deve ser compreensível para o usuário e deve ter de alguma forma utilidade para o usuário \cite{freitas:2000}.
+	O processo de descoberta de conhecimento ocorre quando um conjunto de padrões que são semelhantes, e que podem levar a construção de um modelo. Este processo é formado por 5 etapas: seleção, pré-processamento, transformação, a mineração de dados e a interpretação dos dados \cite{fayyad:1996}. Além do processo, o conhecimento que se deseja buscar deve estar de acordo com três características: deve ser correto, deve ser compreensível para o usuário e deve ter de alguma forma utilidade para o usuário \cite{freitas:2000}.
 	
 	A seguir serão detalhadas as etapas do processo de KDD de acordo com o apresentado na figura 1.
 	
@@ -418,7 +412,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		
 	\section{Técnicas de Classificação}
 	
-	Uma técnica de classificação é uma abordagem sistemática para construção de modelos de classificação a partir de im conjunto de dados de entrada. Exemplos incluem classificadores de árvores de decisão, classificadores baseados em regras, redes neurais, máquinas de vetores de suporte e classificadores Bayes simples. Cada técnica emprega um algoritmo de aprendizagem para identificar um modelo que seja mais apropriado para o relacionamento entre o conjunto de atributos e o rótulo da classe dos dados de entrada. O modelos gerado pelo algoritmo de aprendizagem deve se adaptar bem aos dados de entrada e prever corretamente os rótulos de classes de registros que ele nunca viu antes. Portanto, o objetivo chave do algoritmo de aprendizagem é construir modelos com boa capacidade de generalização \cite{tan:2009}.
+	Uma técnica de classificação é uma abordagem sistemática para construção de modelos de classificação a partir de um conjunto de dados de entrada. Exemplos incluem classificadores de árvores de decisão, classificadores baseados em regras, redes neurais, máquinas de vetores de suporte e classificadores Bayes simples. Cada técnica emprega um algoritmo de aprendizagem para identificar um modelo que seja mais apropriado para o relacionamento entre o conjunto de atributos e o rótulo da classe dos dados de entrada. O modelos gerado pelo algoritmo de aprendizagem deve se adaptar bem aos dados de entrada e prever corretamente os rótulos de classes de registros que ele nunca viu antes. Portanto, o objetivo chave do algoritmo de aprendizagem é construir modelos com boa capacidade de generalização \cite{tan:2009}.
 	
 	A Figura \ref{figabordagemModeloClassificacao} mostra uma abordagem geral para resolver problemas de classificação. Primeiro, um conjunto de treinamento consistindo de registros cujos rótulos sejam conhecidos e devem ser fornecidos. O conjunto de treinamento é usado para construir um modelo de classificação, que é subsequentemente aplicado ao conjunto de teste, que consiste de registros com rótulos de classes desconhecidas \cite{tan:2009}.
 	\\
@@ -436,15 +430,38 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		Em uma árvore de decisão, cada nodo folha recebe um rótulo de classe. os nodos não terminais, que incluem o nodo raiz e outros nodos internos, contêm condições de testes de atributos para separar registros que possuem características diferentes.
 		
 		Classificar um registro de testes é direto, assim que uma árvore de decisão tenha sido construída. Começando do nodo raiz, aplicamos a condição de teste ao registro e seguimos a ramificação apropriada baseados no resultado do teste. Isto nos levará a um outro nodo interno, para o qual uma nova condição de teste é aplicada, ou a um nodo folha \cite{tan:2009}.
-		
-		
-	\subsection{Bayes}
 	
-	Em muitas aplicações, o relacionamento entre o conjunto de atributos e a variável classe é não determinístico. O rótulo da classe de um registro de teste não pode ser previsto com certeza embora seu conjunto de atributos seja idêntico a alguns dos exemplos de treinamento. Esta situação pode surgir por causa de dados com ruídos oud a presença de determinados fatores de confusão que afetam a classificação mas que não são incluídos na análise.
+	\subsubsection{Algoritmo J48}
+	
+	\subsubsection{Algoritmo RandomTree}
+	
+	\subsubsection{Algoritmo REPTree}
+			
+	\subsection{Teorema de Bayes}
+	
+	É um teorema usado para calcular a probabilidade condicional , usando em estatística, probabilidade e outras aplicações
+	
+	Em muitas aplicações, o relacionamento entre o conjunto de atributos e a variável classe é não determinístico. O rótulo da classe de um registro de teste não pode ser previsto com certeza embora seu conjunto de atributos seja idêntico a alguns dos exemplos de treinamento. Esta situação pode surgir por causa de dados com ruídos ou da presença de determinados fatores de confusão que afetam a classificação mas que não são incluídos na análise.
+	
+	%Bayes' theorem
+	%--------------
+	\begin{equation}
+		 P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)} 
+	\end{equation}
+	\\
+	Sendo $ P(A\mid B) $ a probabilidade \textbf{posteriori} condicional de A a B, tem-se que:
+	\begin{itemize}
+		\item $P(B \mid A) $ a probabilidade \textbf{posteiori} condicional de B a A.
+		\item $P(A) $ probabilidade \textbf{apriori} de A.
+		\item $P(B )$ probabilidade \textbf{apriori} de B.
+	\end{itemize}
+	\subsubsection{Algoritmo NaiveBayes}
+	O Classificador \textit{NaiveBayes} é uma técnica probabilística baseada no teorema de \textit{Bayes}, expressão, para calcular a probabilidade Posteriori da classe C
+	Em \cite{john:1995}
 	
 	\subsection{Máquinas de Vetores de Suporte (SVM)}
 	
-	Uma técnica de classificação que tem recebido considerável atenção é esta técnica que possui seus fundamentos na teoria de aprendizagem estatística e tem mostrado resultados empíricos promissores em muitas aplicações práticas, desde o reconhecimento de dígitos escritos à mão até a categorização de textos. SVM também funciona bem com dados de alta dimensionalidade e evita o problema da dimensionalidade. Outro aspecto único desta abordagem é que ela representa o limite da decisão usando um subconjunto dos exemplos de treinamento, conhecido com vetores de suporte \cite{tan:2009}.
+	Uma técnica de classificação que tem recebido considerável atenção pois esta técnica possui seus fundamentos na teoria de aprendizagem estatística e tem mostrado resultados empíricos promissores em muitas aplicações práticas, desde o reconhecimento de dígitos escritos à mão até a categorização de textos. SVM também funciona bem com dados de alta dimensionalidade e evita o problema da dimensionalidade. Outro aspecto único desta abordagem é que ela representa o limite da decisão usando um subconjunto dos exemplos de treinamento, conhecido com vetores de suporte \cite{tan:2009}.
 	
 	Na Figura \ref{figsvmHiperPlanos}, existe um conjunto de classificadores lineares que separam duas classes, mas apenas um (em destaque) que maximiza a margem de separação (distância da instância mais próxima ao hiperplano de separação das classes). O hiperplano com margem máxima é chamado de hiperplano ótimo \cite{junior:2010}.
 	\\
@@ -456,6 +473,23 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{center}
 		Fonte: \cite{junior:2010}.
 	\end{figure}
+	
+	\subsubsection{Algoritmo SMO}
+
+	\subsection{Métricas para avaliação de modelo}
+	
+	As métricas mais utilizadas na literatura...
+	
+		\begin{itemize}
+			\item \textit{Correctly Classified Instances}: Mostra o percentual de precisão das instâncias corretamente classificados.
+			\item \textit{Incorrectly Classified Instances} : Mostra o percentual de precisão das instâncias incorretamente classificados.
+			\item \textit{TP Rate}: Taxa de verdadeiros positivos.
+			\item \textit{FP Rate}: Taxa de falsos positivos.
+			\item \textit{Precision}: Percentual de instâncias positivas classificadas corretamente sobre o total de instâncias classificadas como positivas.
+			\item \textit{Recall}: Percentual de instâncias positivas classificadas corretamente sobre o total de instâncias positivas.
+			\item \textit{F-Measure}: É uma média ponderada de \textit{Precision} e \textit{Recall}.
+			\item \textit{ROC Area}: 
+		\end{itemize}
 
 	\section{WEKA}
 	
@@ -640,18 +674,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\section{Resultados}
 	
 	Nesta seção apresentamos os resultados obtidos na aplicação dos classificadores em  5  conjuntos de dados e as medidas resultantes que utilizamos:
-	\begin{itemize}
-		\item \textit{Correctly Classified Instances}: Mostra o percentual de precisão das instâncias corretamente classificados.
-		\item \textit{Incorrectly Classified Instances} : Mostra o percentual de precisão das instâncias incorretamente classificados.
-		\item \textit{TP Rate}: Taxa de verdadeiros positivos.
-		\item \textit{FP Rate}: Taxa de falsos positivos.
-		\item \textit{Precision}: Percentual de instâncias positivas classificadas corretamente sobre o total de instâncias classificadas como positivas.
-		\item \textit{Recall}: Percentual de instâncias positivas classificadas corretamente sobre o total de instâncias positivas.
-		\item \textit{F-Measure}: ë uma média ponderada de \textit{Precision} e \textit{Recall}.
-		\item \textit{ROC Area}: 
-	\end{itemize}
 	
-		\subsection{ZeroR}
 		
 		% Please add the following required packages to your document preamble:
 		% \usepackage[table,xcdraw]{xcolor}
@@ -759,13 +782,18 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{center}
 \end{table}
 
-		\subsection{J48}
-		\subsection{RandomTree}
-		\subsection{REPTree}
-		\subsection{NaiveBayes}
-		\subsection{SMO}
-		
-	\section{Conclusões}
+	\newpage	
+	
+	Como podemos observar na Figura \ref{figinstanciasClassificadasCorretamente}, os modelos com melhores resultados SMO e J48.
+	\\
+	\begin{figure}[!htb]
+		\caption{\label{figinstanciasClassificadasCorretamente} Instâncias Classificadas Corretamente}
+		\begin{center}
+			\includegraphics[scale=0.60]{img/instanciasClassificadasCorretamente.png}
+		\end{center}
+		 Fonte: Próprio Autor.
+	\end{figure}
+	
 % - - -
 % Capítulo 4
 % - - -
@@ -775,26 +803,17 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 
 	\section{Resultados Obtidos}
 
-	As medidas de desepenho resultantes do experimentos na classificação foram: 
+	As medidas de desepenho resultantes do experimentos na classificação foram 
 	
-	\begin{itemize}
-		\item Correctly Classified Instances
-		\item Incorrectly Classified Instances
-		\item TP Rate
-		\item FP Rate
-		\item Precision
-		\item Recall
-		\item F-Measure
-		\item ROC Area
-	\end{itemize}
-
 	\section{Limitações}
 	
 	Neste trabalho não estamos levando em consideração o tempo de criação de cada modelo gerado.
 	
 	\section{Trabalhos Futuros}
 	
-	Como trabalhos futuros
+	Como trabalhos futuros verificamos a oportunidade de estudos na área de geração de modelos em tempo real, para que desta forma o modelo possa ser melhorado a cada nova clasificação.
+	
+	A junção dods conjuntos de dados utilizados com índices de precipitação fluvial da região de onde os dados foram gerados.
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS

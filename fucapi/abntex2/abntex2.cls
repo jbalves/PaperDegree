@@ -1249,7 +1249,7 @@
           \vspace*{\fill}
           %mudei esta linha abaixo para adequar ao padrao da FUCAPI
            {%\fontsize{12}{15}\selectfont\imprimirorientadorRotulo~\par
-             Orientador: \fontsize{12}{15}\selectfont\imprimirorientador\par}
+          \textbf{Orientador: \fontsize{12}{15}\selectfont\imprimirorientador\par}}
              \abntex@ifnotempty{\imprimircoorientador}{%
              	{\large\imprimircoorientadorRotulo~\imprimircoorientador}%
              }%
