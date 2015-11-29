@@ -22,6 +22,13 @@
 {BERRY, M.~J.; LINOFF, G. \emph{Data mining techniques: for marketing, sales,
   and customer support}. [S.l.]: John Wiley \& Sons, Inc., 1997.}
 
+\bibitem[Bhatt et al. 2013]{bhatt:2013}
+\abntrefinfo{Bhatt et al.}{BHATT et al.}{2013}
+{BHATT, S. et al. The global distribution and burden of dengue.
+\emph{Nature}, Nature Publishing Group, a division of Macmillan Publishers
+  Limited. All Rights Reserved., v.~496, n.~7446, p. 504--507, 04 2013.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1038/nature12060}.}
+
 \bibitem[Costa 2012]{costa:2012}
 \abntrefinfo{Costa}{COSTA}{2012}
 {COSTA, A.~F.
@@ -80,11 +87,18 @@ Acessado em Novembro de 2015.}
   \url{http://dados.fortaleza.ce.gov.br/catalogo/dataset/notificacoes-de-dengue-ref-01-06-2015}.
 Acessado em 2015.}
 
-\bibitem[Santos e Neto]{santos:2011}
-\abntrefinfo{Santos e Neto}{SANTOS; NETO}{}
+\bibitem[Oracle 2015]{oracle:2015}
+\abntrefinfo{Oracle}{ORACLE}{2015}
+{ORACLE. 2015.
+Dispon{\'\i}vel em:
+  \url{https://www.java.com/pt\_BR/download/faq/whatis\_java.xml}.}
+
+\bibitem[Santos e Neto 2011]{santos:2011}
+\abntrefinfo{Santos e Neto}{SANTOS; NETO}{2011}
 {SANTOS, M.~S.; NETO, J.~C. da C. Amagodis: Algoritmos de minera{\c{c}}{\~a}o
   para apoio {\`a} ger{\^e}ncia de ocorr{\^e}ncias de dengue a partir de
-  informa{\c{c}}{\~o}es presentes na base dados do sinan.}
+  informa{\c{c}}{\~o}es presentes na base dados do sinan.
+2011.}
 
 \bibitem[Sa{\'u}de 2008]{saude:2008}
 \abntrefinfo{Sa{\'u}de}{SA{\'U}DE}{2008}
@@ -97,6 +111,12 @@ Acessado em 2015.}
 {SA{\'U}DE, M. da. Dengue: diagn{\'o}stico e manejo cl{\'i}nico: adulto e
   crian{\c{c}}a.
 \emph{Departamento de Aten{\c{c}}{\~a}o B{\'a}sica}, 2013.}
+
+\bibitem[Sa{\'u}de 2015]{MS:2015}
+\abntrefinfo{Sa{\'u}de}{SA{\'U}DE}{2015}
+{SA{\'U}DE, M. da. 2015.
+Dispon{\'\i}vel em:
+  \url{http://portalsaude.saude.gov.br/index.php/o-ministerio/principal/secretarias/svs/dengue}.}
 
 \bibitem[Shakil, Anis e Alam 2015]{shakil:2015}
 \abntrefinfo{Shakil, Anis e Alam}{SHAKIL; ANIS; ALAM}{2015}
@@ -122,5 +142,10 @@ Acessado em 2015.}
 {THOM{\'E}, A. C.~G. Redes neurais: uma ferramenta para kdd e data mining.
 \emph{Material Did{\'a}tico http://equipe. nce. ufrj.
   br/thome/grad/nn/mat\_didatico/apostila\_kdd\_mbi. pdf, Outubro}, 2002.}
+
+\bibitem[Waikato 2015]{weka:2015}
+\abntrefinfo{Waikato}{WAIKATO}{2015}
+{WAIKATO, T.~U. of. 2015.
+Dispon{\'\i}vel em: \url{http://www.cs.waikato.ac.nz/ml/weka/}.}
 
 \end{thebibliography}

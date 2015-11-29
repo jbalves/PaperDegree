@@ -166,13 +166,10 @@
 %   \vspace*{\fill}
 %   \noindent
 %   \leftskip=5cm
-
 %   Homenagem que o autor presta a uma ou mais pessoas.
-
 %   \vspace{5cm}
 %\end{dedicatoria}
 % ---
-
 % ---
 % Agradecimentos
 % ---
@@ -207,9 +204,9 @@
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
 
- 	A tarefa de classificação em \textit{Data Mining} consiste na predição de classe dado um determinado conjunto de atributos de uma instância. Esta técnica pode ser útil em auxílio ao diagnóstico médico, como ferramenta de apoio ao profissional da saúde. As melhores técnicas para esta tarefa na literatura, em geral, usam máquinas de vetores de suporte e árvore de decisão. Nestas técnicas é utilizado o conceito de hiperplano para separa de uma melhor forma as classes existentes num conjunto de dados, também, pode-se verificar o uso da ideia de dividir para conquistar na identificação dos melhores atributos capazes de resultados mais eficientes no processo de predição. Como resultado, obtivemos modelos classificadores, baseados em SMO e J48, que alcançaram resultados de 89,61\% e 86,63\% respectivamente no conjunto de dados utilizado neste trabalho. Também observamos que os modelos gerados obtiveram melhores resultados à medida que os experimentos no tamanho do conjunto de dados aumentava.
+ 	A tarefa de classificação em \textit{Data Mining} consiste na predição de classe dado um determinado conjunto de atributos de uma instância. Esta técnica pode ser útil no diagnóstico médico, como ferramenta de apoio ao profissional da saúde. Na literatura, as melhores técnicas para classificação utilizam máquinas de vetores de suporte e árvore de decisão. Tais técnicas utilizam o conceito de hiperplano para separar de uma melhor forma as classes existentes em conjuntos de dados, também pode-se verificar o uso da divisão e conquista na identificação dos melhores atributos, sendo capazes de produzir resultados mais eficientes no processo de predição. Como resultado, obtivemos modelos classificadores baseados em SMO e J48, que alcançaram resultados de 89,61\% e 86,63\% na classificação correta de instâncias, respectivamente nos conjuntos de dados utilizados neste trabalho, mostrando resultados satisfatórios em relação ao classificador ZeroR utilizando como \textit{baseline}. Foi possível observar também que os modelos gerados obtiveram melhores resultados à medida que os experimentos no tamanho do conjunto de dados aumentava.
 
- \textit{Palavras-chave}: Data Mining, Classificação, Árvore de Decisão, Bayes, Support Vector Machine.
+ \textit{Palavras-chave}: Mineração de Dados, Classificação, Árvore de Decisão, Bayes, Máquina de Vetor de Suporte.
 
 \end{resumo}
 
@@ -246,10 +243,10 @@
 % inserir lista de abreviaturas e siglas
 % ---
 \begin{siglas}
-  \item[KDD] Knowledge Discovery in Databases
-  \item[WEKA] Waikato Environment for Knowledge Analysis
-  \item[SVM] Support Vector Machine
-  \item[SMO] Sequential Minimal Optimization
+  \item[KDD] \textit{Knowledge Discovery in Databases}
+  \item[WEKA] \textit{Waikato Environment for Knowledge Analysis}
+  \item[SVM] \textit{Support Vector Machine}
+  \item[SMO] \textit{Sequential Minimal Optimization}
   \item[SINAN] Sistema de Informação de Agravos de Notificação
   \item[SUS] Sistema Único de Saúde
 \end{siglas}
@@ -277,51 +274,60 @@
 
 \chapter{Introdução}
 
-	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso surgiu uma abordagem de técnicas e ferramentas que buscam transformar dados, denominada Descoberta de Conhecimento em Base de Dados (knowledge Discovery in Databases - KDD), que foi proposto em 1989 com o objetivo de analisar os dados de uma base para que de alguma forma possa ser extraído conhecimento útil \cite{fayyad:1996}.	
+	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso, surgiram diversas abordagens, técnicas e ferramentas que buscam transformar dados, também conhecida por Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Discovery in Databases - KDD}). Tal abordagem foi proposta em 1989, com o objetivo de analisar os dados de uma base afim de extrair conhecimento útil \cite{fayyad:1996}.	
 	
-	A computação tem apoiado o desenvolvimento da medicina em diversas áreas como em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras. Desta maneira, esse grande volume de dados é uma valiosa fonte de conhecimento que pode ser utilizada para o auxílio ao diagnóstico médico. Assim, é grande a importância do desenvolvimento de técnicas que permitam a descoberta de conhecimento em base de dados médicos para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista (COSTA, 2012).
+	A computação tem apoiado o desenvolvimento da medicina em diversas áreas como em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras \cite{costa:2012}. Desta maneira, esse grande volume de dados é uma fonte valiosa de conhecimentos que pode ser utilizada como auxílio ao diagnóstico médico. Com base nisso, é necessário o desenvolvimento de técnicas que permitam a descoberta de conhecimentos em base de dados médicos, para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
     
     \newpage
 	\section{Especificação do problema}
 		
-		Ao longo dos últimos anos a mineração de dados tem sido cada vez mais utilizada na literatura médica. No entanto, a sua aplicação à analise de dados médicos tem sido relativamente limitada, tendo em vista que a aplicação prática pode explorar o conhecimento disponível no contexto clínico e explicar decisões propostas, uma vez que os modelos são utilizados para apoiar decisões \cite{bellazzi:2008}.
+		Ao longo dos últimos anos a mineração de dados tem sido cada vez mais utilizada na literatura médica. No entanto, a sua aplicação na análise de dados médicos tem sido relativamente limitada, tendo em vista que a aplicação prática pode explorar o conhecimento disponível no contexto clínico e explicar decisões propostas \cite{bellazzi:2008}. Faz-se importante o desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases de dados médicos, que possam apoiar o profissional em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 		
-		É grande a importância do desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases de dados médicos para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
-		
-		A dengue é hoje uma das doenças com maior incidência no Brasil, atingindo a população de todos os estados, independente de classe social. Nesse cenário, torna-se imperioso que um conjunto de ações para a prevenção da doença seja intensificado, permitindo assim a identificação precoce dos casos de dengue, a tomada de decisões e a implementação de medidas de maneira oportuna a fim de principalmente evitar óbitos. Preservar a vida humana é obrigação de todos.
-		
-		A classificação epidemiológica dos casos de dengue, que é feita habitualmente após desfecho clínico, na maioria das vezes é restrospectiva e depende de informações clínicas e laboratoriais disponíveis ao final do acompanhamento médico. Esses critérios não permitem o reconhecimento precoce de formas potencialmente graves, para as quais é crucial a instituição do tratamento imediato \cite{saude:2013}.
+		Segundo \cite{saude:2013}, a dengue é uma das doenças com maior incidência no Brasil, atingindo a população de todos os estados, independente de classe social. Diante disto, faz-se necessário que um conjunto de ações com intuito de combater os casos de dengue sejam realizadas. Dentre elas temos a previsão de forma antecipada de possíveis novos casos.
+		\begin{comment}
+		Nesse cenário, torna-se importante que um conjunto de ações para a prevenção da doença seja intensificado, permitindo assim a identificação precoce dos casos de dengue, a tomada de decisões e a implementação de medidas de maneira oportuna a fim de principalmente evitar óbitos.
+		\end{comment}
+		A classificação epidemiológica dos casos de dengue, que é feita habitualmente após desfecho clínico, na maioria das vezes é retrospectiva, dependendo de informações clínicas e laboratoriais, disponíveis no final do acompanhamento médico. Esses critérios não permitem o reconhecimento precoce de formas potencialmente graves, para as quais é crucial para a instituição de tratamento imediato \cite{saude:2013}.
 
 
 	\section{Objetivos}
 	
 		\subsection{Objetivo Geral}
 
-		Construir um classificador que utilize dentre as diversas técnicas de classificação em Data Mining e avaliar a que mais se adequa ao conjunto de dados utilizados no SINAN dengue do município de Fortaleza. 
+		Construir modelos utilizando as técnicas de classificação em \textit{Data Mining} conhecidas como: Árvore de Decisão, \textit{Bayes} e \textit{Support Vector Machine}. Avaliar a que mais se adequa ao conjunto de dados utilizados no SINAN (Sistema de Informação de Agravos de Notificação) Dengue do município de Fortaleza. 
 		
 		\subsection{Objetivos Específicos}
 		
 		\begin{itemize}
-			\item Realizar experimentos com classificadores mais utilizados na literatura.
+			\item Dividir o conjunto de dados na seguinte quantidade de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000;
+			
+			\item Utilizar atributos mais relevantes na tarefa de Classificação;
+			
+			\item Construir modelos clasificadores com os algoritmos de classificação: J48, REPTree, RandomTree, NaiveBayes e SMO;
 
-			\item Identificar qual classificador é mais adequado para o trabalho.
+			\item Identificar qual modelos obteve melhor desempenho no trabalho;
 			
-			\item Tratar o conjunto de dados para aplicação do classificador
-			
-			\item Construir o modelo classificador
-			
-			\item Validar e interpretar os resultados obtidos no processo de classificação
+			\item Validar e interpretar os resultados obtidos no processo de classificação.
 		\end{itemize}
 		
 	\section{Justificativa}
 	
+	\begin{comment}
 	Considera-se a dengue um dos maiores problemas de saúde pública do mundo, especialmente nos países tropicais, cujas condições sócio-ambientais favorecem o desenvolvimento e a proliferação do seu principal vetor o \textsl{Aedes aegypti}. A dengue é, hoje, uma das doenças mais frenquentes no Brasil, atingindo a população em todos os estados, independente de classe social \cite{saude:2008}.
+	\end{comment}
+	Transmitida pelo mosquito \textit{Aedes aegypti}, a dengue é uma doença viral que se espalha rapidamente pelo mundo. Segundo a Organização Mundial da Saúde (OMS) por volta de 100 milhões de pessoas são infectadas por dengue anualmente, em mais de 100 países, sendo que 2,5 bilhões de pessoas estão sob o risco de infecção, tornando-se assim um dos maiores problemas de saúde pública no mundo \cite{bhatt:2013}. A dengue é, hoje, uma das doenças mais frequentes no Brasil, atingindo a população em todos os estados, idependente de classe social \cite{saude:2008}.
 	
-	O desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases médicas possui grande importância para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e a eficiência dos diagnósticos elaborados pelo especialista. Esse apoio computacional pode atuar como uma junta médica virtual, ao trazer para o especialista o conhecimento armazenado em exames e diagnósticos relacionados \cite{costa:2012}.
+	Na região das Américas, a doença tem se disseminado com surtos cíclicos ocorrendo a cada 3/5 anos. No Brasil, a transmissão vem ocorrendo de forma continuada desde 1986, intercalando-se com a ocorrência de epidemias, geralmente associadas com a introdução de novos sorotipos em áreas anteriormente indenes ou alteração do sorotipo predominante. O maior surto no Brasil ocorreu em 2013, com aproximadamente 2 milhões de casos notificados. Atualmente, circulam no país os quatro sorotipos da doença \cite{MS:2015}.
+	
+	\begin{comment}
+	O desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases médicas possui grande importância para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e a eficiência dos diagnósticos elaborados pelo especialista. 
+
+	Esse apoio computacional pode atuar como uma junta médica virtual, ao trazer para o especialista o conhecimento armazenado em exames e diagnósticos relacionados \cite{costa:2012}.
+	\end{comment}
 	
 	\section{Trabalhos Relacionados}	
 	
-	No trabalho de \cite{shakil:2015}, observamos que o foco principal do trabalho foi a classificação de dengue, onde inicialmente aplicou-se a classificação nos datasets iniciais para identificar qual algoritmo obteve melhor resultado. O experimentos releram que os algoritmos Naive Bayes e J48 obtiveram melhores resultados, onde as maiores contribuições do trabalho foram:
+	No trabalho de \cite{shakil:2015}, observamos que o foco principal do trabalho foi a classificação de dengue, onde inicialmente aplicou-se a classificação nos \textit{datasets} iniciais para identificar qual algoritmo obteve melhor resultado. Os experimentos mostraram que os algoritmos Naive Bayes e J48 obtiveram melhores resultados, onde as maiores contribuições do trabalho foram:
 	
 	\begin{itemize}
 		\item A extração da acurácia de classificação para predição do diagnóstico de dengue.
@@ -329,15 +335,17 @@
 		\item Identificação dos algoritmos com melhor desempenho para previsão dos diagnósticos.
 	\end{itemize}
 	
-	No trabalho de \cite{thitiprayoonwongse:2012}, foi utilizado a técnica de classificação conhecida como Árvore de Decisão, aplicado a um conjunto de dados temporais contendo dados clínicos e laboratoriais. Utilizaram dois conjuntos de dados com mais de 400 atributos. Nos experimentos os dados foram divididos em: conjunto de teste e treinamento. Onde o objetivo principal deste trabalho foi identificar o dia zero da dengue, pois esta previsão torna-se crítica, tendo em vista que o dia zero tem forte relação com o melhor tratamento do paciente.
+	No trabalho de \cite{thitiprayoonwongse:2012}, foi utilizada a técnica de classificação conhecida como Árvore de Decisão \cite{tan:2009}, aplicado a um conjunto de dados temporais contendo dados clínicos e laboratoriais com mais de 400 atributos. Nos experimentos, os dados foram divididos em: conjunto de teste e treinamento, de modo que, o seu objetivo principal foi identificar o dia zero da dengue, pois esta previsão torna-se crítica, tendo em vista que o dia zero tem forte relação com o melhor tratamento do paciente.
 	
-	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN. Onde resultou uma aplicação em java que implementa algoritmos de classificação e regras de associação da base de dados do SINAN utilizando a API WEKA. Como resultado esta ferramenta possibilitou o auxílio no diagnóstico de pacientes.	
+	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN (Sistema de Informação de Agravos de Notificação). Tal aplicativo, escrito em  \textit{Java}\cite{oracle:2015}, implementa algoritmos de classificação e regras de associação da base de dados do SINAN, utilizando o \textit{software} WEKA (\textit{Waikato Environment for Knowledge Analysis}) \cite{weka:2015}. Como resultado, esta ferramenta possibilitou o auxílio no diagnóstico de pacientes.	
 
 	\section{Metodologia de Desenvolvimento}
 		
-		Com base na metodologia utilizada no processo de Descoberta de Conhecimento em Base de Dados (Knowledge Dicovery in Databases) definida em \cite{fayyad:1996}, a realização desta pesquisa será composta das seguintes etapas:
+		Com base na metodologia utilizada no processo de Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Dicovery in Databases}) definida em \cite{fayyad:1996}, a realização desta pesquisa será composta das seguintes etapas:
 		
 		\begin{itemize}
+			
+			\item A primeira etapa deste trabalho baseado na revisão bibliográfica da literatura relacionada à mineração de dados, para determinar trabalhos relacionados
 			
 			\item Na primeira etapa, ocorrerá a extração, manutenção e pré-processamento dos dados, onde será realizada a análise de base de dados para extração de informações de atendimentos de pacientes necessários à pesquisa. 
 			
@@ -354,7 +362,7 @@
 % ---
 \chapter{Referencial Teórico}
 
-Este Capitulo apresenta uma visão geral dos conceitos envolvidos nas várias técnicas de classificação utilizadas ao longo deste trabalho.
+Este Capítulo apresenta uma visão geral dos conceitos envolvidos nas várias técnicas de classificação utilizadas ao longo deste trabalho.
 
 Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos envolvidos em KDD e consequentemente em Data Mining. Apresentam-se também os trabalhos encontrados na literatura sobre assunto que são relevantes para o desenvolvimento deste trabalho.
 
@@ -497,7 +505,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		
 	\section{Dados Abertos}
 
-	Utilizamos a base de dados disponibilizada pelo portal de dados abertos da prefeitura do Rio de Janeiro de casos notificados de dengue. O portal de dados abertos de Fortaleza é um espaço desenvolvido pela Coordenadoria de Ciência, Tecnologia e Inovação da Prefeitura de Fortaleza (CITINOVA) para que a sociedade possa encontrar e utlizar os dados e informações públicas da cidade de Fortaleza. Os dados são publicados em formatos abertos que permitem sua reutilização em aplicativos digitais desenvolvidos por e para qualquer pessoa. Além disso, o portal serve como uma ferramenta de interlocução com a sociedade fortalezense para pensar e promover  a inovação e a criatividade em prol da melhoria de serviços e da vida na cidade de Fortaleza. O portal de dados abertos de Fortaleza está em conformidade com os princípios da administração pública e observâncias às recomendações aceitas internacionalmente, como as emitidas pela Open Knowledge Foundation e pelo Consórcio W3C Internacional.
+	Utilizamos a base de dados disponibilizada pelo portal de dados abertos da prefeitura do Município de Fortaleza de casos notificados de dengue. O portal de dados abertos de Fortaleza é um espaço desenvolvido pela Coordenadoria de Ciência, Tecnologia e Inovação da Prefeitura de Fortaleza (CITINOVA) para que a sociedade possa encontrar e utlizar os dados e informações públicas da cidade de Fortaleza. Os dados são publicados em formatos abertos que permitem sua reutilização em aplicativos digitais desenvolvidos por e para qualquer pessoa. Além disso, o portal serve como uma ferramenta de interlocução com a sociedade fortalezense para pensar e promover  a inovação e a criatividade em prol da melhoria de serviços e da vida na cidade de Fortaleza. O portal de dados abertos de Fortaleza está em conformidade com os princípios da administração pública e observâncias às recomendações aceitas internacionalmente, como as emitidas pela Open Knowledge Foundation e pelo Consórcio W3C Internacional.
 		
 		
 	\section{SINAN}
