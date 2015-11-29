@@ -1,12 +1,19 @@
 \select@language {brazil}
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Etapas do processo KDD.}}{15}{figure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Abordagem geral para a constru\IeC {\c c}\IeC {\~a}o de um modelo de classifica\IeC {\c c}\IeC {\~a}o }}{18}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Conjunto de hiperplanos poss\IeC {\'\i }veis}}{20}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Data Set Original}}{25}{figure.3.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Erro ao Carregar Inst\IeC {\^a}ncias}}{25}{figure.3.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Erro Mencionado pelo WEKA}}{25}{figure.3.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Filtro \textit {RemoveUseless}}}{26}{figure.3.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Filtro \textit {NumericToNominal}}}{27}{figure.3.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Filtro \textit {RemoveRange}}}{27}{figure.3.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Inst\IeC {\^a}ncias Classificadas Corretamente}}{31}{figure.3.10}
+\contentsline {figure}{\numberline {1}{\ignorespaces Etapas do processo KDD.}}{16}{figure.2.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Abordagem geral para a constru\IeC {\c c}\IeC {\~a}o de um modelo de classifica\IeC {\c c}\IeC {\~a}o }}{19}{figure.2.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Conjunto de hiperplanos poss\IeC {\'\i }veis}}{21}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Data Set Original}}{26}{figure.3.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Erro ao Carregar Inst\IeC {\^a}ncias}}{26}{figure.3.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Erro Mencionado pelo WEKA}}{26}{figure.3.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Filtro \textit {RemoveUseless}}}{27}{figure.3.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Filtro \textit {NumericToNominal}}}{28}{figure.3.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Filtro \textit {RemoveRange}}}{28}{figure.3.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Metodologia Processo dos Experimentos}}{29}{figure.3.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces TP Rate}}{33}{figure.3.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces FP Rate}}{34}{figure.3.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 5K Inst\IeC {\^a}ncias}}{35}{figure.4.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 10K Inst\IeC {\^a}ncias}}{36}{figure.4.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 15K Inst\IeC {\^a}ncias}}{37}{figure.4.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 20K Inst\IeC {\^a}ncias}}{38}{figure.4.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 25K Inst\IeC {\^a}ncias}}{39}{figure.4.17}

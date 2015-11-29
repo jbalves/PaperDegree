@@ -317,7 +317,7 @@
 	\end{comment}
 	Transmitida pelo mosquito \textit{Aedes aegypti}, a dengue é uma doença viral que se espalha rapidamente pelo mundo. Segundo a Organização Mundial da Saúde (OMS) por volta de 100 milhões de pessoas são infectadas por dengue anualmente, em mais de 100 países, sendo que 2,5 bilhões de pessoas estão sob o risco de infecção, tornando-se assim um dos maiores problemas de saúde pública no mundo \cite{bhatt:2013}. A dengue é, hoje, uma das doenças mais frequentes no Brasil, atingindo a população em todos os estados, idependente de classe social \cite{saude:2008}.
 	
-	Na região das Américas, a doença tem se disseminado com surtos cíclicos ocorrendo a cada 3/5 anos. No Brasil, a transmissão vem ocorrendo de forma continuada desde 1986, intercalando-se com a ocorrência de epidemias, geralmente associadas com a introdução de novos sorotipos em áreas anteriormente indenes ou alteração do sorotipo predominante. O maior surto no Brasil ocorreu em 2013, com aproximadamente 2 milhões de casos notificados. Atualmente, circulam no país os quatro sorotipos da doença \cite{MS:2015}.
+	Na região das Américas, a doença tem se disseminado com surtos cíclicos ocorrendo a cada 3/5 anos. No Brasil, a transmissão vem ocorrendo de forma continuada desde 1986, intercalando-se com a ocorrência de epidemias, geralmente associadas com a introdução de novos sorotipos em áreas anteriormente não se tinha registro ou alteração do sorotipo predominante. O maior surto no Brasil ocorreu em 2013, com aproximadamente 2 milhões de casos notificados. Atualmente, circulam no país os quatro sorotipos da doença \cite{MS:2015}.
 	
 	\begin{comment}
 	O desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases médicas possui grande importância para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e a eficiência dos diagnósticos elaborados pelo especialista. 
@@ -345,17 +345,21 @@
 		
 		\begin{itemize}
 			
-			\item A primeira etapa deste trabalho baseado na revisão bibliográfica da literatura relacionada à mineração de dados, para determinar trabalhos relacionados
+			\item A primeira etapa deste trabalho baseado na revisão bibliográfica da literatura relacionada à mineração de dados, para determinar trabalhos relacionados, onde são aplicadas as técnicas de mineração em base de dados médicos para descoberta de conhecimento novo e relevante, que possa auxiliar em diagnósticos do médico especialista;
 			
-			\item Na primeira etapa, ocorrerá a extração, manutenção e pré-processamento dos dados, onde será realizada a análise de base de dados para extração de informações de atendimentos de pacientes necessários à pesquisa. 
+			\item Na segunda etapa, ocorrerá a extração, manutenção e pré-processamento dos dados, onde será realizada a análise  de base de dados para extração de informações de atendimentos de pacientes;
 			
-			\item A quinta e última etapa do processo ocorrerá a análise dos resultados obtidos com a a aplicação dos algoritmos de mineração de dados. Encontrar padrões de classificação que sejam relevantes para a pesquisa em questão.
+			\item Na terceira etapa, será executado algoritmos para descoberta e extração de informações. O objetivo desta etapa srá encontrar padrões na base de dados que foi pré-processada, utilizando a ferramenta de mineração WEKA(\textit{Waikato Environment for Knowledge Analysis}), um software textit{open-source} \cite{opensource:2015} amplamente utilizado por implementar diversos algoritmos de mineração de dados \cite{hall:2009}.
+			
+			%\item Na primeira etapa, ocorrerá a extração, manutenção e pré-processamento dos dados, onde será realizada a análise de base de dados para extração de informações de atendimentos de pacientes necessários à pesquisa. 
+			
+			\item Por fim,  na quinta etapa do processo, ocorrerá a análise dos resultados obtidos com a a aplicação dos algoritmos de mineração de dados. Encontrar padrões de classificação que sejam relevantes para a pesquisa em questão.
 			
 		\end{itemize}
 	
 	\section{Estruturação da Monografia}
 	
-		Além deste capítulo introdutório, este trabalho está organizado da forma descrita à seguir. No Capítulo 2, será descrito conceitos básicos relacionados a compreensão deste trabalho, bem como referencial teórico. No Capítulo 3, será apresentado os experimentos juntamente com os resultados obtidos. Finalmente no Capítulo 4, será apresentado as conclusões observadas e sugestões de trabalhos futuros da pesquisa.
+		Além deste capítulo introdutório, este trabalho está organizado da forma descrita à seguir. No Capítulo 2, serão descritos conceitos básicos relacionados à compreensão deste trabalho, bem como o referencial teórico. No Capítulo 3, serão apresentados os experimentos juntamente com os resultados obtidos. Finalmente no Capítulo 4, serão apresentadas as conclusões observadas e sugestões de trabalhos futuros da pesquisa.
 
 % ---
 % Capítulo 2
@@ -390,7 +394,6 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\caption{\label{figDataMiningFayyad} Etapas do processo KDD.}
 			\begin{center}
 			    \includegraphics[scale=1]{img/dataMiningFayyad.png}
-			    %			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
 			\end{center}
 			Fonte: Adaptado de \cite{fayyad:1996}.
 		\end{figure}
@@ -499,7 +502,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\item \textit{ROC Area}: 
 		\end{itemize}
 
-	\section{WEKA}
+	\section{WEKA \textit{Waikato Environment for Knowledge Analysis}}
 	
 	A ferramenta WEKA (Waikato Environment for Knowledge Analysis)  conforme descrito em \cite{hall:2009}, visa proporcionar uma coleção abrangente de algoritmos de aprendizagem de máquina e ferramentas de pré-processamento de dados tanto para pesquisadores como para profissionais. Permite aos usuários experimentar rapidamente e comparar diferentes métodos de aprendizagem de máquina em diferentes conjuntos de dados. Sua arquitetura modular, extensível, permite que os processos de mineração de dados pode ser construido a partir da vasta coleção de algoritmos de aprendizado e diversas ferramentas oferecidas.
 		
@@ -678,6 +681,14 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	Nossos experimentos foram realizar a partir dos conjuntos de dados divididos nas seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. A cada conjunto de instâncias, aplicamos os processos de classificação utilizando 5 classificadores que estão contidos em 3 técnicas de classificação. Como resultado dos classificadores obtivemos 25 modelos. Todos os modelos utilizara o processo de validação conhecido como \textit{Cross Validation}. 
 	Cada modelo gerado disponibiliza um conjunto de informações para avaliação que serão utilizadas para comparação entre si.
+	\\
+	\begin{figure}[!htb]
+		\caption{\label{figmetodologiaExperimentos} Metodologia Processo dos Experimentos}
+		\begin{center}
+			\includegraphics[scale=0.55]{img/metodologiaExperimentos.png}
+		\end{center}
+		Fonte: Próprio Autor.
+	\end{figure}
 	
 	\section{Resultados}
 	
@@ -790,8 +801,23 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{center}
 \end{table}
 
-	\newpage	
+\begin{figure}[!htb]
+	\caption{\label{figtpRate} TP Rate}
+	\begin{center}
+		\includegraphics[scale=0.8]{graphs/tp_graph.png}
+	\end{center}
+	Fonte: Próprio Autor.
+\end{figure}
+
+\begin{figure}[!htb]
+	\caption{\label{figfpRate} FP Rate}
+	\begin{center}
+		\includegraphics[scale=0.8]{graphs/fp_graph.png}
+	\end{center}
+	Fonte: Próprio Autor.
+\end{figure}
 	
+	\begin{comment}
 	Como podemos observar na Figura \ref{figinstanciasClassificadasCorretamente}, os modelos com melhores resultados SMO e J48.
 	\\
 	\begin{figure}[!htb]
@@ -801,6 +827,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{center}
 		 Fonte: Próprio Autor.
 	\end{figure}
+	\end{comment}
 	
 % - - -
 % Capítulo 4
@@ -811,7 +838,48 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 
 	\section{Resultados Obtidos}
 
-	As medidas de desepenho resultantes do experimentos na classificação foram 
+	As medidas de desepenho resultantes do experimentos na classificação foram: 
+	\\
+	\begin{figure}[!htb]
+		\caption{\label{figperHits5k} Índice de Classificação - 5K Instâncias}
+		\begin{center}
+			\includegraphics[scale=0.8]{graphs/perc_hits_5k.png}
+				Fonte: Próprio Autor.
+		\end{center}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\caption{\label{figperHits10k} Índice de Classificação - 10K Instâncias}
+		\begin{center}
+			\includegraphics[scale=0.8]{graphs/perc_hits_10k.png}
+		Fonte: Próprio Autor.
+		\end{center}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\caption{\label{figperHits15k} Índice de Classificação - 15K Instâncias}
+		\begin{center}
+			\includegraphics[scale=0.8]{graphs/perc_hits_15k.png}
+			Fonte: Próprio Autor.
+		\end{center}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\caption{\label{figperHits20k} Índice de Classificação - 20K Instâncias}
+		\begin{center}
+			\includegraphics[scale=0.8]{graphs/perc_hits_20k.png}
+			Fonte: Próprio Autor.
+		\end{center}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\caption{\label{figperHits25k} Índice de Classificação - 25K Instâncias}
+		\begin{center}
+			\includegraphics[scale=0.8]{graphs/perc_hits_25k.png}
+			Fonte: Próprio Autor.
+		\end{center}
+
+	\end{figure}
 	
 	\section{Limitações}
 	
