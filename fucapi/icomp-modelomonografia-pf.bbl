@@ -61,6 +61,11 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
 {HALL, M. et al. The weka data mining software: an update.
 \emph{ACM SIGKDD explorations newsletter}, ACM, v.~11, n.~1, p. 10--18, 2009.}
 
+\bibitem[Initiative 2015]{opensource:2015}
+\abntrefinfo{Initiative}{INITIATIVE}{2015}
+{INITIATIVE, O.~S. 2015.
+Dispon{\'\i}vel em: \url{https://opensource.org/definition}.}
+
 \bibitem[John e Langley 1995]{john:1995}
 \abntrefinfo{John e Langley}{JOHN; LANGLEY}{1995}
 {JOHN, G.~H.; LANGLEY, P. Estimating continuous distributions in bayesian
