@@ -111,6 +111,12 @@ Acessado em 2015.}
 Dispon{\'\i}vel em:
   \url{https://www.java.com/pt\_BR/download/faq/whatis\_java.xml}.}
 
+\bibitem[Oshiro 2013]{oshiro:2013}
+\abntrefinfo{Oshiro}{OSHIRO}{2013}
+{OSHIRO, T.~M.
+\emph{Mestre em Bioinform{\'a}tica}.
+Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2013.}
+
 \bibitem[Salzberg 1994]{quinlan:94}
 \abntrefinfo{Salzberg}{SALZBERG}{1994}
 {SALZBERG, S. C4.5: Programs for machine learning by j. ross quinlan. morgan
@@ -174,5 +180,19 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Waikato}{WAIKATO}{2015}
 {WAIKATO, T.~U. of. 2015.
 Dispon{\'\i}vel em: \url{http://www.cs.waikato.ac.nz/ml/weka/}.}
+
+\bibitem[Witten, Frank e Hall 2011]{witten:2011}
+\abntrefinfo{Witten, Frank e Hall}{WITTEN; FRANK; HALL}{2011}
+{WITTEN, I.~H.; FRANK, E.; HALL, M.~A. \emph{Data Mining: Practical Machine
+  Learning Tools and Techniques}. 3rd. ed. San Francisco, CA, USA: Morgan
+  Kaufmann Publishers Inc., 2011.
+ISBN 0123748569, 9780123748560.}
+
+\bibitem[Zhao e Zhang 2008]{zhao:2008}
+\abntrefinfo{Zhao e Zhang}{ZHAO; ZHANG}{2008}
+{ZHAO, Y.; ZHANG, Y. Comparison of decision tree methods for finding active
+  objects.
+\emph{Advances in Space Research}, Elsevier, v.~41, n.~12, p. 1955--1959,
+  2008.}
 
 \end{thebibliography}

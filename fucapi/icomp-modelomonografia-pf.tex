@@ -465,8 +465,8 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	\begin{itemize}
 		\item Não exista exemplos para classificar o conjunto de treinamento \textit{S}. Neste caso, a árvore de decisão é um nodo com valor negativo;
-		\item Que os exemplos no conjunto de treinamento \textit{S} pertençam todos à mesma classe \textit{C}. A árvore de decisão é um folha identificando a classe \textit{$C_i$.};
-		\item Não exista atributos não categóricos \textit{R} para classificação. A árvore é uma folha identificando a classe \textit{$C_i$.} mais frequente de \textit{S}.
+		\item Que os exemplos no conjunto de treinamento \textit{S} pertençam todos à mesma classe \textit{C}. A árvore de decisão é um folha identificando a classe \textit{$C_i$};
+		\item Não exista atributos não categóricos \textit{R} para classificação. A árvore é uma folha identificando a classe \textit{$C_i$} mais frequente de \textit{S}.
 	\end{itemize}
 	
 	Quando o conjunto de treinamentos \textit{S} contém casos pertencentes a várias classes, a ideia é refinar \textit{S} em subconjuntos de casos, que tendem a permanecer em apenas uma classe. A árvore de decisão para \textit{S} consiste de um nodo de decisão que identifica o teste e uma ligação de cada valor possível do atributo. O mesmo processo de construção é aplicado recursivamente em cada subconjunto de casos de treinamento até que a \textit{i-ésima} ligação tenha a árvore de decisão construída do subconjunto \textit{$S_i$} de casos de treinamento. Quando o algoritmo parar, basta percorrer os caminhos desde a raiz até as folhas para verificar as descobertas extraídas da base de dados.
@@ -483,11 +483,15 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item Complexidade do algoritmo: É dada por \textit{O($mn^{2}$)}, em que \textit{m} é o número de atributos e \textit{n} é o número de instâncias do conjunto de treinamento. 
 	\end{itemize}
 
-	\subsubsection{Algoritmo RandomTree}
+	\subsubsection{Algoritmo \textit{RandomTree}}
 	
+	Segundo \cite{oshiro:2013}, considerando um conjunto de treinamento \textit{T} com \textit{a} atributos e \textit{n} exemplos, seja \textit{$T_k$} uma amostra \textit{bootstrap} do conjunto de treinamento a partir de \textit{T} com reposição, contendo \textit{n} exemplos e usando\textit{m} atributos aleatórios \textit{($m\le a$)} em cada nó das árvores.
 	
+	\textit{RandomTree} é uma árvore induzida aleatoriamente a partir de um conjunto de árvores possíves, usando \textit{m} atributos aleatórios em cada nó. O termo ''aleatoriamente'' significa que cada árvore tem uma chance igual de ser utilizada na amostrada. \textit{Random Trees} podem ser geradas eficientemente e a combinação de grandes conjuntos de \textit{Random Trees} geralmente leva a modelos precisos \cite{zhao:2008}.
 	
-	\subsubsection{Algoritmo REPTree}
+	\subsubsection{Algoritmo \textit{REPTree}}
+	
+	O algoritmo \textit{REPTree} constrói árvores de decisão para classificação ou regressão  com base no ganho de informação/variância e poda esta árvore usando uma poda guiada por erro. Otimizado para velocidade, só classifica valores para atributos numéricos uma vez. Os valores são tratadas dividindo as instâncias correspondentes em pedaços (como no algoritmo C4.5) \cite{witten:2011}.
 			
 	\subsection{Teorema de Bayes}
 	
@@ -527,6 +531,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{figure}
 	
 	\subsubsection{Algoritmo SMO}
+	
+	O Algoritmo SMO (\textit{Sequential Minimal Optimization}) proposto por \cite{platt:1998},  é um algoritmo simples que pode resolver rapidamente o problema quadrático encontrado em SVM (\textit{Support Vector Machines}) sem qualquer armazenamento extra de matriz e sem o uso de passos de otimização numérica
+
 
 	\subsection{Métricas para avaliação de modelo}
 	
@@ -718,7 +725,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 
 %		$\lambda$
 		
-	\section{Metodologia}
+	\section{Metodologia do Experimento}
 	
 	Nossos experimentos foram realizar a partir dos conjuntos de dados divididos nas seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. A cada conjunto de instâncias, aplicamos os processos de classificação utilizando 5 classificadores que estão contidos em 3 técnicas de classificação. Como resultado dos classificadores obtivemos 25 modelos. 
 	
@@ -730,7 +737,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item Os resultados do teste são coletados e calculados sobre todos os conjuntos.
 	\end{itemize}
 	 
-	\\
+	
 	\begin{figure}[!htb]
 		\caption{\label{figmetodologiaExperimentos} Metodologia Processo dos Experimentos}
 		\begin{center}
