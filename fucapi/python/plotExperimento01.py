@@ -13,10 +13,17 @@ for line in dataset:
 
 dataset.close()
 
-plt.plot(x,y)
+fig = plt.figure()
+rect = fig.patch
+rect.set_facecolor('blue')
 
-plt.title('Example')
-plt.xlabel('x label')
-plt.ylabel('y label')
+#plt.plot(x,y)
+
+#plt.title('Example')
+#plt.xlabel('FP Rate')
+#plt.ylabel('TP Rate')
+
+ax1 = fig.add_subplot(1,1,1,)
+
 
 plt.show()

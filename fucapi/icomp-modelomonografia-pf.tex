@@ -43,6 +43,7 @@
 \usepackage{multirow} % para adicionar "mesclar" estre células
 \usepackage{scalefnt} %definir tamanho da fonte da tabela
 \usepackage{verbatim}  %fazer comentários em bloco
+\usepackage{float}
 
 
 
@@ -174,11 +175,11 @@
 % Agradecimentos
 % ---
 
-%\begin{agradecimentos}
+\begin{agradecimentos}
 
-%Agradecimentos dirigidos àqueles que contribuíram de maneira relevante à elaboração do trabalho, sejam eles pessoas ou mesmo organizações.
+Agradecimentos dirigidos àqueles que contribuíram de maneira relevante à elaboração do trabalho, sejam eles pessoas ou mesmo organizações.
 
-%\end{agradecimentos}
+\end{agradecimentos}
 
 % ---
 % Epígrafe
@@ -293,7 +294,7 @@
 	
 		\subsection{Objetivo Geral}
 
-		Construir modelos utilizando as técnicas de classificação em \textit{Data Mining} conhecidas como Árvore de Decisão, \textit{Bayes} e \textit{Support Vector Machine}. Após a criação dos modelos de classificação, avaliar o que obetve melhor resultado em realação ao conjunto de dados utilizados no SINAN (Sistema de Informação de Agravos de Notificação) Dengue do município de Fortaleza. 
+		Construir modelos utilizando as técnicas de classificação em \textit{Data Mining} conhecidas como Árvore de Decisão, \textit{Bayes} e \textit{Support Vector Machine}. Após a criação dos modelos de classificação, avaliar o que obteve melhor resultado em relação ao conjunto de dados utilizados no SINAN (Sistema de Informação de Agravos de Notificação) Dengue do município de Fortaleza. 
 		
 		\subsection{Objetivos Específicos}
 		
@@ -304,7 +305,7 @@
 			
 			\item Construir modelos clasificadores com os algoritmos de classificação: J48, REPTree, RandomTree, NaiveBayes e SMO;
 
-			\item Identificar qual modelos obteve melhor desempenho no trabalho;
+			\item Identificar quais modelos gerados possuem melhor desempenho;
 			
 			\item Validar e interpretar os resultados obtidos no processo de classificação.
 		\end{itemize}
@@ -314,7 +315,7 @@
 	\begin{comment}
 	Considera-se a dengue um dos maiores problemas de saúde pública do mundo, especialmente nos países tropicais, cujas condições sócio-ambientais favorecem o desenvolvimento e a proliferação do seu principal vetor o \textsl{Aedes aegypti}. A dengue é, hoje, uma das doenças mais frenquentes no Brasil, atingindo a população em todos os estados, independente de classe social \cite{saude:2008}.
 	\end{comment}
-	Transmitida pelo mosquito \textit{Aedes aegypti}, a dengue é uma doença viral que se espalha rapidamente pelo mundo. Segundo a Organização Mundial da Saúde (OMS) por volta de 100 milhões de pessoas são infectadas por dengue anualmente, em mais de 100 países, sendo que 2,5 bilhões de pessoas estão sob o risco de infecção, tornando-se assim um dos maiores problemas de saúde pública no mundo \cite{bhatt:2013}. A dengue é, hoje, uma das doenças mais frequentes no Brasil, atingindo a população em todos os estados, idependente de classe social \cite{saude:2008}.
+	Transmitida pelo mosquito \textit{Aedes aegypti}, a dengue é uma doença viral que se espalha rapidamente pelo mundo. Segundo a Organização Mundial da Saúde (OMS) por volta de 100 milhões de pessoas são infectadas por dengue anualmente, em mais de 100 países, sendo que 2,5 bilhões de pessoas estão sob o risco de infecção, tornando-se assim um dos maiores problemas de saúde pública no mundo \cite{bhatt:2013}. A dengue é, hoje, uma das doenças mais frequentes no Brasil, atingindo a população em todos os estados, independente de classe social \cite{saude:2008}.
 	
 	Na região das Américas, a doença tem se disseminado com surtos cíclicos ocorrendo a cada 3/5 anos. No Brasil, a transmissão vem ocorrendo de forma continuada desde 1986, intercalando-se com a ocorrência de epidemias, geralmente associadas com a introdução de novos sorotipos em áreas anteriormente não se tinha registro ou alteração do sorotipo predominante. O maior surto no Brasil ocorreu em 2013, com aproximadamente 2 milhões de casos notificados. Atualmente, circulam no país os quatro sorotipos da doença \cite{MS:2015}.
 	
@@ -348,11 +349,11 @@
 			
 			\item Na segunda etapa, ocorrerá a extração, manutenção e pré-processamento dos dados, onde será realizada a análise  de base de dados para extração de informações de atendimentos de pacientes;
 			
-			\item Na terceira etapa, será executado algoritmos para descoberta e extração de informações. O objetivo desta etapa srá encontrar padrões na base de dados que foi pré-processada, utilizando a ferramenta de mineração WEKA(\textit{Waikato Environment for Knowledge Analysis}), um software \textit{open-source} \cite{opensource:2015} amplamente utilizado por implementar diversos algoritmos de mineração de dados \cite{hall:2009}.
+			\item Na terceira etapa, será executado algoritmos para descoberta e extração de informações. O objetivo desta etapa será encontrar padrões na base de dados que foi pré-processada, utilizando a ferramenta de mineração WEKA(\textit{Waikato Environment for Knowledge Analysis}), um software \textit{open-source} \cite{opensource:2015} amplamente utilizado por implementar diversos algoritmos de mineração de dados \cite{hall:2009}.
 			
 			%\item Na primeira etapa, ocorrerá a extração, manutenção e pré-processamento dos dados, onde será realizada a análise de base de dados para extração de informações de atendimentos de pacientes necessários à pesquisa. 
 			
-			\item Por fim,  na quinta etapa do processo, ocorrerá a análise dos resultados obtidos com a a aplicação dos algoritmos de mineração de dados. Encontrar padrões de classificação que sejam relevantes para a pesquisa em questão.
+			\item Por fim,  na quarta etapa do processo, ocorrerá a análise dos resultados obtidos com a a aplicação dos algoritmos de mineração de dados. Encontrar padrões de classificação que sejam relevantes para a pesquisa em questão.
 			
 		\end{itemize}
 	
@@ -443,9 +444,48 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	\subsubsection{Algoritmo C4.5}
 	
-	O algoritmo J48 é uma implementação em Java \cite{oracle:2015} do algoritmo C4.5 para gerar uma árvore de decisão\cite{weka:2015}. O algoritmo C4.5  
+	O algoritmo J48 \cite{weka:2015} é uma implementação em Java \cite{oracle:2015} do algoritmo C4.5 \cite{quinlan:94}, que visa gerar árvore de decisão com tratamento de atributos contínuos e discretos, construindo uma árvore com um número de partições variável e com folhas sendo indicadas pelos valores do atributo categórico. 
 	
+	Segundo \cite{halmenschlager:2002}, para evitar a geração de todas as árvores possíveis, o algoritmo C4.5 se baseia no atributo mais informativo, escolhido entre todos os atributos ainda não considerados no caminho desde a raiz. O algoritmo seleciona como sendo o atributo mais informativo aquele que possuir o maior ganho de informação, resultante da diferença do valor da informação do atributo categórico e do valor da informação (entropia) do atributo em questão.
+	
+	Para cada atributo é calculado seu ganho de informação. O atributo que tiver o maior valor, será considerado pelo algoritmo como o próximo nodo da árvore. Assim, a partição começa pelo nodo raiz e continua pelos nodos filhos da mesma maneira, até que todos os exemplos desta partição possuam a mesma classe, rotulando-se este nodo como folha e recebendo sua respectiva classe. Na Figura \ref{fignucleoC45}, podemos observar o funcionamento principal do C4.5.
+	
+		\begin{figure}[!htb]
+			\caption{\label{fignucleoC45} Núcleo do Algoritmo C4.5}
+			\begin{center}
+				\includegraphics[scale=0.4]{img/nucleoC45.png}
+				%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
+			\end{center}
+			Fonte: \cite{feldens:1997}.
+		\end{figure}
+	
+	O algoritmo recebe o atributo categorico \textit{C} (que indica a classe), um conjunto de atributos não categóricos \textit{R} (demais atributos), e um conjunto de treinamento \textit{S} (que contém os exemplos). Ele verifica qual é o atributo \textit{D} mais informativo de \textit{R}, ou seja, o atributo com maior ganho de informação para o conjunto de treinamento \textit{S} e, então, subdivide este conjunto \textit{S} de acordo com cada um dos valores deste atributo mais informativo \textit{D} \cite{feldens:1997}.
+	
+	De forma recursiva o algoritmo é chamado para cada subconjunto obtido, até atingir os seguintes objetivos:
+	
+	\begin{itemize}
+		\item Não exista exemplos para classificar o conjunto de treinamento \textit{S}. Neste caso, a árvore de decisão é um nodo com valor negativo;
+		\item Que os exemplos no conjunto de treinamento \textit{S} pertençam todos à mesma classe \textit{C}. A árvore de decisão é um folha identificando a classe \textit{$C_i$.};
+		\item Não exista atributos não categóricos \textit{R} para classificação. A árvore é uma folha identificando a classe \textit{$C_i$.} mais frequente de \textit{S}.
+	\end{itemize}
+	
+	Quando o conjunto de treinamentos \textit{S} contém casos pertencentes a várias classes, a ideia é refinar \textit{S} em subconjuntos de casos, que tendem a permanecer em apenas uma classe. A árvore de decisão para \textit{S} consiste de um nodo de decisão que identifica o teste e uma ligação de cada valor possível do atributo. O mesmo processo de construção é aplicado recursivamente em cada subconjunto de casos de treinamento até que a \textit{i-ésima} ligação tenha a árvore de decisão construída do subconjunto \textit{$S_i$} de casos de treinamento. Quando o algoritmo parar, basta percorrer os caminhos desde a raiz até as folhas para verificar as descobertas extraídas da base de dados.
+	
+	Como observado em \cite{halmenschlager:2002}, os critérios que fazem parte do algoritmo C4.5 são:
+	
+	\begin{itemize}
+		\item Eleição do melhor atributo: utiliza o critério do ganho de informação;
+		\item Tratamento dos atributos discretos: atribui uma ligação distinta a cada valor ou forma de agrupamentos de valores em vários conjuntos;
+		\item Tratamento de atributos contínuos: Utiliza a técnica do teste simples para partição, escolhendo como ponto de cisão o ponto médio entre os valores;
+		\item Tratamento de valores desconhecidos: Desconsidera os atributos com valores deconhecidos, utilizando apenas aqueles com valores totalmente deconhecidos;
+		\item Determinação da classe associada à folha: É efetuada por atribuição da classe mais provável nesta folha;
+		\item Método de poda: Utiliza a técnica de pós-poda baseada no erro, examinando a árvore de forma \textit{bottom-up} e subtituindo uma subárvore por uma folha;
+		\item Complexidade do algoritmo: É dada por \textit{O($mn^{2}$)}, em que \textit{m} é o número de atributos e \textit{n} é o número de instâncias do conjunto de treinamento. 
+	\end{itemize}
+
 	\subsubsection{Algoritmo RandomTree}
+	
+	
 	
 	\subsubsection{Algoritmo REPTree}
 			
@@ -463,7 +503,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\\
 	Sendo $ P(A\mid B) $ a probabilidade \textbf{posteriori} condicional de A a B, tem-se que:
 	\begin{itemize}
-		\item $P(B \mid A) $ a probabilidade \textbf{posteiori} condicional de B a A.
+		\item $P(B \mid A) $ a probabilidade \textbf{posteriori} condicional de B a A.
 		\item $P(A) $ probabilidade \textbf{apriori} de A.
 		\item $P(B )$ probabilidade \textbf{apriori} de B.
 	\end{itemize}
@@ -524,11 +564,11 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 % - - -
 \chapter{Experimentos}
 
-	Neste capítulo, avaliamos os modelos gerados através de uma série de experimentos. Apresentaremos a base de dados utilizada nestes experimentos, nossa metodologia de experimentação e os experimentos em si realizados.
+	Neste capítulo, avaliamos os modelos gerados através de uma série de experimentos. Apresentaremos a base de dados utilizada para os experimentos, a metodologia de experimentação e os experimentos em si realizados.
 
 	\section{Base de Dados}
 	
-	Para avaliar o objetivo geral neste trabalho, usamos a base de dados  do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualquer pessoa \cite{fortaleza:2015}. Este conjunto de dados contém notificações de dengue do Município de Fortaleza no período de janeiro à junho de 2015, contendo 26.568 instâncias. Na Tabela \ref{tabDescricaoAtributos}, podemos observar os atributos utilizados neste trabalho.
+	Para avaliar o objetivo geral neste trabalho, usamos a base de dados  do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualquer pessoa \cite{fortaleza:2015}. Este conjunto de dados contém notificações de dengue do Município de Fortaleza no período de janeiro à junho de 2015, contendo 26.568 instâncias. %Na Tabela \ref{tabDescricaoAtributos}, podemos observar os atributos utilizados neste trabalho.
 
 \begin{comment}
 	\begin{table}[]
@@ -632,7 +672,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			Fonte: Próprio Autor.
 		\end{figure}
 
-	Onde nos deparamos com o erros no campos DS\_OBS, onde o WEKA informa que está lendo 102 atributos ao invés de 99, conforme mostrado na Figura \ref{figerroCarregarInstancias}. Já na Figura \ref{figerroLinhaSete}, podemos observar que houve falha na inserção dos dados no atributo DS\_OBS, pois o mesmo foi preenchido com vírgula em seu conteúdo da seguinte ''CEFALEIA, FEBRE, DOR NOS OLHOS, VOMITO'', além do caracter ''\^M'' que representa quebra de linha. Pelo fato do arquivo ser contruído no formato CSV (\textit{Comma Separated Value}), essas vírgulas excedentes serão consideradas como início de novos atributos.
+	Onde nos deparamos com erros no campos DS\_OBS, onde o WEKA informa que está lendo 102 atributos em vez de 99, conforme mostrado na Figura \ref{figerroCarregarInstancias}. Já na Figura \ref{figerroLinhaSete}, podemos observar que houve falha na inserção dos dados no atributo DS\_OBS, pois o mesmo foi preenchido com vírgula em seu conteúdo da seguinte ''CEFALEIA, FEBRE, DOR NOS OLHOS, VOMITO'', além do caracter ''\^M'' que representa quebra de linha. Pelo fato do arquivo ser contruído no formato CSV (\textit{Comma Separated Value}), essas vírgulas excedentes serão consideradas como início de novos atributos.
 	
 
 	
@@ -657,7 +697,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 				\end{center}
 				\centering Fonte: Próprio Autor.
 			\end{figure}
-			\item \textit{NumericToNominal}: Um filtro para transformar numérico atributos em uns nominais. Ao contrário de discretização, apenas toma todos os valores numéricos e os adiciona à lista de valores nominais do que atributo. Útil após a importação CSV, para impor certos atributos para se tornar nominal. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroNumericToNominal}.
+			\item \textit{NumericToNominal}: Um filtro para transformar numérico atributos em uns nominais. Ao contrário da discretização, apenas toma todos os valores numéricos e os adiciona à lista de valores nominais do que atributo. Útil após a importação CSV, para impor certos atributos para se tornar nominal. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroNumericToNominal}.
 			\begin{figure}[!h]
 				\caption{\label{figfiltroNumericToNominal} Filtro \textit{NumericToNominal}}
 				\begin{center}
@@ -666,7 +706,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 				\centering Fonte: Próprio Autor.
 			\end{figure}
 			\newpage
-			\item \textit{RemoveRange}: Um filtro que remove uma determinado intervalo de ocorrências de um conjunto de dados. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroRemoveRange}. O parâmetro ''instancesIndices''  foi utilizado cinco vezes para criarmos 05 (cinco) conjuntos de dados com as seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. Que foram utilizados durantes os experimentos.
+			\item \textit{RemoveRange}: Um filtro que remove um determinado intervalo de ocorrências de um conjunto de dados. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroRemoveRange}. O parâmetro ''instancesIndices''  foi utilizado cinco vezes para criarmos 05 (cinco) conjuntos de dados com as seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. Que foram utilizados durantes os experimentos.
 			\begin{figure}[!h]
 					\caption{\label{figfiltroRemoveRange} Filtro \textit{RemoveRange}}
 				\begin{center}
@@ -847,7 +887,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 
 	\section{Resultados Obtidos}
 
-	As medidas de desepenho resultantes do experimentos na classificação foram: 
+	As medidas de desepenho resultantes dos experimentos na classificação foram: 
 	\\
 	\begin{figure}[!htb]
 		\caption{\label{figperHits5k} Índice de Classificação - 5K Instâncias}
@@ -865,6 +905,10 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{center}
 	\end{figure}
 	
+	\pagebreak
+	\clearpage
+	\newpage
+	
 	\begin{figure}[!htb]
 		\caption{\label{figperHits15k} Índice de Classificação - 15K Instâncias}
 		\begin{center}
@@ -881,13 +925,80 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{center}
 	\end{figure}
 	
+	\pagebreak
+	\clearpage
+	\newpage
+	
+	
 	\begin{figure}[!htb]
 		\caption{\label{figperHits25k} Índice de Classificação - 25K Instâncias}
 		\begin{center}
 			\includegraphics[scale=0.8]{graphs/perc_hits_25k.png}
 			Fonte: Próprio Autor.
 		\end{center}
-
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\caption{\label{figRocSMO} Gráfico ROC - Algoritmo SMO}
+		\begin{center}
+			\includegraphics[scale=0.8]{python/smo.png}
+			Fonte: Próprio Autor.
+		\end{center}
+	\end{figure}
+	
+	\pagebreak
+	\clearpage
+	\newpage
+	
+	
+	\begin{figure}[!htb]
+		\caption{\label{figRocJ48} Gráfico ROC - Algoritmo J48}
+		\begin{center}
+			\includegraphics[scale=0.8]{python/j48.png}
+			Fonte: Próprio Autor.
+		\end{center}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\caption{\label{figRocRandomTree} Gráfico ROC - Algoritmo RandomTree}
+		\begin{center}
+			\includegraphics[scale=0.8]{python/RandomTree.png}
+			Fonte: Próprio Autor.
+		\end{center}
+	\end{figure}
+	
+	\pagebreak
+	\clearpage
+	\newpage
+	
+	
+	\begin{figure}[!htb]
+		\caption{\label{figRocREPTree} Gráfico ROC - Algoritmo REPTree}
+		\begin{center}
+			\includegraphics[scale=0.8]{python/REPTree.png}
+			Fonte: Próprio Autor.
+		\end{center}
+	\end{figure}
+	
+	\begin{figure}[!htb]
+		\caption{\label{figRocNaiveBayes} Gráfico ROC - Algoritmo NaiveBayes}
+		\begin{center}
+			\includegraphics[scale=0.8]{python/NaiveBayes.png}
+			Fonte: Próprio Autor.
+		\end{center}
+	\end{figure}
+	
+	\pagebreak
+	\clearpage
+	\newpage
+	
+	
+	\begin{figure}[!htb]
+		\caption{\label{figRocZeroR} Gráfico ROC - Algoritmo ZeroR}
+		\begin{center}
+			\includegraphics[scale=0.8]{python/ZeroR.png}
+			Fonte: Próprio Autor.
+		\end{center}
 	\end{figure}
 	
 	\newpage

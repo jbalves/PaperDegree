@@ -29,6 +29,11 @@
   Limited. All Rights Reserved., v.~496, n.~7446, p. 504--507, 04 2013.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1038/nature12060}.}
 
+\bibitem[CONASS 2015]{conass:2015}
+\abntrefinfo{CONASS}{CONASS}{2015}
+{CONASS. \emph{Nota T{\'e}cnica - 45 - 2013}. 2015.
+Dispon{\'\i}vel em: \url{http://www.conass.org.br}.}
+
 \bibitem[Costa 2012]{costa:2012}
 \abntrefinfo{Costa}{COSTA}{2012}
 {COSTA, A.~F.
@@ -50,6 +55,12 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
   discovery in databases.
 \emph{AI magazine}, v.~17, n.~3, p.~37, 1996.}
 
+\bibitem[FELDENS e Castilho 1997]{feldens:1997}
+\abntrefinfo{FELDENS e Castilho}{FELDENS; CASTILHO}{1997}
+{FELDENS, M.~A.; CASTILHO, J. M. V.~d. Engenharia da descoberta de conhecimento
+  em bases de dados: estudo e aplica{\c{c}}{\~a}o na {\'a}rea de sa{\'u}de.
+\emph{Porto Alegre}, 1997.}
+
 \bibitem[Freitas 2000]{freitas:2000}
 \abntrefinfo{Freitas}{FREITAS}{2000}
 {FREITAS, A. Uma introdu{\c{c}}{\~a}o a data mining.
@@ -60,6 +71,13 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
 \abntrefinfo{Hall et al.}{HALL et al.}{2009}
 {HALL, M. et al. The weka data mining software: an update.
 \emph{ACM SIGKDD explorations newsletter}, ACM, v.~11, n.~1, p. 10--18, 2009.}
+
+\bibitem[Halmenschlager 2002]{halmenschlager:2002}
+\abntrefinfo{Halmenschlager}{HALMENSCHLAGER}{2002}
+{HALMENSCHLAGER, C.
+\emph{Um algoritmo para indu{\c{c}}{\~a}o de {\'a}rvores e regras de
+  decis{\~a}o}.
+Tese (Doutorado) --- UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL, 2002.}
 
 \bibitem[Initiative 2015]{opensource:2015}
 \abntrefinfo{Initiative}{INITIATIVE}{2015}
@@ -80,11 +98,6 @@ Dispon{\'\i}vel em: \url{https://opensource.org/definition}.}
 \emph{Trabalho de Gradua{\c{c}}{\~a}o em Ci{\^e}ncia da Computa{\c{c}}{\~a}o},
   2010.}
 
-\bibitem[Nota T{\'e}cnica - 45 - 2013 2015]{conass:2015}
-\abntrefinfo{Nota\ldots}{NOTA\ldots}{2015}
-{NOTA T{\'e}cnica - 45 - 2013. 2015. \url{http://www.conass.org.br}.
-Acessado em Novembro de 2015.}
-
 \bibitem[Notifica{\c{c}}{\~o}es de Dengue - Ref. 01 a 06/2015
   2015]{fortaleza:2015}
 \abntrefinfo{Notifica{\c{c}}{\~o}es\ldots}{NOTIFICA{\c{C}}{\~O}ES\ldots}{2015}
@@ -97,6 +110,15 @@ Acessado em 2015.}
 {ORACLE. 2015.
 Dispon{\'\i}vel em:
   \url{https://www.java.com/pt\_BR/download/faq/whatis\_java.xml}.}
+
+\bibitem[Salzberg 1994]{quinlan:94}
+\abntrefinfo{Salzberg}{SALZBERG}{1994}
+{SALZBERG, S. C4.5: Programs for machine learning by j. ross quinlan. morgan
+  kaufmann publishers, inc., 1993.
+\emph{Machine Learning}, Kluwer Academic Publishers, v.~16, n.~3, p. 235--240,
+  1994.
+ISSN 0885-6125.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/BF00993309}.}
 
 \bibitem[Santos e Neto 2011]{santos:2011}
 \abntrefinfo{Santos e Neto}{SANTOS; NETO}{2011}

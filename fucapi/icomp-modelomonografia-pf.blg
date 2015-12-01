@@ -13,14 +13,16 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
+Warning--entry type for "conass:2015" isn't style-file defined
+--line 93 of file referencias.bib
 Warning--entry type for "MS:2015" isn't style-file defined
---line 182 of file referencias.bib
+--line 196 of file referencias.bib
 Warning--entry type for "opensource:2015" isn't style-file defined
---line 190 of file referencias.bib
+--line 204 of file referencias.bib
 Warning--entry type for "oracle:2015" isn't style-file defined
---line 198 of file referencias.bib
+--line 212 of file referencias.bib
 Warning--entry type for "weka:2015" isn't style-file defined
---line 265 of file referencias.bib
+--line 313 of file referencias.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -30,45 +32,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 25 entries,
+You've used 28 entries,
             6714 wiz_defined-function locations,
-            1319 strings with 13485 characters,
-and the built_in function-call counts, 23440 in all, are:
-= -- 2372
-> -- 616
-< -- 274
-+ -- 580
-- -- 189
-* -- 1526
-:= -- 3118
-add.period$ -- 78
-call.type$ -- 25
-change.case$ -- 231
-chr.to.int$ -- 40
-cite$ -- 24
-duplicate$ -- 1564
-empty$ -- 1343
-format.name$ -- 890
-if$ -- 5207
+            1338 strings with 14041 characters,
+and the built_in function-call counts, 26426 in all, are:
+= -- 2638
+> -- 694
+< -- 340
++ -- 659
+- -- 214
+* -- 1732
+:= -- 3535
+add.period$ -- 89
+call.type$ -- 28
+change.case$ -- 254
+chr.to.int$ -- 46
+cite$ -- 27
+duplicate$ -- 1847
+empty$ -- 1484
+format.name$ -- 1006
+if$ -- 5774
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 423
-newline$ -- 127
-num.names$ -- 110
-pop$ -- 606
+missing$ -- 472
+newline$ -- 145
+num.names$ -- 130
+pop$ -- 658
 preamble$ -- 1
-purify$ -- 92
+purify$ -- 102
 quote$ -- 0
-skip$ -- 1963
+skip$ -- 2200
 stack$ -- 1
-substring$ -- 891
-swap$ -- 578
-text.length$ -- 21
+substring$ -- 1018
+swap$ -- 685
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 30
+type$ -- 27
 warning$ -- 0
-while$ -- 158
+while$ -- 183
 width$ -- 0
-write$ -- 362
-(There were 4 warnings)
+write$ -- 411
+(There were 5 warnings)
