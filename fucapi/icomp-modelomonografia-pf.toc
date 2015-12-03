@@ -29,11 +29,11 @@
 \contentsline {subsection}{\numberline {2.4.2}Teorema de Bayes}{24}{subsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.2.1}Algoritmo NaiveBayes}{25}{subsubsection.2.4.2.1}
 \contentsline {subsection}{\numberline {2.4.3}M\IeC {\'a}quinas de Vetores de Suporte (SVM)}{25}{subsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.3.1}Algoritmo SMO}{25}{subsubsection.2.4.3.1}
-\contentsline {subsection}{\numberline {2.4.4}M\IeC {\'e}tricas para avalia\IeC {\c c}\IeC {\~a}o de modelo}{25}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}WEKA (\textit {Waikato Environment for Knowledge Analysis})}{26}{section.2.5}
+\contentsline {subsubsection}{\numberline {2.4.3.1}Algoritmo SMO}{26}{subsubsection.2.4.3.1}
+\contentsline {subsection}{\numberline {2.4.4}M\IeC {\'e}tricas para avalia\IeC {\c c}\IeC {\~a}o de modelo}{26}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}WEKA (\textit {Waikato Environment for Knowledge Analysis})}{27}{section.2.5}
 \contentsline {section}{\numberline {2.6}Dados Abertos}{27}{section.2.6}
-\contentsline {section}{\numberline {2.7}SINAN}{27}{section.2.7}
+\contentsline {section}{\numberline {2.7}SINAN}{28}{section.2.7}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Experimentos}}{29}{chapter.3}
 \contentsline {section}{\numberline {3.1}Base de Dados}{29}{section.3.1}

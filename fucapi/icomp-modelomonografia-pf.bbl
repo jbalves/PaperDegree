@@ -79,6 +79,13 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
   decis{\~a}o}.
 Tese (Doutorado) --- UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL, 2002.}
 
+\bibitem[Hern{\'a}ndez 2009]{hernandez:2009}
+\abntrefinfo{Hern{\'a}ndez}{HERN{\'A}NDEZ}{2009}
+{HERN{\'A}NDEZ, R. A.
+\emph{MP-SMO: um algoritmo para a implementa{\c{c}}{\~a}o VLSI do treinamento
+  de m{\'a}quinas de vetores de suporte.}
+Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2009.}
+
 \bibitem[Initiative 2015]{opensource:2015}
 \abntrefinfo{Initiative}{INITIATIVE}{2015}
 {INITIATIVE, O.~S. 2015.
@@ -116,6 +123,19 @@ Dispon{\'\i}vel em:
 {OSHIRO, T.~M.
 \emph{Mestre em Bioinform{\'a}tica}.
 Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2013.}
+
+\bibitem[Platt 1998]{platt:1998}
+\abntrefinfo{Platt}{PLATT}{1998}
+{PLATT, J. \emph{Sequential Minimal Optimization: A Fast Algorithm for Training
+  Support Vector Machines}.
+[S.l.], 1998. 21~p. Dispon{\'\i}vel em:
+  \url{http://research.microsoft.com/apps/pubs/default.aspx?id=69644}.}
+
+\bibitem[Prati, Batista e Monard 2008]{prati:2008}
+\abntrefinfo{Prati, Batista e Monard}{PRATI; BATISTA; MONARD}{2008}
+{PRATI, R.~C.; BATISTA, G. E. d. A. P.~A.; MONARD, M.~C. Curvas roc para
+  avalia{\c{c}}{\~a}o de classificadores.
+\emph{Revista IEEE Am{\'e}rica Latina}, v.~6, n.~2, p. 215--222, 2008.}
 
 \bibitem[Salzberg 1994]{quinlan:94}
 \abntrefinfo{Salzberg}{SALZBERG}{1994}

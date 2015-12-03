@@ -511,7 +511,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item $P(A) $ probabilidade \textbf{apriori} de A.
 		\item $P(B )$ probabilidade \textbf{apriori} de B.
 	\end{itemize}
+	
 	\subsubsection{Algoritmo NaiveBayes}
+	
 	O Classificador \textit{NaiveBayes} é uma técnica probabilística baseada no teorema de \textit{Bayes}, expressão, para calcular a probabilidade Posteriori da classe C
 	Em \cite{john:1995}
 	
@@ -520,8 +522,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	Uma técnica de classificação que tem recebido considerável atenção pois esta técnica possui seus fundamentos na teoria de aprendizagem estatística e tem mostrado resultados empíricos promissores em muitas aplicações práticas, desde o reconhecimento de dígitos escritos à mão até a categorização de textos. SVM também funciona bem com dados de alta dimensionalidade e evita o problema da dimensionalidade. Outro aspecto único desta abordagem é que ela representa o limite da decisão usando um subconjunto dos exemplos de treinamento, conhecido com vetores de suporte \cite{tan:2009}.
 	
 	Na Figura \ref{figsvmHiperPlanos}, existe um conjunto de classificadores lineares que separam duas classes, mas apenas um (em destaque) que maximiza a margem de separação (distância da instância mais próxima ao hiperplano de separação das classes). O hiperplano com margem máxima é chamado de hiperplano ótimo \cite{junior:2010}.
-	\\
-	\begin{figure}[!htb]
+	
+	%\begin{figure}[!htb]
+	\begin{figure}[H]
 		\caption{\label{figsvmHiperPlanos} Conjunto de hiperplanos possíveis}
 		\begin{center}
 			\includegraphics[scale=0.5]{img/svmHiperPlanos.png}
@@ -530,15 +533,27 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		Fonte: \cite{junior:2010}.
 	\end{figure}
 	
+	%\pagebreak
+	%\clearpage
+	%\newpage
+	
 	\subsubsection{Algoritmo SMO}
 	
-	O Algoritmo SMO (\textit{Sequential Minimal Optimization}) proposto por \cite{platt:1998},  é um algoritmo simples que pode resolver rapidamente o problema quadrático encontrado em SVM (\textit{Support Vector Machines}) sem qualquer armazenamento extra de matriz e sem o uso de passos de otimização numérica
-
+	O Algoritmo SMO (\textit{Sequential Minimal Optimization}) \cite{platt:1998}, é um algoritmo simples que pode resolver rapidamente o problema quadrático encontrado em SVM (\textit{Support Vector Machines}) sem qualquer armazenamento extra de matriz e sem o uso de passos de otimização numérica.
+	
+	O SMO (\textit{Sequential Minimal Optimization}) é um algoritmo de decomposição  que usa uma solução analítica para otimizar um par de Multiplicadores de Lagrange por iteração. Em cada uma delas, três tarefas são executadas: seleção de um par de coeficientes, otimização do par de coeficientes selecionados e atualização de dados globais. A parada do algoritmo ocorre quando todos os coeficientes satisfazem o conjunto de condições. O conjunto de trabalho é formado pelo par de coeficientes a otimizar \cite{hernandez:2009}. 
 
 	\subsection{Métricas para avaliação de modelo}
 	
-	As métricas mais utilizadas na literatura...
+	As métricas mais utilizadas na literatura... \cite{prati:2008}
 	
+	\begin{itemize}
+		\item Precisão na classificação
+		\item Taxa de erro na classificação
+		\item Matriz de confusão
+	\end{itemize}
+		
+		\begin{comment}
 		\begin{itemize}
 			\item \textit{Correctly Classified Instances}: Mostra o percentual de precisão das instâncias corretamente classificados.
 			\item \textit{Incorrectly Classified Instances} : Mostra o percentual de precisão das instâncias incorretamente classificados.
@@ -549,6 +564,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\item \textit{F-Measure}: É uma média ponderada de \textit{Precision} e \textit{Recall}.
 			\item \textit{ROC Area}: 
 		\end{itemize}
+		\end{comment}	
 
 	\section{WEKA (\textit{Waikato Environment for Knowledge Analysis})}
 	
