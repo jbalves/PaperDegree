@@ -45,10 +45,9 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~o}es e Trabalhos Futuros}}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Resultados Obtidos}{39}{section.4.1}
-\contentsline {section}{\numberline {4.2}Limita\IeC {\c c}\IeC {\~o}es}{42}{section.4.2}
-\contentsline {section}{\numberline {4.3}Trabalhos Futuros}{42}{section.4.3}
+\contentsline {section}{\numberline {4.2}Trabalhos Futuros}{41}{section.4.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{43}{section*.11}
+\contentsline {chapter}{Refer\^encias}{42}{section*.11}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

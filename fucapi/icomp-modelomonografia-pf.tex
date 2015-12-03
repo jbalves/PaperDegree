@@ -197,7 +197,15 @@
 
 \begin{agradecimentos}
 
-Agradecimentos dirigidos àqueles que contribuíram de maneira relevante à elaboração do trabalho, sejam eles pessoas ou mesmo organizações.
+Em primeiro lugar quero agradecer a Deus, meu grande amigo, companheiro, e sempre me mostrou o caminho a ser seguido.
+
+A minha  esposa amada  Suzane Barros, que me incetivou nessa jornada.
+
+Ao meu orientador Prof. Márcio palheta, por mostrar-me o caminho da mineração de dados.
+
+Aos meus amigos, Hussama, Wellington, Patrick, Pedro e Tiago que sempre estiveram por perto nesta caminhada.
+
+Agradecimentos também aos que contribuíram de maneira relevante à elaboração deste trabalho, direta ou indiretamente.
 
 \end{agradecimentos}
 
@@ -1003,7 +1011,8 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 	Observando a Figura \ref{figAcertosErrosClassificacao}, pode-se verificar que em todos os conjuntos de dados utilizados nos experimentos, os algoritmos \textit{SMO} e \textit{J48} se destacam em relação aos demais. Com isso os modelos de classificação gerados por esses algoritmos se desempenharam com índices próximos a 90\% no quesito predição de novas instâncias.
 
 	Em \cite{prati:2008}, gráfico ROC(\textit{Receiver Operating Characteristic}) é um método para avaliação e seleção de sistemas de diagnóstico e/ou predição. O gráfico ROC é baseado na probabilidade de detecção ou \textit{taxa de verdadeiros positivos}, e na probalidade de falsos alarmes, ou \textit{taxa de falsos positivos}.
-
+	
+	Como pode-se observar na Figura \ref{figTodosModelos}, os modelos gerados pelo algoritmos \textit{SMO} e \textit{J48} obtiveram melhor qualidade, pois se aproximam do ponto $(0,1)$.  Em \cite{prati:2008}, resultados pertecentes ao canto superior esquerdo representam classificadores que possuem melhor desempenho.
 
 	
 	\begin{comment}
@@ -1089,8 +1098,6 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 		Fonte: Próprio Autor.
 	\end{figure}
 
-	Como pode-se observar na Figura \ref{figTodosModelos}, os modelos gerados pelo algoritmos \textit{SMO} e \textit{J48} obtiveram melhor qualidade.
-
 	\begin{comment}
 	\begin{figure}[!htb]
 		\caption{\label{figRocSMO} Gráfico ROC - Algoritmo SMO}
@@ -1155,12 +1162,6 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 		\end{center}
 	\end{figure}
 	\end{comment}
-	
-	\newpage
-	\newpage
-	\section{Limitações}
-	
-	Neste trabalho não estamos levando em consideração o tempo de criação de cada modelo gerado.
 	
 	\section{Trabalhos Futuros}
 	
