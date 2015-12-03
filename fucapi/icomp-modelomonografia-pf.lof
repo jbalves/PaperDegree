@@ -13,9 +13,10 @@
 \contentsline {figure}{\numberline {11}{\ignorespaces Metodologia Processo dos Experimentos}}{35}{figure.3.11}
 \contentsline {figure}{\numberline {12}{\ignorespaces TP Rate}}{37}{figure.3.12}
 \contentsline {figure}{\numberline {13}{\ignorespaces FP Rate}}{38}{figure.3.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Figura 1}}}{40}{subfigure.4.14.5}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Figura 2}}}{40}{subfigure.4.14.5}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Figura 3}}}{40}{subfigure.4.14.5}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Figura 4}}}{40}{subfigure.4.14.5}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Figura 5}}}{40}{subfigure.4.14.5}
-\contentsline {figure}{\numberline {14}{\ignorespaces Gr\IeC {\'a}fico ROC dos Modelos Gerados}}{41}{figure.4.14}
+\contentsline {figure}{\numberline {14}{\ignorespaces Gr\IeC {\'a}ficos de Acertos e Erros de Classifica\IeC {\c c}\IeC {\~a}o}}{40}{figure.4.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {5k Inst\IeC {\^a}ncias}}}{40}{subfigure.4.15.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {10k Inst\IeC {\^a}ncias}}}{40}{subfigure.4.15.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {15k Inst\IeC {\^a}ncias}}}{40}{subfigure.4.15.5}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {20k Inst\IeC {\^a}ncias}}}{40}{subfigure.4.15.5}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {25k Inst\IeC {\^a}ncias}}}{40}{subfigure.4.15.5}
+\contentsline {figure}{\numberline {15}{\ignorespaces Modelos de Classifica\IeC {\c c}\IeC {\~a}o no Espa\IeC {\c c}o ROC}}{41}{figure.4.15}

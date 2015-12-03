@@ -957,7 +957,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 \end{comment}
 
 Na Figura \ref{figtpRate}, pode-se visualizar estas infomarções observando a \textit{taxa de verdadeiros positivos} de cada modelo gerado. Observa-se que houve um certa redução na precisão de classificação dos \textit{verdadeiros positivos}  conforme o tamanho do \textit{dataset} aumenta  nos algoritmos: \textit{REPTree}, \textit{NaiveBayes}, \textit{ZeroR} e \textit{RandomTree}.
-
+\\
 \begin{figure}[!htb]
 	\caption{\label{figtpRate} TP Rate}
 	\begin{center}
@@ -966,6 +966,9 @@ Na Figura \ref{figtpRate}, pode-se visualizar estas infomarções observando a \
 	Fonte: Próprio Autor.
 \end{figure}
 
+\newpage
+Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenho \textit{SMO} e \textit{J48} mostrados na Figura \ref{figtpRate}, apresentam menor \textit{taxa de falso positivo} e com isso um menor custo no processo de classificação de novas instâncias, pois estes algoritmos obtiveram menor quantidade de erros nos \textit{datasets} utilizados.
+\\
 \begin{figure}[!htb]
 	\caption{\label{figfpRate} FP Rate}
 	\begin{center}
@@ -991,12 +994,17 @@ Na Figura \ref{figtpRate}, pode-se visualizar estas infomarções observando a \
 % - - -
 \chapter{Conclusões e Trabalhos Futuros}
 
-	Neste Capítulo, apresentamos as conclusões do nosso trabalho, incluindo suas limitações de nossa pesquisa e futuros estudos que possam ser explorados.
+	Neste Capítulo, apresentado as conclusões do nosso trabalho, incluindo suas limitações  e futuros estudos que possam ser explorados. 
 
 	\section{Resultados Obtidos}
 
-	As medidas de desepenho resultantes dos experimentos na classificação foram: 
-	\\
+	O Objetivo deste estudo foi construir modelos de classificação por meio do uso de técnicas em \textit{Data Mining} conhecidas como: \textit{Árvore de Decisão}, \textit{Teorema de Bayes} e \textit{Máquinas de Vetores de Suporte}. Estas técnicas foram aplicadas por meio dos algoritmos: \textit{SMO}, \textit{J48}, \textit{REPTree}, \textit{RandomTree} e \textit{NaiveBayes}.
+	
+	Observando a Figura \ref{figAcertosErrosClassificacao}, pode-se verificar que em todos os conjuntos de dados utilizados nos experimentos, os algoritmos \textit{SMO} e \textit{J48} se destacam em relação aos demais. Com isso os modelos de classificação gerados por esses algoritmos se desempenharam com índices próximos a 90\% no quesito predição de novas instâncias.
+
+	Em \cite{prati:2008}, gráfico ROC(\textit{Receiver Operating Characteristic}) é um método para avaliação e seleção de sistemas de diagnóstico e/ou predição. O gráfico ROC é baseado na probabilidade de detecção ou \textit{taxa de verdadeiros positivos}, e na probalidade de falsos alarmes, ou \textit{taxa de falsos positivos}.
+
+
 	
 	\begin{comment}
 	\begin{figure}[!htb]
@@ -1009,16 +1017,19 @@ Na Figura \ref{figtpRate}, pode-se visualizar estas infomarções observando a \
 	\end{comment}
 	
 	\begin{figure}[!htb]
-		\subfigure[Figura 1\label{surreal1}]{
+		\begin{center}
+			\caption{\label{figAcertosErrosClassificacao} Gráficos de Acertos e Erros de Classificação}
+		\end{center}
+		\subfigure[5k Instâncias\label{surreal1}]{
 		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_5k.png}}
-		\subfigure[Figura 2\label{surreal2}]{
+		\subfigure[10k Instâncias\label{surreal2}]{
 		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_10k.png}}
-		\subfigure[Figura 3\label{surreal3}]{
+		\subfigure[15k Instâncias\label{surreal3}]{
 		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_15k.png}}
-		\subfigure[Figura 4\label{surreal4}]{
+		\subfigure[20k Instâncias\label{surreal4}]{
 		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_20k.png}}
 		\begin{center}
-		\subfigure[Figura 5\label{surreal5}]{
+		\subfigure[25k Instâncias\label{surreal5}]{
 		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_25k.png}}
 		\end{center}
 	\end{figure}
@@ -1071,7 +1082,7 @@ Na Figura \ref{figtpRate}, pode-se visualizar estas infomarções observando a \
 	\clearpage
 	\newpage
 	\begin{figure}[!htb]
-		\caption{\label{figTodosModelos} Gráfico ROC dos Modelos Gerados}
+		\caption{\label{figTodosModelos} Modelos de Classificação no Espaço ROC}
 		\begin{center}
 			\includegraphics[scale=0.8]{python/TodosModelos.png}
 		\end{center}
