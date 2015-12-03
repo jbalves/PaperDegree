@@ -20,7 +20,7 @@
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{17}{chapter.2}
 \contentsline {section}{\numberline {2.1}Descoberta de Conhecimento em Base de Dados}{17}{section.2.1}
 \contentsline {section}{\numberline {2.2}Data Mining}{19}{section.2.2}
-\contentsline {section}{\numberline {2.3}Aprendizagem N\IeC {\~a}o Supervisionada}{20}{section.2.3}
+\contentsline {section}{\numberline {2.3}Aprendizagem Supervisionada (REVISAR)}{20}{section.2.3}
 \contentsline {section}{\numberline {2.4}T\IeC {\'e}cnicas de Classifica\IeC {\c c}\IeC {\~a}o}{20}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}\IeC {\'A}rvore de Decis\IeC {\~a}o}{21}{subsection.2.4.1}
 \contentsline {subsubsection}{\numberline {2.4.1.1}Algoritmo C4.5}{22}{subsubsection.2.4.1.1}
@@ -30,23 +30,23 @@
 \contentsline {subsubsection}{\numberline {2.4.2.1}Algoritmo NaiveBayes}{26}{subsubsection.2.4.2.1}
 \contentsline {subsection}{\numberline {2.4.3}M\IeC {\'a}quinas de Vetores de Suporte (SVM)}{26}{subsection.2.4.3}
 \contentsline {subsubsection}{\numberline {2.4.3.1}Algoritmo SMO}{27}{subsubsection.2.4.3.1}
-\contentsline {subsection}{\numberline {2.4.4}M\IeC {\'e}tricas para avalia\IeC {\c c}\IeC {\~a}o de modelo}{28}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.4}M\IeC {\'e}tricas para Avalia\IeC {\c c}\IeC {\~a}o de Modelo}{28}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}WEKA (\textit {Waikato Environment for Knowledge Analysis})}{28}{section.2.5}
-\contentsline {section}{\numberline {2.6}Dados Abertos}{28}{section.2.6}
+\contentsline {section}{\numberline {2.6}Dados Abertos}{29}{section.2.6}
 \contentsline {section}{\numberline {2.7}SINAN}{29}{section.2.7}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Experimentos}}{30}{chapter.3}
-\contentsline {section}{\numberline {3.1}Base de Dados}{30}{section.3.1}
-\contentsline {section}{\numberline {3.2}Pr\IeC {\'e}-processamento}{30}{section.3.2}
-\contentsline {section}{\numberline {3.3}Metodologia do Experimento}{33}{section.3.3}
-\contentsline {section}{\numberline {3.4}Resultados}{34}{section.3.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Experimentos}}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}Base de Dados}{31}{section.3.1}
+\contentsline {section}{\numberline {3.2}Pr\IeC {\'e}-processamento}{31}{section.3.2}
+\contentsline {section}{\numberline {3.3}Metodologia do Experimento}{34}{section.3.3}
+\contentsline {section}{\numberline {3.4}Resultados}{35}{section.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~o}es e Trabalhos Futuros}}{40}{chapter.4}
-\contentsline {section}{\numberline {4.1}Resultados Obtidos}{40}{section.4.1}
-\contentsline {section}{\numberline {4.2}Limita\IeC {\c c}\IeC {\~o}es}{51}{section.4.2}
-\contentsline {section}{\numberline {4.3}Trabalhos Futuros}{51}{section.4.3}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~o}es e Trabalhos Futuros}}{41}{chapter.4}
+\contentsline {section}{\numberline {4.1}Resultados Obtidos}{41}{section.4.1}
+\contentsline {section}{\numberline {4.2}Limita\IeC {\c c}\IeC {\~o}es}{44}{section.4.2}
+\contentsline {section}{\numberline {4.3}Trabalhos Futuros}{44}{section.4.3}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{52}{section*.11}
+\contentsline {chapter}{Refer\^encias}{45}{section*.11}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }

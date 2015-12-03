@@ -44,6 +44,7 @@
 \usepackage{scalefnt} %definir tamanho da fonte da tabela
 \usepackage{verbatim}  %fazer comentários em bloco
 \usepackage{float}
+\usepackage{subfigure}
 
 
 
@@ -165,7 +166,7 @@
 	\end{comment}
 	\assinatura{\fontsize{12}{15}\selectfont Prof. Sergio Cleger Tamayo, Dr. \\Faculdade Fucapi \\ \fontsize{12}{15}\selectfont Examinador}
 	\vspace{1cm}
-	\assinatura{\fontsize{12}{15}\selectfont Profa. Marcela Sávia Picanço Pessoa, M.Sc.. \\Faculdade Fucapi \\ \fontsize{12}{15}\selectfont Examinadora}
+	\assinatura{\fontsize{12}{15}\selectfont Profa. Marcela Sávia Picanço Pessoa, M.Sc. \\Faculdade Fucapi \\ \fontsize{12}{15}\selectfont Examinadora}
 	\vfill
     
 	\begin{center}
@@ -234,7 +235,7 @@ Agradecimentos dirigidos àqueles que contribuíram de maneira relevante à elab
 
 \begin{resumo}[Abstract]
  \begin{otherlanguage*}{english}
-   This is the english abstract.
+   The classification task in \ textit {Data Mining} is the class prediction given a certain set of attributes for an instance. This technique can be useful in medical diagnosis, as a support tool for the health professional. In the literature, the best techniques for classification using support vector machines and decision tree. Such techniques use the concept of hyperplane to separate in a better way the existing classes in data sets, you can also verify the use of divide and conquer to identify the best attributes, being able to produce more efficient results in the prediction process. As a result, we obtained classifiers based models SMO and J48, reaching results of 89.61 \% and 86.63 \% in the correct classification of instances respectively in the data sets used in this study, showing satisfactory results in relation to the classifier Zeror using as \ textit {baseline}. It was also observed that the generated models performed better as the experiments in the data set size increased.
 
    \vspace{\onelineskip}
  
@@ -434,7 +435,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\item Otimização do uso de recursos limitados, como tempo, espaço, dinheiro ou matéria-prima e maximizar variáveis de resultado como vendas ou lucros sob um determinado conjunto de restrições.
 		\end{itemize}
 		
-	\section{Aprendizagem Não Supervisionada}
+	\section{Aprendizagem Supervisionada (REVISAR)}
 	
 		Como mostrado por \cite{damasceno:2005} aprendizagem não supervisionada é aquela que utiliza instâncias sem a determinação do atributo classe. Este  tipo de aprendizado é utilizado geralmente para análise exploratória dos dados, utilizando técnicas de  agrupamento ou regras de associação. Onde agrupamentos têm como objetivo relacionar instâncias com características em comuns.
 		
@@ -562,14 +563,34 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	O SMO (\textit{Sequential Minimal Optimization}) é um algoritmo de decomposição  que usa uma solução analítica para otimizar um par de Multiplicadores de Lagrange por iteração. Em cada uma delas, três tarefas são executadas: seleção de um par de coeficientes, otimização do par de coeficientes selecionados e atualização de dados globais. A parada do algoritmo ocorre quando todos os coeficientes satisfazem o conjunto de condições. O conjunto de trabalho é formado pelo par de coeficientes a otimizar \cite{hernandez:2009}. 
 
-	\subsection{Métricas para avaliação de modelo}
+	\subsection{Métricas para Avaliação de Modelo}
 	
-	A performance de um modelo de classificação pode ser medida utilizando a matriz de confusão,  \cite{prati:2008}
+	A performance de um modelo de classificação pode ser medida utilizando a matriz de confusão, mostrada na Tabela \ref{tabMatrizConfusao}. Nesta tabela pode ser observado que a distribuição entre as classes (proporção entre exemplos positivos e negativos) é o relacionamento entre a primeira e segunda linha. Assim, qualquer medida de desempenho que utilize valores de ambas as colunas será, necessariamente, sensível a desproporção entre as classes. Havendo mudança na distribuição das classes, os valores das métricas também mudarão, mesmo que o desempenho global do modelo não melhore \cite{prati:2008}.
+	\\
 	
+		\begin{table}[htbp]
+			\scalefont{1}
+			\centering
+			\caption{Matriz de confusão para problemas de classes binárias}
+			\label{tabMatrizConfusao}
+			\begin{center}
+				\renewcommand{\arraystretch}{2}
+				\begin{tabular}{ccc}
+					\hline
+					               & \textbf{Predição positiva}               & \textbf{Predição negativa}         \\ \hline
+					\multicolumn{1}{c|}{Classe positiva}                                      & Verdadeiro positivo \textit{(TP)}                                                                                 & Falso negativo \textit{(FN)} 							                                                                                    
+					\\
+					\multicolumn{1}{c|}{Classe negativa}                                      & Falso positivo \textit{(FP)}                                                                                  &Verdadeito negativo \textit{(TN)} 							                                                                                   							            
+					\\ 
+					\hline
+				\end{tabular}
+			\end{center}
+			Fonte: Adaptado de \cite{prati:2008}.
+		\end{table}
+		
 	\begin{itemize}
 		\item Precisão na classificação
 		\item Taxa de erro na classificação
-		\item Matriz de confusão
 	\end{itemize}
 		
 		\begin{comment}
@@ -932,6 +953,8 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 
 	As medidas de desepenho resultantes dos experimentos na classificação foram: 
 	\\
+	
+	\begin{comment}
 	\begin{figure}[!htb]
 		\caption{\label{figperHits5k} Índice de Classificação - 5K Instâncias}
 		\begin{center}
@@ -939,13 +962,31 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 				Fonte: Próprio Autor.
 		\end{center}
 	\end{figure}
+	\end{comment}
 	
+	\begin{figure}[!htb]
+		\subfigure[Figura 1\label{surreal1}]{
+		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_5k.png}}
+		\subfigure[Figura 2\label{surreal2}]{
+		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_10k.png}}
+		\subfigure[Figura 3\label{surreal3}]{
+		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_15k.png}}
+		\subfigure[Figura 4\label{surreal4}]{
+		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_20k.png}}
+		\begin{center}
+		\subfigure[Figura 5\label{surreal5}]{
+		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_25k.png}}
+		\end{center}
+	\end{figure}
+
+	\begin{comment}
+
 	\begin{figure}[!htb]
 		\caption{\label{figperHits10k} Índice de Classificação - 10K Instâncias}
 		\begin{center}
 			\includegraphics[scale=0.8]{graphs/perc_hits_10k.png}
-		Fonte: Próprio Autor.
 		\end{center}
+		Fonte: Próprio Autor.
 	\end{figure}
 	
 	\pagebreak
@@ -980,7 +1021,22 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			Fonte: Próprio Autor.
 		\end{center}
 	\end{figure}
+	\end{comment}
 	
+	\pagebreak
+	\clearpage
+	\newpage
+	\begin{figure}[!htb]
+		\caption{\label{figTodosModelos} Gráfico ROC dos Modelos Gerados}
+		\begin{center}
+			\includegraphics[scale=0.8]{python/TodosModelos.png}
+		\end{center}
+		Fonte: Próprio Autor.
+	\end{figure}
+
+	Como pode-se observar na Figura \ref{figTodosModelos}, os modelos gerados pelo algoritmos \textit{SMO} e \textit{J48} obtiveram melhor qualidade.
+
+	\begin{comment}
 	\begin{figure}[!htb]
 		\caption{\label{figRocSMO} Gráfico ROC - Algoritmo SMO}
 		\begin{center}
@@ -1043,6 +1099,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			Fonte: Próprio Autor.
 		\end{center}
 	\end{figure}
+	\end{comment}
 	
 	\newpage
 	\newpage

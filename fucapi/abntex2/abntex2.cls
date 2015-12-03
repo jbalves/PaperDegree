@@ -203,7 +203,7 @@
 % Opções de diagramação de sumários
 % sumario=tradicional    : Sumário tradicional do LaTeX/Memoir
 % sumario=abnt-6027-2012 : Sumário conforme recomendação da ABNT NBR 6027:2012
-\newboolean{ABNTEXsumario-tradicional}     %true=titles of chapter/appendix in uppercase
+\newboolean{ABNTEXsumario-tradicional}    %true=titles of chapter/appendix in uppercase
 \newboolean{ABNTEXsumario-abnt-6027-2012} 
 \setboolean{ABNTEXsumario-tradicional}{false}
 \setboolean{ABNTEXsumario-abnt-6027-2012}{true}
