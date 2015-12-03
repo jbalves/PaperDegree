@@ -50,7 +50,7 @@
 \titulo{Uso de técnicas de \textit{Data Mining} na classificação de tipos de dengue}
 \autor{Jeferson Barros Alves}
 \local{Manaus - AM}
-\data{Novembro de 2015}
+\data{2015}
 \orientador[Orientador]{Márcio Palheta Piedade, M.Sc.}
 \instituicao{%
   Fundação Centro de Análise, Pesquisa e Inovação Tecnológica
@@ -136,30 +136,49 @@
 % imagem da página assinada pela banca com o comando abaixo:
 %
 % \includepdf{folhadeaprovacao_final.pdf}
-%
-%\begin{folhadeaprovacao}
-%	\parindent=0pt
-%	\setlength{\ABNTEXsignskip}{1.5cm}
-%
-%	Monografia de Graduação sob o título \textit{Uso de técnicas de Data Mining na classificação de sorotipos da dengue} apresentada por Jeferson Barros Alves e aceita pelo Instituto de Ensino Superior FUCAPI - CESF, sendo aprovada por todos os membros da banca examinadora abaixo especificada:
-%
-%	\assinatura{\fontsize{12}{15}\selectfont M.Sc. Márcio Palheta Piedade \\ \fontsize{11}{15}\selectfont \imprimirorientadorRotulo}
-%	\vspace{1cm}
-%	\assinatura{\fontsize{12}{15}\selectfont Titulação e nome do(a) membro da banca examinadora \\ \fontsize{11}{15}\selectfont Co-orientador(a), se houver \\ {\fontsize{10}{12}\selectfont Departamento \par Universidade}}
-%	\vspace{1cm}
-%	\assinatura{Titulação e nome do membro da banca examinadora \\ {\fontsize{10}{12}\selectfont Departamento \par Universidade}}
-%	\vspace{1cm}
-%	\assinatura{Titulação e nome do membro da banca examinadora \\ {\fontsize{10}{12}\selectfont Departamento \par Universidade}}
-%	\vfill
-%    
-%	\begin{center}
-%		\fontsize{12}{15}\selectfont
-%		\vspace*{0.5cm}
-%		\imprimirlocal, data de aprovação (por extenso).
-%		\vspace*{1cm}
-%	\end{center}
-%  
-%\end{folhadeaprovacao}
+
+
+\begin{folhadeaprovacao}
+	\parindent=0pt
+	\setlength{\ABNTEXsignskip}{1.5cm}
+	
+	\begin{center}
+		
+		%\vspace*{1cm}
+		{\fontsize{12}{15}\selectfont\imprimirautor}
+		\vspace*{\fill}
+		\begin{center}
+			\fontsize{12}{15}\selectfont\imprimirtitulo
+		\end{center}
+		\vspace*{\fill}
+	\end{center}	
+
+	Monografia apresentada ao Curso de Graduação em Ciência da Computação da Faculdade Fucapi (Instituto de Ensino Superior Fucapi), como requisito parcial para a obtenção do Título de Bacharel em Ciência da Computação.
+	
+	Aprovada em:       /      /            , por:
+
+	\assinatura{\fontsize{12}{15}\selectfont Prof. Márcio Palheta Piedade, M.Sc. \\Faculdade Fucapi \\ \fontsize{12}{15}\selectfont \imprimirorientadorRotulo}
+	\vspace{1cm}
+	\begin{comment}
+	\assinatura{\fontsize{12}{15}\selectfont Titulação e nome do(a) membro da banca examinadora \\ \fontsize{11}{15}\selectfont Co-orientador(a), se houver \\ {\fontsize{10}{12}\selectfont Departamento \par Universidade}}
+	\vspace{1cm}
+	\end{comment}
+	\assinatura{\fontsize{12}{15}\selectfont Prof. Sergio Cleger Tamayo, Dr. \\Faculdade Fucapi \\ \fontsize{12}{15}\selectfont Examinador}
+	\vspace{1cm}
+	\assinatura{\fontsize{12}{15}\selectfont Profa. Marcela Sávia Picanço Pessoa, M.Sc.. \\Faculdade Fucapi \\ \fontsize{12}{15}\selectfont Examinadora}
+	\vfill
+    
+	\begin{center}
+		\fontsize{12}{15}\selectfont
+		\vspace*{0.5cm}
+		\imprimirlocal
+		\\
+		\imprimirdata
+		\vspace*{1cm}
+	\end{center}
+  
+ \end{folhadeaprovacao}
+
 % ---
 % Dedicatória
 % ---
@@ -545,7 +564,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 
 	\subsection{Métricas para avaliação de modelo}
 	
-	As métricas mais utilizadas na literatura... \cite{prati:2008}
+	A performance de um modelo de classificação pode ser medida utilizando a matriz de confusão,  \cite{prati:2008}
 	
 	\begin{itemize}
 		\item Precisão na classificação
@@ -665,7 +684,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{table}
 \end{comment}
 
-
+	\begin{comment}
 	Neste Capítulo é descrita a metodologia utilizada para classificação do tipo de dengue em ocorrências do SINAN do município de Fortaleza. Basicamente, pode ser apresentada da seguinte forma:
 	\begin{itemize}
 		\item Definição de Atributos utilizados: 
@@ -673,7 +692,8 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item Particionamento do Conjunto de Dados:
 		\item Treinamento dos Classificadores:
 	\end{itemize}
-
+	\end{comment}
+	
 	\section{Pré-processamento}
 	
 	Após o download da base de dados em \cite{fortaleza:2015},  iniciamos a importação do arquivo no formato CSV (\textit{Comma Separated Value}), conforme mostrado na Figura \ref{figdataSetOriginal}.

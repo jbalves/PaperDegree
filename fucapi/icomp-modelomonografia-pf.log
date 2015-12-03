@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  2 DEC 2015 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  3 DEC 2015 00:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1041,25 +1041,25 @@ Runaway argument?
 ! Paragraph ended before \text@command was complete.
 <to be read again> 
                    \par 
-l.177 
+l.139 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--177
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
  
  []
 
 LaTeX Font Info:    Font shape `T1/pbk/bx/n' in size <12> not available
-(Font)              Font shape `T1/pbk/b/n' tried instead on input line 177.
+(Font)              Font shape `T1/pbk/b/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <12> not available
-(Font)              Font shape `T1/pbk/db/n' tried instead on input line 177.
+(Font)              Font shape `T1/pbk/db/n' tried instead on input line 139.
 ! Extra }, or forgotten \endgroup.
 <argument> ...lectfont \imprimirorientador \par }}
                                                    \abntex@ifnotempty {\impr...
-l.177 
+l.139 
       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1072,38 +1072,41 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 177.
+(Font)              <12> on input line 139.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 177.
+(Font)              <8> on input line 139.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 177.
+(Font)              <6> on input line 139.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.177 
+l.139 
        [1
 
 
 
 ]
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <22> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 179.
+LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <12> not available
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 151.
  [2
 
 ]
-LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <12> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 208.
+LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <22> not available
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 198.
  [3
+
 
 ] [4
 
-] (./icomp-modelomonografia-pf.lof) [5
+] [5
+
+] (./icomp-modelomonografia-pf.lof) [6
 
 ]
-(./icomp-modelomonografia-pf.lot) [6
+(./icomp-modelomonografia-pf.lot) [7
 
-] [7
+] [8
 
 
 ] (./icomp-modelomonografia-pf.toc
@@ -1116,591 +1119,590 @@ LaTeX Font Info:    Font shape `T1/pbk/bx/it' in size <12> not available
 LaTeX Font Info:    Font shape `T1/pbk/b/it' in size <12> not available
 (Font)              Font shape `T1/pbk/db/it' tried instead on input line 34.
 
-[8
+[9
 
-]) [9] [10
+]) [10] [11
 
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <16> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 283.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 302.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 295.
-LaTeX Font Info:    Try loading font information for OMS+pbk on input line 302.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 314.
+LaTeX Font Info:    Try loading font information for OMS+pbk on input line 321.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omspbk.fd
 File: omspbk.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pbk/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 302.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 321.
 
-[11] [12]
-Overfull \hbox (9.23865pt too wide) in paragraph at lines 338--339
+[12] [13]
+Overfull \hbox (9.23865pt too wide) in paragraph at lines 357--358
 []\T1/pbk/l/n/12 (-20) No tra-ba-lho de ([]THI-TI-PRAYO-ONWONGSE; SU-RIYAPHOL; 
 SO-ONTHORNPHI-
  []
 
-[13] [14] [15] [16
+[14] [15] [16] [17
 
 ]
-<img/dataMiningFayyad.png, id=292, 469.755pt x 189.70876pt>
+<img/dataMiningFayyad.png, id=298, 469.755pt x 189.70876pt>
 File: img/dataMiningFayyad.png Graphic file (type png)
 
 <use img/dataMiningFayyad.png>
-Package pdftex.def Info: img/dataMiningFayyad.png used on input line 396.
+Package pdftex.def Info: img/dataMiningFayyad.png used on input line 415.
 (pdftex.def)             Requested size: 469.75386pt x 189.70828pt.
 
-Overfull \hbox (14.75386pt too wide) in paragraph at lines 396--397
+Overfull \hbox (14.75386pt too wide) in paragraph at lines 415--416
  [] 
  []
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.406 
-       <./img/dataMiningFayyad.png>] [18]
-<img/abordagemModeloClassificacao.png, id=323, 1018.80624pt x 764.8575pt>
+l.425 
+       <./img/dataMiningFayyad.png>] [19]
+<img/abordagemModeloClassificacao.png, id=329, 1018.80624pt x 764.8575pt>
 File: img/abordagemModeloClassificacao.png Graphic file (type png)
 
 <use img/abordagemModeloClassificacao.png>
 Package pdftex.def Info: img/abordagemModeloClassificacao.png used on input lin
-e 433.
+e 452.
 (pdftex.def)             Requested size: 305.64423pt x 229.45901pt.
- [19] [20pdfTeX warning (ext4): destination with the same identifier (name{figu
+ [20] [21pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.448 
+l.467 
        <./img/abordagemModeloClassificacao.png>]
-<img/nucleoC45.png, id=346, 908.39375pt x 480.79625pt>
+<img/nucleoC45.png, id=352, 908.39375pt x 480.79625pt>
 File: img/nucleoC45.png Graphic file (type png)
  <use img/nucleoC45.png>
-Package pdftex.def Info: img/nucleoC45.png used on input line 456.
+Package pdftex.def Info: img/nucleoC45.png used on input line 475.
 (pdftex.def)             Requested size: 363.35106pt x 192.31508pt.
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.463 
-       <./img/nucleoC45.png>] [22] [23] [24]
-<img/svmHiperPlanos.png, id=395, 572.1375pt x 447.6725pt>
+l.482 
+       <./img/nucleoC45.png>] [23] [24] [25]
+<img/svmHiperPlanos.png, id=401, 572.1375pt x 447.6725pt>
 File: img/svmHiperPlanos.png Graphic file (type png)
 
 <use img/svmHiperPlanos.png>
-Package pdftex.def Info: img/svmHiperPlanos.png used on input line 530.
+Package pdftex.def Info: img/svmHiperPlanos.png used on input line 549.
 (pdftex.def)             Requested size: 286.06804pt x 223.8357pt.
- [25] [26pdfTeX warning (ext4): destination with the same identifier (name{figu
+ [26] [27pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.2.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.552 		\item T
-               axa de erro na classificação <./img/svmHiperPlanos.png>]
+l.570 		\item P
+               recisão na classificação <./img/svmHiperPlanos.png>]
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <16> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 569.
-
-[27] [28] <img/dataSetOriginal.png, id=441, 1181.41376pt x 262.9825pt>
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 588.
+ [28]
+[29] <img/dataSetOriginal.png, id=447, 1181.41376pt x 262.9825pt>
 File: img/dataSetOriginal.png Graphic file (type png)
 
 <use img/dataSetOriginal.png>
-Package pdftex.def Info: img/dataSetOriginal.png used on input line 685.
+Package pdftex.def Info: img/dataSetOriginal.png used on input line 705.
 (pdftex.def)             Requested size: 472.55713pt x 105.19113pt.
 
-Overfull \hbox (17.55713pt too wide) in paragraph at lines 685--686
+Overfull \hbox (17.55713pt too wide) in paragraph at lines 705--706
  [] 
  []
 
-<img/erroCarregarInstancias.png, id=442, 888.31876pt x 173.64874pt>
+<img/erroCarregarInstancias.png, id=448, 888.31876pt x 173.64874pt>
 File: img/erroCarregarInstancias.png Graphic file (type png)
 
 <use img/erroCarregarInstancias.png>
-Package pdftex.def Info: img/erroCarregarInstancias.png used on input line 693.
+Package pdftex.def Info: img/erroCarregarInstancias.png used on input line 713.
 
 (pdftex.def)             Requested size: 488.57683pt x 95.5071pt.
 
-Overfull \hbox (33.57683pt too wide) in paragraph at lines 693--694
+Overfull \hbox (33.57683pt too wide) in paragraph at lines 713--714
  [] 
  []
 
-[29
+[30
 
-] <img/erroLinhaSete.png, id=450, 1069.9975pt x 151.56625pt>
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.719 
+       <./img/dataSetOriginal.png>]
+<img/erroLinhaSete.png, id=458, 1069.9975pt x 151.56625pt>
 File: img/erroLinhaSete.png Graphic file (type png)
 
 <use img/erroLinhaSete.png>
-Package pdftex.def Info: img/erroLinhaSete.png used on input line 705.
+Package pdftex.def Info: img/erroLinhaSete.png used on input line 725.
 (pdftex.def)             Requested size: 481.49443pt x 68.20418pt.
 
-Overfull \hbox (26.49443pt too wide) in paragraph at lines 705--706
+Overfull \hbox (26.49443pt too wide) in paragraph at lines 725--726
  [] 
  []
 
-[30pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.711 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.711 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.711 
-       <./img/dataSetOriginal.png> <./img/erroCarregarInstancias.png> <./img/er
-roLinhaSete.png>]
 <img/filtroRemoveUseless.png, id=460, 483.8075pt x 230.8625pt>
 File: img/filtroRemoveUseless.png Graphic file (type png)
 
 <use img/filtroRemoveUseless.png>
-Package pdftex.def Info: img/filtroRemoveUseless.png used on input line 719.
+Package pdftex.def Info: img/filtroRemoveUseless.png used on input line 739.
 (pdftex.def)             Requested size: 217.71136pt x 103.88715pt.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+6}) has been already used, duplicate ignored
 
-<img/filtroNumericToNominal.png, id=462, 483.8075pt x 302.12875pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.743 			\item \textit
+                      {NumericToNominal}: Um filtro para transformar numéri...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.743 			\item \textit
+                      {NumericToNominal}: Um filtro para transformar numéri...
+ <./img/erroCarregarInstancias.png> <./img/erroLinhaSete.png>]
+<img/filtroNumericToNominal.png, id=468, 483.8075pt x 302.12875pt>
 File: img/filtroNumericToNominal.png Graphic file (type png)
 
 <use img/filtroNumericToNominal.png>
-Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 727.
+Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 747.
 
 (pdftex.def)             Requested size: 217.71136pt x 135.95668pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8
-}) has been already used, duplicate ignored
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.731 			\newpage
-                  <./img/filtroRemoveUseless.png>]
-<img/filtroRemoveRange.png, id=469, 478.78876pt x 260.975pt>
+l.751 			\newpage
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.3.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.751 			\newpage
+                  <./img/filtroRemoveUseless.png> <./img/filtroNumericToNominal
+.png>] <img/filtroRemoveRange.png, id=476, 478.78876pt x 260.975pt>
 File: img/filtroRemoveRange.png Graphic file (type png)
 
 <use img/filtroRemoveRange.png>
-Package pdftex.def Info: img/filtroRemoveRange.png used on input line 736.
+Package pdftex.def Info: img/filtroRemoveRange.png used on input line 756.
 (pdftex.def)             Requested size: 215.45294pt x 117.43767pt.
- [32pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-9}) has been already used, duplicate ignored
+ [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.747 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3.10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.747 
-       <./img/filtroNumericToNominal.png> <./img/filtroRemoveRange.png>]
-<img/metodologiaExperimentos.png, id=476, 800.9925pt x 553.06625pt>
+l.773 		\item O
+               s resultados do teste são coletados e calculados sobre todos...
+ <./img/filtroRemoveRange.png>]
+<img/metodologiaExperimentos.png, id=482, 800.9925pt x 553.06625pt>
 File: img/metodologiaExperimentos.png Graphic file (type png)
 
 <use img/metodologiaExperimentos.png>
-Package pdftex.def Info: img/metodologiaExperimentos.png used on input line 760
+Package pdftex.def Info: img/metodologiaExperimentos.png used on input line 780
 .
 (pdftex.def)             Requested size: 440.54723pt x 304.18738pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 782--782
+Underfull \hbox (badness 10000) in paragraph at lines 802--802
 []|\T1/pbk/db/n/12 Correctly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 782--782
+Underfull \hbox (badness 10000) in paragraph at lines 802--802
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 782--782
+Underfull \hbox (badness 10000) in paragraph at lines 802--802
 []|\T1/pbk/db/n/12 Incorrectly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 782--782
+Underfull \hbox (badness 10000) in paragraph at lines 802--802
 \T1/pbk/db/n/12 Clas-si-fied
  []
 
-[33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+[]|\T1/pbk/db/n/12 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+[]|\T1/pbk/db/n/12 Incorrectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--844
+[]|\T1/pbk/db/n/12 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--844
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--844
+[]|\T1/pbk/db/n/12 Incorrectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 844--844
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
+[]|\T1/pbk/db/n/12 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
+[]|\T1/pbk/db/n/12 Incorrectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 865--865
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 885--885
+[]|\T1/pbk/db/n/12 Correctly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 885--885
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 885--885
+[]|\T1/pbk/db/n/12 Incorrectly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 885--885
+\T1/pbk/db/n/12 Clas-si-fied
+ []
+
+<graphs/tp_graph.png, id=483, 578.16pt x 433.62pt>
+File: graphs/tp_graph.png Graphic file (type png)
+ <use graphs/tp_graph.png>
+Package pdftex.def Info: graphs/tp_graph.png used on input line 899.
+(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
+
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 899--900
+ [] 
+ []
+
+<graphs/fp_graph.png, id=484, 578.16pt x 433.62pt>
+File: graphs/fp_graph.png Graphic file (type png)
+ <use graphs/fp_graph.png>
+Package pdftex.def Info: graphs/fp_graph.png used on input line 907.
+(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
+
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 907--908
+ [] 
+ []
+
+[34pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.791 \end{table}
-                  <./img/metodologiaExperimentos.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 803--803
-[]|\T1/pbk/db/n/12 Correctly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 803--803
-\T1/pbk/db/n/12 Clas-si-fied
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 803--803
-[]|\T1/pbk/db/n/12 Incorrectly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 803--803
-\T1/pbk/db/n/12 Clas-si-fied
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-[]|\T1/pbk/db/n/12 Correctly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-\T1/pbk/db/n/12 Clas-si-fied
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-[]|\T1/pbk/db/n/12 Incorrectly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
-\T1/pbk/db/n/12 Clas-si-fied
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 845--845
-[]|\T1/pbk/db/n/12 Correctly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 845--845
-\T1/pbk/db/n/12 Clas-si-fied
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 845--845
-[]|\T1/pbk/db/n/12 Incorrectly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 845--845
-\T1/pbk/db/n/12 Clas-si-fied
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 865--865
-[]|\T1/pbk/db/n/12 Correctly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 865--865
-\T1/pbk/db/n/12 Clas-si-fied
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 865--865
-[]|\T1/pbk/db/n/12 Incorrectly
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 865--865
-\T1/pbk/db/n/12 Clas-si-fied
- []
-
-<graphs/tp_graph.png, id=482, 578.16pt x 433.62pt>
-File: graphs/tp_graph.png Graphic file (type png)
- <use graphs/tp_graph.png>
-Package pdftex.def Info: graphs/tp_graph.png used on input line 879.
-(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
-
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 879--880
- [] 
- []
-
-<graphs/fp_graph.png, id=483, 578.16pt x 433.62pt>
-File: graphs/fp_graph.png Graphic file (type png)
- <use graphs/fp_graph.png>
-Package pdftex.def Info: graphs/fp_graph.png used on input line 887.
-(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
-
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 887--888
- [] 
- []
-
-[34pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}
-) has been already used, duplicate ignored
+l.927 \chapter
+              {Conclusões e Trabalhos Futuros} <./img/metodologiaExperimentos.
+png>] [35pdfTeX warning (ext4): destination with the same identifier (name{tabl
+e.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.907 \chapter
+l.927 \chapter
               {Conclusões e Trabalhos Futuros}pdfTeX warning (ext4): destinati
 on with the same identifier (name{table.3.2}) has been already used, duplicate 
 ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.907 \chapter
-              {Conclusões e Trabalhos Futuros}] [35pdfTeX warning (ext4): dest
+l.927 \chapter
+              {Conclusões e Trabalhos Futuros}] [36pdfTeX warning (ext4): dest
 ination with the same identifier (name{table.3.3}) has been already used, dupli
 cate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.907 \chapter
+l.927 \chapter
               {Conclusões e Trabalhos Futuros}pdfTeX warning (ext4): destinati
 on with the same identifier (name{table.3.4}) has been already used, duplicate 
 ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.907 \chapter
-              {Conclusões e Trabalhos Futuros}] [36pdfTeX warning (ext4): dest
+l.927 \chapter
+              {Conclusões e Trabalhos Futuros}] [37pdfTeX warning (ext4): dest
 ination with the same identifier (name{table.3.5}) has been already used, dupli
 cate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.907 \chapter
-              {Conclusões e Trabalhos Futuros}] [37pdfTeX warning (ext4): dest
+l.927 \chapter
+              {Conclusões e Trabalhos Futuros}] [38pdfTeX warning (ext4): dest
 ination with the same identifier (name{figure.3.12}) has been already used, dup
 licate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.907 \chapter
+l.927 \chapter
               {Conclusões e Trabalhos Futuros} <./graphs/tp_graph.png (PNG cop
-y)>] [38pdfTeX warning (ext4): destination with the same identifier (name{figur
+y)>] [39pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.907 \chapter
+l.927 \chapter
               {Conclusões e Trabalhos Futuros} <./graphs/fp_graph.png (PNG cop
-y)>] <graphs/perc_hits_5k.png, id=505, 578.16pt x 433.62pt>
+y)>] <graphs/perc_hits_5k.png, id=511, 578.16pt x 433.62pt>
 File: graphs/perc_hits_5k.png Graphic file (type png)
 
 <use graphs/perc_hits_5k.png>
-Package pdftex.def Info: graphs/perc_hits_5k.png used on input line 918.
-(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
-
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 918--920
- [] 
- []
-
-<graphs/perc_hits_10k.png, id=506, 578.16pt x 433.62pt>
-File: graphs/perc_hits_10k.png Graphic file (type png)
-
-<use graphs/perc_hits_10k.png>
-Package pdftex.def Info: graphs/perc_hits_10k.png used on input line 926.
-(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
-
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 926--928
- [] 
- []
-
-[39
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.932 	\clearpage
-                  <./graphs/perc_hits_5k.png (PNG copy)>] [40pdfTeX warning (ex
-t4): destination with the same identifier (name{figure.4.15}) has been already 
-used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.932 	\clearpage
-                  <./graphs/perc_hits_10k.png (PNG copy)>]
-<graphs/perc_hits_15k.png, id=515, 578.16pt x 433.62pt>
-File: graphs/perc_hits_15k.png Graphic file (type png)
-
-<use graphs/perc_hits_15k.png>
-Package pdftex.def Info: graphs/perc_hits_15k.png used on input line 938.
+Package pdftex.def Info: graphs/perc_hits_5k.png used on input line 938.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
 Overfull \hbox (7.52863pt too wide) in paragraph at lines 938--940
  [] 
  []
 
-<graphs/perc_hits_20k.png, id=516, 578.16pt x 433.62pt>
-File: graphs/perc_hits_20k.png Graphic file (type png)
+<graphs/perc_hits_10k.png, id=512, 578.16pt x 433.62pt>
+File: graphs/perc_hits_10k.png Graphic file (type png)
 
-<use graphs/perc_hits_20k.png>
-Package pdftex.def Info: graphs/perc_hits_20k.png used on input line 946.
+<use graphs/perc_hits_10k.png>
+Package pdftex.def Info: graphs/perc_hits_10k.png used on input line 946.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
 Overfull \hbox (7.52863pt too wide) in paragraph at lines 946--948
  [] 
  []
 
-[41
+[40
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.952 	\clearpage
+                  <./graphs/perc_hits_5k.png (PNG copy)>] [41pdfTeX warning (ex
+t4): destination with the same identifier (name{figure.4.15}) has been already 
+used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.952 	\clearpage
+                  <./graphs/perc_hits_10k.png (PNG copy)>]
+<graphs/perc_hits_15k.png, id=521, 578.16pt x 433.62pt>
+File: graphs/perc_hits_15k.png Graphic file (type png)
+
+<use graphs/perc_hits_15k.png>
+Package pdftex.def Info: graphs/perc_hits_15k.png used on input line 958.
+(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
+
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 958--960
+ [] 
+ []
+
+<graphs/perc_hits_20k.png, id=522, 578.16pt x 433.62pt>
+File: graphs/perc_hits_20k.png Graphic file (type png)
+
+<use graphs/perc_hits_20k.png>
+Package pdftex.def Info: graphs/perc_hits_20k.png used on input line 966.
+(pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
+
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 966--968
+ [] 
+ []
+
+[42
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.16})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.952 	\clearpage
-                  <./graphs/perc_hits_15k.png (PNG copy)>] [42pdfTeX warning (e
+l.972 	\clearpage
+                  <./graphs/perc_hits_15k.png (PNG copy)>] [43pdfTeX warning (e
 xt4): destination with the same identifier (name{figure.4.17}) has been already
  used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.952 	\clearpage
+l.972 	\clearpage
                   <./graphs/perc_hits_20k.png (PNG copy)>]
-<graphs/perc_hits_25k.png, id=526, 578.16pt x 433.62pt>
+<graphs/perc_hits_25k.png, id=532, 578.16pt x 433.62pt>
 File: graphs/perc_hits_25k.png Graphic file (type png)
 
 <use graphs/perc_hits_25k.png>
-Package pdftex.def Info: graphs/perc_hits_25k.png used on input line 959.
+Package pdftex.def Info: graphs/perc_hits_25k.png used on input line 979.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 959--961
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 979--981
  [] 
  []
 
-<python/smo.png, id=527, 578.16pt x 433.62pt>
+<python/smo.png, id=533, 578.16pt x 433.62pt>
 File: python/smo.png Graphic file (type png)
  <use python/smo.png>
-Package pdftex.def Info: python/smo.png used on input line 967.
+Package pdftex.def Info: python/smo.png used on input line 987.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 967--969
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 987--989
  [] 
  []
 
-[43
+[44
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.18})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.973 	\clearpage
-                  <./graphs/perc_hits_25k.png (PNG copy)>] [44pdfTeX warning (e
+l.993 	\clearpage
+                  <./graphs/perc_hits_25k.png (PNG copy)>] [45pdfTeX warning (e
 xt4): destination with the same identifier (name{figure.4.19}) has been already
  used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.973 	\clearpage
+l.993 	\clearpage
                   <./python/smo.png>]
-<python/j48.png, id=537, 578.16pt x 433.62pt>
+<python/j48.png, id=544, 578.16pt x 433.62pt>
 File: python/j48.png Graphic file (type png)
  <use python/j48.png>
-Package pdftex.def Info: python/j48.png used on input line 980.
+Package pdftex.def Info: python/j48.png used on input line 1000.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 980--982
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 1000--1002
  [] 
  []
 
-<python/RandomTree.png, id=538, 578.16pt x 433.62pt>
+<python/RandomTree.png, id=545, 578.16pt x 433.62pt>
 File: python/RandomTree.png Graphic file (type png)
 
 <use python/RandomTree.png>
-Package pdftex.def Info: python/RandomTree.png used on input line 988.
+Package pdftex.def Info: python/RandomTree.png used on input line 1008.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 988--990
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 1008--1010
  [] 
  []
 
-[45
+[46
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.20})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.994 	\clearpage
-                  <./python/j48.png>] [46pdfTeX warning (ext4): destination wit
-h the same identifier (name{figure.4.21}) has been already used, duplicate igno
-red
+l.1014 	\clearpage
+                   <./python/j48.png>] [47pdfTeX warning (ext4): destination wi
+th the same identifier (name{figure.4.21}) has been already used, duplicate ign
+ored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.994 	\clearpage
-                  <./python/RandomTree.png>]
-<python/REPTree.png, id=550, 578.16pt x 433.62pt>
+l.1014 	\clearpage
+                   <./python/RandomTree.png>]
+<python/REPTree.png, id=556, 578.16pt x 433.62pt>
 File: python/REPTree.png Graphic file (type png)
  <use python/REPTree.png>
-Package pdftex.def Info: python/REPTree.png used on input line 1001.
+Package pdftex.def Info: python/REPTree.png used on input line 1021.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 1001--1003
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 1021--1023
  [] 
  []
 
-<python/NaiveBayes.png, id=551, 578.16pt x 433.62pt>
+<python/NaiveBayes.png, id=557, 578.16pt x 433.62pt>
 File: python/NaiveBayes.png Graphic file (type png)
 
 <use python/NaiveBayes.png>
-Package pdftex.def Info: python/NaiveBayes.png used on input line 1009.
+Package pdftex.def Info: python/NaiveBayes.png used on input line 1029.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 1009--1011
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 1029--1031
  [] 
  []
 
-[47
+[48
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.22})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1015 	\clearpage
-                   <./python/REPTree.png>] [48pdfTeX warning (ext4): destinatio
+l.1035 	\clearpage
+                   <./python/REPTree.png>] [49pdfTeX warning (ext4): destinatio
 n with the same identifier (name{figure.4.23}) has been already used, duplicate
  ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1015 	\clearpage
+l.1035 	\clearpage
                    <./python/NaiveBayes.png>]
-<python/ZeroR.png, id=563, 578.16pt x 433.62pt>
+<python/ZeroR.png, id=569, 578.16pt x 433.62pt>
 File: python/ZeroR.png Graphic file (type png)
  <use python/ZeroR.png>
-Package pdftex.def Info: python/ZeroR.png used on input line 1022.
+Package pdftex.def Info: python/ZeroR.png used on input line 1042.
 (pdftex.def)             Requested size: 462.52863pt x 346.89647pt.
 
-Overfull \hbox (7.52863pt too wide) in paragraph at lines 1022--1024
+Overfull \hbox (7.52863pt too wide) in paragraph at lines 1042--1044
  [] 
  []
 
-[49
+[50
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.24})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1027 	\newpage
+l.1047 	\newpage
                  <./python/ZeroR.png>] (./icomp-modelomonografia-pf.bbl
 (./icomp-modelomonografia-pf.brf)
 \tf@brf=\write5
 \openout5 = `icomp-modelomonografia-pf.brf'.
 
- [50]
+ [51]
 bibitemlist
-[51
+[52
 
-] [52]) [53]
+] [53]) [54]
 \tf@lof=\write6
 \openout6 = `icomp-modelomonografia-pf.lof'.
 
@@ -1710,11 +1712,11 @@ bibitemlist
 \tf@toc=\write8
 \openout8 = `icomp-modelomonografia-pf.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1092.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1092.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1112.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1112.
  (./icomp-modelomonografia-pf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1092.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1092.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1112.
 
 
 
@@ -1723,26 +1725,26 @@ d.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `icomp-modelomonografia-pf.brf':
-(rerunfilecheck)             Before: 780A1CBFA8871BC10D1D9353613EC4BE;2795
-(rerunfilecheck)             After:  9E112114B021889FCD46806C5911A12C;2795.
+(rerunfilecheck)             Before: 02D611594C789DCB11B0CCE32879A857;2795
+(rerunfilecheck)             After:  7625602F40A601388CA642EDAE262858;2795.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1092.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1112.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 1048 (\begingroup)
+### semi simple group (level 2) entered at line 1068 (\begingroup)
 ### semi simple group (level 1) entered at line 376 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14533 strings out of 493089
- 215819 string characters out of 6134842
- 400039 words of memory out of 5000000
- 17496 multiletter control sequences out of 15000+600000
- 36583 words of font info for 135 fonts, out of 8000000 for 9000
+ 14534 strings out of 493089
+ 215830 string characters out of 6134842
+ 401022 words of memory out of 5000000
+ 17497 multiletter control sequences out of 15000+600000
+ 36390 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,13n,38p,1249b,5975s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,38p,1231b,5975s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
@@ -1753,10 +1755,10 @@ cal/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/urw/bookman/ubkdi8a.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2015/texmf-
 dist/fonts/type1/urw/bookman/ubkli8a.pfb>
-Output written on icomp-modelomonografia-pf.pdf (54 pages, 1822731 bytes).
+Output written on icomp-modelomonografia-pf.pdf (55 pages, 1823673 bytes).
 PDF statistics:
- 806 PDF objects out of 1000 (max. 8388607)
- 693 compressed objects within 7 object streams
- 170 named destinations out of 1000 (max. 500000)
- 12761 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 817 PDF objects out of 1000 (max. 8388607)
+ 702 compressed objects within 8 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 12769 words of extra memory for PDF output out of 14400 (max. 10000000)
 

@@ -1,26 +1,26 @@
 \select@language {brazil}
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Etapas do processo KDD.}}{17}{figure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Abordagem geral para a constru\IeC {\c c}\IeC {\~a}o de um modelo de classifica\IeC {\c c}\IeC {\~a}o }}{20}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces N\IeC {\'u}cleo do Algoritmo C4.5}}{21}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Conjunto de hiperplanos poss\IeC {\'\i }veis}}{26}{figure.2.4}
+\contentsline {figure}{\numberline {1}{\ignorespaces Etapas do processo KDD.}}{18}{figure.2.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Abordagem geral para a constru\IeC {\c c}\IeC {\~a}o de um modelo de classifica\IeC {\c c}\IeC {\~a}o }}{21}{figure.2.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces N\IeC {\'u}cleo do Algoritmo C4.5}}{22}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Conjunto de hiperplanos poss\IeC {\'\i }veis}}{27}{figure.2.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Data Set Original}}{30}{figure.3.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Erro ao Carregar Inst\IeC {\^a}ncias}}{30}{figure.3.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Erro Mencionado pelo WEKA}}{30}{figure.3.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Filtro \textit {RemoveUseless}}}{31}{figure.3.8}
+\contentsline {figure}{\numberline {6}{\ignorespaces Erro ao Carregar Inst\IeC {\^a}ncias}}{31}{figure.3.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Erro Mencionado pelo WEKA}}{31}{figure.3.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Filtro \textit {RemoveUseless}}}{32}{figure.3.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Filtro \textit {NumericToNominal}}}{32}{figure.3.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Filtro \textit {RemoveRange}}}{32}{figure.3.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Metodologia Processo dos Experimentos}}{33}{figure.3.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces TP Rate}}{37}{figure.3.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces FP Rate}}{38}{figure.3.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 5K Inst\IeC {\^a}ncias}}{39}{figure.4.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 10K Inst\IeC {\^a}ncias}}{40}{figure.4.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 15K Inst\IeC {\^a}ncias}}{41}{figure.4.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 20K Inst\IeC {\^a}ncias}}{42}{figure.4.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 25K Inst\IeC {\^a}ncias}}{43}{figure.4.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo SMO}}{44}{figure.4.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo J48}}{45}{figure.4.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo RandomTree}}{46}{figure.4.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo REPTree}}{47}{figure.4.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo NaiveBayes}}{48}{figure.4.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo ZeroR}}{49}{figure.4.24}
+\contentsline {figure}{\numberline {10}{\ignorespaces Filtro \textit {RemoveRange}}}{33}{figure.3.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Metodologia Processo dos Experimentos}}{34}{figure.3.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces TP Rate}}{38}{figure.3.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces FP Rate}}{39}{figure.3.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 5K Inst\IeC {\^a}ncias}}{40}{figure.4.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 10K Inst\IeC {\^a}ncias}}{41}{figure.4.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 15K Inst\IeC {\^a}ncias}}{42}{figure.4.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 20K Inst\IeC {\^a}ncias}}{43}{figure.4.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces \IeC {\'I}ndice de Classifica\IeC {\c c}\IeC {\~a}o - 25K Inst\IeC {\^a}ncias}}{44}{figure.4.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo SMO}}{45}{figure.4.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo J48}}{46}{figure.4.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo RandomTree}}{47}{figure.4.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo REPTree}}{48}{figure.4.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo NaiveBayes}}{49}{figure.4.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Gr\IeC {\'a}fico ROC - Algoritmo ZeroR}}{50}{figure.4.24}
