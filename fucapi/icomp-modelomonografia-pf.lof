@@ -2,7 +2,7 @@
 \select@language {brazil}
 \contentsline {figure}{\numberline {1}{\ignorespaces Etapas do processo KDD.}}{18}{figure.2.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Abordagem geral para a constru\IeC {\c c}\IeC {\~a}o de um modelo de classifica\IeC {\c c}\IeC {\~a}o }}{21}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces N\IeC {\'u}cleo do Algoritmo C4.5}}{22}{figure.2.3}
+\contentsline {figure}{\numberline {3}{\ignorespaces N\IeC {\'u}cleo do Algoritmo C4.5}}{23}{figure.2.3}
 \contentsline {figure}{\numberline {4}{\ignorespaces Conjunto de hiperplanos poss\IeC {\'\i }veis}}{27}{figure.2.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Data Set Original}}{31}{figure.3.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Erro ao Carregar Inst\IeC {\^a}ncias}}{32}{figure.3.6}
@@ -11,11 +11,11 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces Filtro \textit {NumericToNominal}}}{33}{figure.3.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces Filtro \textit {RemoveRange}}}{34}{figure.3.10}
 \contentsline {figure}{\numberline {11}{\ignorespaces Metodologia Processo dos Experimentos}}{35}{figure.3.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces TP Rate}}{36}{figure.3.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces FP Rate}}{37}{figure.3.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Figura 1}}}{39}{subfigure.4.14.5}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Figura 2}}}{39}{subfigure.4.14.5}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Figura 3}}}{39}{subfigure.4.14.5}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Figura 4}}}{39}{subfigure.4.14.5}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Figura 5}}}{39}{subfigure.4.14.5}
-\contentsline {figure}{\numberline {14}{\ignorespaces Gr\IeC {\'a}fico ROC dos Modelos Gerados}}{40}{figure.4.14}
+\contentsline {figure}{\numberline {12}{\ignorespaces TP Rate}}{37}{figure.3.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces FP Rate}}{38}{figure.3.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Figura 1}}}{40}{subfigure.4.14.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Figura 2}}}{40}{subfigure.4.14.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Figura 3}}}{40}{subfigure.4.14.5}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Figura 4}}}{40}{subfigure.4.14.5}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Figura 5}}}{40}{subfigure.4.14.5}
+\contentsline {figure}{\numberline {14}{\ignorespaces Gr\IeC {\'a}fico ROC dos Modelos Gerados}}{41}{figure.4.14}

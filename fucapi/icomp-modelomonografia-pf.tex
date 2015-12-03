@@ -298,6 +298,8 @@ Agradecimentos dirigidos àqueles que contribuíram de maneira relevante à elab
 	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso, surgiram diversas abordagens, técnicas e ferramentas que buscam transformar dados, também conhecida por Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Discovery in Databases - KDD}). Tal abordagem foi proposta em 1989, com o objetivo de analisar os dados de uma base afim de extrair conhecimento útil \cite{fayyad:1996}.	
 	
 	A computação tem apoiado o desenvolvimento da medicina em diversas áreas como em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras \cite{costa:2012}. Desta maneira, esse grande volume de dados é uma fonte valiosa de conhecimentos que pode ser utilizada como auxílio ao diagnóstico médico. Com base nisso, é necessário o desenvolvimento de técnicas que permitam a descoberta de conhecimentos em base de dados médicos, para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
+	
+	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir de dados do Ministério da Saúde, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Por esta razão observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Minin}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
     
     \newpage
 	\section{Especificação do problema}
@@ -422,7 +424,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		
 	\section{Data Mining}
 	
-		De acordo com \cite{adriaans:1996}, existe uma confusão entre os termos \textit{Data Mining} e KDD, podendo ser usadas até como sinônimos em algumas situações. Em contrapartida, \cite{berry:1997}, definiu como um processo de exploração e análise, de uma grande quantidade de dados, por meio automático ou semiautomático, com o propósito de descobrir regras e padrões significativos.
+		Em \cite{berry:1997}, definiu-se \textit{Data Mining} como um processo de exploração e análise, de uma grande quantidade de dados, por meio automático ou semiautomático, com o propósito de descobrir regras e padrões significativos.
 		
 		É uma técnica que faz parte de uma das etapas da descoberta de conhecimento em banco de dados. É uma área de pesquisa multidisciplinar, incluindo principalmente as tecnologias de banco de dados, inteligência artificial, estatística, reconhecimento de padrões, sistemas baseados em conhecimento, recuperação da informação, computação de alto desempenho e visualização de dados.
 		
@@ -435,12 +437,16 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\item Otimização do uso de recursos limitados, como tempo, espaço, dinheiro ou matéria-prima e maximizar variáveis de resultado como vendas ou lucros sob um determinado conjunto de restrições.
 		\end{itemize}
 		
-	\section{Aprendizagem Supervisionada (REVISAR)}
+	\subsection{Aprendizagem Não Supervisionada}
 	
 		Como mostrado por \cite{damasceno:2005} aprendizagem não supervisionada é aquela que utiliza instâncias sem a determinação do atributo classe. Este  tipo de aprendizado é utilizado geralmente para análise exploratória dos dados, utilizando técnicas de  agrupamento ou regras de associação. Onde agrupamentos têm como objetivo relacionar instâncias com características em comuns.
 		
 		A partir da definição de uma métrica de similaridade, os dados são  agrupados, dando a possibilidade de encontrar relações interessantes entre as instâncias. Assim, o cliente do conhecimento gerado pode aplicar uma determinada ação em um subconjunto de instâncias presente nos  dados. 
 		
+	\subsection{Aprendizagem Supervisionada}
+	
+	No aprendizado supervisionado tem-se a figura de um professor externo, o qual apresenta o conhecimento do ambiente por conjuntos de exemplos na forma: entrada, saída desejada. Onde extrai-se a representação do conhecimento a partir desses exemplos. O objetivo é que a representação gerada seja capaz de produzir saídas corretas para novas entradas não apresentadas previametne \cite{lorena:2007}.
+	
 	\section{Técnicas de Classificação}
 	
 	Uma técnica de classificação é uma abordagem sistemática para construção de modelos de classificação a partir de um conjunto de dados de entrada. Exemplos incluem classificadores de árvores de decisão, classificadores baseados em regras, redes neurais, máquinas de vetores de suporte e classificadores Bayes simples. Cada técnica emprega um algoritmo de aprendizagem para identificar um modelo que seja mais apropriado para o relacionamento entre o conjunto de atributos e o rótulo da classe dos dados de entrada. O modelos gerado pelo algoritmo de aprendizagem deve se adaptar bem aos dados de entrada e prever corretamente os rótulos de classes de registros que ele nunca viu antes. Portanto, o objetivo chave do algoritmo de aprendizagem é construir modelos com boa capacidade de generalização \cite{tan:2009}.
@@ -588,10 +594,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			Fonte: Adaptado de \cite{prati:2008}.
 		\end{table}
 		
-	\begin{itemize}
-		\item Precisão na classificação
-		\item Taxa de erro na classificação
-	\end{itemize}
+
+		Uma das medidas de desenpenho  mais utilizadas para avaliar a qualidade dos modelos é a \textit{precisão na classificação}, que é definida como $Acc = \frac{TP + TN}{TP + FP + FN + TN} $, ou, equivalente, a \textit{taxa de erro na classificação}, definida como \textit{Err} = 1 - \textit{acc}.
+	
 		
 		\begin{comment}
 		\begin{itemize}
@@ -617,7 +622,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		
 	\section{SINAN}
 	
-	O Sistema de Informações de Agravos de Notificação - SINAN é o principal sistema de informações que tem como objetivo os dados referentes a morbidade, sendo fundamental no processo de trabalho da Vigilância em Saúde, estando envolvido não somente nas ações de Vigilância Epidemiológica, mas também na Vigilância Ambiental em Saúde e Vigilância em Saúde do Trabalhador \cite{conass:2015}.
+	O Sistema de Informações de Agravos de Notificação (SINAN) é o principal sistema de informações que tem como objetivo os dados referentes a morbidade, sendo fundamental no processo de trabalho da Vigilância em Saúde, estando envolvido não somente nas ações de Vigilância Epidemiológica, mas também na Vigilância Ambiental em Saúde e Vigilância em Saúde do Trabalhador \cite{conass:2015}.
 	O SINAN foi desenvolvido no início da década de 90, com o objetivo de padronizar a coleta e o processamento de dados sobre agravos de notificação obrigatória em todo território nacional. Construido de maneira hierarquizada, mantendo coerência com a organização do SUS (Sistem Único de Saúde), pretende ser suficiente ágil na viabilização de análises de situações de saúde em curto espaço de tempo. O SINAN fornece dados para a análise do perfil da morbidade e contribui para a tomada de decisões nos níveis municipal, estadual e federal \cite{saude:2008}.
 	A dengue é uma das doenças de notificação compulsória, devendo todo caso suspeito ou confirmado ser notificado ao Serviço de Vigilância Epidemiológica, por meio do SINAN nas fichas de notificação de investigação \cite{saude:2008}.
 	
@@ -716,6 +721,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{comment}
 	
 	\section{Pré-processamento}
+	\label{Pré-processamento}
 	
 	Após o download da base de dados em \cite{fortaleza:2015},  iniciamos a importação do arquivo no formato CSV (\textit{Comma Separated Value}), conforme mostrado na Figura \ref{figdataSetOriginal}.
 	
@@ -784,7 +790,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		
 	\section{Metodologia do Experimento}
 	
-	Nossos experimentos foram realizar a partir dos conjuntos de dados divididos nas seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. A cada conjunto de instâncias, aplicamos os processos de classificação utilizando 5 classificadores que estão contidos em 3 técnicas de classificação. Como resultado dos classificadores obtivemos 25 modelos. 
+	Nossos experimentos foram realizar a partir dos conjuntos de dados divididos nas seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. A cada conjunto de instâncias, aplicamos os processos de classificação utilizando 5 classificadores que estão contidos em 3 técnicas de classificação, conforme representado na Figura \ref{figmetodologiaExperimentos}. Como resultado dos classificadores obtivemos 25 modelos. 
 	
 	Todos os testes foram feitos utilizando o processo de validação conhecido como \textit{Cross Validation} diposnibilizado pelo WEKA (\textit{Waikato Environment for Knowledge Analysis}), com o funcionamento da seguinte forma:
 	\begin{itemize}
@@ -805,11 +811,19 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	\section{Resultados}
 	
-	Nesta seção apresentamos os resultados obtidos na aplicação dos classificadores em  5  conjuntos de dados e as medidas resultantes que utilizamos:
+	Nesta seção apresentamos os resultados obtidos na aplicação dos classificadores em  5  conjuntos de dados e as medidas resultantes observadas. Iniciamos o processo de classificação utilizando o conjunto de \textit{datasets} em ordem crescente, que foram  produzidos na Seção \ref{Pré-processamento}. Como resultado obtive-se  as métricas de classificação utilizadas para avaliação da qualidade dos modelos gerados.
+	
+	\subsection{Precisão na Classificação}
+	
+	Segundo \cite{witten:2011}, o algoritmo \textit{ZeroR} modela uma base de dados com um única regra. Onde, dado um conjunto de dados para uma nova classificação, o algoritmo prediz o valor mais frequente nos dados de treinamento. Com isso utilizou-se este algoritmo como base de referência para os demais algoritmos utilizados neste trabalho, para que seja possível copará-los entre si.
+	
+	Na Tabela \ref{tabResultadosClassificacao}, pode-se observar que no \textit{dataset} com 5\textit{k} instâncias o melhor resultado ficou com o algoritmo \textit{SMO} e o pior resultado no algoritmo \textit{ZeroR}. Outro dado importante que pode ser percebido, está relação aos algoritmos: \textit{SMO}, \textit{J48} e \textit{REPTree}. Pois estes algoritmos obtiveram o maior índice de classificação em todos os conjuntos de \textit{datasets}.
+	\\
+	
 	
 	% Please add the following required packages to your document preamble:
 	% \usepackage{multirow}
-	\begin{table}[]
+	\begin{table}[!htb]
 		\scalefont{0.8}
 		\centering
 		\caption{Resultados de Classificação}
@@ -821,7 +835,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Classificador}}} & \multicolumn{5}{c}{\textbf{Correctly Classified Instances}}                       \\ \cline{2-6} 
 			\multicolumn{1}{c|}{}                                        & 5k instâncias & 10k instâncias & 15k instâncias & 20k instâncias & 25k instâncias \\ \hline
 			SMO                                                          & 89,2866\%     & 88,5354\%      & 89,6185\%      & 89,4714\%      & 89,1407\%      \\
-			J48                                                          & 86,653\%      & 86,2315\%      & 86,6322\%      & 85,9331\%      & 85,3096\%      \\
+			J48                                                          & 86,6530\%      & 86,2315\%      & 86,6322\%      & 85,9331\%      & 85,3096\%      \\
 			REPTree                                                      & 83,9683\%     & 79,7414\%      & 80,7076\%      & 79,6344\%      & 77,7052\%      \\
 			NaiveBayes                                                   & 83,5592\%     & 76,8103\%      & 76,1682\%      & 74,9666\%      & 70,8689\%      \\
 			RandomTree                                                   & 82,0762\%     & 77,2906\%      & 78,8551\%      & 78,0289\%      & 76,6155\%      \\
@@ -830,6 +844,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{flushleft}
 	\end{table}
 	
+	\pagebreak
+	\clearpage
+	%\newpage
 	
 	\begin{comment}		
 		% Please add the following required packages to your document preamble:
@@ -938,6 +955,8 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{center}
 \end{table}
 \end{comment}
+
+Na Figura \ref{figtpRate}, pode-se visualizar estas infomarções observando a \textit{taxa de verdadeiros positivos} de cada modelo gerado. Observa-se que houve um certa redução na precisão de classificação dos \textit{verdadeiros positivos}  conforme o tamanho do \textit{dataset} aumenta  nos algoritmos: \textit{REPTree}, \textit{NaiveBayes}, \textit{ZeroR} e \textit{RandomTree}.
 
 \begin{figure}[!htb]
 	\caption{\label{figtpRate} TP Rate}
