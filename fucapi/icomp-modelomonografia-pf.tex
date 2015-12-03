@@ -807,7 +807,31 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	Nesta seção apresentamos os resultados obtidos na aplicação dos classificadores em  5  conjuntos de dados e as medidas resultantes que utilizamos:
 	
-		
+	% Please add the following required packages to your document preamble:
+	% \usepackage{multirow}
+	\begin{table}[]
+		\scalefont{0.8}
+		\centering
+		\caption{Resultados de Classificação}
+		\label{tabResultadosClassificacao}
+		\begin{flushleft}
+		\renewcommand{\arraystretch}{2}	
+		\begin{tabular}{cccccc}
+			\hline
+			\multicolumn{1}{c|}{\multirow{2}{*}{\textbf{Classificador}}} & \multicolumn{5}{c}{\textbf{Correctly Classified Instances}}                       \\ \cline{2-6} 
+			\multicolumn{1}{c|}{}                                        & 5k instâncias & 10k instâncias & 15k instâncias & 20k instâncias & 25k instâncias \\ \hline
+			SMO                                                          & 89,2866\%     & 88,5354\%      & 89,6185\%      & 89,4714\%      & 89,1407\%      \\
+			J48                                                          & 86,653\%      & 86,2315\%      & 86,6322\%      & 85,9331\%      & 85,3096\%      \\
+			REPTree                                                      & 83,9683\%     & 79,7414\%      & 80,7076\%      & 79,6344\%      & 77,7052\%      \\
+			NaiveBayes                                                   & 83,5592\%     & 76,8103\%      & 76,1682\%      & 74,9666\%      & 70,8689\%      \\
+			RandomTree                                                   & 82,0762\%     & 77,2906\%      & 78,8551\%      & 78,0289\%      & 76,6155\%      \\
+			ZeroR                                                        & 84,2496\%     & 75,6773\%      & 76,8608\%      & 75,9664\%      & 72,1555\%      \\ \hline
+		\end{tabular}
+	\end{flushleft}
+	\end{table}
+	
+	
+	\begin{comment}		
 		% Please add the following required packages to your document preamble:
 		% \usepackage[table,xcdraw]{xcolor}
 		% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
@@ -913,6 +937,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{tabular}
 	\end{center}
 \end{table}
+\end{comment}
 
 \begin{figure}[!htb]
 	\caption{\label{figtpRate} TP Rate}
