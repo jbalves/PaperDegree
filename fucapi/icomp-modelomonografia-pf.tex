@@ -155,7 +155,7 @@
 
 	Monografia apresentada ao Curso de Graduação em Ciência da Computação da Faculdade Fucapi (Instituto de Ensino Superior Fucapi), como requisito parcial para a obtenção do Título de Bacharel em Ciência da Computação.
 	
-	Aprovada em: \hspace*{0.8cm}/ \hspace*{0.8cm}/\hspace*{1cm}, por:
+	Aprovada em: \hspace*{0.8cm}/ \hspace*{0.8cm}/\hspace*{1.2cm}, por:
 
 	\assinatura{\fontsize{12}{15}\selectfont Prof. Márcio Palheta Piedade, M.Sc. \\Faculdade Fucapi \\ \fontsize{12}{15}\selectfont \imprimirorientadorRotulo}
 	\vspace{1cm}
@@ -198,7 +198,7 @@
 
 Em primeiro lugar quero agradecer a Deus, meu grande amigo, companheiro, e sempre me mostrou o caminho a ser seguido.
 
-A minha  esposa amada  Suzane Barros, que me incetivou nessa jornada.
+A minha  amada esposa Suzane Barros, que sempre me incetivou nessa jornada.
 
 Ao meu orientador Prof. Márcio palheta, por mostrar-me o caminho da mineração de dados.
 
@@ -306,7 +306,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	
 	A computação tem apoiado o desenvolvimento da medicina em diversas áreas como em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras \cite{costa:2012}. Desta maneira, esse grande volume de dados é uma fonte valiosa de conhecimentos que pode ser utilizada como auxílio ao diagnóstico médico. Com base nisso, é necessário o desenvolvimento de técnicas que permitam a descoberta de conhecimentos em base de dados médicos, para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 	
-	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir de dados do Ministério da Saúde, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Por esta razão observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Minin}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
+	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir de dados do Ministério da Saúde, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Por esta razão observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Mining}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
     
     \newpage
 	\section{Especificação do problema}
@@ -370,7 +370,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 
 	\section{Metodologia de Desenvolvimento}
 		
-		Com base na metodologia utilizada no processo de Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Dicovery in Databases}) definida em \cite{fayyad:1996}, a realização desta pesquisa será composta das seguintes etapas:
+		Com base na metodologia utilizada no processo de Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Dicovery in Databases} - KDD) definida em \cite{fayyad:1996}, a realização desta pesquisa será composta das seguintes etapas:
 		
 		\begin{itemize}
 			
@@ -386,6 +386,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 			
 		\end{itemize}
 	
+	\newpage
 	\section{Estruturação da Monografia}
 	
 		Além deste capítulo introdutório, este trabalho está organizado da forma descrita à seguir. No Capítulo 2, serão descritos conceitos básicos relacionados à compreensão deste trabalho, bem como o referencial teórico. No Capítulo 3, serão apresentados os experimentos juntamente com os resultados obtidos. Finalmente no Capítulo 4, serão apresentadas as conclusões observadas e sugestões de trabalhos futuros da pesquisa.
@@ -397,7 +398,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 
 Este Capítulo apresenta uma visão geral dos conceitos envolvidos nas várias técnicas de classificação utilizadas ao longo deste trabalho.
 
-Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos envolvidos em KDD e consequentemente em Data Mining. Apresentam-se também os trabalhos encontrados na literatura sobre assunto que são relevantes para o desenvolvimento deste trabalho.
+Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos envolvidos em KDD (\textit{Knowledge Discovery in Databases}) e consequentemente em Data Mining. Apresentam-se também os trabalhos encontrados na literatura sobre assunto que são relevantes para o desenvolvimento deste trabalho.
 
 	\section{Descoberta de Conhecimento em Base de Dados}
 	
@@ -469,6 +470,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		Fonte: Adaptado de \cite{tan:2009}.
 	\end{figure}
 
+	\newpage
 	\subsection{Árvore de Decisão}
 	
 		Em uma árvore de decisão, cada nodo folha recebe um rótulo de classe. os nodos não terminais, que incluem o nodo raiz e outros nodos internos, contêm condições de testes de atributos para separar registros que possuem características diferentes.
@@ -538,17 +540,26 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		 P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)} 
 	\end{equation}
 	\\
-	Sendo $ P(A\mid B) $ a probabilidade \textbf{posteriori} condicional de A a B, tem-se que:
+	Sendo $ P(A\mid B) $ a probabilidade \textit{posteriori} condicional de A a B, tem-se que:
 	\begin{itemize}
-		\item $P(B \mid A) $ a probabilidade \textbf{posteriori} condicional de B a A.
-		\item $P(A) $ probabilidade \textbf{apriori} de A.
-		\item $P(B )$ probabilidade \textbf{apriori} de B.
+		\item $P(B \mid A) $ a probabilidade \textit{posteriori} condicional de B a A.
+		\item $P(A)$ probabilidade a \textit{priori} de A.
+		\item $P(B )$ probabilidade a \textit{priori} de B.
 	\end{itemize}
 	
-	\subsubsection{Algoritmo NaiveBayes}
+	\subsubsection{Algoritmo Naive Bayes}
 	
-	O Classificador \textit{NaiveBayes} é uma técnica probabilística baseada no teorema de \textit{Bayes}, expressão, para calcular a probabilidade Posteriori da classe C
-	Em \cite{john:1995}
+	%O algoritmo \textit{NaiveBayes} é uma técnica probabilística baseada no teorema de \textit{Bayes}, expressão, para calcular a probabilidade Posteriori da classe C Em \cite{john:1995}
+	
+	Em \cite{lucca:2013}, o algoritmo \textit{Naive Bayes} computa a probabilidade de $P(c \mid d)$ de uma instância pertencer a uma determinada classe a partir da probabilidade a priori $P(c)$ de uma instância ser desta classe e das probabilidades condicionais $P(t_k \mid c)$ de cada termo $t_k$ ocorrer em uma instância da mesma classe. O objetivo do algoritmo é encontrar a melhor classe $C_{map}$ para uma instância, maximizando a probabilidade a posteriori conforme a equação \ref{equacaoNaiveBayes}, onde $n_d$ é o número de atributos na instância $d$.
+	\\
+	
+	\begin{equation}
+	\label{equacaoNaiveBayes}
+	C_{map} = {\arg \max}_{c \in C}P(c \mid d) = {\arg \max}_{c \in C}P(c) \Pi_{1 \leq k \leq n_d} P(t_k \mid c)
+	\end{equation}
+	
+	
 	
 	\subsection{Máquinas de Vetores de Suporte (SVM)}
 	
@@ -1045,6 +1056,8 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 	Apesar da técnica SVM (\textit{Support Vector Machine}) em sua formulação original tem o objetivo de lidar apenas com problemas de classificação binários, na aplicação do algoritmo SMO (\textit{Sequential Minimal Optimization}) neste trabalho observou-se os melhores resultados em todas os conjuntos de \textit{datasets} utilizados nos experimentos.
 	
 	O Algoritmo REPTree mostrou maior custo na classificação, pois sua \textit{taxa de falsos positivos} foi a maior em comparação aos algoritmos RandomTree e J48, apesar de realizarem a mesma técnica de classificação Árvores de Decisão.
+	
+	Com isso foi possível observar a viabilidade da aplicação de técnicas de \textit{Data Mining} em conjuntos de dados com informações de agravos de Dengue.
 	
 
 	\begin{comment}

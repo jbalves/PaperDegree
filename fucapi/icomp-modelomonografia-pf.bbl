@@ -5,11 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.5 }
 
-\bibitem[Adriaans e Zantinge 1996]{adriaans:1996}
-\abntrefinfo{Adriaans e Zantinge}{ADRIAANS; ZANTINGE}{1996}
-{ADRIAANS, P.; ZANTINGE, D. Data mining.
-\emph{Addision-Wesley, Harlow}, 1996.}
-
 \bibitem[Bellazzi e Zupan 2008]{bellazzi:2008}
 \abntrefinfo{Bellazzi e Zupan}{BELLAZZI; ZUPAN}{2008}
 {BELLAZZI, R.; ZUPAN, B. Predictive data mining in clinical medicine: current
@@ -91,19 +86,25 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2009.}
 {INITIATIVE, O.~S. 2015.
 Dispon{\'\i}vel em: \url{https://opensource.org/definition}.}
 
-\bibitem[John e Langley 1995]{john:1995}
-\abntrefinfo{John e Langley}{JOHN; LANGLEY}{1995}
-{JOHN, G.~H.; LANGLEY, P. Estimating continuous distributions in bayesian
-  classifiers. In:  MORGAN KAUFMANN PUBLISHERS INC. \emph{Proceedings of the
-  Eleventh conference on Uncertainty in artificial intelligence}. [S.l.], 1995.
-  p. 338--345.}
-
 \bibitem[Junior 2010]{junior:2010}
 \abntrefinfo{Junior}{JUNIOR}{2010}
 {JUNIOR, G. M. d.~O. M{\'a}quina de vetores suporte: estudo e an{\'a}lise de
   par{\^a}metros para otimiza{\c{c}}{\~a}o de resultado, 2010.
 \emph{Trabalho de Gradua{\c{c}}{\~a}o em Ci{\^e}ncia da Computa{\c{c}}{\~a}o},
   2010.}
+
+\bibitem[Lorena e Carvalho 2007]{lorena:2007}
+\abntrefinfo{Lorena e Carvalho}{LORENA; CARVALHO}{2007}
+{LORENA, A.~C.; CARVALHO, A.~C. de. Uma introdu{\c{c}}{\~a}o {\`a}s support
+  vector machines.
+\emph{Revista de Inform{\'a}tica Te{\'o}rica e Aplicada}, v.~14, n.~2, p.
+  43--67, 2007.}
+
+\bibitem[Lucca et al. 2013]{lucca:2013}
+\abntrefinfo{Lucca et al.}{LUCCA et al.}{2013}
+{LUCCA, G. et al. Uma implementa{\c{c}}{\~a}o do algoritmo na{\"\i}ve bayes
+  para classifica{\c{c}}{\~a}o de texto.
+2013.}
 
 \bibitem[Notifica{\c{c}}{\~o}es de Dengue - Ref. 01 a 06/2015
   2015]{fortaleza:2015}

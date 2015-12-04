@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  4 DEC 2015 06:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  4 DEC 2015 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1196,10 +1196,10 @@ SO-ONTHORNPHI-
 File: img/dataMiningFayyad.png Graphic file (type png)
 
 <use img/dataMiningFayyad.png>
-Package pdftex.def Info: img/dataMiningFayyad.png used on input line 425.
+Package pdftex.def Info: img/dataMiningFayyad.png used on input line 426.
 (pdftex.def)             Requested size: 469.75386pt x 189.70828pt.
 
-Overfull \hbox (14.75386pt too wide) in paragraph at lines 425--426
+Overfull \hbox (14.75386pt too wide) in paragraph at lines 426--427
  [] 
  []
 
@@ -1208,133 +1208,133 @@ Overfull \hbox (14.75386pt too wide) in paragraph at lines 425--426
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.435 
-       <./img/dataMiningFayyad.png>] [19]
-
-LaTeX Warning: Citation `lorena:2007' on page 20 undefined on input line 455.
-
-<img/abordagemModeloClassificacao.png, id=305, 1018.80624pt x 764.8575pt>
+l.433 	\section{Data Mining}
+                             <./img/dataMiningFayyad.png>] [19] [20]
+<img/abordagemModeloClassificacao.png, id=312, 1018.80624pt x 764.8575pt>
 File: img/abordagemModeloClassificacao.png Graphic file (type png)
 
 <use img/abordagemModeloClassificacao.png>
 Package pdftex.def Info: img/abordagemModeloClassificacao.png used on input lin
-e 466.
+e 467.
 (pdftex.def)             Requested size: 305.64423pt x 229.45901pt.
- [20] [21pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.2.2}) has been already used, duplicate ignored
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.477 
-       <./img/abordagemModeloClassificacao.png>]
-<img/nucleoC45.png, id=328, 908.39375pt x 480.79625pt>
+l.473 	\newpage
+                <./img/abordagemModeloClassificacao.png>] [22]
+<img/nucleoC45.png, id=337, 908.39375pt x 480.79625pt>
 File: img/nucleoC45.png Graphic file (type png)
  <use img/nucleoC45.png>
-Package pdftex.def Info: img/nucleoC45.png used on input line 489.
+Package pdftex.def Info: img/nucleoC45.png used on input line 491.
 (pdftex.def)             Requested size: 363.35106pt x 192.31508pt.
 
-[22] [23pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.2.3}) has been already used, duplicate ignored
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.508 
        <./img/nucleoC45.png>] [24] [25]
-<img/svmHiperPlanos.png, id=377, 572.1375pt x 447.6725pt>
+Underfull \hbox (badness 10000) in paragraph at lines 554--556
+
+ []
+
+[26] <img/svmHiperPlanos.png, id=389, 572.1375pt x 447.6725pt>
 File: img/svmHiperPlanos.png Graphic file (type png)
 
 <use img/svmHiperPlanos.png>
-Package pdftex.def Info: img/svmHiperPlanos.png used on input line 563.
+Package pdftex.def Info: img/svmHiperPlanos.png used on input line 574.
 (pdftex.def)             Requested size: 286.06804pt x 223.8357pt.
- [26]
-Underfull \hbox (badness 10000) in paragraph at lines 581--583
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.589 
+       <./img/svmHiperPlanos.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 592--594
 
  []
 
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.583 
-       <./img/svmHiperPlanos.png>]
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <16> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 621.
- [28pdfTeX warning (ext4): destination with the same identifier (name{table.2.1
-}) has been already used, duplicate ignored
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 632.
+[28pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.624 
-      ] [29] [30] <img/dataSetOriginal.png, id=432, 1181.41376pt x 262.9825pt>
+l.635 
+      ] [29] [30] <img/dataSetOriginal.png, id=439, 1181.41376pt x 262.9825pt>
 File: img/dataSetOriginal.png Graphic file (type png)
 
 <use img/dataSetOriginal.png>
-Package pdftex.def Info: img/dataSetOriginal.png used on input line 739.
+Package pdftex.def Info: img/dataSetOriginal.png used on input line 750.
 (pdftex.def)             Requested size: 472.55713pt x 105.19113pt.
 
-Overfull \hbox (17.55713pt too wide) in paragraph at lines 739--740
+Overfull \hbox (17.55713pt too wide) in paragraph at lines 750--751
  [] 
  []
 
-<img/erroCarregarInstancias.png, id=433, 888.31876pt x 173.64874pt>
+<img/erroCarregarInstancias.png, id=440, 888.31876pt x 173.64874pt>
 File: img/erroCarregarInstancias.png Graphic file (type png)
 
 <use img/erroCarregarInstancias.png>
-Package pdftex.def Info: img/erroCarregarInstancias.png used on input line 747.
+Package pdftex.def Info: img/erroCarregarInstancias.png used on input line 758.
 
 (pdftex.def)             Requested size: 488.57683pt x 95.5071pt.
 
-Overfull \hbox (33.57683pt too wide) in paragraph at lines 747--748
+Overfull \hbox (33.57683pt too wide) in paragraph at lines 758--759
  [] 
  []
 
 [31
 
-] <img/erroLinhaSete.png, id=441, 1069.9975pt x 151.56625pt>
+] <img/erroLinhaSete.png, id=448, 1069.9975pt x 151.56625pt>
 File: img/erroLinhaSete.png Graphic file (type png)
 
 <use img/erroLinhaSete.png>
-Package pdftex.def Info: img/erroLinhaSete.png used on input line 759.
+Package pdftex.def Info: img/erroLinhaSete.png used on input line 770.
 (pdftex.def)             Requested size: 481.49443pt x 68.20418pt.
 
-Overfull \hbox (26.49443pt too wide) in paragraph at lines 759--760
+Overfull \hbox (26.49443pt too wide) in paragraph at lines 770--771
  [] 
  []
 
-<img/filtroRemoveUseless.png, id=443, 483.8075pt x 230.8625pt>
+<img/filtroRemoveUseless.png, id=450, 483.8075pt x 230.8625pt>
 File: img/filtroRemoveUseless.png Graphic file (type png)
 
 <use img/filtroRemoveUseless.png>
-Package pdftex.def Info: img/filtroRemoveUseless.png used on input line 773.
+Package pdftex.def Info: img/filtroRemoveUseless.png used on input line 784.
 (pdftex.def)             Requested size: 217.71136pt x 103.88715pt.
  [32pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.777 			\item \textit
+l.788 			\item \textit
                       {NumericToNominal}: Um filtro para transformar numéri...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.777 			\item \textit
+l.788 			\item \textit
                       {NumericToNominal}: Um filtro para transformar numéri...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.777 			\item \textit
+l.788 			\item \textit
                       {NumericToNominal}: Um filtro para transformar numéri...
  <./img/dataSetOriginal.png> <./img/erroCarregarInstancias.png> <./img/erroLinh
-aSete.png>] <img/filtroNumericToNominal.png, id=452, 483.8075pt x 302.12875pt>
+aSete.png>] <img/filtroNumericToNominal.png, id=459, 483.8075pt x 302.12875pt>
 File: img/filtroNumericToNominal.png Graphic file (type png)
 
 <use img/filtroNumericToNominal.png>
-Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 781.
+Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 792.
 
 (pdftex.def)             Requested size: 217.71136pt x 135.95668pt.
  [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
@@ -1342,37 +1342,37 @@ Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 781.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.785 			\newpage
+l.796 			\newpage
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{figure.3.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.785 			\newpage
+l.796 			\newpage
                   <./img/filtroRemoveUseless.png> <./img/filtroNumericToNominal
-.png>] <img/filtroRemoveRange.png, id=460, 478.78876pt x 260.975pt>
+.png>] <img/filtroRemoveRange.png, id=467, 478.78876pt x 260.975pt>
 File: img/filtroRemoveRange.png Graphic file (type png)
 
 <use img/filtroRemoveRange.png>
-Package pdftex.def Info: img/filtroRemoveRange.png used on input line 790.
+Package pdftex.def Info: img/filtroRemoveRange.png used on input line 801.
 (pdftex.def)             Requested size: 215.45294pt x 117.43767pt.
  [34pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.807 		\item O
+l.818 		\item O
                s resultados do teste são coletados e calculados sobre todos...
  <./img/filtroRemoveRange.png>]
-<img/metodologiaExperimentos.png, id=467, 800.9925pt x 553.06625pt>
+<img/metodologiaExperimentos.png, id=474, 800.9925pt x 553.06625pt>
 File: img/metodologiaExperimentos.png Graphic file (type png)
 
 <use img/metodologiaExperimentos.png>
-Package pdftex.def Info: img/metodologiaExperimentos.png used on input line 814
+Package pdftex.def Info: img/metodologiaExperimentos.png used on input line 825
 .
 (pdftex.def)             Requested size: 440.54723pt x 304.18738pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 826--828
+Underfull \hbox (badness 10000) in paragraph at lines 837--839
 
  []
 
@@ -1381,107 +1381,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 826--828
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.828 
+l.839 
        <./img/metodologiaExperimentos.png>]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <9.60004> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 833.
-LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 839
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 844.
+LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 850
 .
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.60004> on input line 839.
+(Font)              <9.60004> on input line 850.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.71999> on input line 839.
+(Font)              <6.71999> on input line 850.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.80002> on input line 839.
+(Font)              <4.80002> on input line 850.
 LaTeX Font Info:    Font shape `T1/pbk/bx/n' in size <9.60004> not available
-(Font)              Font shape `T1/pbk/b/n' tried instead on input line 841.
+(Font)              Font shape `T1/pbk/b/n' tried instead on input line 852.
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <9.60004> not available
-(Font)              Font shape `T1/pbk/db/n' tried instead on input line 841.
+(Font)              Font shape `T1/pbk/db/n' tried instead on input line 852.
 
-Overfull \hbox (21.17331pt too wide) in paragraph at lines 839--850
+Overfull \hbox (21.17331pt too wide) in paragraph at lines 850--861
 []  
  []
 
-<graphs/tp_graph.png, id=477, 503.9628pt x 399.4122pt>
+<graphs/tp_graph.png, id=484, 503.9628pt x 399.4122pt>
 File: graphs/tp_graph.png Graphic file (type png)
 
 <use graphs/tp_graph.png>
-Package pdftex.def Info: graphs/tp_graph.png used on input line 970.
+Package pdftex.def Info: graphs/tp_graph.png used on input line 981.
 (pdftex.def)             Requested size: 403.17078pt x 319.5302pt.
  [36pdfTeX warning (ext4): destination with the same identifier (name{table.3.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.975 \newpage
-              ] <graphs/fp_graph.png, id=485, 489.027pt x 398.4486pt>
+l.986 \newpage
+              ] <graphs/fp_graph.png, id=492, 489.027pt x 398.4486pt>
 File: graphs/fp_graph.png Graphic file (type png)
 
 <use graphs/fp_graph.png>
-Package pdftex.def Info: graphs/fp_graph.png used on input line 981.
+Package pdftex.def Info: graphs/fp_graph.png used on input line 992.
 (pdftex.def)             Requested size: 391.22212pt x 318.75931pt.
  [37pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1002 
+l.1013 
         <./graphs/tp_graph.png>]
-<graphs/perc_hits_5k.png, id=497, 484.6908pt x 383.9946pt>
+<graphs/perc_hits_5k.png, id=504, 484.6908pt x 383.9946pt>
 File: graphs/perc_hits_5k.png Graphic file (type png)
 
 <use graphs/perc_hits_5k.png>
-Package pdftex.def Info: graphs/perc_hits_5k.png used on input line 1010.
+Package pdftex.def Info: graphs/perc_hits_5k.png used on input line 1021.
 (pdftex.def)             Requested size: 241.84927pt x 199.16858pt.
 
-<graphs/perc_hits_10k.png, id=498, 485.1726pt x 384.4764pt>
+<graphs/perc_hits_10k.png, id=505, 485.1726pt x 384.4764pt>
 File: graphs/perc_hits_10k.png Graphic file (type png)
 
 <use graphs/perc_hits_10k.png>
-Package pdftex.def Info: graphs/perc_hits_10k.png used on input line 1012.
+Package pdftex.def Info: graphs/perc_hits_10k.png used on input line 1023.
 (pdftex.def)             Requested size: 241.8528pt x 199.17207pt.
 
-<graphs/perc_hits_15k.png, id=499, 486.1362pt x 384.9582pt>
+<graphs/perc_hits_15k.png, id=506, 486.1362pt x 384.9582pt>
 File: graphs/perc_hits_15k.png Graphic file (type png)
 
 <use graphs/perc_hits_15k.png>
-Package pdftex.def Info: graphs/perc_hits_15k.png used on input line 1014.
+Package pdftex.def Info: graphs/perc_hits_15k.png used on input line 1025.
 (pdftex.def)             Requested size: 241.85097pt x 199.16908pt.
 
-<graphs/perc_hits_20k.png, id=500, 485.6544pt x 385.44pt>
+<graphs/perc_hits_20k.png, id=507, 485.6544pt x 385.44pt>
 File: graphs/perc_hits_20k.png Graphic file (type png)
 
 <use graphs/perc_hits_20k.png>
-Package pdftex.def Info: graphs/perc_hits_20k.png used on input line 1016.
+Package pdftex.def Info: graphs/perc_hits_20k.png used on input line 1027.
 (pdftex.def)             Requested size: 241.84842pt x 199.16547pt.
 
-Overfull \hbox (39.31001pt too wide) in paragraph at lines 1010--1017
+Overfull \hbox (39.31001pt too wide) in paragraph at lines 1021--1028
 [] [][]
  []
 
 
-Overfull \hbox (39.30733pt too wide) in paragraph at lines 1010--1017
+Overfull \hbox (39.30733pt too wide) in paragraph at lines 1021--1028
 [][] [][] 
  []
 
-<graphs/perc_hits_25k.png, id=501, 486.1362pt x 386.4036pt>
+<graphs/perc_hits_25k.png, id=508, 486.1362pt x 386.4036pt>
 File: graphs/perc_hits_25k.png Graphic file (type png)
 
 <use graphs/perc_hits_25k.png>
-Package pdftex.def Info: graphs/perc_hits_25k.png used on input line 1019.
+Package pdftex.def Info: graphs/perc_hits_25k.png used on input line 1030.
 (pdftex.def)             Requested size: 241.85097pt x 199.174pt.
 
 
-LaTeX Warning: Float too large for page by 30.94159pt on input line 1021.
+LaTeX Warning: Float too large for page by 30.94159pt on input line 1032.
 
-<python/TodosModelos.png, id=502, 577.4373pt x 405.4347pt>
+<python/TodosModelos.png, id=509, 577.4373pt x 405.4347pt>
 File: python/TodosModelos.png Graphic file (type png)
 
 <use python/TodosModelos.png>
-Package pdftex.def Info: python/TodosModelos.png used on input line 1027.
+Package pdftex.def Info: python/TodosModelos.png used on input line 1038.
 (pdftex.def)             Requested size: 461.95045pt x 324.34819pt.
 
-Overfull \hbox (6.95045pt too wide) in paragraph at lines 1027--1028
+Overfull \hbox (6.95045pt too wide) in paragraph at lines 1038--1039
  [] 
  []
 
@@ -1490,14 +1490,14 @@ Overfull \hbox (6.95045pt too wide) in paragraph at lines 1027--1028
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1035 \chapter
+l.1046 \chapter
                {Conclusão e Trabalhos Futuros} <./graphs/fp_graph.png>]
 [39pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1035 \chapter
+l.1046 \chapter
                {Conclusão e Trabalhos Futuros} <./graphs/perc_hits_5k.png> <./
 graphs/perc_hits_10k.png> <./graphs/perc_hits_15k.png> <./graphs/perc_hits_20k.
 png> <./graphs/perc_hits_25k.png>] [40pdfTeX warning (ext4): destination with t
@@ -1506,7 +1506,7 @@ he same identifier (name{figure.3.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1035 \chapter
+l.1046 \chapter
                {Conclusão e Trabalhos Futuros} <./python/TodosModelos.png>]
 [41
 
@@ -1531,11 +1531,11 @@ bibitemlist
 \tf@toc=\write8
 \openout8 = `icomp-modelomonografia-pf.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1235.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1235.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1248.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1248.
  (./icomp-modelomonografia-pf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1235.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1235.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1248.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1248.
 
 
 
@@ -1544,43 +1544,42 @@ d.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `icomp-modelomonografia-pf.brf':
-(rerunfilecheck)             Before: FE3D77C9AEC18F25FE1A15CE00A5AB6A;3036
-(rerunfilecheck)             After:  BCBFFC6F5E3090414D09C61BA500948B;3036.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: 4F011F7D068FCEE2FCAE46F37F307545;3037
+(rerunfilecheck)             After:  20B166231B4CE2D0239DB0BBFA73A060;3037.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1235.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1248.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 1191 (\begingroup)
+### semi simple group (level 2) entered at line 1204 (\begingroup)
 ### semi simple group (level 1) entered at line 376 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14657 strings out of 493089
- 217944 string characters out of 6134842
- 390151 words of memory out of 5000000
- 17633 multiletter control sequences out of 15000+600000
+ 14656 strings out of 493089
+ 217916 string characters out of 6134842
+ 389230 words of memory out of 5000000
+ 17631 multiletter control sequences out of 15000+600000
  39370 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,13n,38p,1231b,6149s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,38p,1231b,6146s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/urw/bookman/ubkdi8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/urw/bookman/ubkli8a.pfb>
-Output written on icomp-modelomonografia-pf.pdf (46 pages, 1752850 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/urw/bookman/ubkdi8a.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/urw/bookman/ubkli8a.pfb>
+Output written on icomp-modelomonografia-pf.pdf (46 pages, 1771873 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
- 670 compressed objects within 7 object streams
- 157 named destinations out of 1000 (max. 500000)
+ 784 PDF objects out of 1000 (max. 8388607)
+ 680 compressed objects within 7 object streams
+ 158 named destinations out of 1000 (max. 500000)
  15304 words of extra memory for PDF output out of 17280 (max. 10000000)
 
