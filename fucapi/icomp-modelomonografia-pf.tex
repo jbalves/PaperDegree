@@ -138,7 +138,6 @@
 %
 % \includepdf{folhadeaprovacao_final.pdf}
 
-
 \begin{folhadeaprovacao}
 	\parindent=0pt
 	\setlength{\ABNTEXsignskip}{1.5cm}
@@ -156,7 +155,7 @@
 
 	Monografia apresentada ao Curso de Graduação em Ciência da Computação da Faculdade Fucapi (Instituto de Ensino Superior Fucapi), como requisito parcial para a obtenção do Título de Bacharel em Ciência da Computação.
 	
-	Aprovada em:       /      /            , por:
+	Aprovada em: \hspace*{0.8cm}/ \hspace*{0.8cm}/\hspace*{1cm}, por:
 
 	\assinatura{\fontsize{12}{15}\selectfont Prof. Márcio Palheta Piedade, M.Sc. \\Faculdade Fucapi \\ \fontsize{12}{15}\selectfont \imprimirorientadorRotulo}
 	\vspace{1cm}
@@ -640,7 +639,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 % - - -
 \chapter{Experimentos}
 
-	Neste capítulo, avaliamos os modelos gerados através de uma série de experimentos. Apresentaremos a base de dados utilizada para os experimentos, a metodologia de experimentação e os experimentos em si realizados.
+	Neste capítulo, avaliamos os modelos gerados através de uma série de experimentos. Apresentaremos a base de dados utilizada para os experimentos, a metodologia de experimentação e os experimentos em si realizados. Serão apresentados resultados obtidos na aplicação dos classificadores em  5  conjuntos de dados e as medidas resultantes observadas. O processo de classificação utiliza o conjunto de \textit{datasets} em ordem crescente, que foram  produzidos na Seção \ref{Pré-processamento}. %Como resultado obtive-se  as métricas de classificação utilizadas para avaliação da qualidade dos modelos gerados.
 
 	\section{Base de Dados}
 	
@@ -819,9 +818,8 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	\section{Resultados}
 	
-	Nesta seção apresentamos os resultados obtidos na aplicação dos classificadores em  5  conjuntos de dados e as medidas resultantes observadas. Iniciamos o processo de classificação utilizando o conjunto de \textit{datasets} em ordem crescente, que foram  produzidos na Seção \ref{Pré-processamento}. Como resultado obtive-se  as métricas de classificação utilizadas para avaliação da qualidade dos modelos gerados.
 	
-	\subsection{Precisão na Classificação}
+	%\subsection{Precisão na Classificação}
 	
 	Segundo \cite{witten:2011}, o algoritmo \textit{ZeroR} modela uma base de dados com um única regra. Onde, dado um conjunto de dados para uma nova classificação, o algoritmo prediz o valor mais frequente nos dados de treinamento. Com isso utilizou-se este algoritmo como base de referência para os demais algoritmos utilizados neste trabalho, para que seja possível copará-los entre si.
 	
@@ -852,8 +850,8 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{flushleft}
 	\end{table}
 	
-	\pagebreak
-	\clearpage
+	%\pagebreak
+	%\clearpage
 	%\newpage
 	
 	\begin{comment}		
@@ -997,24 +995,58 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 	\end{figure}
 	\end{comment}
 	
-% - - -
-% Capítulo 4
-% - - -
-\chapter{Conclusões e Trabalhos Futuros}
-
-	Neste Capítulo, apresentado as conclusões do nosso trabalho, incluindo suas limitações  e futuros estudos que possam ser explorados. 
-
-	\section{Resultados Obtidos}
-
-	O Objetivo deste estudo foi construir modelos de classificação por meio do uso de técnicas em \textit{Data Mining} conhecidas como: \textit{Árvore de Decisão}, \textit{Teorema de Bayes} e \textit{Máquinas de Vetores de Suporte}. Estas técnicas foram aplicadas por meio dos algoritmos: \textit{SMO}, \textit{J48}, \textit{REPTree}, \textit{RandomTree} e \textit{NaiveBayes}.
-	
+	%\newpage
 	Observando a Figura \ref{figAcertosErrosClassificacao}, pode-se verificar que em todos os conjuntos de dados utilizados nos experimentos, os algoritmos \textit{SMO} e \textit{J48} se destacam em relação aos demais. Com isso os modelos de classificação gerados por esses algoritmos se desempenharam com índices próximos a 90\% no quesito predição de novas instâncias.
-
+	
 	Em \cite{prati:2008}, gráfico ROC(\textit{Receiver Operating Characteristic}) é um método para avaliação e seleção de sistemas de diagnóstico e/ou predição. O gráfico ROC é baseado na probabilidade de detecção ou \textit{taxa de verdadeiros positivos}, e na probalidade de falsos alarmes, ou \textit{taxa de falsos positivos}.
 	
 	Como pode-se observar na Figura \ref{figTodosModelos}, os modelos gerados pelo algoritmos \textit{SMO} e \textit{J48} obtiveram melhor qualidade, pois se aproximam do ponto $(0,1)$.  Em \cite{prati:2008}, resultados pertecentes ao canto superior esquerdo representam classificadores que possuem melhor desempenho.
-
 	
+	\begin{figure}[!htb]
+		\begin{center}
+			\caption{\label{figAcertosErrosClassificacao} Gráficos de Acertos e Erros de Classificação}
+		\end{center}
+		\subfigure[5k Instâncias\label{surreal1}]{
+			\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_5k.png}}
+		\subfigure[10k Instâncias\label{surreal2}]{
+			\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_10k.png}}
+		\subfigure[15k Instâncias\label{surreal3}]{
+			\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_15k.png}}
+		\subfigure[20k Instâncias\label{surreal4}]{
+			\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_20k.png}}
+		\begin{center}
+			\subfigure[25k Instâncias\label{surreal5}]{
+				\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_25k.png}}
+		\end{center}
+	\end{figure}
+	
+	
+	\begin{figure}[!htb]
+		\caption{\label{figTodosModelos} Modelos de Classificação no Espaço ROC}
+		\begin{center}
+			\includegraphics[scale=0.8]{python/TodosModelos.png}
+		\end{center}
+		Fonte: Próprio Autor.
+	\end{figure}
+	
+% - - -
+% Capítulo 4
+% - - -
+\chapter{Conclusão e Trabalhos Futuros}
+
+	Neste Capítulo, apresentado as conclusões do nosso trabalho, incluindo suas limitações  e futuros estudos que possam ser explorados. 
+
+	\section{Conclusão}
+
+	O Objetivo deste estudo foi construir modelos de classificação por meio do uso de técnicas em \textit{Data Mining} conhecidas como: \textit{Árvore de Decisão}, \textit{Teorema de Bayes} e \textit{Máquinas de Vetores de Suporte}. Estas técnicas foram aplicadas por meio dos algoritmos: \textit{SMO}, \textit{J48}, \textit{REPTree}, \textit{RandomTree} e \textit{NaiveBayes}.
+	
+	As três técnicas apresentadas e testadas neste trabalho: Árvores de Decisão, Bayes e SVM (\textit{Support Vector Machine}), mostraram ser técnicas aplicáveis em bases de dados oriundas do SINAN (Sistema de Informações de Agravos de Notificação), obtendo resultados entre 70\% e 90\% na classificação.
+	
+	Apesar da técnica SVM (\textit{Support Vector Machine}) em sua formulação original tem o objetivo de lidar apenas com problemas de classificação binários, na aplicação do algoritmo SMO (\textit{Sequential Minimal Optimization}) neste trabalho observou-se os melhores resultados em todas os conjuntos de \textit{datasets} utilizados nos experimentos.
+	
+	O Algoritmo REPTree mostrou maior custo na classificação, pois sua \textit{taxa de falsos positivos} foi a maior em comparação aos algoritmos RandomTree e J48, apesar de realizarem a mesma técnica de classificação Árvores de Decisão.
+	
+
 	\begin{comment}
 	\begin{figure}[!htb]
 		\caption{\label{figperHits5k} Índice de Classificação - 5K Instâncias}
@@ -1025,26 +1057,9 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 	\end{figure}
 	\end{comment}
 	
-	\begin{figure}[!htb]
-		\begin{center}
-			\caption{\label{figAcertosErrosClassificacao} Gráficos de Acertos e Erros de Classificação}
-		\end{center}
-		\subfigure[5k Instâncias\label{surreal1}]{
-		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_5k.png}}
-		\subfigure[10k Instâncias\label{surreal2}]{
-		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_10k.png}}
-		\subfigure[15k Instâncias\label{surreal3}]{
-		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_15k.png}}
-		\subfigure[20k Instâncias\label{surreal4}]{
-		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_20k.png}}
-		\begin{center}
-		\subfigure[25k Instâncias\label{surreal5}]{
-		\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_25k.png}}
-		\end{center}
-	\end{figure}
+	
 
 	\begin{comment}
-
 	\begin{figure}[!htb]
 		\caption{\label{figperHits10k} Índice de Classificação - 10K Instâncias}
 		\begin{center}
@@ -1090,13 +1105,7 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 	\pagebreak
 	\clearpage
 	\newpage
-	\begin{figure}[!htb]
-		\caption{\label{figTodosModelos} Modelos de Classificação no Espaço ROC}
-		\begin{center}
-			\includegraphics[scale=0.8]{python/TodosModelos.png}
-		\end{center}
-		Fonte: Próprio Autor.
-	\end{figure}
+	
 
 	\begin{comment}
 	\begin{figure}[!htb]
@@ -1171,6 +1180,7 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 		\item Implementar remoção de instâncias que influenciam na qualidade do classificador.
 		\item Adaptar a construção de modelos em tempo real.
 		\item Integrar informações de precipitação de chuva da região onde os dados foram coletados.
+		\item Testar modelos gerados em bases de outros estados.
 		\item Usar outros algoritmos de classificação.
 	\end{itemize}
 

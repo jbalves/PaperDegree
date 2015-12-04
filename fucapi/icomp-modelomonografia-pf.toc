@@ -41,13 +41,12 @@
 \contentsline {section}{\numberline {3.2}Pr\IeC {\'e}-processamento}{31}{section.3.2}
 \contentsline {section}{\numberline {3.3}Metodologia do Experimento}{34}{section.3.3}
 \contentsline {section}{\numberline {3.4}Resultados}{35}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Precis\IeC {\~a}o na Classifica\IeC {\c c}\IeC {\~a}o}{36}{subsection.3.4.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~o}es e Trabalhos Futuros}}{39}{chapter.4}
-\contentsline {section}{\numberline {4.1}Resultados Obtidos}{39}{section.4.1}
-\contentsline {section}{\numberline {4.2}Trabalhos Futuros}{41}{section.4.2}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~a}o e Trabalhos Futuros}}{41}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclus\IeC {\~a}o}{41}{section.4.1}
+\contentsline {section}{\numberline {4.2}Trabalhos Futuros}{42}{section.4.2}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{42}{section*.11}
+\contentsline {chapter}{Refer\^encias}{43}{section*.11}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
