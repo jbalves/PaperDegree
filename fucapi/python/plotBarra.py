@@ -55,7 +55,7 @@ plt.grid(False)
 # na variavel legenda 
 #plt.legend(grafico, legenda)
 
-plt.axis(['','',0,100])
+plt.axis(['',',0,100])
 
 
 # Exibe o grafico 
