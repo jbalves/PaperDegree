@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  4 DEC 2015 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.9.25)  14 DEC 2015 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -848,22 +848,7 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/backref.sty
-Package: backref 2012/07/25 v1.38 Bibliographical back referencing
-
-
-! Package keyval Error: hyper undefined.
-
-See the keyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.161 \ProcessKeyvalOptions*
-                            
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/abntex2/abntex2cite.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2015/04/28 v1.9.5 abnTeX2
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
@@ -880,6 +865,25 @@ LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks28
 )
+
+! LaTeX Error: Option clash for package abntex2cite.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \usepackage
+                {pdfpages} %adicionar documentos pdf. neste caso utilizando ...
+
+The package abntex2cite has already been loaded with options:
+  [alf]
+There has now been an attempt to load it with options
+  [alf,bibjustif]
+Adding the global options:
+  alf,alf,bibjustif
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
 
@@ -988,29 +992,29 @@ Writing index file icomp-modelomonografia-pf.idx
 (./icomp-modelomonografia-pf.aux)
 \openout1 = `icomp-modelomonografia-pf.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Try loading font information for T1+pbk on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Try loading font information for T1+pbk on input line 105.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pbk.fd
 File: t1pbk.fd 2001/06/04 font definitions for T1/pbk.
 )
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <12> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 103.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 105.
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 103.
+Package hyperref Info: Link coloring OFF on input line 105.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1022,10 +1026,10 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 103.
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 105.
+LaTeX Info: Redefining \pageref on input line 105.
+LaTeX Info: Redefining \nameref on input line 105.
 \myptabbox=\box36
 \myptabboxwidth=\skip210
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -1056,7 +1060,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 103.
+LaTeX Info: Redefining \microtypecontext on input line 105.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1071,13 +1075,13 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <11> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 122.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 124.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <18> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 122.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 124.
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <18> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 122.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 124.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <15> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 122.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 124.
 
 [1
 
@@ -1087,25 +1091,25 @@ Runaway argument?
 ! Paragraph ended before \text@command was complete.
 <to be read again> 
                    \par 
-l.140 
+l.142 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 142--142
  
  []
 
 LaTeX Font Info:    Font shape `T1/pbk/bx/n' in size <12> not available
-(Font)              Font shape `T1/pbk/b/n' tried instead on input line 140.
+(Font)              Font shape `T1/pbk/b/n' tried instead on input line 142.
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <12> not available
-(Font)              Font shape `T1/pbk/db/n' tried instead on input line 140.
+(Font)              Font shape `T1/pbk/db/n' tried instead on input line 142.
 ! Extra }, or forgotten \endgroup.
 <argument> ...lectfont \imprimirorientador \par }}
                                                    \abntex@ifnotempty {\impr...
-l.140 
+l.142 
       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1118,28 +1122,28 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 140.
+(Font)              <12> on input line 142.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 140.
+(Font)              <8> on input line 142.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 140.
+(Font)              <6> on input line 142.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 
+l.142 
        [1
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <12> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 151.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 153.
  [2
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <22> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 198.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 200.
  [3
 
 
@@ -1172,19 +1176,19 @@ LaTeX Font Info:    Font shape `T1/pbk/b/it' in size <12> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <16> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 312.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 314.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 324.
-LaTeX Font Info:    Try loading font information for OMS+pbk on input line 331.
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 326.
+LaTeX Font Info:    Try loading font information for OMS+pbk on input line 333.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omspbk.fd
 File: omspbk.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pbk/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 331.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 333.
 
 [12] [13]
-Overfull \hbox (9.23865pt too wide) in paragraph at lines 367--368
+Overfull \hbox (9.23865pt too wide) in paragraph at lines 369--370
 []\T1/pbk/l/n/12 (-20) No tra-ba-lho de ([]THI-TI-PRAYO-ONWONGSE; SU-RIYAPHOL; 
 SO-ONTHORNPHI-
  []
@@ -1196,10 +1200,10 @@ SO-ONTHORNPHI-
 File: img/dataMiningFayyad.png Graphic file (type png)
 
 <use img/dataMiningFayyad.png>
-Package pdftex.def Info: img/dataMiningFayyad.png used on input line 426.
+Package pdftex.def Info: img/dataMiningFayyad.png used on input line 428.
 (pdftex.def)             Requested size: 469.75386pt x 189.70828pt.
 
-Overfull \hbox (14.75386pt too wide) in paragraph at lines 426--427
+Overfull \hbox (14.75386pt too wide) in paragraph at lines 428--429
  [] 
  []
 
@@ -1208,26 +1212,26 @@ Overfull \hbox (14.75386pt too wide) in paragraph at lines 426--427
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.433 	\section{Data Mining}
+l.435 	\section{Data Mining}
                              <./img/dataMiningFayyad.png>] [19] [20]
 <img/abordagemModeloClassificacao.png, id=312, 1018.80624pt x 764.8575pt>
 File: img/abordagemModeloClassificacao.png Graphic file (type png)
 
 <use img/abordagemModeloClassificacao.png>
 Package pdftex.def Info: img/abordagemModeloClassificacao.png used on input lin
-e 467.
+e 469.
 (pdftex.def)             Requested size: 305.64423pt x 229.45901pt.
  [21pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.473 	\newpage
+l.475 	\newpage
                 <./img/abordagemModeloClassificacao.png>] [22]
 <img/nucleoC45.png, id=337, 908.39375pt x 480.79625pt>
 File: img/nucleoC45.png Graphic file (type png)
  <use img/nucleoC45.png>
-Package pdftex.def Info: img/nucleoC45.png used on input line 491.
+Package pdftex.def Info: img/nucleoC45.png used on input line 493.
 (pdftex.def)             Requested size: 363.35106pt x 192.31508pt.
 
 [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
@@ -1235,9 +1239,9 @@ Package pdftex.def Info: img/nucleoC45.png used on input line 491.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.508 
+l.510 
        <./img/nucleoC45.png>] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 554--556
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
 
  []
 
@@ -1245,35 +1249,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 554--556
 File: img/svmHiperPlanos.png Graphic file (type png)
 
 <use img/svmHiperPlanos.png>
-Package pdftex.def Info: img/svmHiperPlanos.png used on input line 574.
+Package pdftex.def Info: img/svmHiperPlanos.png used on input line 576.
 (pdftex.def)             Requested size: 286.06804pt x 223.8357pt.
  [27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.589 
+l.591 
        <./img/svmHiperPlanos.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 592--594
+Underfull \hbox (badness 10000) in paragraph at lines 594--596
 
  []
 
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <16> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 632.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 634.
 [28pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.635 
+l.637 
       ] [29] [30] <img/dataSetOriginal.png, id=439, 1181.41376pt x 262.9825pt>
 File: img/dataSetOriginal.png Graphic file (type png)
 
 <use img/dataSetOriginal.png>
-Package pdftex.def Info: img/dataSetOriginal.png used on input line 750.
+Package pdftex.def Info: img/dataSetOriginal.png used on input line 752.
 (pdftex.def)             Requested size: 472.55713pt x 105.19113pt.
 
-Overfull \hbox (17.55713pt too wide) in paragraph at lines 750--751
+Overfull \hbox (17.55713pt too wide) in paragraph at lines 752--753
  [] 
  []
 
@@ -1281,11 +1285,11 @@ Overfull \hbox (17.55713pt too wide) in paragraph at lines 750--751
 File: img/erroCarregarInstancias.png Graphic file (type png)
 
 <use img/erroCarregarInstancias.png>
-Package pdftex.def Info: img/erroCarregarInstancias.png used on input line 758.
+Package pdftex.def Info: img/erroCarregarInstancias.png used on input line 760.
 
 (pdftex.def)             Requested size: 488.57683pt x 95.5071pt.
 
-Overfull \hbox (33.57683pt too wide) in paragraph at lines 758--759
+Overfull \hbox (33.57683pt too wide) in paragraph at lines 760--761
  [] 
  []
 
@@ -1295,10 +1299,10 @@ Overfull \hbox (33.57683pt too wide) in paragraph at lines 758--759
 File: img/erroLinhaSete.png Graphic file (type png)
 
 <use img/erroLinhaSete.png>
-Package pdftex.def Info: img/erroLinhaSete.png used on input line 770.
+Package pdftex.def Info: img/erroLinhaSete.png used on input line 772.
 (pdftex.def)             Requested size: 481.49443pt x 68.20418pt.
 
-Overfull \hbox (26.49443pt too wide) in paragraph at lines 770--771
+Overfull \hbox (26.49443pt too wide) in paragraph at lines 772--773
  [] 
  []
 
@@ -1306,35 +1310,35 @@ Overfull \hbox (26.49443pt too wide) in paragraph at lines 770--771
 File: img/filtroRemoveUseless.png Graphic file (type png)
 
 <use img/filtroRemoveUseless.png>
-Package pdftex.def Info: img/filtroRemoveUseless.png used on input line 784.
+Package pdftex.def Info: img/filtroRemoveUseless.png used on input line 786.
 (pdftex.def)             Requested size: 217.71136pt x 103.88715pt.
  [32pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.788 			\item \textit
+l.790 			\item \textit
                       {NumericToNominal}: Um filtro para transformar numéri...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.788 			\item \textit
+l.790 			\item \textit
                       {NumericToNominal}: Um filtro para transformar numéri...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.788 			\item \textit
+l.790 			\item \textit
                       {NumericToNominal}: Um filtro para transformar numéri...
  <./img/dataSetOriginal.png> <./img/erroCarregarInstancias.png> <./img/erroLinh
 aSete.png>] <img/filtroNumericToNominal.png, id=459, 483.8075pt x 302.12875pt>
 File: img/filtroNumericToNominal.png Graphic file (type png)
 
 <use img/filtroNumericToNominal.png>
-Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 792.
+Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 794.
 
 (pdftex.def)             Requested size: 217.71136pt x 135.95668pt.
  [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
@@ -1342,37 +1346,37 @@ Package pdftex.def Info: img/filtroNumericToNominal.png used on input line 792.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.796 			\newpage
+l.798 			\newpage
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{figure.3.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.796 			\newpage
+l.798 			\newpage
                   <./img/filtroRemoveUseless.png> <./img/filtroNumericToNominal
 .png>] <img/filtroRemoveRange.png, id=467, 478.78876pt x 260.975pt>
 File: img/filtroRemoveRange.png Graphic file (type png)
 
 <use img/filtroRemoveRange.png>
-Package pdftex.def Info: img/filtroRemoveRange.png used on input line 801.
+Package pdftex.def Info: img/filtroRemoveRange.png used on input line 803.
 (pdftex.def)             Requested size: 215.45294pt x 117.43767pt.
  [34pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.818 		\item O
+l.820 		\item O
                s resultados do teste são coletados e calculados sobre todos...
  <./img/filtroRemoveRange.png>]
 <img/metodologiaExperimentos.png, id=474, 800.9925pt x 553.06625pt>
 File: img/metodologiaExperimentos.png Graphic file (type png)
 
 <use img/metodologiaExperimentos.png>
-Package pdftex.def Info: img/metodologiaExperimentos.png used on input line 825
+Package pdftex.def Info: img/metodologiaExperimentos.png used on input line 827
 .
 (pdftex.def)             Requested size: 440.54723pt x 304.18738pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 837--839
+Underfull \hbox (badness 10000) in paragraph at lines 839--841
 
  []
 
@@ -1381,24 +1385,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 837--839
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.839 
+l.841 
        <./img/metodologiaExperimentos.png>]
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <9.60004> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 844.
-LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 850
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 846.
+LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 852
 .
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.60004> on input line 850.
+(Font)              <9.60004> on input line 852.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.71999> on input line 850.
+(Font)              <6.71999> on input line 852.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.80002> on input line 850.
+(Font)              <4.80002> on input line 852.
 LaTeX Font Info:    Font shape `T1/pbk/bx/n' in size <9.60004> not available
-(Font)              Font shape `T1/pbk/b/n' tried instead on input line 852.
+(Font)              Font shape `T1/pbk/b/n' tried instead on input line 854.
 LaTeX Font Info:    Font shape `T1/pbk/b/n' in size <9.60004> not available
-(Font)              Font shape `T1/pbk/db/n' tried instead on input line 852.
+(Font)              Font shape `T1/pbk/db/n' tried instead on input line 854.
 
-Overfull \hbox (21.17331pt too wide) in paragraph at lines 850--861
+Overfull \hbox (21.17331pt too wide) in paragraph at lines 852--863
 []  
  []
 
@@ -1406,61 +1410,61 @@ Overfull \hbox (21.17331pt too wide) in paragraph at lines 850--861
 File: graphs/tp_graph.png Graphic file (type png)
 
 <use graphs/tp_graph.png>
-Package pdftex.def Info: graphs/tp_graph.png used on input line 981.
+Package pdftex.def Info: graphs/tp_graph.png used on input line 983.
 (pdftex.def)             Requested size: 403.17078pt x 319.5302pt.
  [36pdfTeX warning (ext4): destination with the same identifier (name{table.3.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.986 \newpage
+l.988 \newpage
               ] <graphs/fp_graph.png, id=492, 489.027pt x 398.4486pt>
 File: graphs/fp_graph.png Graphic file (type png)
 
 <use graphs/fp_graph.png>
-Package pdftex.def Info: graphs/fp_graph.png used on input line 992.
+Package pdftex.def Info: graphs/fp_graph.png used on input line 994.
 (pdftex.def)             Requested size: 391.22212pt x 318.75931pt.
  [37pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1013 
+l.1015 
         <./graphs/tp_graph.png>]
 <graphs/perc_hits_5k.png, id=504, 484.6908pt x 383.9946pt>
 File: graphs/perc_hits_5k.png Graphic file (type png)
 
 <use graphs/perc_hits_5k.png>
-Package pdftex.def Info: graphs/perc_hits_5k.png used on input line 1021.
+Package pdftex.def Info: graphs/perc_hits_5k.png used on input line 1023.
 (pdftex.def)             Requested size: 241.84927pt x 199.16858pt.
 
 <graphs/perc_hits_10k.png, id=505, 485.1726pt x 384.4764pt>
 File: graphs/perc_hits_10k.png Graphic file (type png)
 
 <use graphs/perc_hits_10k.png>
-Package pdftex.def Info: graphs/perc_hits_10k.png used on input line 1023.
+Package pdftex.def Info: graphs/perc_hits_10k.png used on input line 1025.
 (pdftex.def)             Requested size: 241.8528pt x 199.17207pt.
 
 <graphs/perc_hits_15k.png, id=506, 486.1362pt x 384.9582pt>
 File: graphs/perc_hits_15k.png Graphic file (type png)
 
 <use graphs/perc_hits_15k.png>
-Package pdftex.def Info: graphs/perc_hits_15k.png used on input line 1025.
+Package pdftex.def Info: graphs/perc_hits_15k.png used on input line 1027.
 (pdftex.def)             Requested size: 241.85097pt x 199.16908pt.
 
 <graphs/perc_hits_20k.png, id=507, 485.6544pt x 385.44pt>
 File: graphs/perc_hits_20k.png Graphic file (type png)
 
 <use graphs/perc_hits_20k.png>
-Package pdftex.def Info: graphs/perc_hits_20k.png used on input line 1027.
+Package pdftex.def Info: graphs/perc_hits_20k.png used on input line 1029.
 (pdftex.def)             Requested size: 241.84842pt x 199.16547pt.
 
-Overfull \hbox (39.31001pt too wide) in paragraph at lines 1021--1028
+Overfull \hbox (39.31001pt too wide) in paragraph at lines 1023--1030
 [] [][]
  []
 
 
-Overfull \hbox (39.30733pt too wide) in paragraph at lines 1021--1028
+Overfull \hbox (39.30733pt too wide) in paragraph at lines 1023--1030
 [][] [][] 
  []
 
@@ -1468,20 +1472,20 @@ Overfull \hbox (39.30733pt too wide) in paragraph at lines 1021--1028
 File: graphs/perc_hits_25k.png Graphic file (type png)
 
 <use graphs/perc_hits_25k.png>
-Package pdftex.def Info: graphs/perc_hits_25k.png used on input line 1030.
+Package pdftex.def Info: graphs/perc_hits_25k.png used on input line 1032.
 (pdftex.def)             Requested size: 241.85097pt x 199.174pt.
 
 
-LaTeX Warning: Float too large for page by 30.94159pt on input line 1032.
+LaTeX Warning: Float too large for page by 30.94159pt on input line 1034.
 
 <python/TodosModelos.png, id=509, 577.4373pt x 405.4347pt>
 File: python/TodosModelos.png Graphic file (type png)
 
 <use python/TodosModelos.png>
-Package pdftex.def Info: python/TodosModelos.png used on input line 1038.
+Package pdftex.def Info: python/TodosModelos.png used on input line 1040.
 (pdftex.def)             Requested size: 461.95045pt x 324.34819pt.
 
-Overfull \hbox (6.95045pt too wide) in paragraph at lines 1038--1039
+Overfull \hbox (6.95045pt too wide) in paragraph at lines 1040--1041
  [] 
  []
 
@@ -1490,14 +1494,14 @@ Overfull \hbox (6.95045pt too wide) in paragraph at lines 1038--1039
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1046 \chapter
+l.1048 \chapter
                {Conclusão e Trabalhos Futuros} <./graphs/fp_graph.png>]
 [39pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1046 \chapter
+l.1048 \chapter
                {Conclusão e Trabalhos Futuros} <./graphs/perc_hits_5k.png> <./
 graphs/perc_hits_10k.png> <./graphs/perc_hits_15k.png> <./graphs/perc_hits_20k.
 png> <./graphs/perc_hits_25k.png>] [40pdfTeX warning (ext4): destination with t
@@ -1506,64 +1510,50 @@ he same identifier (name{figure.3.15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1046 \chapter
+l.1048 \chapter
                {Conclusão e Trabalhos Futuros} <./python/TodosModelos.png>]
 [41
 
-] (./icomp-modelomonografia-pf.bbl (./icomp-modelomonografia-pf.brf)
-\tf@brf=\write5
-\openout5 = `icomp-modelomonografia-pf.brf'.
-
-
-[42
+] (./icomp-modelomonografia-pf.bbl [42
 
 ]
 bibitemlist
 [43
 
 ] [44]) [45]
-\tf@lof=\write6
-\openout6 = `icomp-modelomonografia-pf.lof'.
+\tf@lof=\write5
+\openout5 = `icomp-modelomonografia-pf.lof'.
 
-\tf@lot=\write7
-\openout7 = `icomp-modelomonografia-pf.lot'.
+\tf@lot=\write6
+\openout6 = `icomp-modelomonografia-pf.lot'.
 
-\tf@toc=\write8
-\openout8 = `icomp-modelomonografia-pf.toc'.
+\tf@toc=\write7
+\openout7 = `icomp-modelomonografia-pf.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1248.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1248.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1250.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1250.
  (./icomp-modelomonografia-pf.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1248.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1248.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1250.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1250.
 
-
-
-Package rerunfilecheck Warning: File `icomp-modelomonografia-pf.brf' has change
-d.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `icomp-modelomonografia-pf.brf':
-(rerunfilecheck)             Before: 4F011F7D068FCEE2FCAE46F37F307545;3037
-(rerunfilecheck)             After:  20B166231B4CE2D0239DB0BBFA73A060;3037.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1248.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1250.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 1204 (\begingroup)
+### semi simple group (level 2) entered at line 1206 (\begingroup)
 ### semi simple group (level 1) entered at line 376 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 14656 strings out of 493089
- 217916 string characters out of 6134842
- 389230 words of memory out of 5000000
- 17631 multiletter control sequences out of 15000+600000
+ 14386 strings out of 493089
+ 213405 string characters out of 6134842
+ 384923 words of memory out of 5000000
+ 17366 multiletter control sequences out of 15000+600000
  39370 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,13n,38p,1231b,6146s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,38p,1231b,5983s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
@@ -1576,7 +1566,7 @@ texlive/2015/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/bookman/ubkdi8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/urw/bookman/ubkli8a.pfb>
-Output written on icomp-modelomonografia-pf.pdf (46 pages, 1771873 bytes).
+Output written on icomp-modelomonografia-pf.pdf (46 pages, 1771498 bytes).
 PDF statistics:
  784 PDF objects out of 1000 (max. 8388607)
  680 compressed objects within 7 object streams

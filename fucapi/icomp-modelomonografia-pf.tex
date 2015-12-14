@@ -35,8 +35,10 @@
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
 
-\usepackage[brazilian,hyper]{backref}	 % Paginas com as citações na bibl
+%\usepackage[brazilian,hyper]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+%referência justificada
+\usepackage[alf,bibjustif]{abntex2cite}
 \usepackage{pdfpages} %adicionar documentos pdf. neste caso utilizando no anexo
 \usepackage{booktabs} %adicionar tabelas geradas pelo site http://www.tablesgenerator.com
 \usepackage[table,xcdraw]{xcolor} %para adicionar cor
@@ -1205,7 +1207,7 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 % -----------------------------------------------------------------------------
 % Referencias Bibliograficas
 % -----------------------------------------------------------------------------
-%\bibliographystyle{abnt-alf}
+\bibliographystyle{abnt-alf}
 \bibliography{referencias}
 
 % ----------------------------------------------------------
