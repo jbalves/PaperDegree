@@ -38,7 +38,7 @@
 %\usepackage[brazilian,hyper]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
 %referência justificada
-\usepackage[alf,bibjustif]{abntex2cite}
+%\usepackage[alf,bibjustif]{abntex2cite}
 \usepackage{pdfpages} %adicionar documentos pdf. neste caso utilizando no anexo
 \usepackage{booktabs} %adicionar tabelas geradas pelo site http://www.tablesgenerator.com
 \usepackage[table,xcdraw]{xcolor} %para adicionar cor
@@ -202,7 +202,7 @@ Em primeiro lugar quero agradecer a Deus, meu grande amigo, companheiro, e sempr
 
 A minha  amada esposa Suzane Barros, que sempre me incetivou nessa jornada.
 
-Ao meu orientador Prof. Márcio palheta, por mostrar-me o caminho da mineração de dados.
+Ao meu orientador Prof. Márcio Palheta, por mostrar-me o caminho da mineração de dados.
 
 Aos meus amigos, Hussama, Wellington, Patrick, Pedro e Tiago que sempre estiveram por perto nesta caminhada.
 
@@ -234,9 +234,9 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
 
- 	A tarefa de classificação em \textit{Data Mining} consiste na predição de classe dado um determinado conjunto de atributos de uma instância. Esta técnica pode ser útil no diagnóstico médico, como ferramenta de apoio ao profissional da saúde. Na literatura, as melhores técnicas para classificação utilizam máquinas de vetores de suporte e árvore de decisão. Tais técnicas utilizam o conceito de hiperplano para separar de uma melhor forma as classes existentes em conjuntos de dados, também pode-se verificar o uso da divisão e conquista na identificação dos melhores atributos, sendo capazes de produzir resultados mais eficientes no processo de predição. Como resultado, obtivemos modelos classificadores baseados em SMO e J48, que alcançaram resultados de 89,61\% e 86,63\% na classificação correta de instâncias, respectivamente nos conjuntos de dados utilizados neste trabalho, mostrando resultados satisfatórios em relação ao classificador ZeroR utilizando como \textit{baseline}. Foi possível observar também que os modelos gerados obtiveram melhores resultados à medida que os experimentos no tamanho do conjunto de dados aumentava.
+ 	A tarefa de classificação em \textit{Data Mining} consiste na predição de classe dado um determinado conjunto de atributos de uma instância. Esta técnica pode ser útil no diagnóstico médico, como ferramenta de apoio ao profissional da saúde. Na literatura, as melhores técnicas para classificação utilizam máquinas de vetores de suporte e árvore de decisão. Tais técnicas utilizam o conceito de hiperplano para separar de uma melhor forma as classes existentes em conjuntos de dados, também pode-se verificar o uso da divisão e conquista na identificação dos melhores atributos, sendo capazes de produzir resultados mais eficientes no processo de predição. Como resultado, obtivemos modelos classificadores baseados em SMO e J48, que alcançaram resultados de 89,61\% e 86,63\% na classificação correta de instâncias, respectivamente nos conjuntos de dados utilizados, mostrando resultados satisfatórios em relação ao classificador ZeroR utilizado como \textit{baseline}. Foi possível observar, também, que os modelos gerados obtiveram melhores resultados à medida que os experimentos no tamanho do conjunto de dados aumentava.
 
- \textit{Palavras-chave}: Mineração de Dados, Classificação, Árvore de Decisão, Bayes, Máquina de Vetor de Suporte.
+ \textit{Palavras-chave}: Mineração de Dados, Classificação, Árvore de Decisão, Bayes, Máquina de Vetor de Suporte, Dengue.
 
 \end{resumo}
 
@@ -249,7 +249,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
    \vspace{\onelineskip}
  
    \noindent 
-   \textit{Keywords}: Data mining, Classifier, Decision Tree, Bayes, Support Vector Machine.
+   \textit{Keywords}: Data mining, Classifier, Decision Tree, Bayes, Support Vector Machine, Dengue.
  \end{otherlanguage*}
 \end{resumo}
 
@@ -308,7 +308,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	
 	A computação tem apoiado o desenvolvimento da medicina em diversas áreas como em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras \cite{costa:2012}. Desta maneira, esse grande volume de dados é uma fonte valiosa de conhecimentos que pode ser utilizada como auxílio ao diagnóstico médico. Com base nisso, é necessário o desenvolvimento de técnicas que permitam a descoberta de conhecimentos em base de dados médicos, para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 	
-	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir de dados do Ministério da Saúde, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Por esta razão observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Mining}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
+	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir desses dados, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Por esta razão observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Mining}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
     
     \newpage
 	\section{Especificação do problema}
@@ -496,14 +496,14 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			Fonte: \cite{feldens:1997}.
 		\end{figure}
 	
-	O algoritmo recebe o atributo categorico \textit{C} (que indica a classe), um conjunto de atributos não categóricos \textit{R} (demais atributos), e um conjunto de treinamento \textit{S} (que contém os exemplos). Ele verifica qual é o atributo \textit{D} mais informativo de \textit{R}, ou seja, o atributo com maior ganho de informação para o conjunto de treinamento \textit{S} e, então, subdivide este conjunto \textit{S} de acordo com cada um dos valores deste atributo mais informativo \textit{D} \cite{feldens:1997}.
+	O algoritmo recebe o atributo categórico \textit{C} (que indica a classe), um conjunto de atributos não categóricos \textit{R} (demais atributos), e um conjunto de treinamento \textit{S} (que contém os exemplos). Ele verifica qual é o atributo \textit{D} mais informativo de \textit{R}, ou seja, o atributo com maior ganho de informação para o conjunto de treinamento \textit{S} e, então, subdivide este conjunto \textit{S} de acordo com cada um dos valores deste atributo mais informativo \textit{D} \cite{feldens:1997}.
 	
 	De forma recursiva o algoritmo é chamado para cada subconjunto obtido, até atingir os seguintes objetivos:
 	
 	\begin{itemize}
-		\item Não exista exemplos para classificar o conjunto de treinamento \textit{S}. Neste caso, a árvore de decisão é um nodo com valor negativo;
+		\item Existindo exemplos para classificar o conjunto de treinamento \textit{S}. Neste caso, a árvore de decisão é um nodo com valor negativo;
 		\item Que os exemplos no conjunto de treinamento \textit{S} pertençam todos à mesma classe \textit{C}. A árvore de decisão é um folha identificando a classe \textit{$C_i$};
-		\item Não exista atributos não categóricos \textit{R} para classificação. A árvore é uma folha identificando a classe \textit{$C_i$} mais frequente de \textit{S}.
+		\item Existindo atributos não categóricos \textit{R} para classificação. A árvore é uma folha identificando a classe \textit{$C_i$} mais frequente de \textit{S}.
 	\end{itemize}
 	
 	Quando o conjunto de treinamentos \textit{S} contém casos pertencentes a várias classes, a ideia é refinar \textit{S} em subconjuntos de casos, que tendem a permanecer em apenas uma classe. A árvore de decisão para \textit{S} consiste de um nodo de decisão que identifica o teste e uma ligação de cada valor possível do atributo. O mesmo processo de construção é aplicado recursivamente em cada subconjunto de casos de treinamento até que a \textit{i-ésima} ligação tenha a árvore de decisão construída do subconjunto \textit{$S_i$} de casos de treinamento. Quando o algoritmo parar, basta percorrer os caminhos desde a raiz até as folhas para verificar as descobertas extraídas da base de dados.
@@ -513,7 +513,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\begin{itemize}
 		\item Eleição do melhor atributo: utiliza o critério do ganho de informação;
 		\item Tratamento dos atributos discretos: atribui uma ligação distinta a cada valor ou forma de agrupamentos de valores em vários conjuntos;
-		\item Tratamento de atributos contínuos: Utiliza a técnica do teste simples para partição, escolhendo como ponto de cisão o ponto médio entre os valores;
+		\item Tratamento de atributos contínuos: Utiliza a técnica do teste simples para partição, escolhendo como ponto de decisão o ponto médio entre os valores;
 		\item Tratamento de valores desconhecidos: Desconsidera os atributos com valores deconhecidos, utilizando apenas aqueles com valores totalmente deconhecidos;
 		\item Determinação da classe associada à folha: É efetuada por atribuição da classe mais provável nesta folha;
 		\item Método de poda: Utiliza a técnica de pós-poda baseada no erro, examinando a árvore de forma \textit{bottom-up} e subtituindo uma subárvore por uma folha;
