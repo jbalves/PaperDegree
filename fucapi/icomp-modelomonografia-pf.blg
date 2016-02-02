@@ -16,13 +16,13 @@ Database file #2: referencias.bib
 Warning--entry type for "conass:2015" isn't style-file defined
 --line 100 of file referencias.bib
 Warning--entry type for "MS:2015" isn't style-file defined
---line 216 of file referencias.bib
+--line 218 of file referencias.bib
 Warning--entry type for "opensource:2015" isn't style-file defined
---line 224 of file referencias.bib
+--line 226 of file referencias.bib
 Warning--entry type for "oracle:2015" isn't style-file defined
---line 239 of file referencias.bib
+--line 241 of file referencias.bib
 Warning--entry type for "weka:2015" isn't style-file defined
---line 376 of file referencias.bib
+--line 378 of file referencias.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -34,43 +34,43 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 You've used 34 entries,
             6714 wiz_defined-function locations,
-            1371 strings with 15071 characters,
-and the built_in function-call counts, 32150 in all, are:
-= -- 3142
+            1372 strings with 15081 characters,
+and the built_in function-call counts, 32700 in all, are:
+= -- 3149
 > -- 886
-< -- 414
-+ -- 790
+< -- 502
++ -- 832
 - -- 271
-* -- 2153
-:= -- 4291
-add.period$ -- 108
+* -- 2195
+:= -- 4319
+add.period$ -- 109
 call.type$ -- 34
-change.case$ -- 315
+change.case$ -- 314
 chr.to.int$ -- 64
 cite$ -- 33
-duplicate$ -- 2251
-empty$ -- 1784
+duplicate$ -- 2515
+empty$ -- 1771
 format.name$ -- 1276
-if$ -- 7004
+if$ -- 6949
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 577
-newline$ -- 178
+missing$ -- 576
+newline$ -- 179
 num.names$ -- 160
-pop$ -- 774
+pop$ -- 764
 preamble$ -- 1
 purify$ -- 126
 quote$ -- 0
-skip$ -- 2611
+skip$ -- 2668
 stack$ -- 1
-substring$ -- 1250
-swap$ -- 857
-text.length$ -- 35
+substring$ -- 1287
+swap$ -- 942
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 31
+type$ -- 8
 warning$ -- 0
-while$ -- 226
+while$ -- 225
 width$ -- 0
-write$ -- 507
+write$ -- 508
 (There were 5 warnings)

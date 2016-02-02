@@ -514,7 +514,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item Eleição do melhor atributo: utiliza o critério do ganho de informação;
 		\item Tratamento dos atributos discretos: atribui uma ligação distinta a cada valor ou forma de agrupamentos de valores em vários conjuntos;
 		\item Tratamento de atributos contínuos: Utiliza a técnica do teste simples para partição, escolhendo como ponto de decisão o ponto médio entre os valores;
-		\item Tratamento de valores desconhecidos: Desconsidera os atributos com valores deconhecidos, utilizando apenas aqueles com valores totalmente deconhecidos;
+		\item Tratamento de valores desconhecidos: Desconsidera os atributos com valores desconhecidos nos cálculos de ganho e entropia;
 		\item Determinação da classe associada à folha: É efetuada por atribuição da classe mais provável nesta folha;
 		\item Método de poda: Utiliza a técnica de pós-poda baseada no erro, examinando a árvore de forma \textit{bottom-up} e subtituindo uma subárvore por uma folha;
 		\item Complexidade do algoritmo: É dada por \textit{O($mn^{2}$)}, em que \textit{m} é o número de atributos e \textit{n} é o número de instâncias do conjunto de treinamento. 
@@ -657,6 +657,25 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\section{Base de Dados}
 	
 	Para avaliar o objetivo geral neste trabalho, usamos a base de dados  do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualquer pessoa \cite{fortaleza:2015}. Este conjunto de dados contém notificações de dengue do Município de Fortaleza no período de janeiro à junho de 2015, contendo 26.568 instâncias. %Na Tabela \ref{tabDescricaoAtributos}, podemos observar os atributos utilizados neste trabalho.
+	
+	\begin{comment}
+	@webpage{fortaleza:2015,
+	autor = {Prefeitura de Fortaleza},
+	Lastchecked = {Online; accessed 19-Outubro-2015},
+	Month={Outubro},
+	Url = = {http://dados.fortaleza.ce.gov.br/catalogo/dataset/notificacoes-de-dengue-ref-01-06-2015},
+	Year = {2015}
+	}
+	
+	@webpage{fortaleza:2015,
+	author={Prefeitura de Fortaleza},
+	Month={Outubro},
+	Url = {http://www.cs.waikato.ac.nz/ml/weka/},
+	urlaccessdate={19 out. 2015},
+	Year = {2015}
+	}
+	
+	\end{comment}
 
 \begin{comment}
 	\begin{table}[]
@@ -762,7 +781,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			Fonte: Próprio Autor.
 		\end{figure}
 
-	Onde nos deparamos com erros no campos DS\_OBS, onde o WEKA informa que está lendo 102 atributos em vez de 99, conforme mostrado na Figura \ref{figerroCarregarInstancias}. Já na Figura \ref{figerroLinhaSete}, podemos observar que houve falha na inserção dos dados no atributo DS\_OBS, pois o mesmo foi preenchido com vírgula em seu conteúdo da seguinte ''CEFALEIA, FEBRE, DOR NOS OLHOS, VOMITO'', além do caracter ''\^M'' que representa quebra de linha. Pelo fato do arquivo ser contruído no formato CSV (\textit{Comma Separated Value}), essas vírgulas excedentes serão consideradas como início de novos atributos.
+	Onde nos deparamos com erros no campos DS\_OBS, onde o WEKA informa que está lendo 102 atributos em vez de 99, conforme mostrado na Figura \ref{figerroCarregarInstancias}. Já na Figura \ref{figerroLinhaSete}, podemos observar que houve falha na inserção dos dados no atributo DS\_OBS, pois o mesmo foi preenchido com vírgula em seu conteúdo da seguinte ''CEFALEIA, FEBRE, DOR NOS OLHOS, VOMITO'', além do caracter ''M'' que representa quebra de linha. Pelo fato do arquivo ser contruído no formato CSV (\textit{Comma Separated Value}), essas vírgulas excedentes serão consideradas como início de novos atributos.
 	
 
 	
@@ -779,7 +798,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		Em seguida aplicamos os seguintes filtros:
 		
 		\begin{itemize}
-			\item \textit{RemoveUseless}: Este filtro remove atributos que não variam em tudo ou que variam muito. Todos os atributos constantes são excluídos automaticamente, juntamente com qualquer que exceder o percentual máximo de parâmetro de variação. O teste de variância máxima só é aplicada aos atributos nominais. Utilizamos os parâmetros padrões conforme Figura \ref{figfiltroRemoveUseless}.
+			\item \textit{RemoveUseless}: Este filtro remove atributos que não variam em tudo ou que variam muito. Todos os atributos constantes são excluídos automaticamente, juntamente com qualquer que exceder o percentual máximo de parâmetro de variação. O teste de variância máxima só é aplicada aos atributos nominais: ITP\_NOT, D\_AGRAVO, NU\_ANO, SOUNDEX, ID\_GEO2, ID\_PAIS, NDUPLIC\_N, DT\_TRANSUS, DT\_TRANSDM, DT\_TRANSSM, DT\_TRANSRM, DT\_TRANSRS, DT\_TRANSSE, NU\_LOTE\_V, NU\_LOTE\_H, FLXRECEBI, MIGRADO\_W, COPAISINF, MANI\_HEMOR, EPISTAXE, GENGIVO, METRO, PETEQUIAS, HEMATURA, SANGRAM, LACO\_N, PLASMATICO, EVIDENCIA, PLAQ\_MENOR, CON\_FHD e  COMPLICA. Utilizamos os parâmetros padrões conforme Figura \ref{figfiltroRemoveUseless}.
 			\begin{figure}[!h]
 				\caption{\label{figfiltroRemoveUseless} Filtro \textit{RemoveUseless}}
 				\begin{center}
@@ -787,6 +806,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 				\end{center}
 				\centering Fonte: Próprio Autor.
 			\end{figure}
+			
+			\item Remoção manual: Pelo fato de não contribuir nos resultados os seguintes atributos foram removidos: DT\_NASC, NU\_DDD\_TEL, DDD\_HOSP, TEL\_HOSP e NU\_LOTE\_I.
+			
 			\item \textit{NumericToNominal}: Um filtro para transformar numérico atributos em uns nominais. Ao contrário da discretização, apenas toma todos os valores numéricos e os adiciona à lista de valores nominais do que atributo. Útil após a importação CSV, para impor certos atributos para se tornar nominal. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroNumericToNominal}.
 			\begin{figure}[!h]
 				\caption{\label{figfiltroNumericToNominal} Filtro \textit{NumericToNominal}}
@@ -829,16 +851,24 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		Fonte: Próprio Autor.
 	\end{figure}
 	
-	\section{Resultados}
+	\subsection{Parâmetros }
+	Configuração padrão utilizada em cada algoritmo de classificação:
 	
+	\begin{itemize}
+		\item J48: confidenceFactor  (fator de confiança utilizado para a poda) = 0.25; minNumObj (número mínimo de instâncias por folha) = 2.
+		\item REPTree: minNum = 2.0; minVarianceProp = 0.001; numFolds = 3; seed =1.
+		\item RandomTree: KValue = 0; minNum = 1.0; seed = 1;
+		\item NaiveBayes: debug = False; displayModelInOldFormat = False; useKernelEstimator = False; useSupervisedDiscretization = False;
+		\item SMO: c = 1.0; toleranceParameter = 0.001; epsilon = 1.0E-12; filterType = Normalize training data; kernel = PolyKernel; cacheSize = 250007; exponent = 1.0.
+	\end{itemize}
 	
+	\section{Resultados dos Algoritmos}
 	%\subsection{Precisão na Classificação}
 	
 	Segundo \cite{witten:2011}, o algoritmo \textit{ZeroR} modela uma base de dados com um única regra. Onde, dado um conjunto de dados para uma nova classificação, o algoritmo prediz o valor mais frequente nos dados de treinamento. Com isso utilizou-se este algoritmo como base de referência para os demais algoritmos utilizados neste trabalho, para que seja possível copará-los entre si.
 	
 	Na Tabela \ref{tabResultadosClassificacao}, pode-se observar que no \textit{dataset} com 5\textit{k} instâncias o melhor resultado ficou com o algoritmo \textit{SMO} e o pior resultado no algoritmo \textit{ZeroR}. Outro dado importante que pode ser percebido, está relação aos algoritmos: \textit{SMO}, \textit{J48} e \textit{REPTree}. Pois estes algoritmos obtiveram o maior índice de classificação em todos os conjuntos de \textit{datasets}.
 	\\
-	
 	
 	% Please add the following required packages to your document preamble:
 	% \usepackage{multirow}
@@ -861,137 +891,33 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			ZeroR                                                        & 84,2496\%     & 75,6773\%      & 76,8608\%      & 75,9664\%      & 72,1555\%      \\ \hline
 		\end{tabular}
 	\end{flushleft}
+	\begin{flushleft}
+	Fonte: Próprio Autor.
+	\end{flushleft}
 	\end{table}
 	
 	%\pagebreak
 	%\clearpage
 	%\newpage
-	
-	\begin{comment}		
-		% Please add the following required packages to your document preamble:
-		% \usepackage[table,xcdraw]{xcolor}
-		% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-		\begin{table}[htbp]
-			\scalefont{1}
-			\centering
-			\caption{Resultados dos Experimentos com 5.000 instâncias}
-			\label{tabResultadosExperimentos5k}
-			\begin{center}
-	\renewcommand{\arraystretch}{2}
-	\begin{tabular}{cp{3cm}p{3.2cm}cc}
-		\hline
-		\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
-		SMO                                      & 89,2866\%                                                                                 & 10,7134\% 							&0.863									&0.346                                                                                    \\
-		J48                                      & 86,6530\%                                                                                  & 13,3470\% 							&0.867										&0.701                                                                                     \\
-		REPTree                                  & 83,9683\%                                                                                 & 16,0317\%								&0.84											&0.815                                                                                     \\
-		NaiveBayes                               & 83,5592\%                                                                                 & 16,4408\%								&0.836												&0.619                                                                                     \\ \hline \hline
-		ZeroR    									& 84,2496\%                                                 									& 15,7504\%								&0.842											&0.842                                                     								\\
-		RandomTree                               & 82,0762\%                                                                                 & 17,9238\%									&0.821												&0.623                                                                                     \\ \hline
-	\end{tabular}
-\end{center}
-\end{table}
-		
-		
-				\begin{table}[htbp]
-					\scalefont{1}
-					\centering
-					\caption{Resultados dos Experimentos com 10.000 instâncias}
-					\label{tabResultadosExperimentos10k}
-					\begin{center}
-						\renewcommand{\arraystretch}{2}
-						\begin{tabular}{cp{3cm}p{3.2cm}cc}
-							\hline
-							\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
-							SMO                                      & 88.5345\%                                                                                 & 11.4655\% 							&0.885									&0.218                                                                                    \\
-							J48                                      & 86,2315\%                                                                                  & 13,7685\% 							&0.862										&0.328                                                                                     \\
-							REPTree                                  & 79,7414\%                                                                                 & 20,2586\%								&0.797											&0.497                                                                                     \\
-							RandomTree                               & 77,2906\%                                                                                 & 22,7094\%								&0.773												&0.408                                                                                     \\
-							NaiveBayes    									& 76,8103\%                                                 									& 23,1897\%								&0.768											&0.420                                                     								\\ \hline \hline
-							ZeroR                               & 75,6773\%                                                                                 &  24,3227\%									&0.757												&0.757                                                                                     \\ \hline
-						\end{tabular}
-					\end{center}
-				\end{table}
-		
-		
-\begin{table}[htbp]
-	\scalefont{1}
-	\centering
-	\caption{Resultados dos Experimentos com 15.000 instâncias}
-	\label{tabResultadosExperimentos15k}
-	\begin{center}
-		\renewcommand{\arraystretch}{2}
-		\begin{tabular}{cp{3cm}p{3.2cm}cc}
-			\hline
-			\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
-			SMO                                      & 89,6195\%                                                                                 & 10,3805\% 							&0.896									&0.207                                                                                    \\
-			J48                                      & 86,6322\%                                                                                  & 13,3678\% 							&0.866										&0.335                                                                                     \\
-			REPTree                                  & 80,7076\%                                                                                 & 19,2924\%								&0.807											&0.507                                                                                     \\ \hline \hline
-			ZeroR                               & 76,8608\%                                                                                 & 23,1392\%								&0.769												&0.769                                                                                     \\
-			RandomTree    									& 78,8551\%                                                 									& 21,1449\%								&0.789											&0.435                                                     								\\ 
-			NaiveBayes                               & 76,1682\%                                                                                 &  23,8318\%									&0.762												&0.448                                                                                     \\ \hline
-		\end{tabular}
-	\end{center}
-\end{table}		
-
-
-\begin{table}[htbp]
-	\scalefont{1}
-	\centering
-	\caption{Resultados dos Experimentos com 20.000 instâncias}
-	\label{tabResultadosExperimentos20k}
-	\begin{center}
-		\renewcommand{\arraystretch}{2}
-		\begin{tabular}{cp{3cm}p{3.2cm}cc}
-			\hline
-			\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
-			SMO                                      & 89,4714\%                                                                                 & 10,5286\% 							&0.895									&0.199                                                                                    \\
-			J48                                      & 85,9331\%                                                                                  & 14,0669\% 							&0.859										&0.324                                                                                     \\
-			REPTree                                  & 79,6344\%                                                                                 & 20,3656\%								&0.796											&0.499                                                                                     \\ 
-			RandomTree                               & 78,0289\%                                                                                 & 21,9711\%								&0.780												&0.426                                                                                     \\ \hline \hline
-			ZeroR    									& 75,9664\%                                                 									& 24,0336\%								&0.760											&0.760                                                     								\\ 
-			NaiveBayes                               & 74,6696\%                                                                                 &  25,3304\%									&0.747												&0.417                                                                                     \\ \hline
-		\end{tabular}
-	\end{center}
-\end{table}
-
-\begin{table}[htbp]
-	\scalefont{1}
-	\centering
-	\caption{Resultados dos Experimentos com 25.000 instâncias}
-	\label{tabResultadosExperimentos25k}
-	\begin{center}
-		\renewcommand{\arraystretch}{2}
-		\begin{tabular}{cp{3cm}p{3.2cm}cc}
-			\hline
-			\textbf{Classificador}                & \textbf{Correctly Classified Instances}               & \textbf{Incorrectly Classified Instances}      	& \textbf{TP Rate}						&\textbf{FP Rate}   \\ \hline
-			SMO                                      & 89,1407\%                                                                                 & 10,8593\% 							&0.891									&0.169                                                                                    \\
-			J48                                      & 85.3096\%                                                                                  & 14,6904\% 							&0.853										&0.287                                                                                     \\
-			REPTree                                  & 77,7052\%                                                                                 & 22,2948\%								&0.777											&0.431                                                                                     \\ 
-			RandomTree                               & 76,6155\%                                                                                 & 23,3845\%								&0.766												&0.377                                                                                     \\ \hline \hline
-			ZeroR    									& 72,1555\%                                                 									& 27,8445\%								&0.722											&0.722                                                     								\\ 
-			NaiveBayes                               & 70,8689\%                                                                                 &  29,1311\%									&0.709												&0.319                                                                                     \\ \hline
-		\end{tabular}
-	\end{center}
-\end{table}
-\end{comment}
 
 Na Figura \ref{figtpRate}, pode-se visualizar estas infomarções observando a \textit{taxa de verdadeiros positivos} de cada modelo gerado. Observa-se que houve um certa redução na precisão de classificação dos \textit{verdadeiros positivos}  conforme o tamanho do \textit{dataset} aumenta  nos algoritmos: \textit{REPTree}, \textit{NaiveBayes}, \textit{ZeroR} e \textit{RandomTree}.
-\\
+
 \begin{figure}[!htb]
 	\caption{\label{figtpRate} TP Rate}
 	\begin{center}
-		\includegraphics[scale=0.8]{graphs/tp_graph.png}
+		\includegraphics[scale=0.6]{graphs/tp_graph.png}
 	\end{center}
 	Fonte: Próprio Autor.
 \end{figure}
 
-\newpage
+%\newpage
 Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenho \textit{SMO} e \textit{J48} mostrados na Figura \ref{figtpRate}, apresentam menor \textit{taxa de falso positivo} e com isso um menor custo no processo de classificação de novas instâncias, pois estes algoritmos obtiveram menor quantidade de erros nos \textit{datasets} utilizados.
 \\
+
 \begin{figure}[!htb]
 	\caption{\label{figfpRate} FP Rate}
 	\begin{center}
-		\includegraphics[scale=0.8]{graphs/fp_graph.png}
+		\includegraphics[scale=0.6]{graphs/fp_graph.png}
 	\end{center}
 	Fonte: Próprio Autor.
 \end{figure}
@@ -1008,31 +934,34 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 	\end{figure}
 	\end{comment}
 	
-	%\newpage
+	
 	Observando a Figura \ref{figAcertosErrosClassificacao}, pode-se verificar que em todos os conjuntos de dados utilizados nos experimentos, os algoritmos \textit{SMO} e \textit{J48} se destacam em relação aos demais. Com isso os modelos de classificação gerados por esses algoritmos se desempenharam com índices próximos a 90\% no quesito predição de novas instâncias.
-	
-	Em \cite{prati:2008}, gráfico ROC(\textit{Receiver Operating Characteristic}) é um método para avaliação e seleção de sistemas de diagnóstico e/ou predição. O gráfico ROC é baseado na probabilidade de detecção ou \textit{taxa de verdadeiros positivos}, e na probalidade de falsos alarmes, ou \textit{taxa de falsos positivos}.
-	
-	Como pode-se observar na Figura \ref{figTodosModelos}, os modelos gerados pelo algoritmos \textit{SMO} e \textit{J48} obtiveram melhor qualidade, pois se aproximam do ponto $(0,1)$.  Em \cite{prati:2008}, resultados pertecentes ao canto superior esquerdo representam classificadores que possuem melhor desempenho.
 	
 	\begin{figure}[!htb]
 		\begin{center}
 			\caption{\label{figAcertosErrosClassificacao} Gráficos de Acertos e Erros de Classificação}
 		\end{center}
 		\subfigure[5k Instâncias\label{surreal1}]{
-			\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_5k.png}}
+			\includegraphics[width=07.5cm, height=05cm]{graphs/perc_hits_5k.png}}
 		\subfigure[10k Instâncias\label{surreal2}]{
-			\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_10k.png}}
+			\includegraphics[width=07.5cm, height=05cm]{graphs/perc_hits_10k.png}}
 		\subfigure[15k Instâncias\label{surreal3}]{
-			\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_15k.png}}
+			\includegraphics[width=07.5cm, height=05cm]{graphs/perc_hits_15k.png}}
 		\subfigure[20k Instâncias\label{surreal4}]{
-			\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_20k.png}}
+			\includegraphics[width=07.5cm, height=05cm]{graphs/perc_hits_20k.png}}
 		\begin{center}
 			\subfigure[25k Instâncias\label{surreal5}]{
-				\includegraphics[width=08.5cm, height=07cm]{graphs/perc_hits_25k.png}}
+				\includegraphics[width=07.5cm, height=05cm]{graphs/perc_hits_25k.png}}
 		\end{center}
+		Fonte: Próprio Autor.
 	\end{figure}
 	
+	\newpage
+
+	
+	Em \cite{prati:2008}, gráfico ROC(\textit{Receiver Operating Characteristic}) é um método para avaliação e seleção de sistemas de diagnóstico e/ou predição. O gráfico ROC é baseado na probabilidade de detecção ou \textit{taxa de verdadeiros positivos}, e na probalidade de falsos alarmes, ou \textit{taxa de falsos positivos}.
+	
+	Como pode-se observar na Figura \ref{figTodosModelos}, os modelos gerados pelo algoritmos \textit{SMO} e \textit{J48} obtiveram melhor qualidade, pois se aproximam do ponto $(0,1)$.  Em \cite{prati:2008}, resultados pertecentes ao canto superior esquerdo representam classificadores que possuem melhor desempenho.
 	
 	\begin{figure}[!htb]
 		\caption{\label{figTodosModelos} Modelos de Classificação no Espaço ROC}
@@ -1207,7 +1136,8 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 % -----------------------------------------------------------------------------
 % Referencias Bibliograficas
 % -----------------------------------------------------------------------------
-\bibliographystyle{abnt-alf}
+% após falha nas referencias comentei linha abaixo
+%\bibliographystyle{abnt-alf}
 \bibliography{referencias}
 
 % ----------------------------------------------------------

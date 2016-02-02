@@ -106,13 +106,6 @@ Dispon{\'\i}vel em: \url{https://opensource.org/definition}.}
   para classifica{\c{c}}{\~a}o de texto.
 2013.}
 
-\bibitem[Notifica{\c{c}}{\~o}es de Dengue - Ref. 01 a 06/2015
-  2015]{fortaleza:2015}
-\abntrefinfo{Notifica{\c{c}}{\~o}es\ldots}{NOTIFICA{\c{C}}{\~O}ES\ldots}{2015}
-{NOTIFICA{\c{C}}{\~O}ES de Dengue - Ref. 01 a 06/2015. 2015.
-  \url{http://dados.fortaleza.ce.gov.br/catalogo/dataset/notificacoes-de-dengue-ref-01-06-2015}.
-Acessado em 2015.}
-
 \bibitem[Oracle 2015]{oracle:2015}
 \abntrefinfo{Oracle}{ORACLE}{2015}
 {ORACLE. 2015.
@@ -137,6 +130,14 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2013.}
 {PRATI, R.~C.; BATISTA, G. E. d. A. P.~A.; MONARD, M.~C. Curvas roc para
   avalia{\c{c}}{\~a}o de classificadores.
 \emph{Revista IEEE Am{\'e}rica Latina}, v.~6, n.~2, p. 215--222, 2008.}
+
+\bibitem[Prefeitura de Fortaleza 2015]{fortaleza:2015}
+\abntrefinfo{Prefeitura de Fortaleza}{PREFEITURA DE FORTALEZA}{2015}
+{PREFEITURA DE FORTALEZA. Notifica{\c c}\~oes de dengue - ref. 01 a 06/2015.
+2015.
+Dispon{\'\i}vel em:
+  \url{http://dados.fortaleza.ce.gov.br/catalogo/dataset/notificacoes-de-dengue-ref-01-06-2015}.
+  Acesso em: 19 out. 2015.}
 
 \bibitem[Salzberg 1994]{quinlan:94}
 \abntrefinfo{Salzberg}{SALZBERG}{1994}
