@@ -272,6 +272,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 % ---
 % inserir lista de abreviaturas e siglas
 % ---
+\begin{comment}
 \begin{siglas}
   \item[KDD] \textit{Knowledge Discovery in Databases}
   \item[WEKA] \textit{Waikato Environment for Knowledge Analysis}
@@ -280,6 +281,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
   \item[SINAN] Sistema de Informação de Agravos de Notificação
   \item[SUS] Sistema Único de Saúde
 \end{siglas}
+\end{comment}
 % ---
 
 % ---
@@ -308,7 +310,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	
 	A computação tem apoiado o desenvolvimento da medicina em diversas áreas como em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras \cite{costa:2012}. Desta maneira, esse grande volume de dados é uma fonte valiosa de conhecimentos que pode ser utilizada como auxílio ao diagnóstico médico. Com base nisso, é necessário o desenvolvimento de técnicas que permitam a descoberta de conhecimentos em base de dados médicos, para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 	
-	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir desses dados, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Por esta razão observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Mining}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
+	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir desses dados, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Mining}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
     
     \newpage
 	\section{Especificação do problema}
@@ -316,9 +318,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 		Ao longo dos últimos anos a mineração de dados tem sido cada vez mais utilizada na literatura médica. No entanto, a sua aplicação na análise de dados médicos tem sido relativamente limitada, tendo em vista que a aplicação prática pode explorar o conhecimento disponível no contexto clínico e explicar decisões propostas \cite{bellazzi:2008}. Faz-se importante o desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases de dados médicos, que possam apoiar o profissional em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 		
 		Segundo \cite{saude:2013}, a dengue é uma das doenças com maior incidência no Brasil, atingindo a população de todos os estados, independente de classe social. Diante disto, faz-se necessário que um conjunto de ações com intuito de combater os casos de dengue sejam realizadas. Dentre elas temos a previsão de forma antecipada de possíveis novos casos.
-		\begin{comment}
-		Nesse cenário, torna-se importante que um conjunto de ações para a prevenção da doença seja intensificado, permitindo assim a identificação precoce dos casos de dengue, a tomada de decisões e a implementação de medidas de maneira oportuna a fim de principalmente evitar óbitos.
-		\end{comment}
+	
 		A classificação epidemiológica dos casos de dengue, que é feita habitualmente após desfecho clínico, na maioria das vezes é retrospectiva, dependendo de informações clínicas e laboratoriais, disponíveis no final do acompanhamento médico. Esses critérios não permitem o reconhecimento precoce de formas potencialmente graves, para as quais é crucial para a instituição de tratamento imediato \cite{saude:2013}.
 
 	\section{Objetivos}
@@ -330,13 +330,13 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 		\subsection{Objetivos Específicos}
 		
 		\begin{itemize}
-			\item Dividir o conjunto de dados na seguinte quantidade de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000;
+			\item Dividir o conjunto de dados na seguinte quantidade de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. Para que seja possível verificar se existirá uma variação nos resultados de acordo com o aumento da quantidade de dados;
 			
 			\item Utilizar atributos mais relevantes na tarefa de Classificação;
 			
-			\item Construir modelos clasificadores com os algoritmos de classificação: J48, REPTree, RandomTree, NaiveBayes e SMO;
+			\item Construir modelos clasificadores com os algoritmos de classificação: J48, REPTree, RandomTree, NaiveBayes, SMO e ZeroR. Comparando os resultados e utilizando como \textit{baseline} o classificador ZeroR;
 
-			\item Identificar quais modelos gerados possuem melhor desempenho;
+			\item Identificar quais modelos gerados possuem melhor desempenho, utilizando resultados estatísticos disponibilizados pela ferramenta WEKA \textit{(Waikato Environment for Knowledge Analysis)} ;
 			
 			\item Validar e interpretar os resultados obtidos no processo de classificação.
 		\end{itemize}
@@ -358,7 +358,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	
 	\section{Trabalhos Relacionados}	
 	
-	No trabalho de \cite{shakil:2015}, observamos que o foco principal do trabalho foi a classificação de dengue, onde inicialmente aplicou-se a classificação nos \textit{datasets} iniciais para identificar qual algoritmo obteve melhor resultado. Os experimentos mostraram que os algoritmos Naive Bayes e J48 obtiveram melhores resultados, onde as maiores contribuições do trabalho foram:
+	No trabalho de \cite{shakil:2015}, observamos que o foco principal do trabalho foi a classificação de dengue, onde inicialmente aplicou-se a classificação nos \textit{datasets} iniciais para identificar qual algoritmo obteve melhor resultado. Os conjunto de dados continha 108 instâncias, dentre estas foram utilizadas 99 instâncias e  18 atributos na ferramenta WEKA (\textit{Waikato Environment for Knowledge Analysis}). Os experimentos mostraram que os algoritmos Naive Bayes e J48 obtiveram resultados de 100\% de acerto na classificação. Dentre as maiores contribuições do trabalho foram:
 	
 	\begin{itemize}
 		\item A extração da acurácia de classificação para predição do diagnóstico de dengue.
@@ -368,7 +368,9 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	
 	No trabalho de \cite{thitiprayoonwongse:2012}, foi utilizada a técnica de classificação conhecida como Árvore de Decisão \cite{tan:2009}, aplicado a um conjunto de dados temporais contendo dados clínicos e laboratoriais com mais de 400 atributos. Nos experimentos, os dados foram divididos em: conjunto de teste e treinamento, de modo que, o seu objetivo principal foi identificar o dia zero da dengue, pois esta previsão torna-se crítica, tendo em vista que o dia zero tem forte relação com o melhor tratamento do paciente.
 	
-	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN (Sistema de Informação de Agravos de Notificação). Tal aplicativo, escrito em  \textit{Java}\cite{oracle:2015}, implementa algoritmos de classificação e regras de associação da base de dados do SINAN, utilizando o \textit{software} WEKA (\textit{Waikato Environment for Knowledge Analysis}) \cite{weka:2015}. Como resultado, esta ferramenta possibilitou o auxílio no diagnóstico de pacientes.	
+	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN (Sistema de Informação de Agravos de Notificação). Tal aplicativo, escrito em  \textit{Java}\cite{oracle:2015}, implementa algoritmos de classificação e regras de associação da base de dados do SINAN, utilizando o \textit{software} WEKA (\textit{Waikato Environment for Knowledge Analysis}) \cite{weka:2015}. Como resultado, esta ferramenta possibilitou o auxílio no diagnóstico de pacientes.
+	
+	Este trabalho se difere dos anteriores em relação aquantidade de instâncias utilizadas, como observados utilizaram 
 
 	\section{Metodologia de Desenvolvimento}
 		
@@ -589,6 +591,15 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	O SMO (\textit{Sequential Minimal Optimization}) é um algoritmo de decomposição  que usa uma solução analítica para otimizar um par de Multiplicadores de Lagrange por iteração. Em cada uma delas, três tarefas são executadas: seleção de um par de coeficientes, otimização do par de coeficientes selecionados e atualização de dados globais. A parada do algoritmo ocorre quando todos os coeficientes satisfazem o conjunto de condições. O conjunto de trabalho é formado pelo par de coeficientes a otimizar \cite{hernandez:2009}. 
 
+	\subsection{Algoritmo ZeroR}
+	
+	 Este é o esquema de aprendizagem mais primitivo em Weka. Ele modela o conjunto de dados com uma única regra. Dado um novo item de dados para a classificação, Zeror sempre prediz o valor da categoria mais frequente nos dados de treinamento para problemas com um valor nominal de classe, ou o valor médio de classe para problemas numéricos de previsão. Embora pareça fazer pouco sentido usar este esquema para a classificação, pode ser útil para gerar uma referência de desempenho que outros sistemas de aprendizagem são comparados com. Em alguns conjuntos de dados, é possível que outros sistemas de aprendizagem para induzir modelos que executam pior em novos dados que Zeror que é um indicador claro de overfitting sério.
+	 
+	 O classificador Zeror só olha para a classe mais popular e adivinha que o tempo todo
+	 
+	 É como Zeror útil na geração de uma linha de base para o desempenho de classificação. Ele tem, surpreendentemente sido demonstrado que este método simples pode superar muitos dos algoritmos mais sofisticados ao longo de muitos conjuntos de dados de mineração de dados padrão \cite{witten:2011}
+	 
+	
 	\subsection{Métricas para Avaliação de Modelo}
 	
 	A performance de um modelo de classificação pode ser medida utilizando a matriz de confusão, mostrada na Tabela \ref{tabMatrizConfusao}. Nesta tabela pode ser observado que a distribuição entre as classes (proporção entre exemplos positivos e negativos) é o relacionamento entre a primeira e segunda linha. Assim, qualquer medida de desempenho que utilize valores de ambas as colunas será, necessariamente, sensível a desproporção entre as classes. Havendo mudança na distribuição das classes, os valores das métricas também mudarão, mesmo que o desempenho global do modelo não melhore \cite{prati:2008}.

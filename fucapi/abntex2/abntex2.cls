@@ -373,7 +373,7 @@
 % ---
 % Espacamento entre linhas - NBR 14724/2011 - 5.2 Espacamento
 % ---
-\Spacing{1.6}
+\Spacing{1.5}
 % ---
 
 % ------------------------------------------------------------------------
@@ -787,9 +787,13 @@
 % -----
 % Cabecalho padrao
 \makepagestyle{abntheadings}
-\makeevenhead{abntheadings}{\ABNTEXfontereduzida\thepage}{}{\ABNTEXfontereduzida\textit\leftmark}
-\makeoddhead{abntheadings}{\ABNTEXfontereduzida\textit\rightmark}{}{\ABNTEXfontereduzida\thepage}
-\makeheadrule{abntheadings}{\textwidth}{\normalrulethickness}
+% removi a linha
+%\makeevenhead{abntheadings}{\ABNTEXfontereduzida\thepage}{}{\ABNTEXfontereduzida\textit\leftmark}
+%exibi apenas o número na página
+\makeoddhead{abntheadings}{}{}{\ABNTEXfontereduzida\thepage}
+%removi o nome do capítulo
+%\makeoddhead{abntheadings}{\ABNTEXfontereduzida\textit\rightmark}{}{\ABNTEXfontereduzida\thepage}
+%\makeheadrule{abntheadings}{\textwidth}{\normalrulethickness}
 
 % Cabecalho do inicio do capitulo
 \makepagestyle{abntchapfirst}
