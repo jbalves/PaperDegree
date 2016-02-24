@@ -9,39 +9,71 @@
 \abntrefinfo{Bellazzi e Zupan}{BELLAZZI; ZUPAN}{2008}
 {BELLAZZI, R.; ZUPAN, B. Predictive data mining in clinical medicine: current
   issues and guidelines.
-\emph{International journal of medical informatics}, Elsevier, v.~77, n.~2, p.
-  81--97, 2008.}
+\emph{International journal of medical informatics}, Elsevier, [S.l.], v.~77,
+  n.~2, p. 81--97, 2008.}
 
 \bibitem[Berry e Linoff 1997]{berry:1997}
 \abntrefinfo{Berry e Linoff}{BERRY; LINOFF}{1997}
-{BERRY, M.~J.; LINOFF, G. \emph{Data mining techniques: for marketing, sales,
-  and customer support}. [S.l.]: John Wiley \& Sons, Inc., 1997.}
+{BERRY, M.~J.; LINOFF, G. \emph{Data mining techniques}: for marketing, sales,
+  and customer support. 1. ed. NY, USA: John Wiley \& Sons, Inc., 1997. 464~p.
+ISBN 978-0-471-17980-1.}
 
 \bibitem[Bhatt et al. 2013]{bhatt:2013}
 \abntrefinfo{Bhatt et al.}{BHATT et al.}{2013}
 {BHATT, S. et al. The global distribution and burden of dengue.
 \emph{Nature}, Nature Publishing Group, a division of Macmillan Publishers
   Limited. All Rights Reserved., v.~496, n.~7446, p. 504--507, 04 2013.
-Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1038/nature12060}.}
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1038/nature12060}. Acesso em: 19
+  out. 2015.}
+
+\bibitem[BRASIL 2008]{saude:2008}
+\abntrefinfo{BRASIL}{BRASIL}{2008}
+{BRASIL. \emph{{Minist{\'e}rio da Sa{\'u}de. Departamento de Aten{\c{c}}{\~a}o
+  B{\'a}sica. Vigil{\^a}ncia em Sa{\'u}de.} Dengue, Esquistossomose,
+  Hansen{\'i}ase, Mal{\'a}ria, Tracoma e Tuberculose}.
+Bras{\'i}lia, 2008. 197~p. Dispon{\'\i}vel em:
+  \url{http://bvsms.saude.gov.br/bvs/publicacoes/cab\_n21\_vigilancia\_saude\_2ed\_p1.pdf}.
+  Acesso em: 20 set. 2015.}
+
+\bibitem[BRASIL 2013]{saude:2013}
+\abntrefinfo{BRASIL}{BRASIL}{2013}
+{BRASIL. \emph{Minist{\'e}rio da Sa{\'u}de. Departamento de Aten{\c{c}}{\~a}o
+  B{\'a}sica. Vigil{\^a}ncia em Sa{\'u}de. Dengue}: diagn{\'o}stico e manejo
+  cl{\'i}nico: adulto e crian{\c{c}}a.
+Bras{\'i}lia, 2013. 80~p. Dispon{\'\i}vel em:
+  \url{http://bvsms.saude.gov.br/bvs/publicacoes/dengue\_diagnostico\_manejo\_clinico\_adulto.pdf}.
+  Acesso em: 20 set. 2015.}
+
+\bibitem[BRASIL 2015]{MS:2015}
+\abntrefinfo{BRASIL}{BRASIL}{2015}
+{BRASIL. \emph{Minist{\'e}rio da Sa{\'u}de. Departamento de Aten{\c{c}}{\~a}o
+  B{\'a}sica. Vigil{\^a}ncia em Sa{\'u}de. Dengue}.
+Bras{\'i}lia, 2015. Dispon{\'\i}vel em:
+  \url{http://portalsaude.saude.gov.br/index.php/o-ministerio/principal/secretarias/svs/dengue}.
+  Acesso em: 19 out. 2015.}
 
 \bibitem[CONASS 2015]{conass:2015}
 \abntrefinfo{CONASS}{CONASS}{2015}
 {CONASS. \emph{Nota T{\'e}cnica - 45 - 2013}. 2015.
-Dispon{\'\i}vel em: \url{http://www.conass.org.br}.}
+Dispon{\'\i}vel em:
+  \url{http://www.conass.org.br/NT\%2045-\%202013\%20SINAN\%20.pdf}. Acesso em:
+  19 nov. 2015.}
 
 \bibitem[Costa 2012]{costa:2012}
 \abntrefinfo{Costa}{COSTA}{2012}
 {COSTA, A.~F.
 \emph{Minera{\c{c}}{\~a}o de imagens m{\'e}dicas utilizando
   caracter{\'\i}sticas de forma}.
-Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
+96~f. Disserta\c{c}\~{a}o (Mestrado em Ci{\^e}ncias de Computa{\c{c}}{\~a}o e
+  Matem{\'a}tica Computacional) --- Instituto de Ci{\^e}ncias Matem{\'a}ticas e
+  de Computa{\c{c}}{\~a}o, Universidade de S{\~a}o Paulo, S\~ao Paulo, 2012.}
 
 \bibitem[DAMASCENO 2005]{damasceno:2005}
 \abntrefinfo{DAMASCENO}{DAMASCENO}{2005}
 {DAMASCENO, M. Introdu{\c{c}}{\~a}o a minera{\c{c}}{\~a}o de dados utilizando o
   weka.
-\emph{Instituto AAAFederal de Educa{\c{c}}{\~a}o, Ci{\^e}ncia e Tecnologia do
-  Rio Grande do Norte}, 2005.}
+\emph{Instituto Federal de Educa{\c{c}}{\~a}o, Ci{\^e}ncia e Tecnologia do Rio
+  Grande do Norte}, 2005.}
 
 \bibitem[Fayyad, Piatetsky-Shapiro e Smyth 1996]{fayyad:1996}
 \abntrefinfo{Fayyad, Piatetsky-Shapiro e Smyth}{FAYYAD; PIATETSKY-SHAPIRO;
@@ -54,44 +86,43 @@ Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2012.}
 \abntrefinfo{FELDENS e Castilho}{FELDENS; CASTILHO}{1997}
 {FELDENS, M.~A.; CASTILHO, J. M. V.~d. Engenharia da descoberta de conhecimento
   em bases de dados: estudo e aplica{\c{c}}{\~a}o na {\'a}rea de sa{\'u}de.
-\emph{Porto Alegre}, 1997.}
+\emph{Encontro Nacional de Intelig{\^e}ncia Artificial}, [s.n.], Bras{\'i}lia,
+  1997.}
 
 \bibitem[Freitas 2000]{freitas:2000}
 \abntrefinfo{Freitas}{FREITAS}{2000}
-{FREITAS, A. Uma introdu{\c{c}}{\~a}o a data mining.
-\emph{Inform{\'a}tica Brasileira em An{\'a}lise, Centro de Estudos e Sistemas
-  Avan{\c{c}}ados do Recife (CESAR), Recife, Pe, ano II}, n.~32, 2000.}
+{FREITAS, A.~A. Uma introdu{\c{c}}{\~a}o a data mining.
+\emph{Inform{\'a}tica Brasileira em An{\'a}lise}, Centro de Estudos e Sistemas
+  Avan{\c{c}}ados do Recife (CESAR), Recife, ano~2, n.~32, mai./jun. 2000.}
 
 \bibitem[Hall et al. 2009]{hall:2009}
 \abntrefinfo{Hall et al.}{HALL et al.}{2009}
-{HALL, M. et al. The weka data mining software: an update.
-\emph{ACM SIGKDD explorations newsletter}, ACM, v.~11, n.~1, p. 10--18, 2009.}
+{HALL, M. et al. The weka data mining software: An update.
+\emph{SIGKDD Explorations Newsletter}, New York, NY, USA, v.~11, n.~1, p.
+  10--18, 2009.}
 
 \bibitem[Halmenschlager 2002]{halmenschlager:2002}
 \abntrefinfo{Halmenschlager}{HALMENSCHLAGER}{2002}
 {HALMENSCHLAGER, C.
 \emph{Um algoritmo para indu{\c{c}}{\~a}o de {\'a}rvores e regras de
   decis{\~a}o}.
-Tese (Doutorado) --- UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL, 2002.}
+112~p. Disserta\c{c}\~{a}o (Programa de P{\'o}s-Gradua{\c{c}}{\~a}o em
+  Computa{\c{c}}{\~a}o) --- Instituto de Informática, Universidade Federal do
+  Rio Grande do Sul, Porto Alegre, 2002.}
 
 \bibitem[Hern{\'a}ndez 2009]{hernandez:2009}
 \abntrefinfo{Hern{\'a}ndez}{HERN{\'A}NDEZ}{2009}
 {HERN{\'A}NDEZ, R. A.
 \emph{MP-SMO: um algoritmo para a implementa{\c{c}}{\~a}o VLSI do treinamento
   de m{\'a}quinas de vetores de suporte.}
-Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2009.}
+112~p. Disserta\c{c}\~{a}o (Mestrado em Microeletr{\^o}nica) --- Escola
+  Polit{\'e}cnica, Universidade de S{\~a}o Paulo, S\~ao Paulo, 2009.}
 
 \bibitem[Initiative 2015]{opensource:2015}
 \abntrefinfo{Initiative}{INITIATIVE}{2015}
 {INITIATIVE, O.~S. 2015.
-Dispon{\'\i}vel em: \url{https://opensource.org/definition}.}
-
-\bibitem[Junior 2010]{junior:2010}
-\abntrefinfo{Junior}{JUNIOR}{2010}
-{JUNIOR, G. M. d.~O. M{\'a}quina de vetores suporte: estudo e an{\'a}lise de
-  par{\^a}metros para otimiza{\c{c}}{\~a}o de resultado, 2010.
-\emph{Trabalho de Gradua{\c{c}}{\~a}o em Ci{\^e}ncia da Computa{\c{c}}{\~a}o},
-  2010.}
+Dispon{\'\i}vel em: \url{https://opensource.org/definition}. Acesso em: 19 out.
+  2015.}
 
 \bibitem[Lorena e Carvalho 2007]{lorena:2007}
 \abntrefinfo{Lorena e Carvalho}{LORENA; CARVALHO}{2007}
@@ -104,26 +135,42 @@ Dispon{\'\i}vel em: \url{https://opensource.org/definition}.}
 \abntrefinfo{Lucca et al.}{LUCCA et al.}{2013}
 {LUCCA, G. et al. Uma implementa{\c{c}}{\~a}o do algoritmo na{\"\i}ve bayes
   para classifica{\c{c}}{\~a}o de texto.
-2013.}
+[S.l], p.~4, 2013.
+Dispon{\'\i}vel em:
+  \url{http://www.lbd.dcc.ufmg.br/colecoes/erbd/2013/0019.pdf}. Acesso em: 10
+  out. 2015.}
+
+\bibitem[Oliveira Junior 2010]{junior:2010}
+\abntrefinfo{Oliveira Junior}{OLIVEIRA JUNIOR}{2010}
+{OLIVEIRA JUNIOR, G. M. d.~O.
+\emph{M{\'a}quina de vetores suporte}: estudo e an{\'a}lise de par{\^a}metros
+  para otimiza{\c{c}}{\~a}o de resultado.
+46~f. Monografia (Trabalho de conclus{\~a}o curso) --- Centro de
+  Inform{\'a}tica, Universidade Federal de Pernambuco, Recife, 2010.}
 
 \bibitem[Oracle 2015]{oracle:2015}
 \abntrefinfo{Oracle}{ORACLE}{2015}
 {ORACLE. 2015.
 Dispon{\'\i}vel em:
-  \url{https://www.java.com/pt\_BR/download/faq/whatis\_java.xml}.}
+  \url{https://www.java.com/pt\_BR/download/faq/whatis\_java.xml}. Acesso em:
+  19 out. 2015.}
 
 \bibitem[Oshiro 2013]{oshiro:2013}
 \abntrefinfo{Oshiro}{OSHIRO}{2013}
 {OSHIRO, T.~M.
-\emph{Mestre em Bioinform{\'a}tica}.
-Tese (Doutorado) --- Universidade de S{\~a}o Paulo, 2013.}
+\emph{Uma abordagem para a constru{\c{c}}{\~a}o de uma {\'u}nica {\'a}rvore a
+  partir de uma \textit{Random Forest} para classifica{\c{c}}{\~a}o de bases de
+  express{\~a}o g{\^e}nica}.
+101~f. Disserta\c{c}\~{a}o (Mestrado em Bioinform{\'a}tica) ---
+  Bioinform{\'a}tica, Universidade de S{\~a}o Paulo, S\~ao Paulo, 2013.}
 
 \bibitem[Platt 1998]{platt:1998}
 \abntrefinfo{Platt}{PLATT}{1998}
-{PLATT, J. \emph{Sequential Minimal Optimization: A Fast Algorithm for Training
-  Support Vector Machines}.
+{PLATT, J. \emph{Sequential Minimal Optimization}: A fast algorithm for
+  training support vector machines.
 [S.l.], 1998. 21~p. Dispon{\'\i}vel em:
-  \url{http://research.microsoft.com/apps/pubs/default.aspx?id=69644}.}
+  \url{http://research.microsoft.com/apps/pubs/default.aspx?id=69644}. Acesso
+  em: 19 out. 2015.}
 
 \bibitem[Prati, Batista e Monard 2008]{prati:2008}
 \abntrefinfo{Prati, Batista e Monard}{PRATI; BATISTA; MONARD}{2008}
@@ -146,32 +193,17 @@ Dispon{\'\i}vel em:
 \emph{Machine Learning}, Kluwer Academic Publishers, v.~16, n.~3, p. 235--240,
   1994.
 ISSN 0885-6125.
-Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/BF00993309}.}
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/BF00993309}. Acesso em: 10
+  set. 2015.}
 
 \bibitem[Santos e Neto 2011]{santos:2011}
 \abntrefinfo{Santos e Neto}{SANTOS; NETO}{2011}
 {SANTOS, M.~S.; NETO, J.~C. da C. Amagodis: Algoritmos de minera{\c{c}}{\~a}o
   para apoio {\`a} ger{\^e}ncia de ocorr{\^e}ncias de dengue a partir de
   informa{\c{c}}{\~o}es presentes na base dados do sinan.
-2011.}
-
-\bibitem[Sa{\'u}de 2008]{saude:2008}
-\abntrefinfo{Sa{\'u}de}{SA{\'U}DE}{2008}
-{SA{\'U}DE, M. da. Vigil{\^a}ncia em sa{\'u}de: Dengue, esquistossomose,
-  hansen{\'i}ase, mal{\'a}ria, tracoma e tuberculose.
-\emph{Departamento de Aten{\c{c}}{\~a}o B{\'a}sica}, 2008.}
-
-\bibitem[Sa{\'u}de 2013]{saude:2013}
-\abntrefinfo{Sa{\'u}de}{SA{\'U}DE}{2013}
-{SA{\'U}DE, M. da. Dengue: diagn{\'o}stico e manejo cl{\'i}nico: adulto e
-  crian{\c{c}}a.
-\emph{Departamento de Aten{\c{c}}{\~a}o B{\'a}sica}, 2013.}
-
-\bibitem[Sa{\'u}de 2015]{MS:2015}
-\abntrefinfo{Sa{\'u}de}{SA{\'U}DE}{2015}
-{SA{\'U}DE, M. da. 2015.
-Dispon{\'\i}vel em:
-  \url{http://portalsaude.saude.gov.br/index.php/o-ministerio/principal/secretarias/svs/dengue}.}
+\emph{Encontro Anual de Computa{\c{c}}{\~a}o, Universidade Federal de
+  Goi{\'a}s}, Catal{\~a}o, 2011.
+ISSN 2178-6992.}
 
 \bibitem[Shakil, Anis e Alam 2015]{shakil:2015}
 \abntrefinfo{Shakil, Anis e Alam}{SHAKIL; ANIS; ALAM}{2015}
@@ -195,13 +227,16 @@ Dispon{\'\i}vel em:
 \bibitem[Thom{\'e} 2002]{thome:2002}
 \abntrefinfo{Thom{\'e}}{THOM{\'E}}{2002}
 {THOM{\'E}, A. C.~G. Redes neurais: uma ferramenta para kdd e data mining.
-\emph{Material Did{\'a}tico http://equipe. nce. ufrj.
-  br/thome/grad/nn/mat\_didatico/apostila\_kdd\_mbi. pdf, Outubro}, 2002.}
+\emph{Material Did{\'a}tico}, 2002.
+Dispon{\'\i}vel em:
+  \url{http://equipe.nce.ufrj.br/thome/grad/nn/mat\_didatico/apostila\_kdd\_mbi.pdf}.
+  Acesso em: 12 ago. 2015.}
 
 \bibitem[Waikato 2015]{weka:2015}
 \abntrefinfo{Waikato}{WAIKATO}{2015}
 {WAIKATO, T.~U. of. 2015.
-Dispon{\'\i}vel em: \url{http://www.cs.waikato.ac.nz/ml/weka/}.}
+Dispon{\'\i}vel em: \url{http://www.cs.waikato.ac.nz/ml/weka/}. Acesso em: 19
+  out. 2015.}
 
 \bibitem[Witten, Frank e Hall 2011]{witten:2011}
 \abntrefinfo{Witten, Frank e Hall}{WITTEN; FRANK; HALL}{2011}

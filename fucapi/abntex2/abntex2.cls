@@ -189,7 +189,7 @@
 \newboolean{ABNTEXuppersubsection}  %true=titles of subsections in uppercase
 \newboolean{ABNTEXuppersubsubsection}  %true=titles of subsubsections in uppercase
 \newboolean{ABNTEXuppersubsubsubsection}  %true=titles of subsubsubsections in uppercase
-\setboolean{ABNTEXupperchapter}{false}
+\setboolean{ABNTEXupperchapter}{true}
 \setboolean{ABNTEXuppersection}{false}
 \setboolean{ABNTEXuppersubsection}{false}
 \setboolean{ABNTEXuppersubsubsection}{false}
@@ -297,7 +297,8 @@
 \newcommand{\epigraphname}{Ep\'igrafe}
 \newcommand{\dedicatorianame}{Dedicat\'oria}
 \newcommand{\errataname}{Errata}
-\newcommand{\agradecimentosname}{Agradecimentos}
+%\newcommand{\agradecimentosname}{Agradecimentos}
+\newcommand{\agradecimentosname}{AGRADECIMENTOS}
 \newcommand{\anexoname}{ANEXO}
 \newcommand{\anexosname}{Anexos}
 \newcommand{\apendicename}{AP\^ENDICE}
@@ -305,7 +306,7 @@
 \newcommand{\orientadorname}{Orientador:}
 \newcommand{\coorientadorname}{Coorientador:}
 \newcommand{\folhadeaprovacaoname}{Folha de aprova\c{c}\~ao}
-\newcommand{\resumoname}{Resumo} 
+\newcommand{\resumoname}{RESUMO} 
 \newcommand{\listadesiglasname}{Lista de abreviaturas e siglas}
 \newcommand{\listadesimbolosname}{Lista de s\'imbolos}
 \newcommand{\fontename}{Fonte}
@@ -313,10 +314,10 @@
 %
 \addto\captionsbrazil{% portugues-brasil
   %% ajusta nomes padroes do babel
-  \renewcommand{\bibname}{Refer\^encias}
+  \renewcommand{\bibname}{REFER\^ENCIAS}
   \renewcommand{\indexname}{\'Indice}
-  \renewcommand{\listfigurename}{Lista de figuras}
-  \renewcommand{\listtablename}{Lista de tabelas}
+  \renewcommand{\listfigurename}{LISTA DE FIGURAS}
+  \renewcommand{\listtablename}{LISTA DE TABELAS}
   %% ajusta nomes usados com a macro \autoref
   \renewcommand{\pageautorefname}{p\'agina}
   \renewcommand{\sectionautorefname}{se{\c c}\~ao}
@@ -338,7 +339,7 @@
   \renewcommand{\orientadorname}{Supervisor:}
   \renewcommand{\coorientadorname}{Co-supervisor:}
   \renewcommand{\folhadeaprovacaoname}{Approval}
-  \renewcommand{\resumoname}{Abstract} 
+  \renewcommand{\resumoname}{ABSTRACT} 
   \renewcommand{\listadesiglasname}{List of abbreviations and acronyms}
   \renewcommand{\listadesimbolosname}{List of symbols}
   \renewcommand{\fontename}{Source}
@@ -395,19 +396,23 @@
 
 % ---
 % Fontes padroes de title, part, chapter, section, subsection e subsubsection
-\newcommand{\ABNTEXtitlefont}{\fontsize{21}{26}\selectfont\fontfamily{pbk}}
+%\newcommand{\ABNTEXtitlefont}{\fontsize{21}{26}\selectfont\fontfamily{pbk}}
+\newcommand{\ABNTEXtitlefont}{\fontsize{12}{26}\selectfont\fontfamily{pbk}\up}
 
 \newcommand{\ABNTEXchapterfont}{\fontfamily{pbk}}
-\newcommand{\ABNTEXchapterfontsize}{\fontsize{22}{27}\selectfont}
+%\newcommand{\ABNTEXchapterfontsize}{\fontsize{22}{27}\selectfont}
+\newcommand{\ABNTEXchapterfontsize}{\fontsize{12}{27}\selectfont}
 
 \newcommand{\ABNTEXpartfont}{\ABNTEXchapterfont}
 \newcommand{\ABNTEXpartfontsize}{\ABNTEXchapterfontsize}
 
 \newcommand{\ABNTEXsectionfont}{\ABNTEXchapterfont}
-\newcommand{\ABNTEXsectionfontsize}{\fontsize{16}{20}\selectfont}
+%\newcommand{\ABNTEXsectionfontsize}{\fontsize{16}{20}\selectfont}
+\newcommand{\ABNTEXsectionfontsize}{\fontsize{12}{20}\selectfont}
 
 \newcommand{\ABNTEXsubsectionfont}{\ABNTEXsectionfont}
-\newcommand{\ABNTEXsubsectionfontsize}{\fontsize{14}{17}\selectfont}
+%\newcommand{\ABNTEXsubsectionfontsize}{\fontsize{14}{17}\selectfont}
+\newcommand{\ABNTEXsubsectionfontsize}{\fontsize{12}{17}\selectfont}
 
 \newcommand{\ABNTEXsubsubsectionfont}{\ABNTEXsubsectionfont}
 \newcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
@@ -976,7 +981,8 @@
 
 \newenvironment{resumo}[1][\resumoname]{%
    \PRIVATEbookmarkthis{#1}
-   \renewcommand{\abstractnamefont}{\fontsize{18}{22}\selectfont}
+   %\renewcommand{\abstractnamefont}{\fontsize{18}{22}\selectfont}
+   \renewcommand{\abstractnamefont}{\fontsize{12}{22}\selectfont}
    \renewcommand{\abstractname}{\ABNTEXchapterupperifneeded{#1}}
    %retirando título, autor e orientador após título do trabalho na página de resumo
    %{\begin{center}
@@ -1194,18 +1200,23 @@
     \center
    % \includegraphics[width=3.1cm, height=3.14cm]{abntex2/ufam-logo}
 
-    {\fontsize{11}{14}\selectfont
+    %{\fontsize{11}{14}\selectfont
+    {\fontsize{12}{14}\selectfont
     \MakeUppercase{\imprimirinstituicao}
     \par
     \MakeUppercase{\imprimircurso}}
-
     \vfill
+    
+     %{\fontsize{15}{18}\fontfamily{pbk}\selectfont\imprimirautor\par}
+     {\fontsize{12}{18}\fontfamily{pbk}\selectfont\imprimirautor\par}
+     \vfill
+    
     %\ABNTEXchapterfont{\fontsize{21}{26}\selectfont\imprimirtitulo\par}
-    \fontsize{18}{22}\selectfont\imprimirtitulo
+    %\fontsize{18}{22}\selectfont\imprimirtitulo
+     \fontsize{12}{22}\selectfont\imprimirtitulo
     \vfill
 
-    {\fontsize{15}{18}\fontfamily{pbk}\selectfont\imprimirautor\par}
-    \vfill
+   
     
     {\fontsize{12}{14}\fontfamily{pbk}\selectfont
       \setlength{\parskip}{-0.4cm}
@@ -1235,11 +1246,13 @@
   \begin{center}
 
     %\vspace*{1cm}
-    {\fontsize{15}{18}\selectfont\imprimirautor}
+    %{\fontsize{15}{18}\selectfont\imprimirautor}
+    {\fontsize{12}{18}\selectfont\imprimirautor}
 	
     \vspace*{\fill}
     \begin{center}
-      \fontsize{18}{22}\selectfont\imprimirtitulo
+      %\fontsize{18}{22}\selectfont\imprimirtitulo
+      \fontsize{12}{22}\selectfont\imprimirtitulo
     \end{center}
     \vspace*{\fill}
 	

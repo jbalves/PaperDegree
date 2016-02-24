@@ -25,6 +25,7 @@
 	brazil				% o último idioma é o principal do documento
 ]{abntex2/abntex2} % Entre chaves vai o caminho para o arquivo .cls
 
+
 % ---
 % Pacotes básicos
 % ---
@@ -50,9 +51,9 @@
 
 
 
-\titulo{Uso de técnicas de \textit{Data Mining} na classificação de tipos de dengue}
-\autor{Jeferson Barros Alves}
-\local{Manaus - AM}
+\titulo{USO DE TÉCNICAS DE \textit{DATA MINING} NA CLASSIFICAÇÃO DE TIPOS DE DENGUE}
+\autor{JEFERSON BARROS ALVES}
+\local{MANAUS}
 \data{2015}
 \orientador[Orientador]{Márcio Palheta Piedade, M.Sc.}
 \instituicao{%
@@ -236,20 +237,20 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 
  	A tarefa de classificação em \textit{Data Mining} consiste na predição de classe dado um determinado conjunto de atributos de uma instância. Esta técnica pode ser útil no diagnóstico médico, como ferramenta de apoio ao profissional da saúde. Na literatura, as melhores técnicas para classificação utilizam máquinas de vetores de suporte e árvore de decisão. Tais técnicas utilizam o conceito de hiperplano para separar de uma melhor forma as classes existentes em conjuntos de dados, também pode-se verificar o uso da divisão e conquista na identificação dos melhores atributos, sendo capazes de produzir resultados mais eficientes no processo de predição. Como resultado, obtivemos modelos classificadores baseados em SMO e J48, que alcançaram resultados de 89,61\% e 86,63\% na classificação correta de instâncias, respectivamente nos conjuntos de dados utilizados, mostrando resultados satisfatórios em relação ao classificador ZeroR utilizado como \textit{baseline}. Foi possível observar, também, que os modelos gerados obtiveram melhores resultados à medida que os experimentos no tamanho do conjunto de dados aumentava.
 
- \textit{Palavras-chave}: Mineração de Dados, Classificação, Árvore de Decisão, Bayes, Máquina de Vetor de Suporte, Dengue.
+ \textbf{Palavras-chave:} Mineração de Dados. Classificação. Árvore de Decisão. Bayes. Máquina de Vetor de Suporte. Dengue.
 
 \end{resumo}
 
 % resumo em inglês
 
-\begin{resumo}[Abstract]
+\begin{resumo}[ABSTRACT]
  \begin{otherlanguage*}{english}
-   The classification task in \ textit {Data Mining} is the class prediction given a certain set of attributes for an instance. This technique can be useful in medical diagnosis, as a support tool for the health professional. In the literature, the best techniques for classification using support vector machines and decision tree. Such techniques use the concept of hyperplane to separate in a better way the existing classes in data sets, you can also verify the use of divide and conquer to identify the best attributes, being able to produce more efficient results in the prediction process. As a result, we obtained classifiers based models SMO and J48, reaching results of 89.61 \% and 86.63 \% in the correct classification of instances respectively in the data sets used in this study, showing satisfactory results in relation to the classifier Zeror using as \ textit {baseline}. It was also observed that the generated models performed better as the experiments in the data set size increased.
+   \textit{The classification task in \ textit {Data Mining} is the class prediction given a certain set of attributes for an instance. This technique can be useful in medical diagnosis, as a support tool for the health professional. In the literature, the best techniques for classification using support vector machines and decision tree. Such techniques use the concept of hyperplane to separate in a better way the existing classes in data sets, you can also verify the use of divide and conquer to identify the best attributes, being able to produce more efficient results in the prediction process. As a result, we obtained classifiers based models SMO and J48, reaching results of 89.61 \% and 86.63 \% in the correct classification of instances respectively in the data sets used in this study, showing satisfactory results in relation to the classifier Zeror using as \ textit {baseline}. It was also observed that the generated models performed better as the experiments in the data set size increased.}
 
    \vspace{\onelineskip}
  
    \noindent 
-   \textit{Keywords}: Data mining, Classifier, Decision Tree, Bayes, Support Vector Machine, Dengue.
+   \textbf{\textit{Key-words}:} \textit{Data mining. Classifier. Decision Tree. Bayes. Support Vector Machine. Dengue.}
  \end{otherlanguage*}
 \end{resumo}
 
@@ -304,7 +305,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 
 \textual
 
-\chapter{Introdução}
+\chapter{INTRODUÇÃO}
 
 	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso, surgiram diversas abordagens, técnicas e ferramentas que buscam transformar dados, também conhecida por Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Discovery in Databases - KDD}). Tal abordagem foi proposta em 1989, com o objetivo de analisar os dados de uma base afim de extrair conhecimento útil \cite{fayyad:1996}.	
 	
@@ -313,7 +314,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir desses dados, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Mining}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
     
     \newpage
-	\section{Especificação do problema}
+	\section{ESPECIFICAÇÃO DO PROBLEMA}
 		
 		Ao longo dos últimos anos a mineração de dados tem sido cada vez mais utilizada na literatura médica. No entanto, a sua aplicação na análise de dados médicos tem sido relativamente limitada, tendo em vista que a aplicação prática pode explorar o conhecimento disponível no contexto clínico e explicar decisões propostas \cite{bellazzi:2008}. Faz-se importante o desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases de dados médicos, que possam apoiar o profissional em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 		
@@ -321,7 +322,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	
 		A classificação epidemiológica dos casos de dengue, que é feita habitualmente após desfecho clínico, na maioria das vezes é retrospectiva, dependendo de informações clínicas e laboratoriais, disponíveis no final do acompanhamento médico. Esses critérios não permitem o reconhecimento precoce de formas potencialmente graves, para as quais é crucial para a instituição de tratamento imediato \cite{saude:2013}.
 
-	\section{Objetivos}
+	\section{OBJETIVOS}
 	
 		\subsection{Objetivo Geral}
 
@@ -341,7 +342,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 			\item Validar e interpretar os resultados obtidos no processo de classificação.
 		\end{itemize}
 		
-	\section{Justificativa}
+	\section{JUSTIFICATIVA}
 	
 	\begin{comment}
 	Considera-se a dengue um dos maiores problemas de saúde pública do mundo, especialmente nos países tropicais, cujas condições sócio-ambientais favorecem o desenvolvimento e a proliferação do seu principal vetor o \textsl{Aedes aegypti}. A dengue é, hoje, uma das doenças mais frenquentes no Brasil, atingindo a população em todos os estados, independente de classe social \cite{saude:2008}.
@@ -356,7 +357,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	Esse apoio computacional pode atuar como uma junta médica virtual, ao trazer para o especialista o conhecimento armazenado em exames e diagnósticos relacionados \cite{costa:2012}.
 	\end{comment}
 	
-	\section{Trabalhos Relacionados}	
+	\section{TRABALHOS RELACIONADOS}	
 	
 	No trabalho de \cite{shakil:2015}, observamos que o foco principal do trabalho foi a classificação de dengue, onde inicialmente aplicou-se a classificação nos \textit{datasets} iniciais para identificar qual algoritmo obteve melhor resultado. Os conjunto de dados continha 108 instâncias, dentre estas foram utilizadas 99 instâncias e  18 atributos na ferramenta WEKA (\textit{Waikato Environment for Knowledge Analysis}). Os experimentos mostraram que os algoritmos Naive Bayes e J48 obtiveram resultados de 100\% de acerto na classificação. Dentre as maiores contribuições do trabalho foram:
 	
@@ -372,7 +373,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	
 	Este trabalho se difere dos anteriores em relação aquantidade de instâncias utilizadas, como observados utilizaram 
 
-	\section{Metodologia de Desenvolvimento}
+	\section{METODOLOGIA DE DESENVOLVIMENTO}
 		
 		Com base na metodologia utilizada no processo de Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Dicovery in Databases} - KDD) definida em \cite{fayyad:1996}, a realização desta pesquisa será composta das seguintes etapas:
 		
@@ -391,20 +392,20 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 		\end{itemize}
 	
 	\newpage
-	\section{Estruturação da Monografia}
+	\section{ESTRUTURAÇÃO DA MONOGRAFIA}
 	
 		Além deste capítulo introdutório, este trabalho está organizado da forma descrita à seguir. No Capítulo 2, serão descritos conceitos básicos relacionados à compreensão deste trabalho, bem como o referencial teórico. No Capítulo 3, serão apresentados os experimentos juntamente com os resultados obtidos. Finalmente no Capítulo 4, serão apresentadas as conclusões observadas e sugestões de trabalhos futuros da pesquisa.
 
 % ---
 % Capítulo 2
 % ---
-\chapter{Referencial Teórico}
+\chapter{REFERENCIAL TEÓRICO}
 
 Este Capítulo apresenta uma visão geral dos conceitos envolvidos nas várias técnicas de classificação utilizadas ao longo deste trabalho.
 
 Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos envolvidos em KDD (\textit{Knowledge Discovery in Databases}) e consequentemente em Data Mining. Apresentam-se também os trabalhos encontrados na literatura sobre assunto que são relevantes para o desenvolvimento deste trabalho.
 
-	\section{Descoberta de Conhecimento em Base de Dados}
+	\section{DESCOBERTA DE CONHECIMENTO EM BASE DE DADOS}
 	
 	Segundo \cite{fayyad:1996}, a Descoberta de Conhecimento em Base de Dados é um processo não trivial de identificações de novos padrões, válidos e potencialmente úteis.
 	
@@ -429,12 +430,12 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\begin{center}
 			    \includegraphics[scale=1]{img/dataMiningFayyad.png}
 			\end{center}
-			Fonte: Adaptado de \cite{fayyad:1996}.
+		{\fontsize{10}{\baselineskip} \selectfont Fonte: Adaptado de \cite{fayyad:1996}.}
 		\end{figure}
 		
 		Inicialmente, é necessário definir que tipo de conhecimento se deseja extrair da base de dados, pois a técnica que será utilizada para a mineração de dados depende do objetivo a que se quer chegar \cite{damasceno:2005}.
 		
-	\section{Data Mining}
+	\section{DATA MINING}
 	
 		Em \cite{berry:1997}, definiu-se \textit{Data Mining} como um processo de exploração e análise, de uma grande quantidade de dados, por meio automático ou semiautomático, com o propósito de descobrir regras e padrões significativos.
 		
@@ -459,7 +460,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	No aprendizado supervisionado tem-se a figura de um professor externo, o qual apresenta o conhecimento do ambiente por conjuntos de exemplos na forma: entrada, saída desejada. Onde extrai-se a representação do conhecimento a partir desses exemplos. O objetivo é que a representação gerada seja capaz de produzir saídas corretas para novas entradas não apresentadas previametne \cite{lorena:2007}.
 	
-	\section{Técnicas de Classificação}
+	\section{TÉCNICAS DE CLASSIFICAÇÃO}
 	
 	Uma técnica de classificação é uma abordagem sistemática para construção de modelos de classificação a partir de um conjunto de dados de entrada. Exemplos incluem classificadores de árvores de decisão, classificadores baseados em regras, redes neurais, máquinas de vetores de suporte e classificadores Bayes simples. Cada técnica emprega um algoritmo de aprendizagem para identificar um modelo que seja mais apropriado para o relacionamento entre o conjunto de atributos e o rótulo da classe dos dados de entrada. O modelos gerado pelo algoritmo de aprendizagem deve se adaptar bem aos dados de entrada e prever corretamente os rótulos de classes de registros que ele nunca viu antes. Portanto, o objetivo chave do algoritmo de aprendizagem é construir modelos com boa capacidade de generalização \cite{tan:2009}.
 	
@@ -471,10 +472,10 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\includegraphics[scale=0.3]{img/abordagemModeloClassificacao.png}
 			%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
 		\end{center}
-		Fonte: Adaptado de \cite{tan:2009}.
+		\hspace{2.5cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: Adaptado de \cite{tan:2009}.}
 	\end{figure}
 
-	\newpage
+	%\newpage
 	\subsection{Árvore de Decisão}
 	
 		Em uma árvore de decisão, cada nodo folha recebe um rótulo de classe. os nodos não terminais, que incluem o nodo raiz e outros nodos internos, contêm condições de testes de atributos para separar registros que possuem características diferentes.
@@ -495,7 +496,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 				\includegraphics[scale=0.4]{img/nucleoC45.png}
 				%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
 			\end{center}
-			Fonte: \cite{feldens:1997}.
+			\hspace{1.5cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: \cite{feldens:1997}.}
 		\end{figure}
 	
 	O algoritmo recebe o atributo categórico \textit{C} (que indica a classe), um conjunto de atributos não categóricos \textit{R} (demais atributos), e um conjunto de treinamento \textit{S} (que contém os exemplos). Ele verifica qual é o atributo \textit{D} mais informativo de \textit{R}, ou seja, o atributo com maior ganho de informação para o conjunto de treinamento \textit{S} e, então, subdivide este conjunto \textit{S} de acordo com cada um dos valores deste atributo mais informativo \textit{D} \cite{feldens:1997}.
@@ -570,15 +571,16 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	Uma técnica de classificação que tem recebido considerável atenção pois esta técnica possui seus fundamentos na teoria de aprendizagem estatística e tem mostrado resultados empíricos promissores em muitas aplicações práticas, desde o reconhecimento de dígitos escritos à mão até a categorização de textos. SVM também funciona bem com dados de alta dimensionalidade e evita o problema da dimensionalidade. Outro aspecto único desta abordagem é que ela representa o limite da decisão usando um subconjunto dos exemplos de treinamento, conhecido com vetores de suporte \cite{tan:2009}.
 	
 	Na Figura \ref{figsvmHiperPlanos}, existe um conjunto de classificadores lineares que separam duas classes, mas apenas um (em destaque) que maximiza a margem de separação (distância da instância mais próxima ao hiperplano de separação das classes). O hiperplano com margem máxima é chamado de hiperplano ótimo \cite{junior:2010}.
-	
-	%\begin{figure}[!htb]
+
+	%\begin{figure}[!htb]	
+	%\begin{figure}[H]
 	\begin{figure}[H]
 		\caption{\label{figsvmHiperPlanos} Conjunto de hiperplanos possíveis}
 		\begin{center}
-			\includegraphics[scale=0.5]{img/svmHiperPlanos.png}
+			\includegraphics[scale=0.4]{img/svmHiperPlanos.png}
 			%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
 		\end{center}
-		Fonte: \cite{junior:2010}.
+		\hspace{4cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: \cite{junior:2010}.}
 	\end{figure}
 	
 	%\pagebreak
@@ -622,7 +624,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 					\hline
 				\end{tabular}
 			\end{center}
-			Fonte: Adaptado de \cite{prati:2008}.
+			{\fontsize{10}{\baselineskip} \selectfont Fonte: Adaptado de \cite{prati:2008}.}
 		\end{table}
 		
 
@@ -646,7 +648,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	A ferramenta WEKA (Waikato Environment for Knowledge Analysis)  conforme descrito em \cite{hall:2009}, visa proporcionar uma coleção abrangente de algoritmos de aprendizagem de máquina e ferramentas de pré-processamento de dados tanto para pesquisadores como para profissionais. Permite aos usuários experimentar rapidamente e comparar diferentes métodos de aprendizagem de máquina em diferentes conjuntos de dados. Sua arquitetura modular, extensível, permite que os processos de mineração de dados pode ser construido a partir da vasta coleção de algoritmos de aprendizado e diversas ferramentas oferecidas.
 		
-	\section{Dados Abertos}
+	\section{DADOS ABERTOS}
 
 	Utilizamos a base de dados disponibilizada pelo portal de dados abertos da prefeitura do Município de Fortaleza de casos notificados de dengue. O portal de dados abertos de Fortaleza é um espaço desenvolvido pela Coordenadoria de Ciência, Tecnologia e Inovação da Prefeitura de Fortaleza (CITINOVA) para que a sociedade possa encontrar e utlizar os dados e informações públicas da cidade de Fortaleza. Os dados são publicados em formatos abertos que permitem sua reutilização em aplicativos digitais desenvolvidos por e para qualquer pessoa. Além disso, o portal serve como uma ferramenta de interlocução com a sociedade fortalezense para pensar e promover  a inovação e a criatividade em prol da melhoria de serviços e da vida na cidade de Fortaleza. O portal de dados abertos de Fortaleza está em conformidade com os princípios da administração pública e observâncias às recomendações aceitas internacionalmente, como as emitidas pela Open Knowledge Foundation e pelo Consórcio W3C Internacional.
 		
@@ -661,11 +663,11 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 % - - -
 % Capítulo 3
 % - - -
-\chapter{Experimentos}
+\chapter{EXPERIMENTOS}
 
 	Neste capítulo, avaliamos os modelos gerados através de uma série de experimentos. Apresentaremos a base de dados utilizada para os experimentos, a metodologia de experimentação e os experimentos em si realizados. Serão apresentados resultados obtidos na aplicação dos classificadores em  5  conjuntos de dados e as medidas resultantes observadas. O processo de classificação utiliza o conjunto de \textit{datasets} em ordem crescente, que foram  produzidos na Seção \ref{Pré-processamento}. %Como resultado obtive-se  as métricas de classificação utilizadas para avaliação da qualidade dos modelos gerados.
 
-	\section{Base de Dados}
+	\section{BASE DE DADOS}
 	
 	Para avaliar o objetivo geral neste trabalho, usamos a base de dados  do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualquer pessoa \cite{fortaleza:2015}. Este conjunto de dados contém notificações de dengue do Município de Fortaleza no período de janeiro à junho de 2015, contendo 26.568 instâncias. %Na Tabela \ref{tabDescricaoAtributos}, podemos observar os atributos utilizados neste trabalho.
 	
@@ -770,7 +772,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{itemize}
 	\end{comment}
 	
-	\section{Pré-processamento}
+	\section{PRÉ-PROCESSAMENTO}
 	\label{Pré-processamento}
 	
 	Após o download da base de dados em \cite{fortaleza:2015},  iniciamos a importação do arquivo no formato CSV (\textit{Comma Separated Value}), conforme mostrado na Figura \ref{figdataSetOriginal}.
@@ -781,7 +783,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\begin{center}
 				\includegraphics[scale=0.4]{img/dataSetOriginal.png}
 			\end{center}
-			Fonte: Próprio Autor.
+			{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 		\end{figure}
 	
 		\begin{figure}[!htb]
@@ -789,7 +791,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\begin{center}
 				\includegraphics[scale=0.55]{img/erroCarregarInstancias.png}
 			\end{center}
-			Fonte: Próprio Autor.
+			{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 		\end{figure}
 
 	Onde nos deparamos com erros no campos DS\_OBS, onde o WEKA informa que está lendo 102 atributos em vez de 99, conforme mostrado na Figura \ref{figerroCarregarInstancias}. Já na Figura \ref{figerroLinhaSete}, podemos observar que houve falha na inserção dos dados no atributo DS\_OBS, pois o mesmo foi preenchido com vírgula em seu conteúdo da seguinte ''CEFALEIA, FEBRE, DOR NOS OLHOS, VOMITO'', além do caracter ''M'' que representa quebra de linha. Pelo fato do arquivo ser contruído no formato CSV (\textit{Comma Separated Value}), essas vírgulas excedentes serão consideradas como início de novos atributos.
@@ -801,7 +803,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\begin{center}
 				\includegraphics[scale=0.45]{img/erroLinhaSete.png}
 			\end{center}
-			Fonte: Próprio Autor.
+			{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 		\end{figure}
 		
 		Para resolver este problema editamos o arquivo de tal forma que os atributos ''DS\_OBS'' e ''TP\_SISTEMA'' foram removidos. 
@@ -815,7 +817,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 				\begin{center}
 					\includegraphics[scale=0.45]{img/filtroRemoveUseless.png}
 				\end{center}
-				\centering Fonte: Próprio Autor.
+				\centering {\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 			\end{figure}
 			
 			\item Remoção manual: Pelo fato de não contribuir nos resultados os seguintes atributos foram removidos: DT\_NASC, NU\_DDD\_TEL, DDD\_HOSP, TEL\_HOSP e NU\_LOTE\_I.
@@ -826,7 +828,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 				\begin{center}
 					\includegraphics[scale=0.45]{img/filtroNumericToNominal.png}
 				\end{center}
-				\centering Fonte: Próprio Autor.
+				\centering {\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 			\end{figure}
 			\newpage
 			\item \textit{RemoveRange}: Um filtro que remove um determinado intervalo de ocorrências de um conjunto de dados. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroRemoveRange}. O parâmetro ''instancesIndices''  foi utilizado cinco vezes para criarmos 05 (cinco) conjuntos de dados com as seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. Que foram utilizados durantes os experimentos.
@@ -835,13 +837,13 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 				\begin{center}
 					\includegraphics[scale=0.45]{img/filtroRemoveRange.png}
 				\end{center}
-			\centering Fonte: Próprio Autor.
+			\centering {\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 			\end{figure}
 		\end{itemize}
 
 %		$\lambda$
 		
-	\section{Metodologia do Experimento}
+	\section{METODOLOGIA DO EXPERIMENTO}
 	
 	Nossos experimentos foram realizar a partir dos conjuntos de dados divididos nas seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. A cada conjunto de instâncias, aplicamos os processos de classificação utilizando 5 classificadores que estão contidos em 3 técnicas de classificação, conforme representado na Figura \ref{figmetodologiaExperimentos}. Como resultado dos classificadores obtivemos 25 modelos. 
 	
@@ -859,7 +861,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\begin{center}
 			\includegraphics[scale=0.55]{img/metodologiaExperimentos.png}
 		\end{center}
-		Fonte: Próprio Autor.
+		{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 	\end{figure}
 	
 	\subsection{Parâmetros }
@@ -873,7 +875,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item SMO: c = 1.0; toleranceParameter = 0.001; epsilon = 1.0E-12; filterType = Normalize training data; kernel = PolyKernel; cacheSize = 250007; exponent = 1.0.
 	\end{itemize}
 	
-	\section{Resultados dos Algoritmos}
+	\section{RESULTADOS DOS ALGORITMOS}
 	%\subsection{Precisão na Classificação}
 	
 	Segundo \cite{witten:2011}, o algoritmo \textit{ZeroR} modela uma base de dados com um única regra. Onde, dado um conjunto de dados para uma nova classificação, o algoritmo prediz o valor mais frequente nos dados de treinamento. Com isso utilizou-se este algoritmo como base de referência para os demais algoritmos utilizados neste trabalho, para que seja possível copará-los entre si.
@@ -903,7 +905,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{tabular}
 	\end{flushleft}
 	\begin{flushleft}
-	Fonte: Próprio Autor.
+	{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 	\end{flushleft}
 	\end{table}
 	
@@ -918,7 +920,7 @@ Na Figura \ref{figtpRate}, pode-se visualizar estas infomarções observando a \
 	\begin{center}
 		\includegraphics[scale=0.6]{graphs/tp_graph.png}
 	\end{center}
-	Fonte: Próprio Autor.
+	\hspace{3cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 \end{figure}
 
 %\newpage
@@ -930,7 +932,7 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 	\begin{center}
 		\includegraphics[scale=0.6]{graphs/fp_graph.png}
 	\end{center}
-	Fonte: Próprio Autor.
+	\hspace{3cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 \end{figure}
 	
 	\begin{comment}
@@ -964,7 +966,7 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 			\subfigure[25k Instâncias\label{surreal5}]{
 				\includegraphics[width=07.5cm, height=05cm]{graphs/perc_hits_25k.png}}
 		\end{center}
-		Fonte: Próprio Autor.
+		{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 	\end{figure}
 	
 	\newpage
@@ -979,17 +981,17 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 		\begin{center}
 			\includegraphics[scale=0.8]{python/TodosModelos.png}
 		\end{center}
-		Fonte: Próprio Autor.
+		\hspace{1cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 	\end{figure}
 	
 % - - -
 % Capítulo 4
 % - - -
-\chapter{Conclusão e Trabalhos Futuros}
+\chapter{CONCLUSÃO E TRABALHOS FUTUROS}
 
 	Neste Capítulo, apresentado as conclusões do nosso trabalho, incluindo suas limitações  e futuros estudos que possam ser explorados. 
 
-	\section{Conclusão}
+	\section{CONCLUSÃO}
 
 	O Objetivo deste estudo foi construir modelos de classificação por meio do uso de técnicas em \textit{Data Mining} conhecidas como: \textit{Árvore de Decisão}, \textit{Teorema de Bayes} e \textit{Máquinas de Vetores de Suporte}. Estas técnicas foram aplicadas por meio dos algoritmos: \textit{SMO}, \textit{J48}, \textit{REPTree}, \textit{RandomTree} e \textit{NaiveBayes}.
 	
@@ -1127,7 +1129,7 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 	\end{figure}
 	\end{comment}
 	
-	\section{Trabalhos Futuros}
+	\section{TRABALHOS FUTUROS}
 	
 	Como trabalhos futuros, podem ser explorados na continuação desta pesquisa as oportunidades descritas a seguir:
 	
