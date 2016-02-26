@@ -252,6 +252,7 @@
 \newcommand{\ABNTEXsubsubsubsectionupperifneeded}{\ifthenelse{\boolean{ABNTEXuppersubsubsubsection}}{\MakeTextUppercase}{}}
 % ---
 
+%valor default = 2, mudei para 1.5
 \RequirePackage{titlesec}
 \titlespacing*{\section}
 {0pt}{2\baselineskip}{0pt}
@@ -316,7 +317,7 @@
   %% ajusta nomes padroes do babel
   \renewcommand{\bibname}{REFER\^ENCIAS}
   \renewcommand{\indexname}{\'Indice}
-  \renewcommand{\listfigurename}{LISTA DE FIGURAS}
+  \renewcommand{\listfigurename}{LISTA DE ILUSTRA{\C{C}{\~O}ES} }
   \renewcommand{\listtablename}{LISTA DE TABELAS}
   %% ajusta nomes usados com a macro \autoref
   \renewcommand{\pageautorefname}{p\'agina}
@@ -397,9 +398,9 @@
 % ---
 % Fontes padroes de title, part, chapter, section, subsection e subsubsection
 %\newcommand{\ABNTEXtitlefont}{\fontsize{21}{26}\selectfont\fontfamily{pbk}}
-\newcommand{\ABNTEXtitlefont}{\fontsize{12}{26}\selectfont\fontfamily{pbk}\up}
+\newcommand{\ABNTEXtitlefont}{\fontsize{12}{26}\selectfont\fontfamily{ptm}\up}
 
-\newcommand{\ABNTEXchapterfont}{\fontfamily{pbk}}
+\newcommand{\ABNTEXchapterfont}{\fontfamily{ptm}}
 %\newcommand{\ABNTEXchapterfontsize}{\fontsize{22}{27}\selectfont}
 \newcommand{\ABNTEXchapterfontsize}{\fontsize{12}{27}\selectfont}
 
@@ -601,6 +602,27 @@
 \renewcommand{\cfttablename}{\tablename\space}
 \renewcommand*{\cfttableaftersnum}{\hfill\textendash\hfill}	
  
+ % Novo list of (listings) para QUADROS
+ \newcommand{\quadroname}{Quadro}
+ \newcommand{\listofquadrosname}{Lista de quadros}
+ 
+ \newfloat[chapter]{quadro}{loq}{\quadroname}
+ \newlistof{listofquadros}{loq}{\listofquadrosname}
+ \newlistentry{quadro}{loq}{0}
+ 
+ % configurações para atender às regras da ABNT da lista de Quadros
+ \counterwithout{quadro}{chapter}
+ \renewcommand{\cftquadroname}{\quadroname\space} 
+ \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+ 
+%% Gráfico
+\newcommand{\graficoname}{Grafico}
+\newfloat[chapter]{grafico}{lof}{\graficoname}
+\newlistentry{grafico}{lof}{0}
+\counterwithout{grafico}{chapter}
+\renewcommand{\cftgraficoname}{\graficoname\space} 
+\renewcommand*{\cftgraficoaftersnum}{\hfill--\hfill}
+
 % fonte das partes e do capitulo do TOC
 \renewcommand{\tocheadstart}{\ABNTEXchapterfont}
 
@@ -1208,7 +1230,7 @@
     \vfill
     
      %{\fontsize{15}{18}\fontfamily{pbk}\selectfont\imprimirautor\par}
-     {\fontsize{12}{18}\fontfamily{pbk}\selectfont\imprimirautor\par}
+     {\fontsize{12}{18}\fontfamily{ptm}\selectfont\imprimirautor\par}
      \vfill
     
     %\ABNTEXchapterfont{\fontsize{21}{26}\selectfont\imprimirtitulo\par}
@@ -1218,7 +1240,7 @@
 
    
     
-    {\fontsize{12}{14}\fontfamily{pbk}\selectfont
+    {\fontsize{12}{14}\fontfamily{ptm}\selectfont
       \setlength{\parskip}{-0.4cm}
       \imprimirlocal
 

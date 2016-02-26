@@ -29,7 +29,8 @@
 % ---
 % Pacotes básicos
 % ---
-\usepackage{bookman}				% Usa a fonte Bookman Old Style
+%\usepackage{bookman}				% Usa a fonte Bookman Old Style
+\usepackage{times}				% Usa a fonte Bookman Old Style
 \usepackage[T1]{fontenc}			% Selecao de codigos de fonte.
 \usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
 \usepackage{color}				% Controle das cores
@@ -48,6 +49,12 @@
 \usepackage{verbatim}  %fazer comentários em bloco
 \usepackage{float}
 \usepackage{subfigure}
+\usepackage{indentfirst}  % Indenta o primeiro parágrafo de cada seção
+\usepackage{setspace} % alterar espaçamento entre linhas
+\setlength\afterchapskip{\lineskip}  %espaçamento entre capítulo e texto
+%\setlength\aftersectionskip{\lineskip}
+\setlength\aftersecskip{\lineskip}	%espaçamento entre seção e texto
+\setlength\aftersubsecskip{\lineskip} %espaçamento entre subseção e texto
 
 
 
@@ -245,17 +252,17 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 
 \begin{resumo}[ABSTRACT]
  \begin{otherlanguage*}{english}
-   \textit{The classification task in \ textit {Data Mining} is the class prediction given a certain set of attributes for an instance. This technique can be useful in medical diagnosis, as a support tool for the health professional. In the literature, the best techniques for classification using support vector machines and decision tree. Such techniques use the concept of hyperplane to separate in a better way the existing classes in data sets, you can also verify the use of divide and conquer to identify the best attributes, being able to produce more efficient results in the prediction process. As a result, we obtained classifiers based models SMO and J48, reaching results of 89.61 \% and 86.63 \% in the correct classification of instances respectively in the data sets used in this study, showing satisfactory results in relation to the classifier Zeror using as \ textit {baseline}. It was also observed that the generated models performed better as the experiments in the data set size increased.}
+   The classification task in \ textit {Data Mining} is the class prediction given a certain set of attributes for an instance. This technique can be useful in medical diagnosis, as a support tool for the health professional. In the literature, the best techniques for classification using support vector machines and decision tree. Such techniques use the concept of hyperplane to separate in a better way the existing classes in data sets, you can also verify the use of divide and conquer to identify the best attributes, being able to produce more efficient results in the prediction process. As a result, we obtained classifiers based models SMO and J48, reaching results of 89.61 \% and 86.63 \% in the correct classification of instances respectively in the data sets used in this study, showing satisfactory results in relation to the classifier Zeror using as \ textit {baseline}. It was also observed that the generated models performed better as the experiments in the data set size increased.
 
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{\textit{Key-words}:} \textit{Data mining. Classifier. Decision Tree. Bayes. Support Vector Machine. Dengue.}
+   \textbf{\textit{Keywords}:} \textit{Data mining. Classifier. Decision Tree. Bayes. Support Vector Machine. Dengue.}
  \end{otherlanguage*}
 \end{resumo}
 
 % ---
-% inserir lista de figuras
+% inserir lista de ilustrações
 % ---
 \pdfbookmark[0]{\listfigurename}{lof}
 \listoffigures*
@@ -269,6 +276,15 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 \listoftables*
 \cleardoublepage
 % ---
+
+% ---
+% inserir lista de quadros
+% ---
+\pdfbookmark[0]{\listofquadrosname}{loq}
+\listofquadros*
+\cleardoublepage
+% ---
+
 
 % ---
 % inserir lista de abreviaturas e siglas
@@ -306,16 +322,15 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 \textual
 
 \chapter{INTRODUÇÃO}
-
 	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso, surgiram diversas abordagens, técnicas e ferramentas que buscam transformar dados, também conhecida por Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Discovery in Databases - KDD}). Tal abordagem foi proposta em 1989, com o objetivo de analisar os dados de uma base afim de extrair conhecimento útil \cite{fayyad:1996}.	
 	
 	A computação tem apoiado o desenvolvimento da medicina em diversas áreas como em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras \cite{costa:2012}. Desta maneira, esse grande volume de dados é uma fonte valiosa de conhecimentos que pode ser utilizada como auxílio ao diagnóstico médico. Com base nisso, é necessário o desenvolvimento de técnicas que permitam a descoberta de conhecimentos em base de dados médicos, para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 	
 	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir desses dados, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Mining}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
-    
-    \newpage
+    %\setlength{\parskip}{0.2cm} % tente também \onelineskip
+    %\newpage
 	\section{ESPECIFICAÇÃO DO PROBLEMA}
-		
+	
 		Ao longo dos últimos anos a mineração de dados tem sido cada vez mais utilizada na literatura médica. No entanto, a sua aplicação na análise de dados médicos tem sido relativamente limitada, tendo em vista que a aplicação prática pode explorar o conhecimento disponível no contexto clínico e explicar decisões propostas \cite{bellazzi:2008}. Faz-se importante o desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases de dados médicos, que possam apoiar o profissional em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 		
 		Segundo \cite{saude:2013}, a dengue é uma das doenças com maior incidência no Brasil, atingindo a população de todos os estados, independente de classe social. Diante disto, faz-se necessário que um conjunto de ações com intuito de combater os casos de dengue sejam realizadas. Dentre elas temos a previsão de forma antecipada de possíveis novos casos.
@@ -391,7 +406,7 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 			
 		\end{itemize}
 	
-	\newpage
+	%\newpage
 	\section{ESTRUTURAÇÃO DA MONOGRAFIA}
 	
 		Além deste capítulo introdutório, este trabalho está organizado da forma descrita à seguir. No Capítulo 2, serão descritos conceitos básicos relacionados à compreensão deste trabalho, bem como o referencial teórico. No Capítulo 3, serão apresentados os experimentos juntamente com os resultados obtidos. Finalmente no Capítulo 4, serão apresentadas as conclusões observadas e sugestões de trabalhos futuros da pesquisa.
@@ -426,7 +441,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	Ao final do processo teremos a etapa de interpretação e avaliação dos resultados, onde o conhecimento extraído da base de dados é representado por padrões.
 \\
 		\begin{figure}[h!]
-			\caption{\label{figDataMiningFayyad} Etapas do processo KDD.}
+			\caption{\label{figDataMiningFayyad} \fontsize{10}{\baselineskip} \selectfont Etapas do processo KDD.}
 			\begin{center}
 			    \includegraphics[scale=1]{img/dataMiningFayyad.png}
 			\end{center}
@@ -467,7 +482,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	A Figura \ref{figabordagemModeloClassificacao} mostra uma abordagem geral para resolver problemas de classificação. Primeiro, um conjunto de treinamento consistindo de registros cujos rótulos sejam conhecidos e devem ser fornecidos. O conjunto de treinamento é usado para construir um modelo de classificação, que é subsequentemente aplicado ao conjunto de teste, que consiste de registros com rótulos de classes desconhecidas \cite{tan:2009}.
 	\\
 	\begin{figure}[!htb]
-		\caption{\label{figabordagemModeloClassificacao} Abordagem geral para a construção de um modelo de classificação }
+		\caption{\label{figabordagemModeloClassificacao} \fontsize{10}{\baselineskip} \selectfont Abordagem geral para a construção de um modelo de classificação }
 		\begin{center}
 			\includegraphics[scale=0.3]{img/abordagemModeloClassificacao.png}
 			%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
@@ -491,7 +506,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	Para cada atributo é calculado seu ganho de informação. O atributo que tiver o maior valor, será considerado pelo algoritmo como o próximo nodo da árvore. Assim, a partição começa pelo nodo raiz e continua pelos nodos filhos da mesma maneira, até que todos os exemplos desta partição possuam a mesma classe, rotulando-se este nodo como folha e recebendo sua respectiva classe. Na Figura \ref{fignucleoC45}, podemos observar o funcionamento principal do C4.5.
 	
 		\begin{figure}[!htb]
-			\caption{\label{fignucleoC45} Núcleo do Algoritmo C4.5}
+			\caption{\label{fignucleoC45} \fontsize{10}{\baselineskip} \selectfont Núcleo do Algoritmo C4.5}
 			\begin{center}
 				\includegraphics[scale=0.4]{img/nucleoC45.png}
 				%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
@@ -575,9 +590,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	%\begin{figure}[!htb]	
 	%\begin{figure}[H]
 	\begin{figure}[H]
-		\caption{\label{figsvmHiperPlanos} Conjunto de hiperplanos possíveis}
+		\caption{\label{figsvmHiperPlanos} \fontsize{10}{\baselineskip} \selectfont Conjunto de hiperplanos possíveis}
 		\begin{center}
-			\includegraphics[scale=0.4]{img/svmHiperPlanos.png}
+			\includegraphics[scale=0.6]{img/svmHiperPlanos.png}
 			%			    \includegraphics[scale=0.5]{img/dataMiningFayyad}
 		\end{center}
 		\hspace{4cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: \cite{junior:2010}.}
@@ -604,14 +619,15 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 	\subsection{Métricas para Avaliação de Modelo}
 	
-	A performance de um modelo de classificação pode ser medida utilizando a matriz de confusão, mostrada na Tabela \ref{tabMatrizConfusao}. Nesta tabela pode ser observado que a distribuição entre as classes (proporção entre exemplos positivos e negativos) é o relacionamento entre a primeira e segunda linha. Assim, qualquer medida de desempenho que utilize valores de ambas as colunas será, necessariamente, sensível a desproporção entre as classes. Havendo mudança na distribuição das classes, os valores das métricas também mudarão, mesmo que o desempenho global do modelo não melhore \cite{prati:2008}.
+	A performance de um modelo de classificação pode ser medida utilizando a matriz de confusão, mostrada no Quadro \ref{quadroMatrizConfusao}. Nesta tabela pode ser observado que a distribuição entre as classes (proporção entre exemplos positivos e negativos) é o relacionamento entre a primeira e segunda linha. Assim, qualquer medida de desempenho que utilize valores de ambas as colunas será, necessariamente, sensível a desproporção entre as classes. Havendo mudança na distribuição das classes, os valores das métricas também mudarão, mesmo que o desempenho global do modelo não melhore \cite{prati:2008}.
 	\\
 	
-		\begin{table}[htbp]
+		%\begin{table}[htbp]
+		\begin{quadro}[htb]
 			\scalefont{1}
 			\centering
-			\caption{Matriz de confusão para problemas de classes binárias}
-			\label{tabMatrizConfusao}
+			\caption{\fontsize{10}{\baselineskip} \selectfont Matriz de confusão para problemas de classes binárias}
+			\label{quadroMatrizConfusao}
 			\begin{center}
 				\renewcommand{\arraystretch}{2}
 				\begin{tabular}{ccc}
@@ -625,7 +641,8 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 				\end{tabular}
 			\end{center}
 			{\fontsize{10}{\baselineskip} \selectfont Fonte: Adaptado de \cite{prati:2008}.}
-		\end{table}
+		\end{quadro}
+		%\end{table}
 		
 
 		Uma das medidas de desenpenho  mais utilizadas para avaliar a qualidade dos modelos é a \textit{precisão na classificação}, que é definida como $Acc = \frac{TP + TN}{TP + FP + FN + TN} $, ou, equivalente, a \textit{taxa de erro na classificação}, definida como \textit{Err} = 1 - \textit{acc}.
@@ -779,7 +796,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	
 		
 		\begin{figure}[!htb]
-			\caption{\label{figdataSetOriginal} Data Set Original}
+			\caption{\label{figdataSetOriginal} \fontsize{10}{\baselineskip} \selectfont Data Set Original}
 			\begin{center}
 				\includegraphics[scale=0.4]{img/dataSetOriginal.png}
 			\end{center}
@@ -787,7 +804,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{figure}
 	
 		\begin{figure}[!htb]
-			\caption{\label{figerroCarregarInstancias} Erro ao Carregar Instâncias}
+			\caption{\label{figerroCarregarInstancias} \fontsize{10}{\baselineskip} \selectfont Erro ao Carregar Instâncias}
 			\begin{center}
 				\includegraphics[scale=0.55]{img/erroCarregarInstancias.png}
 			\end{center}
@@ -799,7 +816,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 
 	
 		\begin{figure}[!htb]
-			\caption{\label{figerroLinhaSete} Erro Mencionado pelo WEKA}
+			\caption{\label{figerroLinhaSete} \fontsize{10}{\baselineskip} \selectfont Erro Mencionado pelo WEKA}
 			\begin{center}
 				\includegraphics[scale=0.45]{img/erroLinhaSete.png}
 			\end{center}
@@ -813,31 +830,31 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\begin{itemize}
 			\item \textit{RemoveUseless}: Este filtro remove atributos que não variam em tudo ou que variam muito. Todos os atributos constantes são excluídos automaticamente, juntamente com qualquer que exceder o percentual máximo de parâmetro de variação. O teste de variância máxima só é aplicada aos atributos nominais: ITP\_NOT, D\_AGRAVO, NU\_ANO, SOUNDEX, ID\_GEO2, ID\_PAIS, NDUPLIC\_N, DT\_TRANSUS, DT\_TRANSDM, DT\_TRANSSM, DT\_TRANSRM, DT\_TRANSRS, DT\_TRANSSE, NU\_LOTE\_V, NU\_LOTE\_H, FLXRECEBI, MIGRADO\_W, COPAISINF, MANI\_HEMOR, EPISTAXE, GENGIVO, METRO, PETEQUIAS, HEMATURA, SANGRAM, LACO\_N, PLASMATICO, EVIDENCIA, PLAQ\_MENOR, CON\_FHD e  COMPLICA. Utilizamos os parâmetros padrões conforme Figura \ref{figfiltroRemoveUseless}.
 			\begin{figure}[!h]
-				\caption{\label{figfiltroRemoveUseless} Filtro \textit{RemoveUseless}}
+				\caption{\label{figfiltroRemoveUseless} \fontsize{10}{\baselineskip} \selectfont Filtro \textit{RemoveUseless}}
 				\begin{center}
 					\includegraphics[scale=0.45]{img/filtroRemoveUseless.png}
 				\end{center}
-				\centering {\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
+				\hspace{4cm} {\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 			\end{figure}
 			
 			\item Remoção manual: Pelo fato de não contribuir nos resultados os seguintes atributos foram removidos: DT\_NASC, NU\_DDD\_TEL, DDD\_HOSP, TEL\_HOSP e NU\_LOTE\_I.
 			
 			\item \textit{NumericToNominal}: Um filtro para transformar numérico atributos em uns nominais. Ao contrário da discretização, apenas toma todos os valores numéricos e os adiciona à lista de valores nominais do que atributo. Útil após a importação CSV, para impor certos atributos para se tornar nominal. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroNumericToNominal}.
 			\begin{figure}[!h]
-				\caption{\label{figfiltroNumericToNominal} Filtro \textit{NumericToNominal}}
+				\caption{\label{figfiltroNumericToNominal} \fontsize{10}{\baselineskip} \selectfont Filtro \textit{NumericToNominal}}
 				\begin{center}
 					\includegraphics[scale=0.45]{img/filtroNumericToNominal.png}
 				\end{center}
-				\centering {\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
+				\hspace{4cm} {\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 			\end{figure}
 			\newpage
 			\item \textit{RemoveRange}: Um filtro que remove um determinado intervalo de ocorrências de um conjunto de dados. Utilizamos o parâmetro mostrado na Figura \ref{figfiltroRemoveRange}. O parâmetro ''instancesIndices''  foi utilizado cinco vezes para criarmos 05 (cinco) conjuntos de dados com as seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. Que foram utilizados durantes os experimentos.
 			\begin{figure}[!h]
-					\caption{\label{figfiltroRemoveRange} Filtro \textit{RemoveRange}}
+					\caption{\label{figfiltroRemoveRange} \fontsize{10}{\baselineskip} \selectfont Filtro \textit{RemoveRange}}
 				\begin{center}
 					\includegraphics[scale=0.45]{img/filtroRemoveRange.png}
 				\end{center}
-			\centering {\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
+			\hspace{4cm} {\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 			\end{figure}
 		\end{itemize}
 
@@ -857,7 +874,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	 
 	
 	\begin{figure}[!htb]
-		\caption{\label{figmetodologiaExperimentos} Metodologia Processo dos Experimentos}
+		\caption{\label{figmetodologiaExperimentos} \fontsize{10}{\baselineskip} \selectfont Metodologia Processo dos Experimentos}
 		\begin{center}
 			\includegraphics[scale=0.55]{img/metodologiaExperimentos.png}
 		\end{center}
@@ -888,7 +905,7 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\begin{table}[!htb]
 		\scalefont{0.8}
 		\centering
-		\caption{Resultados de Classificação}
+		\caption{\fontsize{10}{\baselineskip} \selectfont Resultados de Classificação}
 		\label{tabResultadosClassificacao}
 		\begin{flushleft}
 		\renewcommand{\arraystretch}{2}	
@@ -913,27 +930,28 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	%\clearpage
 	%\newpage
 
-Na Figura \ref{figtpRate}, pode-se visualizar estas infomarções observando a \textit{taxa de verdadeiros positivos} de cada modelo gerado. Observa-se que houve um certa redução na precisão de classificação dos \textit{verdadeiros positivos}  conforme o tamanho do \textit{dataset} aumenta  nos algoritmos: \textit{REPTree}, \textit{NaiveBayes}, \textit{ZeroR} e \textit{RandomTree}.
+No Gráfico \ref{graficotpRate}, pode-se visualizar estas infomarções observando a \textit{taxa de verdadeiros positivos} de cada modelo gerado. Observa-se que houve um certa redução na precisão de classificação dos \textit{verdadeiros positivos}  conforme o tamanho do \textit{dataset} aumenta  nos algoritmos: \textit{REPTree}, \textit{NaiveBayes}, \textit{ZeroR} e \textit{RandomTree}.
 
-\begin{figure}[!htb]
-	\caption{\label{figtpRate} TP Rate}
+%\begin{figure}[!htb]
+\begin{grafico}[!htb]
+	\caption{\label{graficotpRate} \fontsize{10}{\baselineskip} \selectfont TP Rate}
 	\begin{center}
 		\includegraphics[scale=0.6]{graphs/tp_graph.png}
 	\end{center}
 	\hspace{3cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
-\end{figure}
+\end{grafico}
+%\end{figure}
 
 %\newpage
-Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenho \textit{SMO} e \textit{J48} mostrados na Figura \ref{figtpRate}, apresentam menor \textit{taxa de falso positivo} e com isso um menor custo no processo de classificação de novas instâncias, pois estes algoritmos obtiveram menor quantidade de erros nos \textit{datasets} utilizados.
-\\
+No Gráfico \ref{graficofpRate}, pode confirmar que os algoritmos com melhor desempenho \textit{SMO} e \textit{J48} mostrados no Gráfico \ref{graficotpRate}, apresentam menor \textit{taxa de falso positivo} e com isso um menor custo no processo de classificação de novas instâncias, pois estes algoritmos obtiveram menor quantidade de erros nos \textit{datasets} utilizados.
 
-\begin{figure}[!htb]
-	\caption{\label{figfpRate} FP Rate}
+\begin{grafico}[!htb]
+	\caption{\label{graficofpRate} \fontsize{10}{\baselineskip} \selectfont FP Rate}
 	\begin{center}
 		\includegraphics[scale=0.6]{graphs/fp_graph.png}
 	\end{center}
 	\hspace{3cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
-\end{figure}
+\end{grafico}
 	
 	\begin{comment}
 	Como podemos observar na Figura \ref{figinstanciasClassificadasCorretamente}, os modelos com melhores resultados SMO e J48.
@@ -952,7 +970,7 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 	
 	\begin{figure}[!htb]
 		\begin{center}
-			\caption{\label{figAcertosErrosClassificacao} Gráficos de Acertos e Erros de Classificação}
+			\caption{\label{figAcertosErrosClassificacao} \fontsize{10}{\baselineskip} \selectfont Gráficos de Acertos e Erros de Classificação}
 		\end{center}
 		\subfigure[5k Instâncias\label{surreal1}]{
 			\includegraphics[width=07.5cm, height=05cm]{graphs/perc_hits_5k.png}}
@@ -969,20 +987,20 @@ Na Figura \ref{figfpRate}, pode confirmar que os algoritmos com melhor desempenh
 		{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 	\end{figure}
 	
-	\newpage
+	%\newpage
 
 	
 	Em \cite{prati:2008}, gráfico ROC(\textit{Receiver Operating Characteristic}) é um método para avaliação e seleção de sistemas de diagnóstico e/ou predição. O gráfico ROC é baseado na probabilidade de detecção ou \textit{taxa de verdadeiros positivos}, e na probalidade de falsos alarmes, ou \textit{taxa de falsos positivos}.
 	
-	Como pode-se observar na Figura \ref{figTodosModelos}, os modelos gerados pelo algoritmos \textit{SMO} e \textit{J48} obtiveram melhor qualidade, pois se aproximam do ponto $(0,1)$.  Em \cite{prati:2008}, resultados pertecentes ao canto superior esquerdo representam classificadores que possuem melhor desempenho.
+	Como pode-se observar no Gráfico \ref{graficoTodosModelos}, os modelos gerados pelo algoritmos \textit{SMO} e \textit{J48} obtiveram melhor qualidade, pois se aproximam do ponto $(0,1)$.  Em \cite{prati:2008}, resultados pertecentes ao canto superior esquerdo representam classificadores que possuem melhor desempenho.
 	
-	\begin{figure}[!htb]
-		\caption{\label{figTodosModelos} Modelos de Classificação no Espaço ROC}
+	\begin{grafico}[!htb]
+		\caption{\label{graficoTodosModelos} \fontsize{10}{\baselineskip} \selectfont Modelos de Classificação no Espaço ROC}
 		\begin{center}
-			\includegraphics[scale=0.8]{python/TodosModelos.png}
+			\includegraphics[scale=0.6]{python/TodosModelos.png}
 		\end{center}
 		\hspace{1cm}{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
-	\end{figure}
+	\end{grafico}
 	
 % - - -
 % Capítulo 4
