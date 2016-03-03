@@ -398,22 +398,22 @@
 % ---
 % Fontes padroes de title, part, chapter, section, subsection e subsubsection
 %\newcommand{\ABNTEXtitlefont}{\fontsize{21}{26}\selectfont\fontfamily{pbk}}
-\newcommand{\ABNTEXtitlefont}{\fontsize{12}{26}\selectfont\fontfamily{ptm}\up}
+\newcommand{\ABNTEXtitlefont}{\fontsize{12}{\baselineskip}\selectfont\fontfamily{ptm}\up}
 
 \newcommand{\ABNTEXchapterfont}{\fontfamily{ptm}}
 %\newcommand{\ABNTEXchapterfontsize}{\fontsize{22}{27}\selectfont}
-\newcommand{\ABNTEXchapterfontsize}{\fontsize{12}{27}\selectfont}
+\newcommand{\ABNTEXchapterfontsize}{\fontsize{12}{\baselineskip}\selectfont}
 
 \newcommand{\ABNTEXpartfont}{\ABNTEXchapterfont}
 \newcommand{\ABNTEXpartfontsize}{\ABNTEXchapterfontsize}
 
 \newcommand{\ABNTEXsectionfont}{\ABNTEXchapterfont}
 %\newcommand{\ABNTEXsectionfontsize}{\fontsize{16}{20}\selectfont}
-\newcommand{\ABNTEXsectionfontsize}{\fontsize{12}{20}\selectfont}
+\newcommand{\ABNTEXsectionfontsize}{\fontsize{12}{\baselineskip}\selectfont}
 
 \newcommand{\ABNTEXsubsectionfont}{\ABNTEXsectionfont}
 %\newcommand{\ABNTEXsubsectionfontsize}{\fontsize{14}{17}\selectfont}
-\newcommand{\ABNTEXsubsectionfontsize}{\fontsize{12}{17}\selectfont}
+\newcommand{\ABNTEXsubsectionfontsize}{\fontsize{12}{\baselineskip}\selectfont}
 
 \newcommand{\ABNTEXsubsubsectionfont}{\ABNTEXsubsectionfont}
 \newcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
@@ -616,9 +616,9 @@
  \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
  
 %% Gráfico
-\newcommand{\graficoname}{Grafico}
-\newfloat[chapter]{grafico}{lof}{\graficoname}
-\newlistentry{grafico}{lof}{0}
+\newcommand{\graficoname}{Gr{\'a}fico}
+\newfloat[chapter]{grafico}{log}{\graficoname}
+\newlistentry{grafico}{log}{0}
 \counterwithout{grafico}{chapter}
 \renewcommand{\cftgraficoname}{\graficoname\space} 
 \renewcommand*{\cftgraficoaftersnum}{\hfill--\hfill}
@@ -749,6 +749,7 @@
      \setlength\beforechapskip{\baselineskip}
      \renewcommand{\chaptitlefont}{\ABNTEXsectionfont\ABNTEXsectionfontsize}
    }{%else
+   %0pt
      \setlength{\beforechapskip}{0pt}
      \renewcommand{\chaptitlefont}{\ABNTEXchapterfont\ABNTEXchapterfontsize}
    }
@@ -1038,7 +1039,7 @@
 % ---
 
 % ---
-% Lista de sembolos
+% Lista de simbolos
 \newenvironment{simbolos}{%
   \pretextualchapter{\listadesimbolosname}
   \begin{symbols}
@@ -1222,25 +1223,31 @@
     \center
    % \includegraphics[width=3.1cm, height=3.14cm]{abntex2/ufam-logo}
 
+	%espaco simples no nome da intituicao na capa
+	\begin{SingleSpace}
     %{\fontsize{11}{14}\selectfont
-    {\fontsize{12}{14}\selectfont
+    {\fontsize{12}{\baselineskip}\selectfont
     \MakeUppercase{\imprimirinstituicao}
     \par
     \MakeUppercase{\imprimircurso}}
-    \vfill
+	\end{SingleSpace}
+    %\vfill
+    \vspace*{3cm}
+   
     
      %{\fontsize{15}{18}\fontfamily{pbk}\selectfont\imprimirautor\par}
-     {\fontsize{12}{18}\fontfamily{ptm}\selectfont\imprimirautor\par}
-     \vfill
-    
+     {\fontsize{12}{\baselineskip}\fontfamily{ptm}\selectfont\imprimirautor\par}
+     %\vfill
+     \vspace*{4cm}
+        
     %\ABNTEXchapterfont{\fontsize{21}{26}\selectfont\imprimirtitulo\par}
     %\fontsize{18}{22}\selectfont\imprimirtitulo
      \fontsize{12}{22}\selectfont\imprimirtitulo
     \vfill
 
    
-    
-    {\fontsize{12}{14}\fontfamily{ptm}\selectfont
+    % {\fontsize{12}{14}\fontfamily{ptm}\selectfont
+    {\fontsize{12}{\baselineskip}\fontfamily{ptm}\selectfont
       \setlength{\parskip}{-0.4cm}
       \imprimirlocal
 
@@ -1269,7 +1276,7 @@
 
     %\vspace*{1cm}
     %{\fontsize{15}{18}\selectfont\imprimirautor}
-    {\fontsize{12}{18}\selectfont\imprimirautor}
+    {\fontsize{12}{\baselineskip}\selectfont\imprimirautor}
 	
     \vspace*{\fill}
     \begin{center}
@@ -1281,14 +1288,14 @@
     \abntex@ifnotempty{\imprimirpreambulo}{%
       \begin{minipage}{\textwidth}
           \leftskip=.42\textwidth
-      	  \OnehalfSpacing
+      	  %\OnehalfSpacing
+      	  \SingleSpace
           \imprimirpreambulo
-          \\
           \\
           \vspace*{\fill}
           %mudei esta linha abaixo para adequar ao padrao da FUCAPI
            {%\fontsize{12}{15}\selectfont\imprimirorientadorRotulo~\par
-          \textbf{Orientador: \fontsize{12}{15}\selectfont\imprimirorientador\par}}
+          \textbf{Orientador: \fontsize{10}{\baselineskip}\selectfont\imprimirorientador\par}}
              \abntex@ifnotempty{\imprimircoorientador}{%
              	{\large\imprimircoorientadorRotulo~\imprimircoorientador}%
              }%

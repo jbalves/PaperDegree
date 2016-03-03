@@ -51,12 +51,9 @@
 \usepackage{subfigure}
 \usepackage{indentfirst}  % Indenta o primeiro parágrafo de cada seção
 \usepackage{setspace} % alterar espaçamento entre linhas
-\setlength\afterchapskip{\lineskip}  %espaçamento entre capítulo e texto
-%\setlength\aftersectionskip{\lineskip}
-\setlength\aftersecskip{\lineskip}	%espaçamento entre seção e texto
-\setlength\aftersubsecskip{\lineskip} %espaçamento entre subseção e texto
 
-
+ %espaçamento entre capítulo e texto
+\setlength\afterchapskip{\baselineskip} 	
 
 \titulo{USO DE TÉCNICAS DE \textit{DATA MINING} NA CLASSIFICAÇÃO DE TIPOS DE DENGUE}
 \autor{JEFERSON BARROS ALVES}
@@ -67,12 +64,12 @@
   Fundação Centro de Análise, Pesquisa e Inovação Tecnológica
   \par
   Faculdade Fucapi (Instituto de Ensino Superior Fucapi)}
-\curso{%
+  \curso{%
   Coordenação de Graduação em Ciência da Computação}
-\tipotrabalho{Monografia}
+  \tipotrabalho{Monografia}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
-\preambulo{Monografia apresentada ao Curso de Graduação em Ciência da Computação da Faculdade Fucapi (Instituto de Ensino Superior Fucapi), como requisito parcial para a obtenção do Título de Bacharel em Ciência da Computação. Área de concentração: Banco de Dados.}
+\preambulo{\fontsize{10}{\baselineskip} \selectfont Monografia apresentada ao Curso de Graduação em Ciência da Computação da Faculdade Fucapi (Instituto de Ensino Superior Fucapi), como requisito parcial para a obtenção do Título de Bacharel em Ciência da Computação. Área de concentração: Banco de Dados.}
 
 
 % Informações do PDF
@@ -92,12 +89,20 @@
 % Espaçamentos entre linhas e parágrafos 
 % --- 
 
+%\ Espaçamento do separador do cabeçalho
+\setlength{\headsep}{\baselineskip}
+
+% Controle do espaçamento entre linhas
+%\linespread{1.5}
+
+
 % O tamanho do parágrafo é dado por:
 \setlength{\parindent}{1.3cm}
 
 % Controle do espaçamento entre um parágrafo e outro:
 %\setlength{\parskip}{0.2cm}  % tente também \onelineskip
 
+%testando para verificar espaco apos cada secao
 %\setbeforesecskip{3em}
 %\setbeforesubsecskip{3em}
 
@@ -162,9 +167,9 @@
 		\end{center}
 		\vspace*{\fill}
 	\end{center}	
-
+	\begin{SingleSpace}
 	Monografia apresentada ao Curso de Graduação em Ciência da Computação da Faculdade Fucapi (Instituto de Ensino Superior Fucapi), como requisito parcial para a obtenção do Título de Bacharel em Ciência da Computação.
-	
+	\end{SingleSpace}
 	Aprovada em: \hspace*{0.8cm}/ \hspace*{0.8cm}/\hspace*{1.2cm}, por:
 
 	\assinatura{\fontsize{12}{15}\selectfont Prof. Márcio Palheta Piedade, M.Sc. \\Faculdade Fucapi \\ \fontsize{12}{15}\selectfont \imprimirorientadorRotulo}
@@ -205,7 +210,7 @@
 % ---
 
 \begin{agradecimentos}
-
+\begin{SingleSpace}
 Em primeiro lugar quero agradecer a Deus, meu grande amigo, companheiro, e sempre me mostrou o caminho a ser seguido.
 
 A minha  amada esposa Suzane Barros, que sempre me incetivou nessa jornada.
@@ -215,7 +220,7 @@ Ao meu orientador Prof. Márcio Palheta, por mostrar-me o caminho da mineração
 Aos meus amigos, Hussama, Wellington, Patrick, Pedro e Tiago que sempre estiveram por perto nesta caminhada.
 
 Agradecimentos também aos que contribuíram de maneira relevante à elaboração deste trabalho, direta ou indiretamente.
-
+\end{SingleSpace}
 \end{agradecimentos}
 
 % ---
@@ -257,32 +262,32 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{\textit{Keywords}:} \textit{Data mining. Classifier. Decision Tree. Bayes. Support Vector Machine. Dengue.}
+   \textbf{Keywords:} Data mining. Classifier. Decision Tree. Bayes. Support Vector Machine. Dengue.
  \end{otherlanguage*}
 \end{resumo}
 
 % ---
 % inserir lista de ilustrações
 % ---
-\pdfbookmark[0]{\listfigurename}{lof}
-\listoffigures*
-\cleardoublepage
+%\pdfbookmark[0]{\listfigurename}{lof}
+%\listoffigures*
+%\cleardoublepage
 % ---
 
 % ---
 % inserir lista de tabelas
 % ---
-\pdfbookmark[0]{\listtablename}{lot}
-\listoftables*
-\cleardoublepage
+%\pdfbookmark[0]{\listtablename}{lot}
+%\listoftables*
+%\cleardoublepage
 % ---
 
 % ---
 % inserir lista de quadros
 % ---
-\pdfbookmark[0]{\listofquadrosname}{loq}
-\listofquadros*
-\cleardoublepage
+%\pdfbookmark[0]{\listofquadrosname}{loq}
+%\listofquadros*
+%\cleardoublepage
 % ---
 
 
@@ -321,30 +326,43 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 
 \textual
 
+
 \chapter{INTRODUÇÃO}
+    %\vspace{-1\baselineskip}
+    %\vspace{1\baselineskip}
 	Com a grande quantidade de informações geradas e armazenadas por meio do avanço tecnológico das últimas décadas, houve um acúmulo gigantesco de informações. Com isso, surgiram diversas abordagens, técnicas e ferramentas que buscam transformar dados, também conhecida por Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Discovery in Databases - KDD}). Tal abordagem foi proposta em 1989, com o objetivo de analisar os dados de uma base afim de extrair conhecimento útil \cite{fayyad:1996}.	
 	
 	A computação tem apoiado o desenvolvimento da medicina em diversas áreas como em sistemas de apoio a coleta de dados clínicos e exames por imagens, na organização das informações obtidas, entre outras \cite{costa:2012}. Desta maneira, esse grande volume de dados é uma fonte valiosa de conhecimentos que pode ser utilizada como auxílio ao diagnóstico médico. Com base nisso, é necessário o desenvolvimento de técnicas que permitam a descoberta de conhecimentos em base de dados médicos, para apoiar o médico em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 	
 	O número de casos de dengue no Brasil quase triplicou entre 2009 e 2010 segundo dados do Ministério da Saúde. A partir desses dados, mais de um milhão de pessoas podem ter contraído a doença \cite{santos:2011}. Observou-se a oportunidade de aplicar técnicas de classificação utilizadas em \textit{Data Mining}, com o objetivo de gerar modelos classificadores com dados oriundos do SINAN (Sistema de Informações de Agravos de Notificação), tendo em vista que o mesmo é utilizado com meio oficial de registro em casos de dengue.
     %\setlength{\parskip}{0.2cm} % tente também \onelineskip
-    %\newpage
-	\section{ESPECIFICAÇÃO DO PROBLEMA}
+    %\let\clearforchapter\par
+    
+    %remove espaçamento no final do capítulo
+    \vspace{-1.5\baselineskip}
 	
+	\section{ESPECIFICAÇÃO DO PROBLEMA}
+		%\begin{SingleSpace}
+		
+		%\end{SingleSpace}	
+		\vspace{1\baselineskip}
+
 		Ao longo dos últimos anos a mineração de dados tem sido cada vez mais utilizada na literatura médica. No entanto, a sua aplicação na análise de dados médicos tem sido relativamente limitada, tendo em vista que a aplicação prática pode explorar o conhecimento disponível no contexto clínico e explicar decisões propostas \cite{bellazzi:2008}. Faz-se importante o desenvolvimento de técnicas que permitam a descoberta de conhecimento em bases de dados médicos, que possam apoiar o profissional em sua tarefa diária de tomada de decisões, aumentando a precisão, a confiabilidade e eficiência dos diagnósticos elaborados pelo especialista \cite{costa:2012}.
 		
 		Segundo \cite{saude:2013}, a dengue é uma das doenças com maior incidência no Brasil, atingindo a população de todos os estados, independente de classe social. Diante disto, faz-se necessário que um conjunto de ações com intuito de combater os casos de dengue sejam realizadas. Dentre elas temos a previsão de forma antecipada de possíveis novos casos.
 	
 		A classificação epidemiológica dos casos de dengue, que é feita habitualmente após desfecho clínico, na maioria das vezes é retrospectiva, dependendo de informações clínicas e laboratoriais, disponíveis no final do acompanhamento médico. Esses critérios não permitem o reconhecimento precoce de formas potencialmente graves, para as quais é crucial para a instituição de tratamento imediato \cite{saude:2013}.
-
+		%\vspace{-2\baselineskip}
+		\vspace{-1.5\baselineskip}
 	\section{OBJETIVOS}
+	%\vspace{1\baselineskip}
 	
 		\subsection{Objetivo Geral}
-
+		\vspace{1\baselineskip}	
 		Construir modelos utilizando as técnicas de classificação em \textit{Data Mining} conhecidas como Árvore de Decisão, \textit{Bayes} e \textit{Support Vector Machine}. Após a criação dos modelos de classificação, avaliar o que obteve melhor resultado em relação ao conjunto de dados utilizados no SINAN (Sistema de Informação de Agravos de Notificação) Dengue do município de Fortaleza. 
-		
+		\vspace{-1.5\baselineskip}
 		\subsection{Objetivos Específicos}
-		
+		\vspace{1\baselineskip}
 		\begin{itemize}
 			\item Dividir o conjunto de dados na seguinte quantidade de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. Para que seja possível verificar se existirá uma variação nos resultados de acordo com o aumento da quantidade de dados;
 			
@@ -356,9 +374,9 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 			
 			\item Validar e interpretar os resultados obtidos no processo de classificação.
 		\end{itemize}
-		
+		\vspace{-1.5\baselineskip}
 	\section{JUSTIFICATIVA}
-	
+	\vspace{1\baselineskip}
 	\begin{comment}
 	Considera-se a dengue um dos maiores problemas de saúde pública do mundo, especialmente nos países tropicais, cujas condições sócio-ambientais favorecem o desenvolvimento e a proliferação do seu principal vetor o \textsl{Aedes aegypti}. A dengue é, hoje, uma das doenças mais frenquentes no Brasil, atingindo a população em todos os estados, independente de classe social \cite{saude:2008}.
 	\end{comment}
@@ -371,9 +389,9 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 
 	Esse apoio computacional pode atuar como uma junta médica virtual, ao trazer para o especialista o conhecimento armazenado em exames e diagnósticos relacionados \cite{costa:2012}.
 	\end{comment}
-	
+	\vspace{-1.5\baselineskip}
 	\section{TRABALHOS RELACIONADOS}	
-	
+	\vspace{1\baselineskip}
 	No trabalho de \cite{shakil:2015}, observamos que o foco principal do trabalho foi a classificação de dengue, onde inicialmente aplicou-se a classificação nos \textit{datasets} iniciais para identificar qual algoritmo obteve melhor resultado. Os conjunto de dados continha 108 instâncias, dentre estas foram utilizadas 99 instâncias e  18 atributos na ferramenta WEKA (\textit{Waikato Environment for Knowledge Analysis}). Os experimentos mostraram que os algoritmos Naive Bayes e J48 obtiveram resultados de 100\% de acerto na classificação. Dentre as maiores contribuições do trabalho foram:
 	
 	\begin{itemize}
@@ -386,10 +404,10 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 	
 	No trabalho \cite{santos:2011}, foi desenvolvido um aplicativo para interação dos profissionais da saúde com os dados do SINAN (Sistema de Informação de Agravos de Notificação). Tal aplicativo, escrito em  \textit{Java}\cite{oracle:2015}, implementa algoritmos de classificação e regras de associação da base de dados do SINAN, utilizando o \textit{software} WEKA (\textit{Waikato Environment for Knowledge Analysis}) \cite{weka:2015}. Como resultado, esta ferramenta possibilitou o auxílio no diagnóstico de pacientes.
 	
-	Este trabalho se difere dos anteriores em relação aquantidade de instâncias utilizadas, como observados utilizaram 
-
+	Este trabalho se difere dos anteriores em relação a quantidade de instâncias utilizadas, bem como a quantidade de atributos observados durantes os experimentos. Além do contexto da localização geográfica onde os dados identificados de dengue foram coletados e gerados.
+	\vspace{-1.5\baselineskip}
 	\section{METODOLOGIA DE DESENVOLVIMENTO}
-		
+	\vspace{1\baselineskip}	
 		Com base na metodologia utilizada no processo de Descoberta de Conhecimento em Base de Dados (\textit{Knowledge Dicovery in Databases} - KDD) definida em \cite{fayyad:1996}, a realização desta pesquisa será composta das seguintes etapas:
 		
 		\begin{itemize}
@@ -407,8 +425,9 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 		\end{itemize}
 	
 	%\newpage
+	\vspace{-1.5\baselineskip}
 	\section{ESTRUTURAÇÃO DA MONOGRAFIA}
-	
+	\vspace{1\baselineskip}
 		Além deste capítulo introdutório, este trabalho está organizado da forma descrita à seguir. No Capítulo 2, serão descritos conceitos básicos relacionados à compreensão deste trabalho, bem como o referencial teórico. No Capítulo 3, serão apresentados os experimentos juntamente com os resultados obtidos. Finalmente no Capítulo 4, serão apresentadas as conclusões observadas e sugestões de trabalhos futuros da pesquisa.
 
 % ---
@@ -419,9 +438,9 @@ Agradecimentos também aos que contribuíram de maneira relevante à elaboraçã
 Este Capítulo apresenta uma visão geral dos conceitos envolvidos nas várias técnicas de classificação utilizadas ao longo deste trabalho.
 
 Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos envolvidos em KDD (\textit{Knowledge Discovery in Databases}) e consequentemente em Data Mining. Apresentam-se também os trabalhos encontrados na literatura sobre assunto que são relevantes para o desenvolvimento deste trabalho.
-
+\vspace{-1.5\baselineskip}
 	\section{DESCOBERTA DE CONHECIMENTO EM BASE DE DADOS}
-	
+	\vspace{1\baselineskip}
 	Segundo \cite{fayyad:1996}, a Descoberta de Conhecimento em Base de Dados é um processo não trivial de identificações de novos padrões, válidos e potencialmente úteis.
 	
 	Em contrapartida, no trabalho de \cite{thome:2002}, define-se KDD como sendo a busca de extração de conhecimento de bases de dados utilizando-se de técnicas e algoritmos que realizam a mineração dos dados para trabalhar e descobrir relações.
@@ -449,9 +468,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{figure}
 		
 		Inicialmente, é necessário definir que tipo de conhecimento se deseja extrair da base de dados, pois a técnica que será utilizada para a mineração de dados depende do objetivo a que se quer chegar \cite{damasceno:2005}.
-		
+	\vspace{-1.5\baselineskip}	
 	\section{DATA MINING}
-	
+	\vspace{1\baselineskip}
 		Em \cite{berry:1997}, definiu-se \textit{Data Mining} como um processo de exploração e análise, de uma grande quantidade de dados, por meio automático ou semiautomático, com o propósito de descobrir regras e padrões significativos.
 		
 		É uma técnica que faz parte de uma das etapas da descoberta de conhecimento em banco de dados. É uma área de pesquisa multidisciplinar, incluindo principalmente as tecnologias de banco de dados, inteligência artificial, estatística, reconhecimento de padrões, sistemas baseados em conhecimento, recuperação da informação, computação de alto desempenho e visualização de dados.
@@ -464,19 +483,19 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\item Classificação – pode repartir os dados de modo que diferentes classes ou categorias possam ser identificadas com base em combinações de parâmetros;
 			\item Otimização do uso de recursos limitados, como tempo, espaço, dinheiro ou matéria-prima e maximizar variáveis de resultado como vendas ou lucros sob um determinado conjunto de restrições.
 		\end{itemize}
-		
+	\vspace{-1.5\baselineskip}	
 	\subsection{Aprendizagem Não Supervisionada}
-	
+	\vspace{1\baselineskip}
 		Como mostrado por \cite{damasceno:2005} aprendizagem não supervisionada é aquela que utiliza instâncias sem a determinação do atributo classe. Este  tipo de aprendizado é utilizado geralmente para análise exploratória dos dados, utilizando técnicas de  agrupamento ou regras de associação. Onde agrupamentos têm como objetivo relacionar instâncias com características em comuns.
 		
 		A partir da definição de uma métrica de similaridade, os dados são  agrupados, dando a possibilidade de encontrar relações interessantes entre as instâncias. Assim, o cliente do conhecimento gerado pode aplicar uma determinada ação em um subconjunto de instâncias presente nos  dados. 
-		
+	\vspace{-1.5\baselineskip}	
 	\subsection{Aprendizagem Supervisionada}
-	
+	\vspace{1\baselineskip}
 	No aprendizado supervisionado tem-se a figura de um professor externo, o qual apresenta o conhecimento do ambiente por conjuntos de exemplos na forma: entrada, saída desejada. Onde extrai-se a representação do conhecimento a partir desses exemplos. O objetivo é que a representação gerada seja capaz de produzir saídas corretas para novas entradas não apresentadas previametne \cite{lorena:2007}.
-	
+	\vspace{-1.5\baselineskip}
 	\section{TÉCNICAS DE CLASSIFICAÇÃO}
-	
+	\vspace{1\baselineskip}
 	Uma técnica de classificação é uma abordagem sistemática para construção de modelos de classificação a partir de um conjunto de dados de entrada. Exemplos incluem classificadores de árvores de decisão, classificadores baseados em regras, redes neurais, máquinas de vetores de suporte e classificadores Bayes simples. Cada técnica emprega um algoritmo de aprendizagem para identificar um modelo que seja mais apropriado para o relacionamento entre o conjunto de atributos e o rótulo da classe dos dados de entrada. O modelos gerado pelo algoritmo de aprendizagem deve se adaptar bem aos dados de entrada e prever corretamente os rótulos de classes de registros que ele nunca viu antes. Portanto, o objetivo chave do algoritmo de aprendizagem é construir modelos com boa capacidade de generalização \cite{tan:2009}.
 	
 	A Figura \ref{figabordagemModeloClassificacao} mostra uma abordagem geral para resolver problemas de classificação. Primeiro, um conjunto de treinamento consistindo de registros cujos rótulos sejam conhecidos e devem ser fornecidos. O conjunto de treinamento é usado para construir um modelo de classificação, que é subsequentemente aplicado ao conjunto de teste, que consiste de registros com rótulos de classes desconhecidas \cite{tan:2009}.
@@ -491,14 +510,15 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{figure}
 
 	%\newpage
+	\vspace{-1.5\baselineskip}
 	\subsection{Árvore de Decisão}
-	
+	\vspace{1\baselineskip}
 		Em uma árvore de decisão, cada nodo folha recebe um rótulo de classe. os nodos não terminais, que incluem o nodo raiz e outros nodos internos, contêm condições de testes de atributos para separar registros que possuem características diferentes.
 		
 		Classificar um registro de testes é direto, assim que uma árvore de decisão tenha sido construída. Começando do nodo raiz, aplicamos a condição de teste ao registro e seguimos a ramificação apropriada baseados no resultado do teste. Isto nos levará a um outro nodo interno, para o qual uma nova condição de teste é aplicada, ou a um nodo folha \cite{tan:2009}.
-	
+	\vspace{-1.5\baselineskip}
 	\subsubsection{Algoritmo C4.5}
-	
+	\vspace{1\baselineskip}
 	O algoritmo J48 \cite{weka:2015} é uma implementação em Java \cite{oracle:2015} do algoritmo C4.5 \cite{quinlan:94}, que visa gerar árvore de decisão com tratamento de atributos contínuos e discretos, construindo uma árvore com um número de partições variável e com folhas sendo indicadas pelos valores do atributo categórico. 
 	
 	Segundo \cite{halmenschlager:2002}, para evitar a geração de todas as árvores possíveis, o algoritmo C4.5 se baseia no atributo mais informativo, escolhido entre todos os atributos ainda não considerados no caminho desde a raiz. O algoritmo seleciona como sendo o atributo mais informativo aquele que possuir o maior ganho de informação, resultante da diferença do valor da informação do atributo categórico e do valor da informação (entropia) do atributo em questão.
@@ -537,19 +557,19 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item Método de poda: Utiliza a técnica de pós-poda baseada no erro, examinando a árvore de forma \textit{bottom-up} e subtituindo uma subárvore por uma folha;
 		\item Complexidade do algoritmo: É dada por \textit{O($mn^{2}$)}, em que \textit{m} é o número de atributos e \textit{n} é o número de instâncias do conjunto de treinamento. 
 	\end{itemize}
-
+	\vspace{-1.5\baselineskip}
 	\subsubsection{Algoritmo \textit{RandomTree}}
-	
+	\vspace{1\baselineskip}
 	Segundo \cite{oshiro:2013}, considerando um conjunto de treinamento \textit{T} com \textit{a} atributos e \textit{n} exemplos, seja \textit{$T_k$} uma amostra \textit{bootstrap} do conjunto de treinamento a partir de \textit{T} com reposição, contendo \textit{n} exemplos e usando\textit{m} atributos aleatórios \textit{($m\le a$)} em cada nó das árvores.
 	
 	\textit{RandomTree} é uma árvore induzida aleatoriamente a partir de um conjunto de árvores possíves, usando \textit{m} atributos aleatórios em cada nó. O termo ''aleatoriamente'' significa que cada árvore tem uma chance igual de ser utilizada na amostrada. \textit{Random Trees} podem ser geradas eficientemente e a combinação de grandes conjuntos de \textit{Random Trees} geralmente leva a modelos precisos \cite{zhao:2008}.
-	
+	\vspace{-1.5\baselineskip}
 	\subsubsection{Algoritmo \textit{REPTree}}
-	
+	\vspace{1\baselineskip}
 	O algoritmo \textit{REPTree} constrói árvores de decisão para classificação ou regressão  com base no ganho de informação/variância e poda esta árvore usando uma poda guiada por erro. Otimizado para velocidade, só classifica valores para atributos numéricos uma vez. Os valores são tratadas dividindo as instâncias correspondentes em pedaços (como no algoritmo C4.5) \cite{witten:2011}.
-			
+	\vspace{-1.5\baselineskip}		
 	\subsection{Teorema de Bayes}
-	
+	\vspace{1\baselineskip}
 	É um teorema usado para calcular a probabilidade condicional , usando em estatística, probabilidade e outras aplicações
 	
 	Em muitas aplicações, o relacionamento entre o conjunto de atributos e a variável classe é não determinístico. O rótulo da classe de um registro de teste não pode ser previsto com certeza embora seu conjunto de atributos seja idêntico a alguns dos exemplos de treinamento. Esta situação pode surgir por causa de dados com ruídos ou da presença de determinados fatores de confusão que afetam a classificação mas que não são incluídos na análise.
@@ -566,8 +586,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item $P(A)$ probabilidade a \textit{priori} de A.
 		\item $P(B )$ probabilidade a \textit{priori} de B.
 	\end{itemize}
-	
+	\vspace{-1.5\baselineskip}
 	\subsubsection{Algoritmo Naive Bayes}
+	\vspace{1\baselineskip}
 	
 	%O algoritmo \textit{NaiveBayes} é uma técnica probabilística baseada no teorema de \textit{Bayes}, expressão, para calcular a probabilidade Posteriori da classe C Em \cite{john:1995}
 	
@@ -580,9 +601,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	\end{equation}
 	
 	
-	
+	\vspace{-1.5\baselineskip}
 	\subsection{Máquinas de Vetores de Suporte (SVM)}
-	
+	\vspace{1\baselineskip}
 	Uma técnica de classificação que tem recebido considerável atenção pois esta técnica possui seus fundamentos na teoria de aprendizagem estatística e tem mostrado resultados empíricos promissores em muitas aplicações práticas, desde o reconhecimento de dígitos escritos à mão até a categorização de textos. SVM também funciona bem com dados de alta dimensionalidade e evita o problema da dimensionalidade. Outro aspecto único desta abordagem é que ela representa o limite da decisão usando um subconjunto dos exemplos de treinamento, conhecido com vetores de suporte \cite{tan:2009}.
 	
 	Na Figura \ref{figsvmHiperPlanos}, existe um conjunto de classificadores lineares que separam duas classes, mas apenas um (em destaque) que maximiza a margem de separação (distância da instância mais próxima ao hiperplano de separação das classes). O hiperplano com margem máxima é chamado de hiperplano ótimo \cite{junior:2010}.
@@ -601,24 +622,24 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 	%\pagebreak
 	%\clearpage
 	%\newpage
-	
+	\vspace{-1.5\baselineskip}
 	\subsubsection{Algoritmo SMO}
-	
+	\vspace{1\baselineskip}
 	O Algoritmo SMO (\textit{Sequential Minimal Optimization}) \cite{platt:1998}, é um algoritmo simples que pode resolver rapidamente o problema quadrático encontrado em SVM (\textit{Support Vector Machines}) sem qualquer armazenamento extra de matriz e sem o uso de passos de otimização numérica.
 	
 	O SMO (\textit{Sequential Minimal Optimization}) é um algoritmo de decomposição  que usa uma solução analítica para otimizar um par de Multiplicadores de Lagrange por iteração. Em cada uma delas, três tarefas são executadas: seleção de um par de coeficientes, otimização do par de coeficientes selecionados e atualização de dados globais. A parada do algoritmo ocorre quando todos os coeficientes satisfazem o conjunto de condições. O conjunto de trabalho é formado pelo par de coeficientes a otimizar \cite{hernandez:2009}. 
-
+	\vspace{-1.5\baselineskip}
 	\subsection{Algoritmo ZeroR}
-	
+	\vspace{1\baselineskip}
 	 Este é o esquema de aprendizagem mais primitivo em Weka. Ele modela o conjunto de dados com uma única regra. Dado um novo item de dados para a classificação, Zeror sempre prediz o valor da categoria mais frequente nos dados de treinamento para problemas com um valor nominal de classe, ou o valor médio de classe para problemas numéricos de previsão. Embora pareça fazer pouco sentido usar este esquema para a classificação, pode ser útil para gerar uma referência de desempenho que outros sistemas de aprendizagem são comparados com. Em alguns conjuntos de dados, é possível que outros sistemas de aprendizagem para induzir modelos que executam pior em novos dados que Zeror que é um indicador claro de overfitting sério.
 	 
 	 O classificador Zeror só olha para a classe mais popular e adivinha que o tempo todo
 	 
 	 É como Zeror útil na geração de uma linha de base para o desempenho de classificação. Ele tem, surpreendentemente sido demonstrado que este método simples pode superar muitos dos algoritmos mais sofisticados ao longo de muitos conjuntos de dados de mineração de dados padrão \cite{witten:2011}
 	 
-	
+	\vspace{-1.5\baselineskip}
 	\subsection{Métricas para Avaliação de Modelo}
-	
+	\vspace{1\baselineskip}
 	A performance de um modelo de classificação pode ser medida utilizando a matriz de confusão, mostrada no Quadro \ref{quadroMatrizConfusao}. Nesta tabela pode ser observado que a distribuição entre as classes (proporção entre exemplos positivos e negativos) é o relacionamento entre a primeira e segunda linha. Assim, qualquer medida de desempenho que utilize valores de ambas as colunas será, necessariamente, sensível a desproporção entre as classes. Havendo mudança na distribuição das classes, os valores das métricas também mudarão, mesmo que o desempenho global do modelo não melhore \cite{prati:2008}.
 	\\
 	
@@ -660,22 +681,22 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 			\item \textit{ROC Area}: 
 		\end{itemize}
 		\end{comment}	
-
+	\vspace{-1.5\baselineskip}
 	\section{WEKA (\textit{Waikato Environment for Knowledge Analysis})}
-	
+	\vspace{1\baselineskip}
 	A ferramenta WEKA (Waikato Environment for Knowledge Analysis)  conforme descrito em \cite{hall:2009}, visa proporcionar uma coleção abrangente de algoritmos de aprendizagem de máquina e ferramentas de pré-processamento de dados tanto para pesquisadores como para profissionais. Permite aos usuários experimentar rapidamente e comparar diferentes métodos de aprendizagem de máquina em diferentes conjuntos de dados. Sua arquitetura modular, extensível, permite que os processos de mineração de dados pode ser construido a partir da vasta coleção de algoritmos de aprendizado e diversas ferramentas oferecidas.
-		
+	\vspace{-1.5\baselineskip}	
 	\section{DADOS ABERTOS}
-
+	\vspace{1\baselineskip}
 	Utilizamos a base de dados disponibilizada pelo portal de dados abertos da prefeitura do Município de Fortaleza de casos notificados de dengue. O portal de dados abertos de Fortaleza é um espaço desenvolvido pela Coordenadoria de Ciência, Tecnologia e Inovação da Prefeitura de Fortaleza (CITINOVA) para que a sociedade possa encontrar e utlizar os dados e informações públicas da cidade de Fortaleza. Os dados são publicados em formatos abertos que permitem sua reutilização em aplicativos digitais desenvolvidos por e para qualquer pessoa. Além disso, o portal serve como uma ferramenta de interlocução com a sociedade fortalezense para pensar e promover  a inovação e a criatividade em prol da melhoria de serviços e da vida na cidade de Fortaleza. O portal de dados abertos de Fortaleza está em conformidade com os princípios da administração pública e observâncias às recomendações aceitas internacionalmente, como as emitidas pela Open Knowledge Foundation e pelo Consórcio W3C Internacional.
 		
-		
+	\vspace{-1.5\baselineskip}	
 	\section{SINAN}
-	
+	\vspace{1\baselineskip}
 	O Sistema de Informações de Agravos de Notificação (SINAN) é o principal sistema de informações que tem como objetivo os dados referentes a morbidade, sendo fundamental no processo de trabalho da Vigilância em Saúde, estando envolvido não somente nas ações de Vigilância Epidemiológica, mas também na Vigilância Ambiental em Saúde e Vigilância em Saúde do Trabalhador \cite{conass:2015}.
 	O SINAN foi desenvolvido no início da década de 90, com o objetivo de padronizar a coleta e o processamento de dados sobre agravos de notificação obrigatória em todo território nacional. Construido de maneira hierarquizada, mantendo coerência com a organização do SUS (Sistem Único de Saúde), pretende ser suficiente ágil na viabilização de análises de situações de saúde em curto espaço de tempo. O SINAN fornece dados para a análise do perfil da morbidade e contribui para a tomada de decisões nos níveis municipal, estadual e federal \cite{saude:2008}.
 	A dengue é uma das doenças de notificação compulsória, devendo todo caso suspeito ou confirmado ser notificado ao Serviço de Vigilância Epidemiológica, por meio do SINAN nas fichas de notificação de investigação \cite{saude:2008}.
-	
+	\vspace{-1.5\baselineskip}
 	
 % - - -
 % Capítulo 3
@@ -683,9 +704,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 \chapter{EXPERIMENTOS}
 
 	Neste capítulo, avaliamos os modelos gerados através de uma série de experimentos. Apresentaremos a base de dados utilizada para os experimentos, a metodologia de experimentação e os experimentos em si realizados. Serão apresentados resultados obtidos na aplicação dos classificadores em  5  conjuntos de dados e as medidas resultantes observadas. O processo de classificação utiliza o conjunto de \textit{datasets} em ordem crescente, que foram  produzidos na Seção \ref{Pré-processamento}. %Como resultado obtive-se  as métricas de classificação utilizadas para avaliação da qualidade dos modelos gerados.
-
+	\vspace{-1.5\baselineskip}
 	\section{BASE DE DADOS}
-	
+	\vspace{1\baselineskip}
 	Para avaliar o objetivo geral neste trabalho, usamos a base de dados  do Município de Fortaleza, diposnibilizada pelo portal de dados abertos. Os dados são publicados em formatos abertos que permitem sua reutilização  em aplicativos digitais desenvolvidos por e para qualquer pessoa \cite{fortaleza:2015}. Este conjunto de dados contém notificações de dengue do Município de Fortaleza no período de janeiro à junho de 2015, contendo 26.568 instâncias. %Na Tabela \ref{tabDescricaoAtributos}, podemos observar os atributos utilizados neste trabalho.
 	
 	\begin{comment}
@@ -788,8 +809,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item Treinamento dos Classificadores:
 	\end{itemize}
 	\end{comment}
-	
+	\vspace{-1.5\baselineskip}
 	\section{PRÉ-PROCESSAMENTO}
+	\vspace{1\baselineskip}
 	\label{Pré-processamento}
 	
 	Após o download da base de dados em \cite{fortaleza:2015},  iniciamos a importação do arquivo no formato CSV (\textit{Comma Separated Value}), conforme mostrado na Figura \ref{figdataSetOriginal}.
@@ -859,9 +881,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{itemize}
 
 %		$\lambda$
-		
+	\vspace{-1.5\baselineskip}	
 	\section{METODOLOGIA DO EXPERIMENTO}
-	
+	\vspace{1\baselineskip}
 	Nossos experimentos foram realizar a partir dos conjuntos de dados divididos nas seguintes quantidades de instâncias: 5.000, 10.000, 15.000, 20.000 e 25.000. A cada conjunto de instâncias, aplicamos os processos de classificação utilizando 5 classificadores que estão contidos em 3 técnicas de classificação, conforme representado na Figura \ref{figmetodologiaExperimentos}. Como resultado dos classificadores obtivemos 25 modelos. 
 	
 	Todos os testes foram feitos utilizando o processo de validação conhecido como \textit{Cross Validation} diposnibilizado pelo WEKA (\textit{Waikato Environment for Knowledge Analysis}), com o funcionamento da seguinte forma:
@@ -880,8 +902,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\end{center}
 		{\fontsize{10}{\baselineskip} \selectfont Fonte: Próprio Autor.}
 	\end{figure}
-	
+	\vspace{-1.5\baselineskip}
 	\subsection{Parâmetros }
+	\vspace{1\baselineskip}
 	Configuração padrão utilizada em cada algoritmo de classificação:
 	
 	\begin{itemize}
@@ -891,8 +914,9 @@ Neste capítulo, apresentamos uma visão geral dos conceitos e procedimentos env
 		\item NaiveBayes: debug = False; displayModelInOldFormat = False; useKernelEstimator = False; useSupervisedDiscretization = False;
 		\item SMO: c = 1.0; toleranceParameter = 0.001; epsilon = 1.0E-12; filterType = Normalize training data; kernel = PolyKernel; cacheSize = 250007; exponent = 1.0.
 	\end{itemize}
-	
+	\vspace{-1.5\baselineskip}
 	\section{RESULTADOS DOS ALGORITMOS}
+	\vspace{1\baselineskip}
 	%\subsection{Precisão na Classificação}
 	
 	Segundo \cite{witten:2011}, o algoritmo \textit{ZeroR} modela uma base de dados com um única regra. Onde, dado um conjunto de dados para uma nova classificação, o algoritmo prediz o valor mais frequente nos dados de treinamento. Com isso utilizou-se este algoritmo como base de referência para os demais algoritmos utilizados neste trabalho, para que seja possível copará-los entre si.
@@ -934,7 +958,7 @@ No Gráfico \ref{graficotpRate}, pode-se visualizar estas infomarções observan
 
 %\begin{figure}[!htb]
 \begin{grafico}[!htb]
-	\caption{\label{graficotpRate} \fontsize{10}{\baselineskip} \selectfont TP Rate}
+	\caption{\label{graficotpRate}\fontsize{10}{\baselineskip} \selectfont TP Rate}
 	\begin{center}
 		\includegraphics[scale=0.6]{graphs/tp_graph.png}
 	\end{center}
@@ -1008,9 +1032,9 @@ No Gráfico \ref{graficofpRate}, pode confirmar que os algoritmos com melhor des
 \chapter{CONCLUSÃO E TRABALHOS FUTUROS}
 
 	Neste Capítulo, apresentado as conclusões do nosso trabalho, incluindo suas limitações  e futuros estudos que possam ser explorados. 
-
+	\vspace{-1.5\baselineskip}
 	\section{CONCLUSÃO}
-
+	\vspace{1\baselineskip}
 	O Objetivo deste estudo foi construir modelos de classificação por meio do uso de técnicas em \textit{Data Mining} conhecidas como: \textit{Árvore de Decisão}, \textit{Teorema de Bayes} e \textit{Máquinas de Vetores de Suporte}. Estas técnicas foram aplicadas por meio dos algoritmos: \textit{SMO}, \textit{J48}, \textit{REPTree}, \textit{RandomTree} e \textit{NaiveBayes}.
 	
 	As três técnicas apresentadas e testadas neste trabalho: Árvores de Decisão, Bayes e SVM (\textit{Support Vector Machine}), mostraram ser técnicas aplicáveis em bases de dados oriundas do SINAN (Sistema de Informações de Agravos de Notificação), obtendo resultados entre 70\% e 90\% na classificação.
@@ -1077,9 +1101,9 @@ No Gráfico \ref{graficofpRate}, pode confirmar que os algoritmos com melhor des
 	\end{figure}
 	\end{comment}
 	
-	\pagebreak
-	\clearpage
-	\newpage
+	%\pagebreak
+	%\clearpage
+	%\newpage
 	
 
 	\begin{comment}
@@ -1146,9 +1170,9 @@ No Gráfico \ref{graficofpRate}, pode confirmar que os algoritmos com melhor des
 		\end{center}
 	\end{figure}
 	\end{comment}
-	
+	\vspace{-1.5\baselineskip}
 	\section{TRABALHOS FUTUROS}
-	
+	\vspace{1\baselineskip}
 	Como trabalhos futuros, podem ser explorados na continuação desta pesquisa as oportunidades descritas a seguir:
 	
 	\begin{itemize}
